@@ -1,0 +1,40 @@
+{
+  "sources": {
+    ".raw/pdfs/cognitive-architectures-language-agents-2309.02427.pdf": {
+      "hash": "673a3a00a375762a9e7a947b62d4d14b",
+      "source_url": "https://arxiv.org/abs/2309.02427",
+      "ingested_at": "2026-05-19",
+      "pages_created": [
+        "wiki/sources/2023-09-05 - Sumers et al - Cognitive Architectures for Language Agents.md",
+        "wiki/entities/Shunyu Yao.md",
+        "wiki/concepts/CoALA.md",
+        "wiki/concepts/Agent Memory Taxonomy.md",
+        "wiki/concepts/ReAct.md",
+        "wiki/concepts/Tree of Thoughts.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md",
+        "wiki/domains/AI-Agents.md"
+      ]
+    },
+    ".raw/pdfs/memgpt-llms-as-operating-systems-2310.08560.pdf": {
+      "hash": "16e65f7cc5c1d647eb6acffdf085ce62",
+      "source_url": "https://arxiv.org/abs/2310.08560",
+      "ingested_at": "2026-05-19",
+      "pages_created": [
+        "wiki/sources/2023-10-12 - Packer et al - MemGPT - LLMs as Operating Systems.md",
+        "wiki/concepts/MemGPT.md",
+        "wiki/concepts/Self-Editing Memory.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md",
+        "wiki/domains/AI-Agents.md",
+        "wiki/concepts/Agent Memory Taxonomy.md"
+      ]
+    }
+  }
+}
