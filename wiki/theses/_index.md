@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Theses Index"
-updated: 2026-05-19
+updated: 2026-05-20
 ---
 
 # Theses
@@ -10,6 +10,7 @@ Nick's evolving opinions. Vault extension to the repo's schema — distinct from
 
 ## Current
 
+- [[Interpretable Persona Vectors: the Beckman Pattern]] — confidence: medium, evidence: moderate
 - [[Runtime vs Structural Reliability]] — confidence: medium, evidence: moderate
 - [[Workflows Beat Agents for Most Production]] — confidence: medium, evidence: moderate
 - [[Static Action Spaces vs Dynamic Tool Discovery]] — confidence: medium, evidence: moderate

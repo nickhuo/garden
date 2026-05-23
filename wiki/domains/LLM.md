@@ -2,11 +2,11 @@
 type: domain
 title: LLM
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-05-20
 tags:
   - llm
   - domain
-status: seed
+status: developing
 related:
   - "[[Thinking Machines Lab]]"
 sources: []
@@ -16,7 +16,7 @@ sources: []
 
 Model internals, training, inference, evaluation, alignment. Karpathy-centric seed intent per `CLAUDE.md`, but **first instantiation is a 5-source pulse from [[Thinking Machines Lab]]** on the numerical and architectural foundations of training and inference.
 
-A 60-second read of "what does this wiki think about LLMs as of 2026-05-14." See [[index]] for the full catalog.
+A 60-second read of "what does this wiki think about LLMs as of 2026-05-14." See [[brain/03_Resources/wiki/index]] for the full catalog.
 
 ## Current shape (after 5 sources)
 
@@ -48,6 +48,13 @@ Three of the five papers depend on or interlock with each other:
 - TML's full publication backlog from 2025 — likely worth ingesting in order
 - Karpathy-centric LLM seed (training videos, gist patterns) — still not started
 - The "co-design architecture and optimizer" thesis as a [[theses]] page candidate once a 2nd-source confirmation exists
+
+## Continual learning & persona (2026-05-20)
+
+Expansion beyond the TML seed via the autoresearch pass:
+- **Learning** — [[In-Context Learning]], [[Test-Time Adaptation]], [[Reward Modeling]], [[Online Learning from Interaction]]. [[Welcome to the Era of Experience]] (Silver & Sutton) frames the shift from human-data to experience-grounded learning.
+- **Persona / representation** — [[Persona Vectors]], [[Activation Steering / Representation Engineering]]: causal linear directions in activation space; preventative steering during finetuning preserves capability. The parametric pole of [[Persona Vectors vs Memory Files]].
+- **Foundations** — [[2022-03-04 - Ouyang et al - InstructGPT]] (RLHF / reward modeling lineage). Umbrella: [[Research - Continually-Learning Model-Centric Systems]].
 
 ## Open questions for this domain
 

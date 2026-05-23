@@ -1,6 +1,8 @@
 ---
 type: source
 title: "Quantifying infrastructure noise in agentic coding evals"
+aliases:
+  - "Infrastructure Noise Agentic Coding Evals"
 created: 2026-05-13
 updated: 2026-05-13
 tags:

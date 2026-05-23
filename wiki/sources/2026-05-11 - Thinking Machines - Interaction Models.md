@@ -1,11 +1,12 @@
 ---
 type: source
 title: "Interaction Models: A Scalable Approach to Human-AI Collaboration"
+aliases:
+  - "Interaction Models"
 created: 2026-05-14
 updated: 2026-05-14
 tags:
   - llm
-  - source
   - real-time
   - multimodal
 status: developing

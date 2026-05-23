@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Overview"
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-05-20
 tags:
   - meta
 status: developing
@@ -16,7 +16,7 @@ Executive summary of the vault. What's here, what's the thesis, where the gaps a
 
 ## Vault state (snapshot 2026-05-11)
 
-- **39 wiki pages**, **7 raw sources**, **2 domains** (AI-Agents populated, LLM seeded by tag).
+- **~155 wiki pages**, **34 raw sources**, **2 domains** (AI-Agents and LLM both active). Snapshot 2026-05-20.
 - All migrated from the prior topic-scoped sub-wiki schema (`AI-Agents/{raw,sources,entities,concepts,theses}/`) into the `claude-obsidian` repo's vault layout (`.raw/` + `wiki/`).
 - The vault is designed to work with the `claude-obsidian` Claude Code plugin once installed. Without the plugin, follow `WIKI.md` directly.
 
@@ -33,11 +33,15 @@ Running thesis (cite individual concept pages for details, not this summary):
 - Tool design is becoming its own discipline — [[ACI - Agent-Computer Interface]] formalizes this as analogous to HCI.
 - The MCP standard ([[MCP]]) is winning the tool-interface battle, not because it's technically superior but because Anthropic backs it and the alternatives are fragmented.
 
-### LLM (seeded only)
+### LLM (active)
 
-No pages yet. Planned scope: transformer internals, training, inference, scaling, evaluation, alignment, mechanistic interpretability. Karpathy-centric seed canon (nn-zero-to-hero, Intro to LLMs, nanoGPT, llm.c, Software 2.0/3.0). Will become `wiki/domains/LLM.md` once first source lands.
+Populated 2026-05-14 with a 5-source Thinking Machines Lab pulse, then expanded 2026-05-20 with the continual-learning research: [[Persona Vectors]], [[Activation Steering / Representation Engineering]], [[In-Context Learning]], [[Test-Time Adaptation]], [[Reward Modeling]], [[Online Learning from Interaction]]. Planned scope: transformer internals, training, inference, scaling, evaluation, alignment, mechanistic interpretability. Karpathy-centric seed canon (nn-zero-to-hero, Intro to LLMs, nanoGPT, llm.c, Software 2.0/3.0). Will become `wiki/domains/LLM.md` once first source lands.
 
 Boundary vs AI-Agents: LLM is "how the model works"; AI-Agents is "what you build on top." Training-time tool use is LLM; deployment-time tool use is AI-Agents.
+
+### Continual learning & model-centric systems (added 2026-05-20)
+
+A cross-cutting thread spanning both domains: an agent that learns from each interaction ([[Online Learning from Interaction]]), persists it ([[Persona Vectors vs Memory Files]]), centers the model ([[Model-Centric Architecture]]), and is steered by live signals ([[Online Evaluation]]). Umbrella synthesis: [[Research - Continually-Learning Model-Centric Systems]]. The four directions are one loop; the guarantees layer (constraints/validation/permissioning) is the durable residue model-centrism does not absorb.
 
 ## Theses
 

@@ -8,7 +8,8 @@ tags:
 - infrastructure
 - architecture
 status: developing
-related: []
+related:
+- "[[Model-Centric Architecture]]"
 sources:
 - "[[2026-04-08 - Anthropic - Scaling Managed Agents]]"
 - "[[2026-05-13 - Anthropic - Effective Harnesses for Long-Running Agents]]"

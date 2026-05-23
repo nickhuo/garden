@@ -22,6 +22,8 @@ related:
   - "[[Trace-Based Evaluation]]"
   - "[[tau-bench]]"
   - "[[Workflows Beat Agents for Most Production]]"
+  - "[[Online Evaluation]]"
+  - "[[Eval Validity]]"
 sources:
   - "[[2026-05-13 - Anthropic - Demystifying Evals for AI Agents]]"
 ---

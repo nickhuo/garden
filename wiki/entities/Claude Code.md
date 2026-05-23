@@ -21,7 +21,7 @@ related:
   - "[[Prompt Injection]]"
   - "[[Minimal Footprint Principle]]"
   - "[[Autonomous Agents]]"
-  - "[[CLAUDE.md]]"
+  - "[[brain/CLAUDE]]"
   - "[[Agentic Coding Slash Commands]]"
 sources:
   - "[[2026-04 - Anthropic - Claude Code Auto Mode]]"
@@ -88,7 +88,7 @@ Auto mode is the intended permission policy for Managed Agents-hosted Claude Cod
 
 ## Configuration surface (from Best Practices, 2026-05-13)
 
-The [[CLAUDE.md]] files (root, subdirectory, `~/.claude/`) are auto-loaded at session start and are the primary persistent-config mechanism. [[Agentic Coding Slash Commands]] in `.claude/commands/` provide reusable prompt templates shared across the team.
+The [[brain/CLAUDE]] files (root, subdirectory, `~/.claude/`) are auto-loaded at session start and are the primary persistent-config mechanism. [[Agentic Coding Slash Commands]] in `.claude/commands/` provide reusable prompt templates shared across the team.
 
 **Headless mode** (`claude -p "prompt"`) runs Claude Code non-interactively for CI, git hooks, and scheduled scripts. Pair with `--output-format json` for structured programmatic output.
 

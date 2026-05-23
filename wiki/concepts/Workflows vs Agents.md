@@ -8,7 +8,8 @@ tags:
 - taxonomy
 - foundations
 status: developing
-related: []
+related:
+- "[[Code-to-the-Side vs Orchestration]]"
 sources:
 - "[[2024-12-19 - Anthropic - Building Effective Agents]]"
 - "[[2025-06-13 - Anthropic - How we built our multi-agent research system]]"

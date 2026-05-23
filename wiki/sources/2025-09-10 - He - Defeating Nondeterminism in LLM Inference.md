@@ -1,11 +1,13 @@
 ---
 type: source
 title: "Defeating Nondeterminism in LLM Inference"
+aliases:
+  - "Defeating Nondeterminism in LLM Inference"
+  - "Defeating Nondeterminism"
 created: 2026-05-14
 updated: 2026-05-14
 tags:
   - llm
-  - source
   - inference
   - infrastructure
   - rl

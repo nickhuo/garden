@@ -9,7 +9,8 @@ tags:
 - few-shot
 - anti-pattern
 status: developing
-related: []
+related:
+- "[[In-Context Learning]]"
 sources:
 - "[[2025-07-18 - Manus - Context Engineering for AI Agents]]"
 aliases:

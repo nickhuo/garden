@@ -14,6 +14,7 @@ related:
   - "[[SWE-bench Verified]]"
   - "[[Workflows vs Agents]]"
   - "[[ACI - Agent-Computer Interface]]"
+  - "[[Model-Centric Architecture]]"
 sources:
   - "[[2025-01-06 - Anthropic - SWE-bench Verified Sonnet 3.5]]"
 complexity: basic

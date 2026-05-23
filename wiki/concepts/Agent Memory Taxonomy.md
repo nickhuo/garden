@@ -14,6 +14,8 @@ related:
 - "[[Session as Event Log]]"
 - "[[Agent Skills]]"
 - "[[Context Engineering]]"
+- "[[Persona Vectors]]"
+- "[[Online Learning from Interaction]]"
 sources:
 - "[[2023-09-05 - Sumers et al - Cognitive Architectures for Language Agents]]"
 ---

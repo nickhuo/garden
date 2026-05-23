@@ -12,7 +12,7 @@ status: mature
 related: []
 sources:
   - "[[.raw/articles/2025-07-18 - Manus - Context Engineering for AI Agents.md]]"
-- '[[03_Resources/.raw/articles/2025-07-18 - Manus - Context Engineering for AI Agents.md]]'
+  - '[[03_Resources/.raw/articles/2025-07-18 - Manus - Context Engineering for AI Agents.md]]'
 source_type: blog
 author: Yichao 'Peak' Ji
 date_published: 2026-05-10
@@ -20,7 +20,6 @@ url: https://manus.im/blog/Context-Engineering-for-AI-Agents-Lessons-from-Buildi
 confidence: medium
 key_claims: []
 ---
-
 # Context Engineering for AI Agents: Lessons from Building Manus
 
 ## Summary

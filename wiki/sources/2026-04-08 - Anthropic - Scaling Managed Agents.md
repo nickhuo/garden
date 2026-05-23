@@ -6,17 +6,17 @@ aliases:
 created: 2026-05-04
 updated: 2026-05-13
 tags:
-- ai-agents
-- anthropic
-- infrastructure
-- scaling
-- harness
+  - ai-agents
+  - anthropic
+  - infrastructure
+  - scaling
+  - harness
 status: mature
 related: []
 sources:
   - "[[.raw/articles/2026-04-08 - Anthropic - Scaling Managed Agents.md]]"
 source_type: blog
-author: Anthropic — Lance Martin, Gabe Cemaj, Michael Cohen
+author: Anthropic Engineering
 date_published: 2026-04-08
 url: https://www.anthropic.com/engineering/managed-agents
 confidence: medium

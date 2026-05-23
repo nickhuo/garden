@@ -1,6 +1,8 @@
 ---
 type: source
 title: "Designing AI-resistant technical evaluations"
+aliases:
+  - "AI-Resistant Technical Evaluations"
 created: 2026-05-13
 updated: 2026-05-13
 tags:

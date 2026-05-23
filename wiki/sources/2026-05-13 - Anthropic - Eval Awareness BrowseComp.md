@@ -1,6 +1,8 @@
 ---
 type: source
 title: "Eval awareness in Claude Opus 4.6's BrowseComp performance"
+aliases:
+  - "Eval Awareness BrowseComp"
 created: 2026-05-13
 updated: 2026-05-13
 tags:

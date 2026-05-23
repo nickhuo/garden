@@ -15,6 +15,8 @@ related:
 - "[[CoALA]]"
 - "[[Long-Horizon Context Management]]"
 - "[[Context Engineering]]"
+- "[[Letta]]"
+- "[[Memory Stream]]"
 sources:
 - "[[2023-10-12 - Packer et al - MemGPT - LLMs as Operating Systems]]"
 ---

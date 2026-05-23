@@ -1,6 +1,6 @@
 ---
 type: concept
-title: "Agentic Coding Slash Commands"
+title: Agentic Coding Slash Commands
 created: 2026-05-13
 updated: 2026-05-13
 tags:
@@ -11,12 +11,12 @@ status: seed
 complexity: basic
 domain: ai-agents
 aliases:
-  - "slash commands"
-  - "claude commands"
-  - "custom slash commands"
+  - slash commands
+  - claude commands
+  - custom slash commands
 related:
   - "[[Claude Code]]"
-  - "[[CLAUDE.md]]"
+  - "[[brain/03_Resources/wiki/concepts/CLAUDE]]"
 sources:
   - "[[2026-05-13 - Anthropic - Claude Code Best Practices]]"
 ---
@@ -41,7 +41,7 @@ A mechanism in [[Claude Code]] for defining reusable, team-shared prompt templat
 
 ## Relationship to CLAUDE.md
 
-[[CLAUDE.md]] sets persistent per-session context; slash commands set per-task prompts. They are complementary: CLAUDE.md handles "always know this," slash commands handle "do this operation in this way."
+[[brain/03_Resources/wiki/concepts/CLAUDE]] sets persistent per-session context; slash commands set per-task prompts. They are complementary: CLAUDE.md handles "always know this," slash commands handle "do this operation in this way."
 
 ## Analogy
 

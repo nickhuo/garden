@@ -8,7 +8,9 @@ tags:
 - evaluation
 - methodology
 status: seed
-related: []
+related:
+- "[[LLM-as-Judge]]"
+- "[[Online Evaluation]]"
 sources:
   - "[[2026-05-13 - Anthropic - Demystifying Evals for AI Agents]]"
 _legacy_source_count: 1

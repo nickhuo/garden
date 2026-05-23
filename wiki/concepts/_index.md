@@ -1,12 +1,12 @@
 ---
 type: meta
 title: "Concepts Index"
-updated: 2026-05-14
+updated: 2026-05-20
 ---
 
 # Concepts
 
-Ideas, patterns, frameworks. Domain-agnostic in form, domain-tagged in content. **67 concept pages** currently.
+Ideas, patterns, frameworks. Domain-agnostic in form, domain-tagged in content. **85 concept pages** currently.
 
 ## Architecture and primitives
 
@@ -90,7 +90,7 @@ Ideas, patterns, frameworks. Domain-agnostic in form, domain-tagged in content. 
 
 ## Agentic coding
 
-- [[CLAUDE.md]] — auto-loaded config primitive for Claude Code sessions; the persistent-context lever
+- [[brain/03_Resources/wiki/concepts/CLAUDE]] — auto-loaded config primitive for Claude Code sessions; the persistent-context lever
 - [[Agentic Coding Slash Commands]] — `.claude/commands/` reusable prompt templates, version-controlled
 - [[Config Type Safety]] — typed config schemas (Zod, Pydantic) at the agent boundary; eliminate a class of silent agent failures
 
@@ -120,6 +120,27 @@ Ideas, patterns, frameworks. Domain-agnostic in form, domain-tagged in content. 
 ## Other
 
 - [[Recursive Language Models]]
+
+## Continual learning (2026-05-20)
+
+- [[Online Learning from Interaction]] — the umbrella concept; learning from live interaction as a durability spectrum
+- [[In-Context Learning]] — learning within the context window; the cheapest, most reversible end of the spectrum
+- [[Test-Time Adaptation]] — updating at inference; test-time training as the surprising-effectiveness midpoint
+- [[Learning from Implicit Feedback]] — turning behavioral signals into a learning signal
+- [[Implicit Feedback Signals]] — the observable signals (edits, retries, dwell) that feed online evaluation
+- [[Reward Modeling]] — converting human/behavioral preferences into a differentiable training signal (RLHF lineage)
+- [[Online Evaluation]] — the conduit from live interaction to durable change
+- [[LLM-as-Judge]] — model-scored evaluation; debiasing reaches >80% human agreement
+- [[A/B Testing for Agents]] — the only causally trustworthy online verdict
+- [[Eval Validity]] — every online signal is a proxy; the metric is the construct
+- [[Persona Vectors]] — causal activation-space directions controlling agent persona (parametric pole)
+- [[Activation Steering / Representation Engineering]] — reading/writing model behavior via activation-space directions
+- [[Memory Stream]] — append-only experiential memory record (contextual pole)
+- [[Persona Vectors vs Memory Files]] — the control-vs-inspectability split between the two persistence paths
+- [[Model-Centric Architecture]] — model at the center, code to the side
+- [[Code-to-the-Side vs Orchestration]] — which side-code is scaffolding (scaling absorbs) vs guarantees (persists)
+- [[Software 2.0]] — Karpathy's "neural nets eat code" framing; the scaling argument for model-centrism
+- [[The Bitter Lesson]] — Sutton's argument that general methods + compute beat hand-engineered knowledge
 
 ## Promotion policy
 

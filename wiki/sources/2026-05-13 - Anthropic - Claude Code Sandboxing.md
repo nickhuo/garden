@@ -1,6 +1,8 @@
 ---
 type: source
 title: "Beyond permission prompts: making Claude Code more secure and autonomous"
+aliases:
+  - "Claude Code Sandboxing"
 created: 2026-05-13
 updated: 2026-05-13
 tags:

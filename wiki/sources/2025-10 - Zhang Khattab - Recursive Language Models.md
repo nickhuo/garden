@@ -4,16 +4,16 @@ title: Recursive Language Models
 created: 2026-05-10
 updated: 2026-05-10
 tags:
-- ai-agents
-- context
-- long-context
-- inference-strategy
-- academic
+  - ai-agents
+  - context
+  - long-context
+  - inference-strategy
+  - academic
 status: mature
 related: []
 sources:
   - "[[.raw/articles/2025-10 - Zhang Khattab - Recursive Language Models.md]]"
-- '[[03_Resources/.raw/articles/2025-10 - Zhang Khattab - Recursive Language Models.md]]'
+  - '[[03_Resources/.raw/articles/2025-10 - Zhang Khattab - Recursive Language Models.md]]'
 source_type: blog
 author: Alex L. Zhang & Omar Khattab (MIT OASYS Lab)
 date_published: 2026-05-10

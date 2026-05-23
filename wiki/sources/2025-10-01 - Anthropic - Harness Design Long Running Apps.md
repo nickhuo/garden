@@ -1,9 +1,13 @@
 ---
 type: source
 title: "Harness design for long-running application development"
+aliases:
+  - "Harness Design Long Running Apps"
 url: https://www.anthropic.com/engineering/harness-design-long-running-apps
 author: Anthropic
-date: 2025-10-01
+date_published: 2025-10-01
+created: 2026-05-13
+updated: 2026-05-13
 tags:
   - ai-agents
   - harness

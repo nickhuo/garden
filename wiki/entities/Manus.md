@@ -9,7 +9,8 @@ tags:
 - non-anthropic
 - meta
 status: seed
-related: []
+related:
+- "[[Model-Centric Architecture]]"
 sources:
 - "[[2025-07-18 - Manus - Context Engineering for AI Agents]]"
 _legacy_source_count: 1

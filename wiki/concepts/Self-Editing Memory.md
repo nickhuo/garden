@@ -13,6 +13,9 @@ related:
 - "[[Agent Memory Taxonomy]]"
 - "[[CoALA]]"
 - "[[Agent Skills]]"
+- "[[Online Learning from Interaction]]"
+- "[[Persona Vectors vs Memory Files]]"
+- "[[Letta]]"
 sources:
 - "[[2023-10-12 - Packer et al - MemGPT - LLMs as Operating Systems]]"
 ---

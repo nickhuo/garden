@@ -1,6 +1,8 @@
 ---
 type: source
 title: "Claude Code: Best practices for agentic coding"
+aliases:
+  - "Claude Code Best Practices"
 created: 2026-05-13
 updated: 2026-05-13
 tags:
@@ -15,7 +17,7 @@ url: https://www.anthropic.com/engineering/claude-code-best-practices
 confidence: high
 related:
   - "[[Claude Code]]"
-  - "[[CLAUDE.md]]"
+  - "[[brain/CLAUDE]]"
   - "[[Agentic Coding Slash Commands]]"
   - "[[Multi-Agent Systems]]"
   - "[[Context Engineering]]"
@@ -23,11 +25,11 @@ related:
 sources:
   - "[[.raw/articles/2026-05-13 - Anthropic - Claude Code Best Practices.md]]"
 key_claims:
-  - "CLAUDE.md files are auto-loaded at session start — the primary persistent-config lever"
-  - "Custom slash commands in .claude/commands/ are version-controlled and team-shared"
-  - "Claude Code supports headless mode (-p flag) for CI pipelines and git hooks"
-  - "Claude Code acts as both orchestrator and subagent — spawns parallel Task calls"
-  - "Permission model has allow/deny lists; --dangerously-skip-permissions only for containers"
+  - CLAUDE.md files are auto-loaded at session start — the primary persistent-config lever
+  - Custom slash commands in .claude/commands/ are version-controlled and team-shared
+  - Claude Code supports headless mode (-p flag) for CI pipelines and git hooks
+  - Claude Code acts as both orchestrator and subagent — spawns parallel Task calls
+  - Permission model has allow/deny lists; --dangerously-skip-permissions only for containers
   - "Junior-engineer mental model: literal, needs context, benefits from small verifiable tasks"
 ---
 
@@ -41,7 +43,7 @@ Ten practice areas covering how to get reliable, safe output from Claude Code as
 
 ## Key Claims
 
-1. **[[CLAUDE.md]] is the primary configuration primitive.** Files at `~/.claude/CLAUDE.md`, project root, and subdirectories are merged and loaded at session start. Recommended contents: build/test/lint commands, code style, testing instructions, repo etiquette, gotchas. Keep concise — bullet points preferred.
+1. **[[brain/CLAUDE]] is the primary configuration primitive.** Files at `~/.claude/CLAUDE.md`, project root, and subdirectories are merged and loaded at session start. Recommended contents: build/test/lint commands, code style, testing instructions, repo etiquette, gotchas. Keep concise — bullet points preferred.
 
 2. **Slash commands standardize team workflows.** `.claude/commands/<name>.md` files define reusable `/commands` with `$ARGUMENTS` placeholders. Version-controlled alongside code. Enables encoding conventions like `/new-feature`, `/review-pr`.
 
@@ -71,7 +73,7 @@ Ten practice areas covering how to get reliable, safe output from Claude Code as
 
 ## Concepts Touched
 
-- [[CLAUDE.md]] — persistent config mechanism (new concept page)
+- [[brain/CLAUDE]] — persistent config mechanism (new concept page)
 - [[Agentic Coding Slash Commands]] — `.claude/commands/` pattern (new concept page)
 - [[Context Engineering]] — headless + context-management practices are a coding-domain instantiation
 - [[Multi-Agent Systems]] — orchestrator/subagent roles explicitly described

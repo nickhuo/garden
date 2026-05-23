@@ -16,7 +16,7 @@ url: https://claude.com/blog/how-claude-code-works-in-large-codebases-best-pract
 confidence: high
 related:
   - "[[Claude Code]]"
-  - "[[CLAUDE.md]]"
+  - "[[brain/CLAUDE]]"
   - "[[Agent Skills]]"
   - "[[Agentic Harness]]"
   - "[[Harness Design Patterns]]"
@@ -26,13 +26,13 @@ related:
 sources:
   - "[[.raw/articles/2026-05-14 - Anthropic - Claude Code in Large Codebases.md]]"
 key_claims:
-  - "Agentic search beats RAG at scale because embedding pipelines can't keep up with active engineering teams — index staleness causes silent retrieval errors"
-  - "The harness (CLAUDE.md, hooks, skills, plugins, MCP) determines Claude Code performance more than the model alone"
+  - Agentic search beats RAG at scale because embedding pipelines can't keep up with active engineering teams — index staleness causes silent retrieval errors
+  - The harness (CLAUDE.md, hooks, skills, plugins, MCP) determines Claude Code performance more than the model alone
   - "Hooks compound: stop hooks reflect on sessions and propose CLAUDE.md updates while context is fresh; start hooks load team-specific context dynamically"
-  - "Skills should scope to paths — payments-team deployment skills bind to that directory, not the whole monorepo"
-  - "Initialize Claude in subdirectories, not repo roots — it walks up the tree loading every CLAUDE.md it finds"
-  - "LSP integration is one of the highest-value investments for multi-language large codebases (symbol-level vs string-level navigation)"
-  - "Configuration reviews every 3-6 months — instructions that helped older models can hinder newer ones (e.g., 'one-file-at-a-time' refactor rules)"
+  - Skills should scope to paths — payments-team deployment skills bind to that directory, not the whole monorepo
+  - Initialize Claude in subdirectories, not repo roots — it walks up the tree loading every CLAUDE.md it finds
+  - LSP integration is one of the highest-value investments for multi-language large codebases (symbol-level vs string-level navigation)
+  - Configuration reviews every 3-6 months — instructions that helped older models can hinder newer ones (e.g., 'one-file-at-a-time' refactor rules)
   - "Adoption needs a DRI: fastest rollouts had infrastructure wired before broad access; bottoms-up fragments without centralization"
 ---
 
@@ -46,7 +46,7 @@ Two through-lines.
 
 **(1) Agentic search > RAG at scale.** Claude Code reads files, greps, and traces references the way a human engineer does — no embedding pipeline, no centralized index. This is a feature, not a limitation: RAG-based coding tools fail in active codebases because the index is always stale relative to live HEAD, and retrieval silently returns renamed/deleted symbols. The tradeoff: Claude needs *enough starting context* (CLAUDE.md, skills, codebase maps) to know where to look. Without scaffolding, billion-line codebases blow the context window before work starts.
 
-**(2) The harness is more load-bearing than the model.** Five extension points — [[CLAUDE.md]], hooks, [[Agent Skills|skills]], plugins, [[MCP]] servers — plus LSP and subagents. Configuration order matters. Performance gains from harness work often exceed gains from model upgrades.
+**(2) The harness is more load-bearing than the model.** Five extension points — [[brain/CLAUDE]], hooks, [[Agent Skills|skills]], plugins, [[MCP]] servers — plus LSP and subagents. Configuration order matters. Performance gains from harness work often exceed gains from model upgrades.
 
 ## Key Claims
 
@@ -85,12 +85,12 @@ Plus:
 ## Entities Mentioned
 
 - [[Claude Code]] — primary subject
-- [[Anthropic]] — Applied AI team is the author
+- [[brain/03_Resources/digest/sources/anthropic]] — Applied AI team is the author
 - [[MCP]] — one of the five harness extension points
 
 ## Concepts Touched
 
-- [[CLAUDE.md]] — layering and subdirectory-first initialization explicitly recommended
+- [[brain/CLAUDE]] — layering and subdirectory-first initialization explicitly recommended
 - [[Agent Skills]] — path-scoping called out as the key feature at scale
 - [[Agentic Harness]] — this post is a direct case study of the harness concept
 - [[Harness Design Patterns]] — the 5-layer extension model

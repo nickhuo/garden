@@ -1,6 +1,6 @@
 ---
 type: meta
-title: "Dashboard"
+title: Dashboard
 created: 2026-05-11
 updated: 2026-05-13
 tags:
@@ -8,7 +8,7 @@ tags:
   - dashboard
 status: evergreen
 related:
-  - "[[index]]"
+  - "[[brain/03_Resources/wiki/index]]"
 sources: []
 ---
 

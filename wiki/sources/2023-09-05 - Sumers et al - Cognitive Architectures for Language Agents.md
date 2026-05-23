@@ -70,7 +70,7 @@ The point: each agent fills different cells, and the **empty cells** (e.g. agent
 
 ## Why it matters for this wiki
 
-CoALA gives a principled home for scattered concepts: [[Recitation]] and [[Session as Event Log]] are working-memory mechanics; [[Contextual Retrieval]] / [[Just-in-Time Context Retrieval]] are *retrieval* internal actions; [[Agent Skills]] and [[Voyager]]-style skill libraries are *procedural* memory; [[Long-Horizon Context Management]] is the working↔episodic boundary. It also predates and frames the [[Workflows vs Agents]] distinction — a workflow fixes the decision procedure, an agent chooses it.
+CoALA gives a principled home for scattered concepts: [[Recitation]] and [[Session as Event Log]] are working-memory mechanics; [[Contextual Retrieval]] / [[Just-in-Time Context Retrieval]] are *retrieval* internal actions; [[Agent Skills]] and Voyager-style skill libraries are *procedural* memory; [[Long-Horizon Context Management]] is the working↔episodic boundary. It also predates and frames the [[Workflows vs Agents]] distinction — a workflow fixes the decision procedure, an agent chooses it.
 
 > [!key-insight] The framing claim
 > Language agents are not new — they are the latest cognitive architecture. The history of symbolic AI already mapped the design space; LLMs just made the modules cheap to build. The research frontier is the corners of that map nobody has filled.

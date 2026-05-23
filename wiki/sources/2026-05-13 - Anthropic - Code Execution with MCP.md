@@ -1,6 +1,8 @@
 ---
 type: source
 title: "Code execution with MCP: Building more efficient agents"
+aliases:
+  - "Code Execution with MCP"
 created: 2026-05-13
 updated: 2026-05-13
 tags:

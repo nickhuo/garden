@@ -1,11 +1,12 @@
 ---
 type: source
 title: "LoRA Without Regret"
+aliases:
+  - "LoRA Without Regret"
 created: 2026-05-14
 updated: 2026-05-14
 tags:
   - llm
-  - source
   - post-training
   - fine-tuning
   - parameter-efficient

@@ -1,11 +1,12 @@
 ---
 type: source
 title: "Modular Manifolds"
+aliases:
+  - "Modular Manifolds"
 created: 2026-05-14
 updated: 2026-05-14
 tags:
   - llm
-  - source
   - optimization
   - theory
 status: developing
@@ -15,10 +16,10 @@ date_published: 2025-09-26
 url: https://thinkingmachines.ai/blog/modular-manifolds/
 confidence: medium
 key_claims:
-  - Constraining weights to mathematical submanifolds (e.g., Stiefel) and co-designing the optimizer yields better update directions than vanilla gradient descent
-  - "Manifold Muon" — Muon optimizer variant that retracts weights onto the Stiefel manifold each step; beats AdamW on CIFAR-10 at extra compute cost
-  - Modular manifolds: treat each NN module as (forward, manifold, norm). Compose by Cartesian product of manifolds + weighted-max norms — enables principled per-layer LR budgets
-  - Non-Euclidean norms on tangent spaces can let you move further toward the gradient per fixed step length
+  - "Constraining weights to mathematical submanifolds (e.g., Stiefel) and co-designing the optimizer yields better update directions than vanilla gradient descent"
+  - '"Manifold Muon" — Muon optimizer variant that retracts weights onto the Stiefel manifold each step; beats AdamW on CIFAR-10 at extra compute cost'
+  - "Modular manifolds: treat each NN module as (forward, manifold, norm). Compose by Cartesian product of manifolds + weighted-max norms — enables principled per-layer LR budgets"
+  - "Non-Euclidean norms on tangent spaces can let you move further toward the gradient per fixed step length"
 related:
   - "[[Jeremy Bernstein]]"
   - "[[Thinking Machines Lab]]"

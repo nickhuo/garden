@@ -1,6 +1,6 @@
 ---
 type: source
-title: "A Postmortem of Three Recent Issues"
+title: A Postmortem of Three Recent Issues
 created: 2026-05-13
 updated: 2026-05-13
 tags:
@@ -9,7 +9,7 @@ tags:
   - postmortem
 status: developing
 source_type: article
-author: "Anthropic Engineering"
+author: Anthropic Engineering
 date_published: 2026-05-13
 url: https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues
 confidence: high
@@ -17,15 +17,15 @@ related:
   - "[[KV-Cache Discipline]]"
   - "[[LLM-as-Judge Evaluation]]"
   - "[[Token Economics]]"
-  - "[[Anthropic]]"
+  - "[[brain/03_Resources/digest/sources/anthropic]]"
 sources:
   - "[[.raw/articles/2026-05-13 - Anthropic - Postmortem Three Recent Issues.md]]"
 key_claims:
-  - "A load-balancer misconfiguration (ratio vs. absolute-count type confusion) caused an outage; resolved in 20 min via rollback."
-  - "A context-assembly bug triggered at chunk-boundary alignment (4096-byte multiples) corrupted system prompts — caught by user reports, not monitoring."
-  - "A cache key rotation flushed KV-cache simultaneously at peak traffic, causing a 45s P99 latency cascade for ~90 min."
-  - "LLM-as-judge evaluation on live production traffic is being added as a quality regression detector."
-  - "Gradual cache invalidation (N% per minute) is safer than simultaneous flush."
+  - A load-balancer misconfiguration (ratio vs. absolute-count type confusion) caused an outage; resolved in 20 min via rollback.
+  - A context-assembly bug triggered at chunk-boundary alignment (4096-byte multiples) corrupted system prompts — caught by user reports, not monitoring.
+  - A cache key rotation flushed KV-cache simultaneously at peak traffic, causing a 45s P99 latency cascade for ~90 min.
+  - LLM-as-judge evaluation on live production traffic is being added as a quality regression detector.
+  - Gradual cache invalidation (N% per minute) is safer than simultaneous flush.
 ---
 
 # A Postmortem of Three Recent Issues
@@ -88,4 +88,4 @@ See concept: [[KV-Cache Discipline]], [[Cache Invalidation Cascade]]
 - [[LLM-as-Judge Evaluation]] — Anthropic is now deploying this on live traffic; validates the concept's practical utility.
 - [[Token Economics]] — KV-cache hit rate is directly linked to cost and latency at Anthropic's scale.
 - [[Context Engineering]] — Incident 2's root cause lives in the context assembly pipeline.
-- [[Anthropic]] — entity producing this source.
+- [[brain/03_Resources/digest/sources/anthropic]] — entity producing this source.

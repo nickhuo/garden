@@ -1,6 +1,8 @@
 ---
 type: source
 title: "Claude Code auto mode: a safer way to skip permissions"
+aliases:
+  - "Claude Code Auto Mode"
 created: 2026-05-13
 updated: 2026-05-13
 tags:
@@ -11,7 +13,7 @@ tags:
 status: developing
 source_type: engineering-blog
 author: Anthropic
-date_published: 2026-04
+date_published: 2026-04-01
 url: https://www.anthropic.com/engineering/claude-code-auto-mode
 confidence: high
 related:

@@ -18,7 +18,7 @@ related:
 - "[[Workflows Beat Agents for Most Production]]"
 sources:
   - "[[.raw/articles/2024-06-17 - Yao et al - tau-bench.md]]"
-- "[[03_Resources/.raw/articles/2024-06-17 - Yao et al - tau-bench.md]]"
+  - "[[03_Resources/.raw/articles/2024-06-17 - Yao et al - tau-bench.md]]"
 source_type: paper
 author: Shunyu Yao, Noah Shinn, Pedram Razavi, Karthik Narasimhan (Sierra)
 date_published: 2024-06-17

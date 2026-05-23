@@ -69,7 +69,7 @@ The orchestrator defined interface specs before workers began. Workers operated 
 - **Complicates:** [[Multi-Agent Systems]] open question — "does the triple-conjunction generalize beyond research?" Compiler experiment suggests yes, with the right decomposition
 - **Refines:** [[Context Decomposition vs Problem Decomposition]] — orchestrator decomposes the *problem* into interface-connected workstreams, not just context windows
 - **Relevant to:** [[Workflows vs Agents]] — the system is hybrid: dynamic orchestrator decisions + statically-scoped worker tasks
-- **Related entity:** [[Anthropic]] (engineering team)
+- **Related entity:** [[brain/03_Resources/digest/sources/anthropic]] (engineering team)
 
 ## Open Questions Raised
 

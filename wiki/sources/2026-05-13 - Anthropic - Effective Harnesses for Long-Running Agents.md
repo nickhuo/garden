@@ -1,6 +1,8 @@
 ---
 type: source
 title: "Effective Harnesses for Long-Running Agents"
+aliases:
+  - "Effective Harnesses for Long-Running Agents"
 created: 2026-05-13
 updated: 2026-05-13
 tags:
