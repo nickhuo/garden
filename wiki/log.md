@@ -19,6 +19,10 @@ Ops: `init`, `ingest`, `query`, `lint`, `refactor`, `save`, `autoresearch`, `man
 
 ---
 
+## [2026-05-23] manual | Keep zELO paper only (ZeroEntropy autoresearch trimmed)
+- Autoresearch on ZeroEntropy / zerank ran 3 rounds; per Nick's call, kept **only** the source page [[2025-09-16 - Pipitone et al - zELO]] (flagged by Nick as a strong commercialization angle). Deleted the other 9 pages (4 sources, ZeroEntropy entity, 3 concepts, 1 synthesis) and reverted updates to [[Reranking]], index, hot.
+- Page kept: [[2025-09-16 - Pipitone et al - zELO]] — zELO trains rerankers on LLM-ensemble pairwise preferences converted to absolute Elo scores (no human annotation, regenerable as base LLMs improve). Branch `research/zeroentropy-evals`.
+
 ## [2026-05-22] ingest | OpenAI — A Practical Guide to Building Agents
 - **Trigger:** user — `/wiki-ingest https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/`. Page 403'd WebFetch; fetched the official PDF from cdn.openai.com and extracted text via pypdf (34 pages).
 - **Source:** `.raw/articles/a-practical-guide-to-building-agents-2026-05-22.md`. Summary: [[2025 - OpenAI - A Practical Guide to Building Agents]].

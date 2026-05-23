@@ -152,7 +152,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Vibe Coding]]
 - [[Workflows vs Agents]]
 
-## Sources (50)
+## Sources (51)
 
 - [[2017-11-11 - Karpathy - Software 2.0]]
 - [[2025 - OpenAI - A Practical Guide to Building Agents]]
@@ -204,6 +204,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[2026-05-13 - Anthropic - Postmortem Three Recent Issues]]
 - [[2026-05-13 - Anthropic - Writing Effective Tools for Agents]]
 - [[2026-05-14 - Anthropic - Claude Code in Large Codebases]]
+- [[2025-09-16 - Pipitone et al - zELO]]
 
 ## Theses (4)
 
