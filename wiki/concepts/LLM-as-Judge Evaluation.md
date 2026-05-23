@@ -37,6 +37,9 @@ Agentic systems explore many valid paths to the same goal. Process-fidelity eval
 - **Separate correctness from style** — these are different axes; factual accuracy should be weighted independently of tone or formatting (per [[2026-05-13 - Anthropic - Demystifying Evals for AI Agents]])
 - **Calibrate judges periodically** against 50–200-example human-labeled sets; judge drift is a real failure mode as models and prompts change
 
+> [!note] Graded, not binary — a common point of confusion
+> Anthropic's prescription here uses **graded 0.0-1.0 rubrics**, not pass/fail. The "binary, not scoring" doctrine is a *different* lineage (Husain & Shankar + judge-reliability research), even though it's often misattributed to Anthropic. See [[Binary Evaluation vs Scoring]]. Anthropic's only strictly-binary layer is deterministic Tier-1 unit tests in the [[Agent Eval Pyramid]].
+
 ## Connections
 
 - Solves an open question previously tracked in [[Autonomous Agents]] (long-horizon eval)

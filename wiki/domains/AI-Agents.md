@@ -120,6 +120,7 @@ Autoresearch deepening the online-eval cluster with an external/industry lens. S
 - **Why online (empirical)** — [[Offline-Online Evaluation Gap]] (LiveCodeBench −20-30%, benchmark contamination); extends [[Eval Awareness]] / [[AI-Resistant Evaluation Design]] with the contamination/overfit failure mode.
 - **Bottlenecks** — [[Online Evaluation Bottlenecks]]: judge cost/latency, A/B statistical power (10k+ trajectories/arm), multi-turn credit assignment, baseline drift, online reward-hacking.
 - **Survey anchors** — Yehudai et al. (ACL 2025), Mohammadi et al. (KDD 2025), Guan et al. (multi-turn).
+- **Label design + Raindrop round (2026-05-23)** — [[Binary Evaluation vs Scoring]] (pass/fail over Likert; lineage = Husain/Shankar + judge-reliability research, *not* Anthropic) and [[Specialized Eval Classifiers]] (Raindrop's many tiny per-signal binary classifiers on 100% of traffic; closed-set vs open-set). Entity: [[Raindrop]].
 
 ## OpenAI agent doctrine (2026-05-22)
 

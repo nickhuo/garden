@@ -34,6 +34,7 @@ Named things: people, organizations, products, repositories, frameworks, places.
 - [[ToolBench]] — Tsinghua/OpenBMB tool-use dataset+benchmark over 16k+ real APIs; ToolLLaMA + ToolEval. **Cited in:** [[2023-07-31 - Qin et al - ToolLLM]].
 - [[Letta]] — agent framework built from MemGPT; productizes self-editing memory. **Cited in:** [[2023-10-12 - Packer et al - MemGPT - LLMs as Operating Systems]].
 - [[OpenAI Agents SDK]] — OpenAI's code-first agent orchestration framework: `Agent`, `Runner.run()`, handoffs, first-class guardrails. **Cited in:** [[2025 - OpenAI - A Practical Guide to Building Agents]].
+- [[Raindrop]] — online-evaluation / production-monitoring platform for AI agents; trains many tiny per-signal binary classifiers on 100% of traffic + agent self-diagnostics. **Cited in:** [[2026 - Raindrop - Thoughts on Evals]], [[2026 - Raindrop - Agent Self-Diagnostics]].
 
 ## People
 

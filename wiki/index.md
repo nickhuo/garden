@@ -13,7 +13,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[AI-Agents]] — agentic systems, tool use, orchestration, harnesses, evals, MCP
 - [[LLM]] — model internals, training, inference, optimization, alignment. Seeded 2026-05-14 with 5 Thinking Machines Lab sources.
 
-## Entities (30)
+## Entities (31)
 
 - [[Agent Skills]]
 - [[Andrej Karpathy]]
@@ -37,6 +37,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[OpenAI Agents SDK]]
 - [[OpenBMB]]
 - [[Gorilla]]
+- [[Raindrop]]
 - [[Richard Sutton]]
 - [[Shunyu Yao]]
 - [[Sierra]]
@@ -46,7 +47,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[tau-bench]]
 - [[Thinking Machines Lab]]
 
-## Concepts (108)
+## Concepts (110)
 
 - [[A-B Testing for Agents]]
 - [[ACI - Agent-Computer Interface]]
@@ -69,6 +70,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Augmented LLM]]
 - [[Autonomous Agents]]
 - [[Batch Invariance]]
+- [[Binary Evaluation vs Scoring]]
 - [[BM25 and Hybrid Retrieval]]
 - [[Cache Invalidation Cascade]]
 - [[brain/03_Resources/wiki/concepts/CLAUDE]]
@@ -142,6 +144,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Session as Event Log]]
 - [[Software 2.0]]
 - [[Software 3.0]]
+- [[Specialized Eval Classifiers]]
 - [[Stiefel Manifold]]
 - [[Test-Time Adaptation]]
 - [[The Bitter Lesson]]
@@ -157,7 +160,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Vibe Coding]]
 - [[Workflows vs Agents]]
 
-## Sources (56)
+## Sources (60)
 
 - [[2024-10-14 - Zhuge et al - Agent-as-a-Judge]]
 - [[2025-03-20 - Yehudai et al - Survey on Evaluation of LLM-based Agents]]
@@ -165,6 +168,10 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[2025-07-29 - Mohammadi et al - Evaluation and Benchmarking of LLM Agents]]
 - [[2025 - LangChain - LLM Observability and Monitoring]]
 - [[2025 - Goodeye Labs - LLM Evaluation 2025 Review]]
+- [[2026 - Raindrop - Thoughts on Evals]]
+- [[2026 - Raindrop - Agent Self-Diagnostics]]
+- [[2026-01-15 - Husain Shankar - LLM Evals FAQ]]
+- [[2025-04-20 - Tripathi et al - Pairwise or Pointwise]]
 - [[2017-11-11 - Karpathy - Software 2.0]]
 - [[2025 - OpenAI - A Practical Guide to Building Agents]]
 - [[2026-05-22 - Karpathy - Sequoia Ascent 2026]]
@@ -246,4 +253,4 @@ Master catalog of all wiki pages. Refresh on every ingest.
 
 ---
 
-Total: ~181 wiki pages, 36 raw sources. Last full refresh: 2026-05-20 (autoresearch: continually-learning model-centric systems — 4 directions, 37 new pages). Last autoresearch: 2026-05-23 (Online Evaluation in Production — 5 concepts + 6 sources + 1 synthesis).
+Total: ~188 wiki pages, 36 raw sources. Last full refresh: 2026-05-20 (autoresearch: continually-learning model-centric systems — 4 directions, 37 new pages). Last autoresearch: 2026-05-23 (Online Evaluation in Production — incl. Raindrop binary-classifier round: +7 concepts/sources/entity over two passes).

@@ -15,6 +15,8 @@ related:
   - "[[Agent-as-a-Judge]]"
   - "[[Offline-Online Evaluation Gap]]"
   - "[[Online Evaluation Bottlenecks]]"
+  - "[[Binary Evaluation vs Scoring]]"
+  - "[[Specialized Eval Classifiers]]"
   - "[[Online Evaluation]]"
   - "[[Research - Online Evaluation]]"
 sources:
@@ -24,6 +26,10 @@ sources:
   - "[[2025-03-28 - Guan et al - Multi-Turn Conversational Agent Evaluation Survey]]"
   - "[[2025 - LangChain - LLM Observability and Monitoring]]"
   - "[[2025 - Goodeye Labs - LLM Evaluation 2025 Review]]"
+  - "[[2026 - Raindrop - Thoughts on Evals]]"
+  - "[[2026 - Raindrop - Agent Self-Diagnostics]]"
+  - "[[2026-01-15 - Husain Shankar - LLM Evals FAQ]]"
+  - "[[2025-04-20 - Tripathi et al - Pairwise or Pointwise]]"
 ---
 
 # Research - Online Evaluation in Production
@@ -39,10 +45,13 @@ Online evaluation of agent applications has consolidated, in 2025-2026, into a s
 ### 1. Industry practices
 - The dominant pattern is **continuous evaluation as observability**: online evals run **asynchronously on sampled live traffic**, monitoring four families — latency, token usage, error rates, and quality-via-evals — with threshold alerting as an early-warning system (Source: [[2025 - LangChain - LLM Observability and Monitoring]]). See [[Continuous Evaluation]].
 - Tooling has converged on the same loop with different emphasis (Arize/Confident-AI on production-trace online eval; LangSmith on dev loops; Braintrust on unified eval+observability; Langfuse on infra-owned; Datadog on APM-integrated).
+- **Dissenting practice — Raindrop** ([[Raindrop]]): argues most "online eval" is just *offline eval on sampled prod data* (closed-set) and can't find unexpected failures. Their alternative is **open-set discovery** — many trained per-signal binary classifiers on 100% of traffic + semantic clustering + agent self-diagnostics (Sources: [[2026 - Raindrop - Thoughts on Evals]], [[2026 - Raindrop - Agent Self-Diagnostics]]). The **closed-set vs open-set** distinction is the sharpest framing this round added.
 
 ### 2. Most-used methods + their gaps
 - **Online LLM-as-judge** is the workhorse ([[Online LLM-as-Judge]]); 2026 adds **distilled evaluators** (~1/30 cost, 100% coverage) and **[[Agent-as-a-Judge]]** (step-level, ~human-reliable on DevAI; Source: [[2024-10-14 - Zhuge et al - Agent-as-a-Judge]]).
+- **Specialized per-signal classifiers** ([[Specialized Eval Classifiers]]): Raindrop's approach — many tiny *trained* binary classifiers, one per failure signal, on 100% of traffic (billions of labels/month), plus semantic clustering for open-set discovery (Source: [[2026 - Raindrop - Thoughts on Evals]]).
 - **A/B testing** is the only causally trustworthy verdict ([[A-B Testing for Agents]]).
+- **Label design**: the field favors **binary pass/fail over Likert scoring** ([[Binary Evaluation vs Scoring]]) — popularized by Husain & Shankar ([[2026-01-15 - Husain Shankar - LLM Evals FAQ]]), backed by judge-reliability research ([[2025-04-20 - Tripathi et al - Pairwise or Pointwise]]: absolute flips 9% vs pairwise 35%). *Not* originally Anthropic, whose rubrics are graded 0.0-1.0.
 - **Gaps** (both surveys agree): cost-efficiency, safety, robustness, fine-grained/scalable methods (Source: [[2025-03-20 - Yehudai et al - Survey on Evaluation of LLM-based Agents]]); plus enterprise gaps — role-based access, reliability guarantees, long-horizon, compliance (Source: [[2025-07-29 - Mohammadi et al - Evaluation and Benchmarking of LLM Agents]]).
 
 ### 3. Why online beats offline
@@ -55,6 +64,8 @@ Catalogued in [[Online Evaluation Bottlenecks]]: no runtime ground truth; judge 
 ## Key Concepts
 - [[Continuous Evaluation]]: always-on sampled eval over live traffic
 - [[Online LLM-as-Judge]] / [[Agent-as-a-Judge]]: the judging mechanisms
+- [[Specialized Eval Classifiers]]: many tiny per-signal binary classifiers (Raindrop)
+- [[Binary Evaluation vs Scoring]]: pass/fail over Likert — lineage and why
 - [[Offline-Online Evaluation Gap]]: the empirical why-online
 - [[Online Evaluation Bottlenecks]]: the operational limits
 
@@ -67,6 +78,8 @@ Catalogued in [[Online Evaluation Bottlenecks]]: no runtime ground truth; judge 
 - Solving credit assignment for free-form multi-turn agent outcomes (RL value-transport is only a candidate).
 - Statistical evaluation for low-traffic products that cannot reach A/B significance.
 - Detecting online reward-hacking before it harms long-term value.
+- **Open-set discovery**: how to find failure modes nobody specified, beyond clustering — does the trained-classifier approach ([[Specialized Eval Classifiers]]) scale as the signal set grows, or just relocate the labeling labor?
+- When is numeric scoring worth its cost over binary checks ([[Binary Evaluation vs Scoring]])?
 
 ## Sources
 - [[2025-03-20 - Yehudai et al - Survey on Evaluation of LLM-based Agents]] — 2025, ACL Findings
@@ -75,3 +88,7 @@ Catalogued in [[Online Evaluation Bottlenecks]]: no runtime ground truth; judge 
 - [[2025-03-28 - Guan et al - Multi-Turn Conversational Agent Evaluation Survey]] — 2025
 - [[2025 - LangChain - LLM Observability and Monitoring]] — 2025 (vendor, medium confidence)
 - [[2025 - Goodeye Labs - LLM Evaluation 2025 Review]] — 2025 (vendor, medium confidence)
+- [[2026 - Raindrop - Thoughts on Evals]] — 2026 (vendor, medium confidence)
+- [[2026 - Raindrop - Agent Self-Diagnostics]] — 2026 (vendor, medium confidence)
+- [[2026-01-15 - Husain Shankar - LLM Evals FAQ]] — 2026 (practitioner, high)
+- [[2025-04-20 - Tripathi et al - Pairwise or Pointwise]] — COLM 2025 (peer-reviewed, high)

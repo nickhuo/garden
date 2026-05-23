@@ -19,6 +19,13 @@ Ops: `init`, `ingest`, `query`, `lint`, `refactor`, `save`, `autoresearch`, `man
 
 ---
 
+## [2026-05-23] autoresearch | Online Evaluation — Raindrop + binary-eval lineage (round 2)
+- **Trigger:** user — two Raindrop articles + "where does binary (not scoring) evaluation come from? run another deeper round." Same branch `research/online-eval-agents`.
+- **Rounds:** 1 focused (4 fetches: 2 Raindrop articles, Husain/Shankar evals-faq, Tripathi et al.) + 2 searches.
+- **Pages created (7):** entity [[Raindrop]]; concepts [[Binary Evaluation vs Scoring]], [[Specialized Eval Classifiers]]; sources [[2026 - Raindrop - Thoughts on Evals]], [[2026 - Raindrop - Agent Self-Diagnostics]], [[2026-01-15 - Husain Shankar - LLM Evals FAQ]], [[2025-04-20 - Tripathi et al - Pairwise or Pointwise]].
+- **Pages updated:** [[Research - Online Evaluation in Production]] (Raindrop case + binary finding + closed/open-set), [[LLM-as-Judge Evaluation]] (graded-not-binary clarification), [[Online LLM-as-Judge]], [[Online Evaluation Bottlenecks]] (specialized classifiers + closed/open-set), [[2023-06-09 - Zheng et al - Judging LLM-as-a-Judge]] (reciprocal contradiction callout), index, hot, concepts/_index, sources/_index, entities/_index, [[AI-Agents]].
+- **Key finding (answers Nick's question):** "binary not scoring" is **not** originally Anthropic (whose rubrics are graded 0.0-1.0). Lineage = (1) unit-test/assertion framing, (2) Husain & Shankar practitioner school (taught at OpenAI/Anthropic → the misattribution), (3) judge-reliability research (Zheng pairwise>absolute on benign data; Tripathi absolute>pairwise under adversarial distractors, 9% vs 35% flip) — all converging *away* from high-cardinality Likert. Raindrop operationalizes the "many specific binary checks" idea as **trained tiny per-signal classifiers on 100% of traffic** (open-set discovery), and rejects "online eval = offline eval on sampled prod data."
+
 ## [2026-05-23] autoresearch | Online Evaluation in Production (agent applications)
 - **Trigger:** user — `/autoresearch` on online evaluation of agent AI applications (4 questions: industry practice, methods + gaps, why online beats offline, bottlenecks). Branch `research/online-eval-agents`.
 - **Rounds:** 2 (broad + gap-fill); ~7 searches, 7 fetches. Deepening pass — vault already had the Online Evaluation cluster (2026-05-20).

@@ -27,7 +27,7 @@ Running an LLM judge against **live production traffic** as a continuous quality
 
 - **Same rubric, live traffic.** Run the *same* judge/rubric you calibrated offline against production so degradation is obvious against the established baseline (e.g. hallucination rate 6% at release → 14% two weeks later pinpoints when drift started).
 - **Sampling, not full coverage.** Cost (~$0.01-0.10/assessment) and latency forbid judging every request; sample to detect drift cheaply.
-- **Tiered judges.** Cheap **distilled** evaluators score ~100% of traffic at ≈1/30 cost for format/schema/safety; the expensive [[Agent-as-a-Judge]] (step-level) runs only on flagged anomalies and sampled audits.
+- **Tiered judges.** Cheap **distilled** evaluators score ~100% of traffic at ≈1/30 cost for format/schema/safety; the expensive [[Agent-as-a-Judge]] (step-level) runs only on flagged anomalies and sampled audits. Pushed to the limit, the distilled tier becomes **one trained classifier per signal** — see [[Specialized Eval Classifiers]] (Raindrop).
 - **Guardrail mode.** A low-latency judge (e.g. a small flash model) can gate responses inline — but the latency budget caps detection accuracy, a hard tradeoff.
 
 ## Failure modes specific to online judging
