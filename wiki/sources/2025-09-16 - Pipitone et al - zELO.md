@@ -15,10 +15,8 @@ date_published: 2025-09-16
 url: "https://arxiv.org/abs/2509.12541"
 confidence: high
 related:
-  - "[[ZeroEntropy]]"
-  - "[[zELO]]"
   - "[[Reranking]]"
-  - "[[Reranker Score Calibration]]"
+  - "[[BM25 and Hybrid Retrieval]]"
   - "[[LLM-as-Judge]]"
   - "[[Reward Modeling]]"
 sources:
@@ -31,7 +29,7 @@ The foundational technical paper behind ZeroEntropy's `zerank` reranker family (
 
 ## Core contribution
 
-zELO trains rerankers by modeling query–document relevance as **Elo ratings derived from pairwise LLM-ensemble preferences**, rather than training directly on pointwise labels. Ranking is treated as statistically equivalent to a **Thurstone model**: pairwise preference probabilities convert to absolute relevance scores via `w_ij = (1 + erf(Elo_i − Elo_j))/2`. See [[zELO]] for the method as a standalone concept.
+zELO trains rerankers by modeling query–document relevance as **Elo ratings derived from pairwise LLM-ensemble preferences**, rather than training directly on pointwise labels. Ranking is treated as statistically equivalent to a **Thurstone model**: pairwise preference probabilities convert to absolute relevance scores via `w_ij = (1 + erf(Elo_i − Elo_j))/2`. This is the same preference-to-score conversion that underlies [[LLM-as-Judge]] preference data and RLHF [[Reward Modeling]], applied to retrieval relevance — the productized embodiment is ZeroEntropy's `zerank` reranker family.
 
 ## Pipeline
 

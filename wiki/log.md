@@ -19,12 +19,9 @@ Ops: `init`, `ingest`, `query`, `lint`, `refactor`, `save`, `autoresearch`, `man
 
 ---
 
-## [2026-05-23] autoresearch | ZeroEntropy & the zerank Reranker Family
-- Rounds: 3 | Sources fetched: 9 | Pages created: 10 (+ 4 updates). Branch `research/zeroentropy-evals`.
-- Sources: [[2025-09-16 - Pipitone et al - zELO]], [[2025-11-18 - ZeroEntropy - Introducing zerank-2]], [[2025-07-10 - ZeroEntropy - Announcing zerank-1]], [[2025 - ZeroEntropy - Introducing zembed-1]], [[2025-07-09 - TechCrunch - ZeroEntropy Seed Round]]
-- Entity: [[ZeroEntropy]]. Concepts: [[zELO]], [[Reranker Score Calibration]], [[Embedding Distillation from Rerankers]].
-- Synthesis: [[Research - ZeroEntropy and the zerank Reranker Family]]. Updated: [[Reranking]], index, log, hot.
-- Key finding: ZeroEntropy's edge is the **zELO training method** — relevance learned from LLM-ensemble pairwise preferences converted to absolute Elo scores (no human annotation, regenerable as base LLMs improve), yielding calibrated cross-encoder rerankers (Qwen3-4B/1.7B LoRA) and a reranker-distilled embedding model (zembed-1).
+## [2026-05-23] manual | Keep zELO paper only (ZeroEntropy autoresearch trimmed)
+- Autoresearch on ZeroEntropy / zerank ran 3 rounds; per Nick's call, kept **only** the source page [[2025-09-16 - Pipitone et al - zELO]] (flagged by Nick as a strong commercialization angle). Deleted the other 9 pages (4 sources, ZeroEntropy entity, 3 concepts, 1 synthesis) and reverted updates to [[Reranking]], index, hot.
+- Page kept: [[2025-09-16 - Pipitone et al - zELO]] — zELO trains rerankers on LLM-ensemble pairwise preferences converted to absolute Elo scores (no human annotation, regenerable as base LLMs improve). Branch `research/zeroentropy-evals`.
 
 ## [2026-05-22] ingest | OpenAI — A Practical Guide to Building Agents
 - **Trigger:** user — `/wiki-ingest https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/`. Page 403'd WebFetch; fetched the official PDF from cdn.openai.com and extracted text via pypdf (34 pages).

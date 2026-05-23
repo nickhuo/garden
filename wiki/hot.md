@@ -1,14 +1,12 @@
 ---
 type: meta
 title: "Hot Cache"
-updated: 2026-05-23
+updated: 2026-05-22
 ---
 
 # Recent Context
 
 ## Last Updated
-
-2026-05-23 — autoresearch on **[[ZeroEntropy]] & the zerank reranker family** (branch `research/zeroentropy-evals`, 10 new pages). The vault's first *productized* retrieval implementation, grounding the theory pages [[Reranking]] / [[BM25 and Hybrid Retrieval]] / [[Contextual Retrieval]]. Core finding: ZeroEntropy's edge is the training method, **[[zELO]]** ([[2025-09-16 - Pipitone et al - zELO]]) — model query-doc relevance as **Elo ratings recovered from pairwise LLM-ensemble preferences** (Thurstone/Bradley-Terry), converging at ~0.4% of pairs; no human annotation, data regenerable as base LLMs improve. Products: `zerank-1/2` cross-encoders (LoRA on Qwen3-4B/1.7B), with [[Reranker Score Calibration]] (0.8 ≈ 80% relevance) and instruction-following/multilingual in zerank-2; plus `zembed-1`, a bi-encoder **distilled from the reranker** ([[Embedding Distillation from Rerankers]]) — inverting the usual retrieve→rerank stack. Hard-negative "Laffer curve": overly-smart mined negatives degrade training. Caveat: benchmark superiority claims are vendor/self-reported (medium confidence); method design is high confidence. Synthesis: [[Research - ZeroEntropy and the zerank Reranker Family]].
 
 2026-05-22 — ingested **OpenAI, A Practical Guide to Building Agents** ([[2025 - OpenAI - A Practical Guide to Building Agents]]). The OpenAI-side counterpart to Anthropic's [[2024-12-19 - Anthropic - Building Effective Agents]] — see the new comparison [[OpenAI Practical Guide vs Anthropic Building Effective Agents]]. Convergent advice under different vocabulary: "maximize a single agent first" ≈ Anthropic's "simplest thing that works." Two multi-agent patterns: **[[Manager Pattern]]** (agents-as-tools, central control — ≈ [[Orchestrator-Workers]]) vs **[[Agent Handoffs]]** (decentralized peer transfer — ≈ [[Routing]]). New: [[Agent Tool Categories]] (Data/Action/Orchestration), [[Agent Run Loop]] (`Runner.run()` until exit condition), [[Agent Guardrails]] (layered typology + optimistic tripwires), [[Human-in-the-Loop Intervention]] (failure-threshold + high-risk triggers). Entities: [[OpenAI]], [[OpenAI Agents SDK]] (code-first, anti-declarative-graph). Guardrail tool-safeguards risk ratings connect to [[Permission Model]].
 
