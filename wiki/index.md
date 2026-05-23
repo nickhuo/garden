@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Wiki Index"
-updated: 2026-05-22
+updated: 2026-05-23
 ---
 
 # Wiki Index
@@ -13,7 +13,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[AI-Agents]] — agentic systems, tool use, orchestration, harnesses, evals, MCP
 - [[LLM]] — model internals, training, inference, optimization, alignment. Seeded 2026-05-14 with 5 Thinking Machines Lab sources.
 
-## Entities (30)
+## Entities (32)
 
 - [[Agent Skills]]
 - [[Andrej Karpathy]]
@@ -25,6 +25,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Claude Desktop]]
 - [[Claude Opus 4.6]]
 - [[DXT]]
+- [[Harvey]]
 - [[Horace He]]
 - [[Jeremy Bernstein]]
 - [[John Schulman]]
@@ -36,6 +37,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[OpenAI]]
 - [[OpenAI Agents SDK]]
 - [[OpenBMB]]
+- [[OpenEvidence]]
 - [[Gorilla]]
 - [[Richard Sutton]]
 - [[Shunyu Yao]]
@@ -46,7 +48,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[tau-bench]]
 - [[Thinking Machines Lab]]
 
-## Concepts (103)
+## Concepts (107)
 
 - [[A-B Testing for Agents]]
 - [[ACI - Agent-Computer Interface]]
@@ -65,12 +67,15 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Agentic Harness]]
 - [[AI Tool Fluency]]
 - [[AI-Resistant Evaluation Design]]
+- [[Attributed Text Generation]]
 - [[Augmented LLM]]
 - [[Autonomous Agents]]
 - [[Batch Invariance]]
 - [[BM25 and Hybrid Retrieval]]
 - [[Cache Invalidation Cascade]]
 - [[brain/03_Resources/wiki/concepts/CLAUDE]]
+- [[Citation Precision and Recall]]
+- [[Citation Verification Pipeline]]
 - [[CoALA]]
 - [[Code-to-the-Side vs Orchestration]]
 - [[Config Type Safety]]
@@ -87,6 +92,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Evaluator-Optimizer]]
 - [[Few-Shot Drift]]
 - [[Floating-Point Non-Associativity]]
+- [[Generation-Time vs Post-hoc Citation]]
 - [[Harness Design Patterns]]
 - [[Harness Staleness]]
 - [[Human-in-the-Loop Intervention]]
@@ -152,7 +158,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Vibe Coding]]
 - [[Workflows vs Agents]]
 
-## Sources (51)
+## Sources (57)
 
 - [[2017-11-11 - Karpathy - Software 2.0]]
 - [[2025 - OpenAI - A Practical Guide to Building Agents]]
@@ -205,6 +211,12 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[2026-05-13 - Anthropic - Writing Effective Tools for Agents]]
 - [[2026-05-14 - Anthropic - Claude Code in Large Codebases]]
 - [[2025-09-16 - Pipitone et al - zELO]]
+- [[2023-05-23 - Gao et al - ALCE]]
+- [[2025-09-25 - Generation-Time vs Post-hoc Citation]]
+- [[2025-04-22 - CiteFix - Post-Processing Citation Correction]]
+- [[2025-10-13 - VeriCite - Rigorous Citation Verification]]
+- [[2025 - Harvey - BigLaw Bench Sources]]
+- [[2025 - Harvey - Using Agents to Scale Knowledge Sources]]
 
 ## Theses (4)
 
@@ -218,9 +230,10 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[OpenAI Practical Guide vs Anthropic Building Effective Agents]]
 - [[Tool-Use Benchmarks - BFCL vs tau-bench vs ToolBench]]
 
-## Questions (6)
+## Questions (7)
 
 - [[How to Ensure Agent Reliability]]
+- [[Research - AI Product Citation - Open Evidence and Harvey]]
 - [[Research - Continually-Learning Model-Centric Systems]]
 - [[Research - Real-Time Learning]]
 - [[Research - Persistent Memory and Persona Vectors]]
@@ -235,4 +248,4 @@ Master catalog of all wiki pages. Refresh on every ingest.
 
 ---
 
-Total: ~169 wiki pages, 36 raw sources. Last full refresh: 2026-05-20 (autoresearch: continually-learning model-centric systems — 4 directions, 37 new pages). Last ingest: 2026-05-22 (OpenAI — A Practical Guide to Building Agents; 6 concepts + 2 entities + 1 comparison + 1 source).
+Total: ~183 wiki pages, 36 raw sources. Last autoresearch: 2026-05-23 (AI Product Citation — Open Evidence & Harvey; 6 sources + 2 entities + 4 concepts + 1 synthesis = 13 new pages). Prior: 2026-05-23 (ZeroEntropy zELO paper, kept as single source). Last full refresh: 2026-05-20 (continually-learning model-centric systems — 37 new pages).

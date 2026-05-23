@@ -19,6 +19,13 @@ Ops: `init`, `ingest`, `query`, `lint`, `refactor`, `save`, `autoresearch`, `man
 
 ---
 
+## [2026-05-23] autoresearch | AI Product Citation — Open Evidence & Harvey
+- Rounds: 2 | Searches: 7 | Fetches: 7 | Pages created: 13 (+ 4 updates). Branch `research/ai-product-citation`.
+- Sources: [[2023-05-23 - Gao et al - ALCE]], [[2025-09-25 - Generation-Time vs Post-hoc Citation]], [[2025-04-22 - CiteFix - Post-Processing Citation Correction]], [[2025-10-13 - VeriCite - Rigorous Citation Verification]], [[2025 - Harvey - BigLaw Bench Sources]], [[2025 - Harvey - Using Agents to Scale Knowledge Sources]].
+- Entities: [[OpenEvidence]], [[Harvey]]. Concepts: [[Attributed Text Generation]], [[Citation Precision and Recall]], [[Generation-Time vs Post-hoc Citation]], [[Citation Verification Pipeline]].
+- Synthesis: [[Research - AI Product Citation - Open Evidence and Harvey]] (answers Nick's 4 questions). Updated: [[Reranking]], index, hot.
+- Key finding: citation precision comes mostly from the **curated corpus**, not the model (OpenEvidence: closed 300+ journals; Harvey: vetted gov/LexisNexis). Pipeline = curated corpus → hybrid retrieve → rerank → P-Cite draft → NLI entailment check → CiteFix correction → auto-reject gate → user-facing source link. Evaluate via NLI-based citation precision/recall (ALCE). Highest-leverage insight: **~80% of "unverifiable" facts are mis-citations, not hallucinations** — cheap to fix post-hoc. Newsprout (open web) lacks the curated-corpus lever, so post-verification matters more.
+
 ## [2026-05-23] manual | Keep zELO paper only (ZeroEntropy autoresearch trimmed)
 - Autoresearch on ZeroEntropy / zerank ran 3 rounds; per Nick's call, kept **only** the source page [[2025-09-16 - Pipitone et al - zELO]] (flagged by Nick as a strong commercialization angle). Deleted the other 9 pages (4 sources, ZeroEntropy entity, 3 concepts, 1 synthesis) and reverted updates to [[Reranking]], index, hot.
 - Page kept: [[2025-09-16 - Pipitone et al - zELO]] — zELO trains rerankers on LLM-ensemble pairwise preferences converted to absolute Elo scores (no human annotation, regenerable as base LLMs improve). Branch `research/zeroentropy-evals`.

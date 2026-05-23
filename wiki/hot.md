@@ -1,12 +1,16 @@
 ---
 type: meta
 title: "Hot Cache"
-updated: 2026-05-22
+updated: 2026-05-23
 ---
 
 # Recent Context
 
 ## Last Updated
+
+2026-05-23 — autoresearch on **AI Product Citation — [[OpenEvidence]] & [[Harvey]]** (branch `research/ai-product-citation`, 13 new pages). Prompted by Nick's H60/Compass **citation ground** + Newsprout citation. Fills a clean gap — the wiki had retrieval + eval theory but no citation coverage. Core finding: **citation precision comes mostly from the curated corpus, not the model** — OpenEvidence cites a closed 300+ journal corpus (no open web), Harvey only vetted gov/LexisNexis sources via an agent-curated pipeline with an auto-reject gate on hallucinated citations. The canonical pipeline ([[Citation Verification Pipeline]]): curated corpus → hybrid retrieve → [[Reranking|rerank]] → **P-Cite** draft ([[Generation-Time vs Post-hoc Citation]]) → **NLI entailment** check ([[Citation Precision and Recall]], the ALCE metric) → [[2025-04-22 - CiteFix - Post-Processing Citation Correction|CiteFix]] correction → auto-reject → user-facing source link. Highest-leverage insight: **~80% of "unverifiable" facts are mis-citations, not hallucinations** — cheap to fix post-hoc (a smaller model + correction beats a bigger model alone). For Newsprout (open web), the curated-corpus lever is gone, so post-verification carries the weight. Umbrella: [[Attributed Text Generation]]. Synthesis: [[Research - AI Product Citation - Open Evidence and Harvey]].
+
+2026-05-23 — autoresearch on **ZeroEntropy / zerank** was trimmed on review to keep only the [[2025-09-16 - Pipitone et al - zELO]] paper (zELO: Elo-from-pairwise-LLM-preferences reranker training — a strong commercialization angle). Cross-links to [[Reranking]].
 
 2026-05-22 — ingested **OpenAI, A Practical Guide to Building Agents** ([[2025 - OpenAI - A Practical Guide to Building Agents]]). The OpenAI-side counterpart to Anthropic's [[2024-12-19 - Anthropic - Building Effective Agents]] — see the new comparison [[OpenAI Practical Guide vs Anthropic Building Effective Agents]]. Convergent advice under different vocabulary: "maximize a single agent first" ≈ Anthropic's "simplest thing that works." Two multi-agent patterns: **[[Manager Pattern]]** (agents-as-tools, central control — ≈ [[Orchestrator-Workers]]) vs **[[Agent Handoffs]]** (decentralized peer transfer — ≈ [[Routing]]). New: [[Agent Tool Categories]] (Data/Action/Orchestration), [[Agent Run Loop]] (`Runner.run()` until exit condition), [[Agent Guardrails]] (layered typology + optimistic tripwires), [[Human-in-the-Loop Intervention]] (failure-threshold + high-risk triggers). Entities: [[OpenAI]], [[OpenAI Agents SDK]] (code-first, anti-declarative-graph). Guardrail tool-safeguards risk ratings connect to [[Permission Model]].
 
