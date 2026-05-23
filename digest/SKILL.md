@@ -20,7 +20,7 @@ description: 从 Hacker News + GitHub Trending 策展与 Nick 高相关性内容
 
 ## Nick 的兴趣图谱（相关性评分依据）
 
-**单一来源：** `/Users/nickhuo/Documents/Core/brain/02_Areas/Digest/interest_graph.md`
+**单一来源：** `/Users/nickhuo/Core/brain/03_Resources/digest/interest_graph.md`
 
 所有评分维度（Layer 1–4 主题、加分修正项、反感清单、行为阈值、产出渠道映射）以该文件为准。本任务**不复制**评分细则，避免双源漂移。
 
