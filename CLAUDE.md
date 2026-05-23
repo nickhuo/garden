@@ -66,7 +66,7 @@ Wikilinks use `[[Note Name]]` — filenames are vault-unique so paths aren't nee
 - **Query:** ask any question — read `hot.md` → `index.md` → 3-5 relevant pages, then synthesize
 - **Lint:** say "lint the wiki" for a health check report
 - **Save:** say "save this" mid-chat to file the conversation as a source
-- **Autoresearch:** say "research [topic]" — confirms scope, then runs paused rounds
+- **Autoresearch:** say "research [topic]". Confirms scope, then runs paused rounds (pause after each round per `WIKI.md`). **Always runs on a dedicated `research/<topic-slug>` branch — never commit autoresearch output directly to `main`.** On completion, auto-finalize without asking: commit the new/updated pages on the branch, push the branch, and open a PR to `main` with `gh pr create`, then report the PR link for Nick to review. **Do not merge — Nick reviews and merges.** PR title `Autoresearch: <Topic>`; body summarizes rounds, pages created, key findings, and open questions (mirror the skill's completion report). This auto-push of the `research/*` branch is the one sanctioned exception to the global "confirm before pushing" rule; `main` is still never pushed by autoresearch. Per Nick's global rule, **do not add a Claude co-author/attribution line** to the PR.
 
 See `WIKI.md` for full operation definitions and anti-patterns.
 

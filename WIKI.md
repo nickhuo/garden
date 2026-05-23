@@ -209,6 +209,7 @@ Trigger: Nick says "autoresearch [topic]" or "research [topic]". Requires precon
 1. Round 1: web search, fetch top sources, save to `.raw/articles/`, summarize.
 2. Round 2: identify gaps, search missing angles.
 3. Round 3+: synthesize, resolve contradictions, file as wiki pages.
+4. **Finalize on a branch + PR.** Autoresearch always runs on a `research/<topic-slug>` branch and **never commits to `main`**. After the final round, commit the filed pages on the branch, push it, and open a PR to `main` for Nick's review (auto-created — report the link). Don't merge; Nick reviews and merges. See `CLAUDE.md` Operations → Autoresearch for the binding rule.
 
 **Pause after each round.** Confirm with Nick before continuing. Anti-pattern from AI-Agents/CLAUDE.md still applies: don't ingest 5 sources in one go without discussion.
 
