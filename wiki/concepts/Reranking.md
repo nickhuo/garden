@@ -2,7 +2,7 @@
 type: concept
 title: "Reranking"
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-23
 tags:
   - rag
   - retrieval
@@ -18,8 +18,12 @@ related:
   - "[[BM25 and Hybrid Retrieval]]"
   - "[[Augmented LLM]]"
   - "[[Token Economics]]"
+  - "[[zELO]]"
+  - "[[ZeroEntropy]]"
+  - "[[Reranker Score Calibration]]"
 sources:
   - "[[2024-09-19 - Anthropic - Contextual Retrieval]]"
+  - "[[2025-09-16 - Pipitone et al - zELO]]"
 ---
 
 # Reranking
@@ -43,6 +47,7 @@ Typical pipeline:
 
 - **Cohere Rerank** (Cohere's API)
 - **`voyage-rerank-1`** (Voyage AI, cited by Anthropic)
+- **[[ZeroEntropy]] `zerank` family** — `zerank-1/2` cross-encoders trained via [[zELO]]; multilingual, instruction-following, with [[Reranker Score Calibration|calibrated scores]]. The concrete, technically-documented productized instance of this concept.
 - Open-source: `ms-marco-MiniLM`, `bge-reranker-v2-m3` (HuggingFace)
 
 ## Performance (Anthropic Benchmark)
