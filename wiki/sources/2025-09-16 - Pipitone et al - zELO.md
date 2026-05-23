@@ -61,3 +61,16 @@ On **private** datasets margins widen (Legal 0.854 vs 0.718) — evidence of bet
 - **Hard-negative "Laffer curve"**: overly-intelligent mined negatives can exceed the quality of human-annotated positives, *degrading* performance — there is an optimum, not "harder is always better."
 
 > [!gap] All NDCG figures are self-reported by the authors. No independent third-party reproduction was located.
+
+## Competitive positioning (as of 2026-05)
+
+**First-tier, but not a generational SOTA.** On the semi-independent [Agentset reranker leaderboard](https://agentset.ai/rerankers), zerank-2 ranks #1 at **1638 ELO** — but **Cohere Rerank v4.0 Pro is 1629**, a ~9-point gap that is statistically a tie. ZeroEntropy's own graded-relevance evaluation shows the same near-parity (zerank-2 0.764 vs cohere-v4-pro 0.761 NDCG@10 averaged over 16 embedders).
+
+Calibrated read:
+- "One of the most accurate rerankers today" → **yes** (top tier, co-leading with Cohere v4).
+- "Generational lead / undisputed SOTA" → **no**. The margin over Cohere v4 is negligible; **Voyage Rerank 2.5** is widely cited as the better *quality/latency* balance for production (~2× lower latency at comparable quality).
+- The paper benchmarks against Cohere rerank-**3.5**, while competitors already ship v4-class models — the reranker field iterates roughly every six months, so any "SOTA" claim is a short-lived snapshot.
+
+**Where the durable edge actually is:** not "today's model is strongest," but the **[[zELO]] methodology** — zero human annotation, training data regenerable as base LLMs improve, and calibration by construction. The bet is that this lets ZeroEntropy stay *near* SOTA at lower cost and faster cadence than rivals, not that any single checkpoint dominates.
+
+> [!gap] Agentset / AImultiple-style leaderboards use varied LLM-as-judge methodologies (semi-independent, not academic reproduction). No standard MTEB/BEIR leaderboard entry for zerank-2 was found — ZeroEntropy promotes its own graded-relevance MTEB variant instead, which is itself a signal that the standard-benchmark lead is not decisive.
