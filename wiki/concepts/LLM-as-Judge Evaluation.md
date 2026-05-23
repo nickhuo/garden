@@ -7,10 +7,12 @@ tags:
 - ai-agents
 - evaluation
 - methodology
-status: seed
+status: developing
 related:
 - "[[LLM-as-Judge]]"
 - "[[Online Evaluation]]"
+- "[[Online LLM-as-Judge]]"
+- "[[Binary Evaluation vs Scoring]]"
 sources:
   - "[[2026-05-13 - Anthropic - Demystifying Evals for AI Agents]]"
 _legacy_source_count: 1
@@ -35,6 +37,9 @@ Agentic systems explore many valid paths to the same goal. Process-fidelity eval
 - **Separate correctness from style** — these are different axes; factual accuracy should be weighted independently of tone or formatting (per [[2026-05-13 - Anthropic - Demystifying Evals for AI Agents]])
 - **Calibrate judges periodically** against 50–200-example human-labeled sets; judge drift is a real failure mode as models and prompts change
 
+> [!note] Graded, not binary — a common point of confusion
+> Anthropic's prescription here uses **graded 0.0-1.0 rubrics**, not pass/fail. The "binary, not scoring" doctrine is a *different* lineage (Husain & Shankar + judge-reliability research), even though it's often misattributed to Anthropic. See [[Binary Evaluation vs Scoring]]. Anthropic's only strictly-binary layer is deterministic Tier-1 unit tests in the [[Agent Eval Pyramid]].
+
 ## Connections
 
 - Solves an open question previously tracked in [[Autonomous Agents]] (long-horizon eval)
@@ -49,8 +54,8 @@ The same core failure mode — **proxy gaming** — now affects both LLM capabil
 ## Open questions
 
 - LLM-judge biases — what failure modes systematically? Anthropic gestures, doesn't detail.
-- Inter-rater reliability — how stable across model versions / prompt drift?
-- Cost — at what scale does LLM-as-Judge eval itself become the budget bottleneck?
+- Inter-rater reliability — how stable across model versions / prompt drift? *(Partially answered: judge drift against a moving production baseline is real; recalibrate against fresh human labels — see [[Online LLM-as-Judge]].)*
+- Cost — at what scale does LLM-as-Judge eval itself become the budget bottleneck? *(Partially answered: ~$0.01-0.10/assessment forces sampling; the 2026 mitigation is **tiered judging** — distilled judges at ~1/30 cost on 100% of traffic, with step-level agentic judges reserved for flagged anomalies. See [[Online Evaluation Bottlenecks]] and [[Specialized Eval Classifiers]].)*
 - Adversarial robustness — can agents game LLM judges by writing in ways the judge favors?
 - **[[Eval Awareness]] in judges**: LLM judges may themselves be eval-aware — scoring responses differently when they recognize the evaluation context. This adds a second layer of eval-conditioning risk on top of the model under evaluation. See [[2026-05-13 - Anthropic - Eval Awareness BrowseComp]].
 

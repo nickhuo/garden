@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Wiki Index"
-updated: 2026-05-22
+updated: 2026-05-23
 ---
 
 # Wiki Index
@@ -13,7 +13,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[AI-Agents]] — agentic systems, tool use, orchestration, harnesses, evals, MCP
 - [[LLM]] — model internals, training, inference, optimization, alignment. Seeded 2026-05-14 with 5 Thinking Machines Lab sources.
 
-## Entities (30)
+## Entities (31)
 
 - [[Agent Skills]]
 - [[Andrej Karpathy]]
@@ -37,6 +37,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[OpenAI Agents SDK]]
 - [[OpenBMB]]
 - [[Gorilla]]
+- [[Raindrop]]
 - [[Richard Sutton]]
 - [[Shunyu Yao]]
 - [[Sierra]]
@@ -46,7 +47,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[tau-bench]]
 - [[Thinking Machines Lab]]
 
-## Concepts (103)
+## Concepts (109)
 
 - [[A-B Testing for Agents]]
 - [[ACI - Agent-Computer Interface]]
@@ -68,6 +69,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Augmented LLM]]
 - [[Autonomous Agents]]
 - [[Batch Invariance]]
+- [[Binary Evaluation vs Scoring]]
 - [[BM25 and Hybrid Retrieval]]
 - [[Cache Invalidation Cascade]]
 - [[brain/03_Resources/wiki/concepts/CLAUDE]]
@@ -79,6 +81,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Context Decomposition vs Problem Decomposition]]
 - [[Context Engineering]]
 - [[Contextual Retrieval]]
+- [[Continuous Evaluation]]
 - [[Empirical Neural Tangent Kernel]]
 - [[Error Trace Retention]]
 - [[Eval Awareness]]
@@ -111,9 +114,12 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Minimal Footprint Principle]]
 - [[Model-Centric Architecture]]
 - [[Multi-Agent Systems]]
+- [[Offline-Online Evaluation Gap]]
 - [[On-Policy Distillation]]
 - [[Online Evaluation]]
+- [[Online Evaluation Bottlenecks]]
 - [[Online Learning from Interaction]]
+- [[Online LLM-as-Judge]]
 - [[Orchestrator-Workers]]
 - [[Parallelization]]
 - [[Pass^k Reliability Metric]]
@@ -137,6 +143,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Session as Event Log]]
 - [[Software 2.0]]
 - [[Software 3.0]]
+- [[Specialized Eval Classifiers]]
 - [[Stiefel Manifold]]
 - [[Test-Time Adaptation]]
 - [[The Bitter Lesson]]
@@ -152,8 +159,16 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Vibe Coding]]
 - [[Workflows vs Agents]]
 
-## Sources (50)
+## Sources (58)
 
+- [[2025-03-20 - Yehudai et al - Survey on Evaluation of LLM-based Agents]]
+- [[2025-03-28 - Guan et al - Multi-Turn Conversational Agent Evaluation Survey]]
+- [[2025-07-29 - Mohammadi et al - Evaluation and Benchmarking of LLM Agents]]
+- [[2025 - LangChain - LLM Observability and Monitoring]]
+- [[2025 - Goodeye Labs - LLM Evaluation 2025 Review]]
+- [[2026 - Raindrop - Thoughts on Evals]]
+- [[2026-01-15 - Husain Shankar - LLM Evals FAQ]]
+- [[2025-04-20 - Tripathi et al - Pairwise or Pointwise]]
 - [[2017-11-11 - Karpathy - Software 2.0]]
 - [[2025 - OpenAI - A Practical Guide to Building Agents]]
 - [[2026-05-22 - Karpathy - Sequoia Ascent 2026]]
@@ -217,7 +232,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[OpenAI Practical Guide vs Anthropic Building Effective Agents]]
 - [[Tool-Use Benchmarks - BFCL vs tau-bench vs ToolBench]]
 
-## Questions (6)
+## Questions (7)
 
 - [[How to Ensure Agent Reliability]]
 - [[Research - Continually-Learning Model-Centric Systems]]
@@ -225,6 +240,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Research - Persistent Memory and Persona Vectors]]
 - [[Research - Model-Centric Architecture]]
 - [[Research - Online Evaluation]]
+- [[Research - Online Evaluation in Production]]
 
 ## Meta
 
@@ -234,4 +250,4 @@ Master catalog of all wiki pages. Refresh on every ingest.
 
 ---
 
-Total: ~169 wiki pages, 36 raw sources. Last full refresh: 2026-05-20 (autoresearch: continually-learning model-centric systems — 4 directions, 37 new pages). Last ingest: 2026-05-22 (OpenAI — A Practical Guide to Building Agents; 6 concepts + 2 entities + 1 comparison + 1 source).
+Total: ~185 wiki pages, 36 raw sources. Last full refresh: 2026-05-20 (autoresearch: continually-learning model-centric systems — 4 directions, 37 new pages). Last autoresearch: 2026-05-23 (Online Evaluation in Production — two passes; 3 pages dropped in review: Agent-as-a-Judge concept + Zhuge & Raindrop-self-diagnostics sources).

@@ -112,6 +112,16 @@ A new cross-cutting layer from the autoresearch pass. The agent-facing pillars:
 - **Memory persistence** — [[Memory Stream]], [[Persona Vectors vs Memory Files]], [[Letta]]; extends [[Agent Memory Taxonomy]], [[Self-Editing Memory]], [[MemGPT]].
 - **Architecture** — [[Model-Centric Architecture]], [[Code-to-the-Side vs Orchestration]]; the counter-pole to [[Agentic Harness]]/[[Meta-Harness]]. Umbrella: [[Research - Continually-Learning Model-Centric Systems]].
 
+## Online evaluation in production (2026-05-23)
+
+Autoresearch deepening the online-eval cluster with an external/industry lens. Synthesis: [[Research - Online Evaluation in Production]] (companion to [[Research - Online Evaluation]]).
+- **Industry loop** — [[Continuous Evaluation]]: trace → sample → judge → threshold-alert over live traffic.
+- **Judging mechanisms** — [[Online LLM-as-Judge]] (tiered: distilled at ~1/30 cost on 100% traffic + step-level agentic judges on anomalies) and [[Specialized Eval Classifiers]].
+- **Why online (empirical)** — [[Offline-Online Evaluation Gap]] (LiveCodeBench −20-30%, benchmark contamination); extends [[Eval Awareness]] / [[AI-Resistant Evaluation Design]] with the contamination/overfit failure mode.
+- **Bottlenecks** — [[Online Evaluation Bottlenecks]]: judge cost/latency, A/B statistical power (10k+ trajectories/arm), multi-turn credit assignment, baseline drift, online reward-hacking.
+- **Survey anchors** — Yehudai et al. (ACL 2025), Mohammadi et al. (KDD 2025), Guan et al. (multi-turn).
+- **Label design + Raindrop round (2026-05-23)** — [[Binary Evaluation vs Scoring]] (pass/fail over Likert; lineage = Husain/Shankar + judge-reliability research, *not* Anthropic) and [[Specialized Eval Classifiers]] (Raindrop's many tiny per-signal binary classifiers on 100% of traffic; closed-set vs open-set). Entity: [[Raindrop]].
+
 ## OpenAI agent doctrine (2026-05-22)
 
 [[2025 - OpenAI - A Practical Guide to Building Agents]] adds the **OpenAI-side canon** alongside Anthropic's. Direct comparison: [[OpenAI Practical Guide vs Anthropic Building Effective Agents]].

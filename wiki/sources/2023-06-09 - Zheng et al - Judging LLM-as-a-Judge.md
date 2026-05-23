@@ -46,3 +46,6 @@ Released: MT-Bench questions, 3K expert votes, 30K Arena conversations with huma
 ## Why it matters for online eval
 
 Chatbot Arena is the canonical demonstration that **live pairwise preference from real users** is a usable, high-signal online evaluation channel — the bridge from static benchmark numbers to "did this land for *this* user." The same paper documents exactly why the automated judge that scales it cannot be trusted blind.
+
+> [!contradiction] Pairwise vs absolute robustness — see [[2025-04-20 - Tripathi et al - Pairwise or Pointwise]]
+> This paper favors **pairwise** over absolute scoring (relative judgments are easier, more stable on benign data). Tripathi et al. (COLM 2025) find **absolute** scoring *more robust to adversarial distractors* (preferences flip ~35% pairwise vs ~9% absolute). Not a flat contradiction — different settings (benign human-agreement vs adversarial robustness) — but both motivate moving away from fine-grained Likert toward low-cardinality labels. See [[Binary Evaluation vs Scoring]].

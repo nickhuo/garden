@@ -1,17 +1,26 @@
 ---
 type: meta
 title: "Sources Index"
-updated: 2026-05-22
+updated: 2026-05-23
 ---
 
 # Sources
 
-One summary page per ingested source. Body cites verbatim where load-bearing; synthesis lives on entity/concept pages. **47 sources** currently.
+One summary page per ingested source. Body cites verbatim where load-bearing; synthesis lives on entity/concept pages. **55 sources** currently.
 
 ## Chronological (newest first)
 
+- [[2026 - Raindrop - Thoughts on Evals]]
+- [[2026-01-15 - Husain Shankar - LLM Evals FAQ]]
 - [[2026-05-22 - Karpathy - Sequoia Ascent 2026]]
 - [[2025 - OpenAI - A Practical Guide to Building Agents]]
+- [[2025-04-20 - Tripathi et al - Pairwise or Pointwise]]
+- [[2025-07-29 - Mohammadi et al - Evaluation and Benchmarking of LLM Agents]]
+- [[2025-03-28 - Guan et al - Multi-Turn Conversational Agent Evaluation Survey]]
+- [[2025-03-20 - Yehudai et al - Survey on Evaluation of LLM-based Agents]]
+- [[2024-10-14 - Zhuge et al - Agent-as-a-Judge]]
+- [[2025 - LangChain - LLM Observability and Monitoring]]
+- [[2025 - Goodeye Labs - LLM Evaluation 2025 Review]]
 - [[2026-05-13 - Anthropic - Agent Skills]]
 - [[2026-05-11 - Thinking Machines - Interaction Models]]
 - [[2026-05-13 - Anthropic - Claude Code Best Practices]]
