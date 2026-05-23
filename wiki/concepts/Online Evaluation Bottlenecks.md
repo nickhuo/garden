@@ -30,7 +30,7 @@ Production has no labels. You only see behavior + implicit signals ([[Implicit F
 
 ## 2. Judge cost and latency
 
-Running an [[Online LLM-as-Judge]] on traffic costs roughly **$0.01-0.10 per assessment** and adds latency. You cannot judge every request → you **sample**, which trades coverage for cost. Distilled/cheap judges (≈1/30 the cost) can cover 100% for format/schema/banned-phrase checks; expensive [[Agent-as-a-Judge]] runs only on flagged anomalies and sampled audits. Guardrail judges need *low* latency, capping how good they can be. The aggressive mitigation is [[Specialized Eval Classifiers]] — tiny *trained* per-signal binary models cheap enough to run on 100% of traffic — trading prompt flexibility for full coverage.
+Running an [[Online LLM-as-Judge]] on traffic costs roughly **$0.01-0.10 per assessment** and adds latency. You cannot judge every request → you **sample**, which trades coverage for cost. Distilled/cheap judges (≈1/30 the cost) can cover 100% for format/schema/banned-phrase checks; expensive step-level agentic judges run only on flagged anomalies and sampled audits. Guardrail judges need *low* latency, capping how good they can be. The aggressive mitigation is [[Specialized Eval Classifiers]] — tiny *trained* per-signal binary models cheap enough to run on 100% of traffic — trading prompt flexibility for full coverage.
 
 ## 2b. Closed-set vs open-set
 

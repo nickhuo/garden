@@ -17,7 +17,6 @@ related:
   - "[[Raindrop]]"
 sources:
   - "[[2026 - Raindrop - Thoughts on Evals]]"
-  - "[[2026 - Raindrop - Agent Self-Diagnostics]]"
 ---
 
 # Specialized Eval Classifiers
@@ -42,7 +41,7 @@ The judge cost/latency limit in [[Online Evaluation Bottlenecks]] forces samplin
 
 ## Closed-set vs open-set
 
-Raindrop pairs these classifiers with **semantic clustering** to discover *unexpected* failure modes (open-set), arguing that "online eval = offline eval on sampled prod data" is still closed-set. Combined with [[Raindrop|agent self-diagnostics]] (the agent self-reports), the system covers both known signals (trained classifiers) and unknown ones (clustering + self-report).
+Raindrop pairs these classifiers with **semantic clustering** to discover *unexpected* failure modes (open-set), arguing that "online eval = offline eval on sampled prod data" is still closed-set. The system thus covers both known signals (trained per-signal classifiers) and unknown ones (clustering / anomaly detection).
 
 ## Open questions
 

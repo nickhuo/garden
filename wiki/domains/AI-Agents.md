@@ -116,7 +116,7 @@ A new cross-cutting layer from the autoresearch pass. The agent-facing pillars:
 
 Autoresearch deepening the online-eval cluster with an external/industry lens. Synthesis: [[Research - Online Evaluation in Production]] (companion to [[Research - Online Evaluation]]).
 - **Industry loop** — [[Continuous Evaluation]]: trace → sample → judge → threshold-alert over live traffic.
-- **Judging mechanisms** — [[Online LLM-as-Judge]] (tiered: distilled at ~1/30 cost on 100% traffic + [[Agent-as-a-Judge]] step-level on anomalies).
+- **Judging mechanisms** — [[Online LLM-as-Judge]] (tiered: distilled at ~1/30 cost on 100% traffic + step-level agentic judges on anomalies) and [[Specialized Eval Classifiers]].
 - **Why online (empirical)** — [[Offline-Online Evaluation Gap]] (LiveCodeBench −20-30%, benchmark contamination); extends [[Eval Awareness]] / [[AI-Resistant Evaluation Design]] with the contamination/overfit failure mode.
 - **Bottlenecks** — [[Online Evaluation Bottlenecks]]: judge cost/latency, A/B statistical power (10k+ trajectories/arm), multi-turn credit assignment, baseline drift, online reward-hacking.
 - **Survey anchors** — Yehudai et al. (ACL 2025), Mohammadi et al. (KDD 2025), Guan et al. (multi-turn).

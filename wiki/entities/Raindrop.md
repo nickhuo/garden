@@ -18,14 +18,13 @@ related:
   - "[[Continuous Evaluation]]"
 sources:
   - "[[2026 - Raindrop - Thoughts on Evals]]"
-  - "[[2026 - Raindrop - Agent Self-Diagnostics]]"
 ---
 
 # Raindrop
 
 ## Summary
 
-A production-monitoring / online-evaluation platform for AI agents. Distinctive approach (see [[Specialized Eval Classifiers]]): rather than a single prompted LLM judge sampled on a fraction of traffic, Raindrop trains **many custom tiny models — one per failure signal** — that scan millions of events daily (billions of labels/month) and surface problematic ones. Signals are **semantic** (clustering across cohorts/languages/scenarios) and **manual**, complemented by **agent self-diagnostics** where the agent self-reports failures across four default categories (missing context, repeatedly broken tool, capability gap, complete task failure). Ships as an SDK integrating with the Vercel AI SDK and Claude Agent SDK.
+A production-monitoring / online-evaluation platform for AI agents. Distinctive approach (see [[Specialized Eval Classifiers]]): rather than a single prompted LLM judge sampled on a fraction of traffic, Raindrop trains **many custom tiny models — one per failure signal** — that scan millions of events daily (billions of labels/month) and surface problematic ones. Signals are **semantic** (clustering across cohorts/languages/scenarios) and **manual**. Ships as an SDK integrating with the Vercel AI SDK and Claude Agent SDK.
 
 ## Position
 
@@ -40,4 +39,3 @@ Raindrop argues most "online evals" are just **offline evals on a sampled slice 
 ## Sources
 
 - [[2026 - Raindrop - Thoughts on Evals]]
-- [[2026 - Raindrop - Agent Self-Diagnostics]]

@@ -6,7 +6,7 @@ updated: 2026-05-23
 
 # Concepts
 
-Ideas, patterns, frameworks. Domain-agnostic in form, domain-tagged in content. **104 concept pages** currently.
+Ideas, patterns, frameworks. Domain-agnostic in form, domain-tagged in content. **103 concept pages** currently.
 
 ## Architecture and primitives
 
@@ -146,7 +146,6 @@ Ideas, patterns, frameworks. Domain-agnostic in form, domain-tagged in content. 
 
 - [[Continuous Evaluation]] — always-on sampled eval over live traffic (trace → sample → judge → alert)
 - [[Online LLM-as-Judge]] — running judges on live traffic; tiered distilled + agentic
-- [[Agent-as-a-Judge]] — step-level agentic evaluation (Zhuge et al., DevAI)
 - [[Offline-Online Evaluation Gap]] — empirical why-online (benchmark contamination, LiveCodeBench drops)
 - [[Online Evaluation Bottlenecks]] — operational limits: cost/latency, statistical power, credit assignment, drift
 - [[Binary Evaluation vs Scoring]] — pass/fail over Likert: lineage (Husain/Shankar + judge-reliability research) and why

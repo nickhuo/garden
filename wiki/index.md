@@ -47,7 +47,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[tau-bench]]
 - [[Thinking Machines Lab]]
 
-## Concepts (110)
+## Concepts (109)
 
 - [[A-B Testing for Agents]]
 - [[ACI - Agent-Computer Interface]]
@@ -61,7 +61,6 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Agent Run Loop]]
 - [[Agent Sandboxing]]
 - [[Agent Tool Categories]]
-- [[Agent-as-a-Judge]]
 - [[Agentic Coding Slash Commands]]
 - [[Agentic Engineering]]
 - [[Agentic Harness]]
@@ -160,16 +159,14 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Vibe Coding]]
 - [[Workflows vs Agents]]
 
-## Sources (60)
+## Sources (58)
 
-- [[2024-10-14 - Zhuge et al - Agent-as-a-Judge]]
 - [[2025-03-20 - Yehudai et al - Survey on Evaluation of LLM-based Agents]]
 - [[2025-03-28 - Guan et al - Multi-Turn Conversational Agent Evaluation Survey]]
 - [[2025-07-29 - Mohammadi et al - Evaluation and Benchmarking of LLM Agents]]
 - [[2025 - LangChain - LLM Observability and Monitoring]]
 - [[2025 - Goodeye Labs - LLM Evaluation 2025 Review]]
 - [[2026 - Raindrop - Thoughts on Evals]]
-- [[2026 - Raindrop - Agent Self-Diagnostics]]
 - [[2026-01-15 - Husain Shankar - LLM Evals FAQ]]
 - [[2025-04-20 - Tripathi et al - Pairwise or Pointwise]]
 - [[2017-11-11 - Karpathy - Software 2.0]]
@@ -253,4 +250,4 @@ Master catalog of all wiki pages. Refresh on every ingest.
 
 ---
 
-Total: ~188 wiki pages, 36 raw sources. Last full refresh: 2026-05-20 (autoresearch: continually-learning model-centric systems — 4 directions, 37 new pages). Last autoresearch: 2026-05-23 (Online Evaluation in Production — incl. Raindrop binary-classifier round: +7 concepts/sources/entity over two passes).
+Total: ~185 wiki pages, 36 raw sources. Last full refresh: 2026-05-20 (autoresearch: continually-learning model-centric systems — 4 directions, 37 new pages). Last autoresearch: 2026-05-23 (Online Evaluation in Production — two passes; 3 pages dropped in review: Agent-as-a-Judge concept + Zhuge & Raindrop-self-diagnostics sources).

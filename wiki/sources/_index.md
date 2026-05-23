@@ -6,12 +6,11 @@ updated: 2026-05-23
 
 # Sources
 
-One summary page per ingested source. Body cites verbatim where load-bearing; synthesis lives on entity/concept pages. **57 sources** currently.
+One summary page per ingested source. Body cites verbatim where load-bearing; synthesis lives on entity/concept pages. **55 sources** currently.
 
 ## Chronological (newest first)
 
 - [[2026 - Raindrop - Thoughts on Evals]]
-- [[2026 - Raindrop - Agent Self-Diagnostics]]
 - [[2026-01-15 - Husain Shankar - LLM Evals FAQ]]
 - [[2026-05-22 - Karpathy - Sequoia Ascent 2026]]
 - [[2025 - OpenAI - A Practical Guide to Building Agents]]

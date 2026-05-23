@@ -33,7 +33,7 @@ The methods sit on a spectrum from cheap/fast/observational to expensive/slow/ca
 2. **Interleaving / bandits** — route traffic to compare or learn online with controlled exploration. Sensitive, sample-efficient.
 3. **A/B testing** ([[A/B Testing for Agents]]) — randomized controlled experiment. Slow, expensive, causally trustworthy.
 4. **Online preference / reward learning** ([[Reward Modeling]]) — convert live preference into a reward signal that updates the policy (online DPO, RLAIF).
-5. **Online LLM-as-Judge** ([[Online LLM-as-Judge]]) — score live traffic automatically against a rubric. Scalable, but biased; tiered with cheap distilled judges + agentic [[Agent-as-a-Judge]] on anomalies.
+5. **Online LLM-as-Judge** ([[Online LLM-as-Judge]]) — score live traffic automatically against a rubric. Scalable, but biased; tiered with cheap distilled judges ([[Specialized Eval Classifiers]]) + step-level agentic judges on anomalies.
 
 ## Production view (2026)
 

@@ -11,12 +11,11 @@ tags:
 related:
   - "[[LLM-as-Judge]]"
   - "[[LLM-as-Judge Evaluation]]"
-  - "[[Agent-as-a-Judge]]"
+  - "[[Specialized Eval Classifiers]]"
   - "[[Continuous Evaluation]]"
   - "[[Online Evaluation Bottlenecks]]"
 sources:
   - "[[2025 - LangChain - LLM Observability and Monitoring]]"
-  - "[[2024-10-14 - Zhuge et al - Agent-as-a-Judge]]"
 ---
 
 # Online LLM-as-Judge
@@ -27,7 +26,7 @@ Running an LLM judge against **live production traffic** as a continuous quality
 
 - **Same rubric, live traffic.** Run the *same* judge/rubric you calibrated offline against production so degradation is obvious against the established baseline (e.g. hallucination rate 6% at release → 14% two weeks later pinpoints when drift started).
 - **Sampling, not full coverage.** Cost (~$0.01-0.10/assessment) and latency forbid judging every request; sample to detect drift cheaply.
-- **Tiered judges.** Cheap **distilled** evaluators score ~100% of traffic at ≈1/30 cost for format/schema/safety; the expensive [[Agent-as-a-Judge]] (step-level) runs only on flagged anomalies and sampled audits. Pushed to the limit, the distilled tier becomes **one trained classifier per signal** — see [[Specialized Eval Classifiers]] (Raindrop).
+- **Tiered judges.** Cheap **distilled** evaluators score ~100% of traffic at ≈1/30 cost for format/schema/safety; expensive step-level agentic judges run only on flagged anomalies and sampled audits. Pushed to the limit, the distilled tier becomes **one trained classifier per signal** — see [[Specialized Eval Classifiers]] (Raindrop).
 - **Guardrail mode.** A low-latency judge (e.g. a small flash model) can gate responses inline — but the latency budget caps detection accuracy, a hard tradeoff.
 
 ## Failure modes specific to online judging
@@ -38,4 +37,4 @@ Running an LLM judge against **live production traffic** as a continuous quality
 
 ## Relation to existing pages
 
-Extends [[LLM-as-Judge]] / [[LLM-as-Judge Evaluation]] (which cover the bias catalog and offline calibration) into production; the agentic, step-level variant is [[Agent-as-a-Judge]]; the surrounding operational loop is [[Continuous Evaluation]].
+Extends [[LLM-as-Judge]] / [[LLM-as-Judge Evaluation]] (which cover the bias catalog and offline calibration) into production; the trained, per-signal end is [[Specialized Eval Classifiers]]; the surrounding operational loop is [[Continuous Evaluation]].

@@ -34,7 +34,7 @@ Platforms converge on this loop with different emphasis: **Arize** / Confident-A
 
 ## The 2026 shift
 
-Cheap **distilled evaluators** now score ~100% of traffic at roughly 1/30 the cost (format, schema, banned-phrase, simple quality), reserving expensive [[Agent-as-a-Judge]] for flagged anomalies and sampled audits — a tiered coverage strategy that manages the cost bottleneck.
+Cheap **distilled evaluators** now score ~100% of traffic at roughly 1/30 the cost (format, schema, banned-phrase, simple quality), reserving expensive step-level agentic judges for flagged anomalies and sampled audits — a tiered coverage strategy that manages the cost bottleneck.
 
 ## Relation to existing pages
 
