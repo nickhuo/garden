@@ -1,0 +1,123 @@
+filters:
+  and:
+    - type == "source"
+formulas:
+  channel_count: channels.length
+  media_list: channels.map(value => value.medium).unique().join(", ")
+  has_x: channels.map(value => value.medium).contains("x")
+  has_podcast: channels.map(value => value.medium).contains("podcast")
+  has_blog: channels.map(value => value.medium).contains("blog")
+  any_unverified: channels.filter(value => value.feed_verified == false || value.needs_scraper == true).length > 0
+  rss_status: if(formula.any_unverified, "⚠️", "✅")
+properties:
+  file.name:
+    displayName: Source
+  category:
+    displayName: Cat
+  tier:
+    displayName: T
+  status:
+    displayName: Status
+  formula.channel_count:
+    displayName: "#Ch"
+  formula.media_list:
+    displayName: Media
+  formula.rss_status:
+    displayName: RSS
+  formula.has_x:
+    displayName: X?
+  formula.has_podcast:
+    displayName: Pod?
+  formula.has_blog:
+    displayName: Blog?
+  notes:
+    displayName: Notes
+  added:
+    displayName: Added
+  topics:
+    displayName: Topics
+views:
+  - type: table
+    name: All Active
+    filters:
+      and:
+        - status == "active"
+    order:
+      - file.name
+      - category
+      - tier
+      - formula.media_list
+      - formula.channel_count
+      - formula.rss_status
+      - status
+    columnSize:
+      formula.channel_count: 97
+  - type: table
+    name: By Category
+    filters:
+      and:
+        - status == "active"
+    groupBy:
+      property: category
+      direction: ASC
+    order:
+      - file.name
+      - tier
+      - formula.media_list
+      - formula.channel_count
+      - formula.rss_status
+  - type: table
+    name: By Tier
+    filters:
+      and:
+        - status == "active"
+    groupBy:
+      property: tier
+      direction: ASC
+    order:
+      - file.name
+      - category
+      - formula.media_list
+      - formula.channel_count
+  - type: table
+    name: X Handles Only
+    filters:
+      and:
+        - status == "active"
+        - formula.has_x == true
+    order:
+      - file.name
+      - category
+      - tier
+      - formula.media_list
+  - type: table
+    name: Podcasts Only
+    filters:
+      and:
+        - status == "active"
+        - formula.has_podcast == true
+    order:
+      - file.name
+      - category
+      - tier
+      - formula.media_list
+  - type: table
+    name: RSS Pending
+    filters:
+      and:
+        - status == "active"
+        - formula.any_unverified == true
+    order:
+      - file.name
+      - formula.media_list
+      - formula.channel_count
+      - notes
+  - type: table
+    name: Archived
+    filters:
+      not:
+        - status == "active"
+    order:
+      - file.name
+      - status
+      - notes

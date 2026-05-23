@@ -1,0 +1,65 @@
+filters:
+  and:
+    - type == "topic"
+formulas:
+  priority_label: if(priority == 1, "🔴 Daily", if(priority == 2, "🟡 Tracking", "🟢 Watch"))
+properties:
+  file.name:
+    displayName: Topic
+  priority:
+    displayName: P
+  formula.priority_label:
+    displayName: Priority
+  related_projects:
+    displayName: Projects
+  related_goals:
+    displayName: Goals
+  anchors:
+    displayName: Anchors
+  status:
+    displayName: Status
+  notes:
+    displayName: Notes
+views:
+  - type: table
+    name: All Active
+    filters:
+      and:
+        - status == "active"
+    order:
+      - file.name
+      - formula.priority_label
+      - related_projects
+      - related_goals
+    columnSize:
+      note.related_projects: 383
+  - type: table
+    name: Daily Focus (P1)
+    filters:
+      and:
+        - status == "active"
+        - priority == 1
+    order:
+      - file.name
+      - related_projects
+      - related_goals
+      - anchors
+  - type: cards
+    name: Cards
+    filters:
+      and:
+        - status == "active"
+    order:
+      - file.name
+      - formula.priority_label
+      - related_projects
+      - notes
+  - type: table
+    name: Archived
+    filters:
+      not:
+        - status == "active"
+    order:
+      - file.name
+      - status
+      - notes

@@ -1,0 +1,89 @@
+filters:
+  and:
+    - file.path.contains("wiki/sources/")
+    - type == "source"
+    - file.ext == "md"
+    - file.name != "_index.md"
+formulas:
+  confidence_icon: if(confidence == "high", "🟢 high", if(confidence == "medium", "🟡 medium", if(confidence == "low", "🔴 low", "")))
+  claim_count: if(key_claims, key_claims.length, 0)
+  age_days: (now() - date(date_published)).days.round(0)
+properties:
+  title:
+    displayName: Title
+  author:
+    displayName: Author
+  source_type:
+    displayName: Type
+  status:
+    displayName: Status
+  date_published:
+    displayName: Published
+  url:
+    displayName: Link
+  formula.confidence_icon:
+    displayName: Confidence
+  formula.claim_count:
+    displayName: "# Claims"
+  formula.age_days:
+    displayName: Age (days)
+views:
+  - type: table
+    name: All Sources
+    order:
+      - file.name
+      - source_type
+      - author
+      - status
+      - formula.confidence_icon
+      - date_published
+      - formula.claim_count
+    summaries:
+      formula.claim_count: Sum
+    columnSize:
+      file.name: 506
+  - type: table
+    name: By Type
+    groupBy:
+      property: source_type
+      direction: ASC
+    order:
+      - file.name
+      - title
+      - author
+      - status
+      - date_published
+  - type: table
+    name: By Status
+    groupBy:
+      property: status
+      direction: ASC
+    order:
+      - file.name
+      - source_type
+      - formula.confidence_icon
+      - date_published
+  - type: table
+    name: Recent
+    order:
+      - file.name
+      - author
+      - source_type
+      - date_published
+      - formula.confidence_icon
+    sort:
+      - property: file.ctime
+        direction: DESC
+    limit: 20
+  - type: table
+    name: Needs Review
+    filters:
+      or:
+        - status == "seed"
+        - status == "developing"
+        - confidence == "low"
+    order:
+      - file.name
+      - status
+      - formula.confidence_icon
+      - source_type
