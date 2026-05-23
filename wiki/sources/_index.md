@@ -1,12 +1,12 @@
 ---
 type: meta
 title: "Sources Index"
-updated: 2026-05-14
+updated: 2026-05-20
 ---
 
 # Sources
 
-One summary page per ingested source. Body cites verbatim where load-bearing; synthesis lives on entity/concept pages. **31 sources** currently.
+One summary page per ingested source. Body cites verbatim where load-bearing; synthesis lives on entity/concept pages. **45 sources** currently.
 
 ## Chronological (newest first)
 
@@ -34,6 +34,7 @@ One summary page per ingested source. Body cites verbatim where load-bearing; sy
 - [[2025-09-26 - Bernstein - Modular Manifolds]]
 - [[2025-09-10 - He - Defeating Nondeterminism in LLM Inference]]
 - [[2025-07-18 - Manus - Context Engineering for AI Agents]]
+- [[2025-07 - Patil et al - BFCL]]
 - [[2025-06-26 - Anthropic - Desktop Extensions]]
 - [[2025-06-13 - Anthropic - How we built our multi-agent research system]]
 - [[2025-03-20 - Anthropic - The Think Tool]]
@@ -41,6 +42,24 @@ One summary page per ingested source. Body cites verbatim where load-bearing; sy
 - [[2024-12-19 - Anthropic - Building Effective Agents]]
 - [[2024-09-19 - Anthropic - Contextual Retrieval]]
 - [[2024-06-17 - Yao et al - tau-bench]]
+- [[2023-07-31 - Qin et al - ToolLLM]]
+
+## Continual learning research (added 2026-05-20)
+
+12 sources from the continually-learning model-centric systems autoresearch pass:
+
+- [[2017-11-11 - Karpathy - Software 2.0]]
+- [[2019-03-13 - Sutton - The Bitter Lesson]]
+- [[2022-03-04 - Ouyang et al - InstructGPT]]
+- [[2023-04-07 - Park et al - Generative Agents]]
+- [[2023-05 - Schaeffer et al - Emergent Abilities a Mirage]]
+- [[2023-06-09 - Zheng et al - Judging LLM-as-a-Judge]]
+- [[2023-10-12 - Zou et al - Representation Engineering]]
+- [[2024-04-17 - Agarwal et al - Many-Shot In-Context Learning]]
+- [[2025-04-11 - Silver Sutton - Welcome to the Era of Experience]]
+- [[2025-04-28 - Mem0 - Scalable Long-Term Memory]]
+- [[2025-05-21 - Meta - Reinforcement Learning from User Feedback]]
+- [[2025-07-29 - Chen et al - Persona Vectors]]
 
 ## By author
 
@@ -56,9 +75,11 @@ Single source from a 2nd-tier player; useful as a sanity check against Anthropic
 
 [[2024-06-17 - Yao et al - tau-bench]] — only reliability-focused (vs capability-focused) source; introduces [[Pass^k Reliability Metric]].
 
-### Academic (1)
+### Academic (3)
 
-[[2025-10 - Zhang Khattab - Recursive Language Models]] — only academic paper in the corpus.
+- [[2025-10 - Zhang Khattab - Recursive Language Models]] — context-handling academic paper.
+- [[2025-07 - Patil et al - BFCL]] — UC Berkeley/[[Gorilla]], ICML 2025; the function-calling benchmark standard.
+- [[2023-07-31 - Qin et al - ToolLLM]] — Tsinghua/[[OpenBMB]], ICLR'24; [[ToolBench]] over 16k+ APIs. Forms a tool-use benchmark cluster with τ-bench and BFCL ([[Tool-Use Benchmarks - BFCL vs tau-bench vs ToolBench]]).
 
 ### Thinking Machines Lab (5)
 
@@ -70,6 +91,7 @@ First non-Anthropic systematic corpus. All from the *Connectionism* blog, Sep 20
 - No DeepMind / Google sources.
 - No third-party sources on MCP — corpus is entirely Anthropic's own framing.
 - No critical/contrarian sources — corpus skews toward "agent boosters" (τ-bench partially closes this).
+- ~~Tool-use benchmarks under-covered~~ — closed 2026-05-22 with [[BFCL]] + [[ToolBench]] joining [[tau-bench]]; see [[Tool-Use Benchmarks - BFCL vs tau-bench vs ToolBench]].
 - No non-Anthropic harness postmortems.
 - LLM domain is single-lab (TML only) — Karpathy materials still untouched.
 

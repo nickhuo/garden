@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Wiki Index"
-updated: 2026-05-19
+updated: 2026-05-20
 ---
 
 # Wiki Index
@@ -13,10 +13,12 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[AI-Agents]] — agentic systems, tool use, orchestration, harnesses, evals, MCP
 - [[LLM]] — model internals, training, inference, optimization, alignment. Seeded 2026-05-14 with 5 Thinking Machines Lab sources.
 
-## Entities (21)
+## Entities (28)
 
 - [[Agent Skills]]
-- [[Anthropic]]
+- [[Andrej Karpathy]]
+- [[brain/03_Resources/wiki/entities/Anthropic]]
+- [[BFCL]]
 - [[BrowseComp]]
 - [[Claude 3.5 Sonnet]]
 - [[Claude Code]]
@@ -27,19 +29,26 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Jeremy Bernstein]]
 - [[John Schulman]]
 - [[Kevin Lu]]
+- [[Letta]]
 - [[Managed Agents]]
 - [[Manus]]
 - [[MCP]]
+- [[OpenBMB]]
+- [[Gorilla]]
+- [[Richard Sutton]]
 - [[Shunyu Yao]]
 - [[Sierra]]
+- [[ToolBench]]
 - [[SWE-bench]]
 - [[SWE-bench Verified]]
 - [[tau-bench]]
 - [[Thinking Machines Lab]]
 
-## Concepts (73)
+## Concepts (91)
 
+- [[A-B Testing for Agents]]
 - [[ACI - Agent-Computer Interface]]
+- [[Activation Steering / Representation Engineering]]
 - [[Agent Eval Pyramid]]
 - [[Agent Interface Contracts]]
 - [[Agent Memory Taxonomy]]
@@ -53,8 +62,9 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Batch Invariance]]
 - [[BM25 and Hybrid Retrieval]]
 - [[Cache Invalidation Cascade]]
-- [[CLAUDE.md]]
+- [[brain/03_Resources/wiki/concepts/CLAUDE]]
 - [[CoALA]]
+- [[Code-to-the-Side vs Orchestration]]
 - [[Config Type Safety]]
 - [[Context Anxiety]]
 - [[Context Assembly Pipeline]]
@@ -65,14 +75,19 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Error Trace Retention]]
 - [[Eval Awareness]]
 - [[Eval Infrastructure Noise]]
+- [[Eval Validity]]
 - [[Evaluator-Optimizer]]
 - [[Few-Shot Drift]]
 - [[Floating-Point Non-Associativity]]
 - [[Harness Design Patterns]]
 - [[Harness Staleness]]
+- [[Implicit Feedback Signals]]
+- [[In-Context Learning]]
 - [[Interaction Model Architecture]]
 - [[Just-in-Time Context Retrieval]]
 - [[KV-Cache Discipline]]
+- [[Learning from Implicit Feedback]]
+- [[LLM-as-Judge]]
 - [[LLM-as-Judge Evaluation]]
 - [[Logit Masking]]
 - [[Long-Horizon Context Management]]
@@ -80,15 +95,21 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Manifold Muon]]
 - [[Manifold Optimization]]
 - [[MemGPT]]
+- [[Memory Stream]]
 - [[Meta-Harness]]
 - [[Minimal Footprint Principle]]
+- [[Model-Centric Architecture]]
 - [[Multi-Agent Systems]]
 - [[On-Policy Distillation]]
+- [[Online Evaluation]]
+- [[Online Learning from Interaction]]
 - [[Orchestrator-Workers]]
 - [[Parallelization]]
 - [[Pass^k Reliability Metric]]
 - [[Permission Classifier]]
 - [[Permission Model]]
+- [[Persona Vectors]]
+- [[Persona Vectors vs Memory Files]]
 - [[Programmatic Tool Calling]]
 - [[Progressive Disclosure]]
 - [[Prompt Chaining]]
@@ -98,11 +119,15 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Reranking]]
 - [[ReAct]]
 - [[Reverse KL Divergence]]
+- [[Reward Modeling]]
 - [[Routing]]
 - [[Sandbagging]]
 - [[Self-Editing Memory]]
 - [[Session as Event Log]]
+- [[Software 2.0]]
 - [[Stiefel Manifold]]
+- [[Test-Time Adaptation]]
+- [[The Bitter Lesson]]
 - [[Think Tool]]
 - [[Token Economics]]
 - [[Tool Search Tool]]
@@ -113,15 +138,32 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[User Simulator Evaluation]]
 - [[Workflows vs Agents]]
 
-## Sources (34)
+## Sources (48)
 
+- [[2017-11-11 - Karpathy - Software 2.0]]
+- [[2023-07-31 - Qin et al - ToolLLM]]
+- [[2019-03-13 - Sutton - The Bitter Lesson]]
+- [[2022-03-04 - Ouyang et al - InstructGPT]]
+- [[2023-04-07 - Park et al - Generative Agents]]
+- [[2023-05 - Schaeffer et al - Emergent Abilities a Mirage]]
+- [[2023-06-09 - Zheng et al - Judging LLM-as-a-Judge]]
 - [[2023-09-05 - Sumers et al - Cognitive Architectures for Language Agents]]
 - [[2023-10-12 - Packer et al - MemGPT - LLMs as Operating Systems]]
+- [[2023-10-12 - Zou et al - Representation Engineering]]
+- [[2024-04-17 - Agarwal et al - Many-Shot In-Context Learning]]
 - [[2024-06-17 - Yao et al - tau-bench]]
 - [[2024-09-19 - Anthropic - Contextual Retrieval]]
 - [[2024-12-19 - Anthropic - Building Effective Agents]]
+- [[2025-01-06 - Anthropic - SWE-bench Verified Sonnet 3.5]]
+- [[2025-03-20 - Anthropic - The Think Tool]]
+- [[2025-04-11 - Silver Sutton - Welcome to the Era of Experience]]
+- [[2025-04-28 - Mem0 - Scalable Long-Term Memory]]
+- [[2025-05-21 - Meta - Reinforcement Learning from User Feedback]]
 - [[2025-06-13 - Anthropic - How we built our multi-agent research system]]
+- [[2025-07 - Patil et al - BFCL]]
+- [[2025-06-26 - Anthropic - Desktop Extensions]]
 - [[2025-07-18 - Manus - Context Engineering for AI Agents]]
+- [[2025-07-29 - Chen et al - Persona Vectors]]
 - [[2025-09-10 - He - Defeating Nondeterminism in LLM Inference]]
 - [[2025-09-26 - Bernstein - Modular Manifolds]]
 - [[2025-09-29 - Anthropic - Effective context engineering for AI agents]]
@@ -130,39 +172,42 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[2025-10-01 - Anthropic - Harness Design Long Running Apps]]
 - [[2025-10-27 - Lu - On-Policy Distillation]]
 - [[2025-11-24 - Anthropic - Advanced Tool Use]]
+- [[2026-01-21 - Anthropic - AI-Resistant Technical Evaluations]]
+- [[2026-02-05 - Anthropic - Building C Compiler with Parallel Claudes]]
+- [[2026-02-05 - Anthropic - Infrastructure Noise Agentic Coding Evals]]
 - [[2026-04 - Anthropic - Claude Code Auto Mode]]
 - [[2026-04-08 - Anthropic - Scaling Managed Agents]]
 - [[2026-05-11 - Thinking Machines - Interaction Models]]
 - [[2026-05-13 - Anthropic - Agent Skills]]
-- [[2026-05-14 - Anthropic - Claude Code in Large Codebases]]
-- [[2026-01-21 - Anthropic - AI-Resistant Technical Evaluations]]
-- [[2026-02-05 - Anthropic - Building C Compiler with Parallel Claudes]]
 - [[2026-05-13 - Anthropic - Claude Code Best Practices]]
 - [[2026-05-13 - Anthropic - Claude Code Sandboxing]]
 - [[2026-05-13 - Anthropic - Code Execution with MCP]]
 - [[2026-05-13 - Anthropic - Demystifying Evals for AI Agents]]
-- [[2025-06-26 - Anthropic - Desktop Extensions]]
 - [[2026-05-13 - Anthropic - Effective Harnesses for Long-Running Agents]]
 - [[2026-05-13 - Anthropic - Eval Awareness BrowseComp]]
-- [[2026-02-05 - Anthropic - Infrastructure Noise Agentic Coding Evals]]
 - [[2026-05-13 - Anthropic - Postmortem Three Recent Issues]]
-- [[2025-01-06 - Anthropic - SWE-bench Verified Sonnet 3.5]]
-- [[2025-03-20 - Anthropic - The Think Tool]]
 - [[2026-05-13 - Anthropic - Writing Effective Tools for Agents]]
+- [[2026-05-14 - Anthropic - Claude Code in Large Codebases]]
 
-## Theses (3)
+## Theses (4)
 
+- [[Interpretable Persona Vectors: the Beckman Pattern]]
 - [[Runtime vs Structural Reliability]]
 - [[Static Action Spaces vs Dynamic Tool Discovery]]
 - [[Workflows Beat Agents for Most Production]]
 
-## Comparisons (0)
+## Comparisons (1)
 
-(None yet.)
+- [[Tool-Use Benchmarks - BFCL vs tau-bench vs ToolBench]]
 
-## Questions (0)
+## Questions (6)
 
-(None yet.)
+- [[How to Ensure Agent Reliability]]
+- [[Research - Continually-Learning Model-Centric Systems]]
+- [[Research - Real-Time Learning]]
+- [[Research - Persistent Memory and Persona Vectors]]
+- [[Research - Model-Centric Architecture]]
+- [[Research - Online Evaluation]]
 
 ## Meta
 
@@ -172,4 +217,4 @@ Master catalog of all wiki pages. Refresh on every ingest.
 
 ---
 
-Total: ~116 wiki pages, 32 raw sources. Last full refresh: 2026-05-18 (added Anthropic's "Claude Code in Large Codebases" — companion to the 2026-05-13 Best Practices post).
+Total: ~152 wiki pages, 34 raw sources. Last full refresh: 2026-05-20 (autoresearch: continually-learning model-centric systems — 4 directions, 37 new pages).

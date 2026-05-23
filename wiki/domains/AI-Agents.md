@@ -2,7 +2,7 @@
 type: domain
 title: AI-Agents
 created: 2026-05-04
-updated: 2026-05-13
+updated: 2026-05-20
 tags:
 - ai-agents
 - domain
@@ -13,7 +13,7 @@ sources: []
 
 # AI Agents — Overview
 
-A 60-second read of "what does this wiki think about AI Agents." See [[index]] for the full catalog and [[log]] for the timeline.
+A 60-second read of "what does this wiki think about AI Agents." See [[brain/03_Resources/wiki/index]] for the full catalog and [[log]] for the timeline.
 
 ## Current shape (after 28 sources, 23 Anthropic + 1 Manus + 3 academic + 1 Sierra)
 
@@ -60,7 +60,7 @@ Foundation:
 - **Tool-design framing** — [[ACI - Agent-Computer Interface]] (return-format precision + discoverability + input_examples); now sits alongside [[Agent Interface Contracts]] as the system-layer expression
 - **Coding-agent ergonomics** — [[Agentic Coding Slash Commands]] · [[AI Tool Fluency]] · [[Context Anxiety]] (model behavior when context budget tightens)
 - **Safety & isolation** — [[Agent Sandboxing]] · [[Permission Model]] · [[Permission Classifier]]; the runtime side of letting agents act
-- **Evaluation** — [[LLM-as-Judge Evaluation]] · [[Pass^k Reliability Metric]] · [[User Simulator Evaluation]] · [[Trace-Based Evaluation]] · [[Agent Eval Pyramid]] · [[tau-bench]] · [[SWE-bench]] · [[SWE-bench Verified]] · [[Eval Infrastructure Noise]] · [[Eval Awareness]] · [[Sandbagging]] · [[AI-Resistant Evaluation Design]] · [[AI Tool Fluency]]
+- **Evaluation** — [[LLM-as-Judge Evaluation]] · [[Pass^k Reliability Metric]] · [[User Simulator Evaluation]] · [[Trace-Based Evaluation]] · [[Agent Eval Pyramid]] · [[tau-bench]] · [[BFCL]] · [[ToolBench]] · [[Tool-Use Benchmarks - BFCL vs tau-bench vs ToolBench]] · [[SWE-bench]] · [[SWE-bench Verified]] · [[Eval Infrastructure Noise]] · [[Eval Awareness]] · [[Sandbagging]] · [[AI-Resistant Evaluation Design]] · [[AI Tool Fluency]]
 - **Retrieval substrate** — [[BM25 and Hybrid Retrieval]] · [[Contextual Retrieval]] · [[Reranking]]; the retrieval half of context engineering
 - **Protocol bet** — [[MCP]]
 - **Operational decision tools** — [[Token Economics]] (4× / 15× + attention budget + KV-cache hit rate + smaller-model-in-scaffold) · [[LLM-as-Judge Evaluation]]
@@ -104,7 +104,15 @@ Eight threads now structure the worldview:
 - ~~Production reliability data~~ — partially closed: [[Eval Infrastructure Noise]], [[Eval Awareness]], [[Sandbagging]], and [[Agent Eval Pyramid]] now form a coherent eval-methodology stack.
 - ~~Tool authoring as a distinct discipline~~ — closed by Writing Effective Tools + Agent Skills ingests; [[Agent Interface Contracts]] + [[Progressive Disclosure]] anchor it.
 
+## Continual learning & online evaluation (2026-05-20)
+
+A new cross-cutting layer from the autoresearch pass. The agent-facing pillars:
+- **Online evaluation** — [[Online Evaluation]], [[LLM-as-Judge]], [[Implicit Feedback Signals]], [[A/B Testing for Agents]], [[Eval Validity]]; extends the existing eval stack ([[Agent Eval Pyramid]], [[Trace-Based Evaluation]], [[Eval Awareness]], [[tau-bench]]) from offline benchmarks to live signals.
+- **Real-time learning** — [[Online Learning from Interaction]], [[Learning from Implicit Feedback]]; the durability spectrum from in-context to online RL.
+- **Memory persistence** — [[Memory Stream]], [[Persona Vectors vs Memory Files]], [[Letta]]; extends [[Agent Memory Taxonomy]], [[Self-Editing Memory]], [[MemGPT]].
+- **Architecture** — [[Model-Centric Architecture]], [[Code-to-the-Side vs Orchestration]]; the counter-pole to [[Agentic Harness]]/[[Meta-Harness]]. Umbrella: [[Research - Continually-Learning Model-Centric Systems]].
+
 ## Navigation
 
-- [[index]] — full page catalog (read this first)
+- [[brain/03_Resources/wiki/index]] — full page catalog (read this first)
 - [[log]] — chronological event history

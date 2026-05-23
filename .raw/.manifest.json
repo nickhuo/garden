@@ -1,5 +1,44 @@
 {
   "sources": {
+    ".raw/articles/2025-07 - Patil et al - BFCL.md": {
+      "hash": "fedcac6306e766d6017f818683ab7064",
+      "source_url": "https://proceedings.mlr.press/v267/patil25a.html",
+      "ingested_at": "2026-05-22",
+      "pages_created": [
+        "wiki/sources/2025-07 - Patil et al - BFCL.md",
+        "wiki/entities/BFCL.md",
+        "wiki/entities/Gorilla.md",
+        "wiki/comparisons/Tool-Use Benchmarks - BFCL vs tau-bench vs ToolBench.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md",
+        "wiki/domains/AI-Agents.md",
+        "wiki/entities/_index.md",
+        "wiki/sources/_index.md",
+        "wiki/comparisons/_index.md",
+        "wiki/entities/tau-bench.md"
+      ]
+    },
+    ".raw/articles/2023-07-31 - Qin et al - ToolLLM.md": {
+      "hash": "54ff861b126b02ecbc7bcaf146eb3764",
+      "source_url": "https://arxiv.org/abs/2307.16789",
+      "ingested_at": "2026-05-22",
+      "pages_created": [
+        "wiki/sources/2023-07-31 - Qin et al - ToolLLM.md",
+        "wiki/entities/ToolBench.md",
+        "wiki/entities/OpenBMB.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md",
+        "wiki/domains/AI-Agents.md",
+        "wiki/entities/_index.md",
+        "wiki/sources/_index.md"
+      ]
+    },
     ".raw/pdfs/cognitive-architectures-language-agents-2309.02427.pdf": {
       "hash": "673a3a00a375762a9e7a947b62d4d14b",
       "source_url": "https://arxiv.org/abs/2309.02427",

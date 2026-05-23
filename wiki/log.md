@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Wiki Log"
-updated: 2026-05-19
+updated: 2026-05-20
 ---
 
 # Wiki Log
@@ -19,18 +19,65 @@ Ops: `init`, `ingest`, `query`, `lint`, `refactor`, `save`, `autoresearch`, `man
 
 ---
 
+## [2026-05-22] ingest | BFCL + ToolLLM (tool-use benchmark cluster)
+- **Trigger:** user — "BFCL, τ-bench, ToolBench — find the paper about these three concept." τ-bench already in wiki; found + ingested the other two papers and built the synthesis.
+- **Sources:** `.raw/articles/2025-07 - Patil et al - BFCL.md` (ICML 2025), `.raw/articles/2023-07-31 - Qin et al - ToolLLM.md` (ICLR'24).
+- **Pages created:** [[2025-07 - Patil et al - BFCL]], [[2023-07-31 - Qin et al - ToolLLM]] (sources); [[BFCL]], [[ToolBench]], [[Gorilla]], [[OpenBMB]] (entities); [[Tool-Use Benchmarks - BFCL vs tau-bench vs ToolBench]] (first comparison page).
+- **Pages updated:** [[tau-bench]] (sibling-benchmark section), index, entities/_index, sources/_index, comparisons/_index (new), [[AI-Agents]], hot.
+- **Key insight:** the three benchmarks measure orthogonal axes — BFCL = call correctness at scale (AST grading), τ-bench = reliability under interaction (pass^k, deterministic DB reward), ToolBench = generalization across 16k+ real APIs (LLM-judge). Grading runs deterministic→LLM-judged; faithfulness trades against scale. Closes the "tool-use benchmarks under-covered" gap.
+
+## [2026-05-20] query | How to Ensure Agent Reliability
+- **Trigger:** wiki-query "如何确保 agent reliability?"; filed the synthesized answer back per user request.
+- **Page created:** [[How to Ensure Agent Reliability]] (questions/).
+- **Structure:** 5-layer framework (structural foundation → measurement → runtime hygiene → maintenance → failure-mode awareness), governed by [[Runtime vs Structural Reliability]]. Includes a 5-step incident diagnostic flow.
+- **Index:** questions 5→6.
+
+---
+
+## [2026-05-20] refactor | Trim Online-Eval & Real-Time-Learning sources to milestones
+- Per review on PR #2, removed 3 non-milestone sources: Kohavi et al *Trustworthy Online Controlled Experiments* (a full book, too heavy), Akyürek et al *Test-Time Training* (ARC-specific, narrow), Zheng et al *Lifelong Learning Roadmap* (survey, not a landmark).
+- Stripped their citations from [[Research - Online Evaluation]], [[Research - Real-Time Learning]], and related concept pages. Concepts [[A/B Testing for Agents]] and [[Test-Time Adaptation]] kept as framing rungs but now thinly sourced (flagged with gap callouts).
+- Net: sources 49 -> 46.
+
+## [2026-05-20] save | Thesis — Interpretable Persona Vectors (the Beckman Pattern)
+- Filed Nick's view that the persona-vectors-vs-memory-files split is a general architecture, and Beckman is its fully-interpretable, externally-stored, dual-cadence instance (mastery overlay = memory-file pole; (A,B,C) metacognition coefficients = interpretable persona-vector analogue).
+- Pages created: [[Interpretable Persona Vectors: the Beckman Pattern]]
+- Pages updated: [[brain/03_Resources/wiki/index]], [[theses]] (_index)
+- Key claim: an interpretable persona vector is achievable and worth the inspectability it preserves; three extensions — grow (A,B,C) into a named higher-dim vector, move persona from prompt-param to model-conditioning, add a memory→persona promotion valve.
+
+## [2026-05-20] autoresearch | Continually-Learning Model-Centric Systems (umbrella)
+- Rounds: 3 per direction × 4 directions. Sources found: 15 new. Pages created: 40 (4 syntheses + 1 umbrella + 15 sources + 18 concepts + 3 entities, on branch research/continual-learning-systems).
+- Synthesis: [[Research - Continually-Learning Model-Centric Systems]]
+- Key finding: the four directions form one loop — interaction → online eval → learning signal → persisted memory/persona, with the model (not orchestration code) at the center. Mapped each pillar to Nick's prior work (Sonic/Donut/Beckman/Compass/Baidu).
+
+## [2026-05-20] autoresearch | Online Evaluation
+- Pages: [[Research - Online Evaluation]], [[Online Evaluation]], [[LLM-as-Judge]], [[Implicit Feedback Signals]], [[Reward Modeling]], [[A/B Testing for Agents]], [[Eval Validity]]; sources [[2023-06-09 - Zheng et al - Judging LLM-as-a-Judge]], [[2020 - Kohavi Tang Xu - Trustworthy Online Controlled Experiments]], [[2023-05 - Schaeffer et al - Emergent Abilities a Mirage]].
+- Key finding: a strong LLM judge matches human agreement (>80%) only after debiasing; A/B is the only causally trustworthy verdict; the metric is the construct. Bridges real-time learning ↔ persistent memory.
+
+## [2026-05-20] autoresearch | Model-Centric Architecture
+- Pages: [[Research - Model-Centric Architecture]], [[Model-Centric Architecture]], [[The Bitter Lesson]], [[Software 2.0]], [[Code-to-the-Side vs Orchestration]]; entities [[Andrej Karpathy]], [[Richard Sutton]]; sources [[2019-03-13 - Sutton - The Bitter Lesson]], [[2017-11-11 - Karpathy - Software 2.0]].
+- Key finding: scaling favors model-centrism long-run (Bitter Lesson / Software 2.0); harness/schema discipline wins at ship time. Reconciliation = a slider; the durable side-code is the guarantees layer.
+
+## [2026-05-20] autoresearch | Persistent Memory & Persona Vectors
+- Pages: [[Research - Persistent Memory and Persona Vectors]], [[Persona Vectors]], [[Activation Steering / Representation Engineering]], [[Memory Stream]], [[Persona Vectors vs Memory Files]]; entity [[Letta]]; sources [[2025-07-29 - Chen et al - Persona Vectors]], [[2023-04-07 - Park et al - Generative Agents]], [[2023-10-12 - Zou et al - Representation Engineering]], [[2025-04-28 - Mem0 - Scalable Long-Term Memory]].
+- Key finding: two paths split on control vs inspectability — persona vectors (parametric, who) vs memory files (contextual, what). Beckman implements both poles by hand.
+
+## [2026-05-20] autoresearch | Real-Time Learning
+- Pages: [[Research - Real-Time Learning]], [[Online Learning from Interaction]], [[In-Context Learning]], [[Test-Time Adaptation]], [[Learning from Implicit Feedback]]; sources [[2025-04-11 - Silver Sutton - Welcome to the Era of Experience]], [[2024-11-11 - Akyürek et al - Surprising Effectiveness of Test-Time Training]], [[2024-04-17 - Agarwal et al - Many-Shot In-Context Learning]], [[2025-05-21 - Meta - Reinforcement Learning from User Feedback]], [[2025-01-13 - Zheng et al - Lifelong Learning of LLM-Based Agents - A Roadmap]], [[2022-03-04 - Ouyang et al - InstructGPT]].
+- Key finding: real-time learning is a durability spectrum (in-context → memory → test-time → online RL); catastrophic forgetting is the central unsolved problem; memory is the main mitigation.
+
 ## [2026-05-19] ingest | Packer et al — MemGPT: Towards LLMs as Operating Systems
 - Source: `.raw/pdfs/memgpt-llms-as-operating-systems-2310.08560.pdf` (downloaded; PDF kept locally)
 - Summary: [[2023-10-12 - Packer et al - MemGPT - LLMs as Operating Systems]]
 - Pages created: [[MemGPT]], [[Self-Editing Memory]]
-- Pages updated: [[index]], [[hot]], [[AI-Agents]], [[Agent Memory Taxonomy]]
+- Pages updated: [[brain/03_Resources/wiki/index]], [[hot]], [[AI-Agents]], [[Agent Memory Taxonomy]]
 - Key insight: Context window = RAM. "Virtual context management" pages data between an in-context tier (working context + FIFO queue) and external storage (recall + archival) under the model's own control via function calls. Pairs with [[CoALA]]: MemGPT is the concrete mechanism for the working↔long-term boundary CoALA names; its memory-edit calls are CoALA *learning* actions, its event loop the *decision cycle*. Became the Letta framework.
 
 ## [2026-05-19] ingest | Sumers et al — Cognitive Architectures for Language Agents (CoALA)
 - Source: `.raw/pdfs/cognitive-architectures-language-agents-2309.02427.pdf` (downloaded; PDF kept locally)
 - Summary: [[2023-09-05 - Sumers et al - Cognitive Architectures for Language Agents]]
 - Pages created: [[CoALA]], [[Agent Memory Taxonomy]], [[ReAct]], [[Tree of Thoughts]], [[Shunyu Yao]]
-- Pages updated: [[index]], [[hot]], [[AI-Agents]]
+- Pages updated: [[brain/03_Resources/wiki/index]], [[hot]], [[AI-Agents]]
 - Key insight: First academic-framework source. Imports cognitive-architecture theory (Soar/ACT-R) to organize agents on three axes — memory (working/episodic/semantic/procedural), action space (internal vs external grounding), decision cycle (propose→evaluate→select). Gives a principled home for scattered operational concepts; the empty cells (agents that learn their own decision procedures) are the research frontier.
 
 ## [2026-05-19] manual | New thesis — Runtime vs Structural Reliability
@@ -94,8 +141,8 @@ Ops: `init`, `ingest`, `query`, `lint`, `refactor`, `save`, `autoresearch`, `man
 
 - Scope: deduped against existing wiki (6 of 23 requested URLs were already ingested — Scaling Managed Agents, Advanced Tool Use, Multi-Agent Research System, Building Effective Agents, Effective Context Engineering). Remaining 17 ingested in parallel.
 - Sources added: [[2024-09-19 - Anthropic - Contextual Retrieval]], [[2025-10-01 - Anthropic - Harness Design Long Running Apps]], [[2026-04 - Anthropic - Claude Code Auto Mode]], [[2026-05-13 - Anthropic - Agent Skills]], [[2026-01-21 - Anthropic - AI-Resistant Technical Evaluations]], [[2026-02-05 - Anthropic - Building C Compiler with Parallel Claudes]], [[2026-05-13 - Anthropic - Claude Code Best Practices]], [[2026-05-13 - Anthropic - Claude Code Sandboxing]], [[2026-05-13 - Anthropic - Code Execution with MCP]], [[2026-05-13 - Anthropic - Demystifying Evals for AI Agents]], [[2025-06-26 - Anthropic - Desktop Extensions]], [[2026-05-13 - Anthropic - Effective Harnesses for Long-Running Agents]], [[2026-05-13 - Anthropic - Eval Awareness BrowseComp]], [[2026-02-05 - Anthropic - Infrastructure Noise Agentic Coding Evals]], [[2026-05-13 - Anthropic - Postmortem Three Recent Issues]], [[2025-01-06 - Anthropic - SWE-bench Verified Sonnet 3.5]], [[2025-03-20 - Anthropic - The Think Tool]], [[2026-05-13 - Anthropic - Writing Effective Tools for Agents]]
-- New entities (10): [[Agent Skills]], [[Anthropic]], [[BrowseComp]], [[Claude 3.5 Sonnet]], [[Claude Code]], [[Claude Desktop]], [[Claude Opus 4.6]], [[DXT]], [[SWE-bench]], [[SWE-bench Verified]]
-- New concepts (~27): [[Agent Eval Pyramid]], [[Agent Interface Contracts]], [[Agent Sandboxing]], [[Agentic Coding Slash Commands]], [[Agentic Harness]], [[AI Tool Fluency]], [[AI-Resistant Evaluation Design]], [[BM25 and Hybrid Retrieval]], [[Cache Invalidation Cascade]], [[CLAUDE.md]], [[Config Type Safety]], [[Context Anxiety]], [[Context Assembly Pipeline]], [[Contextual Retrieval]], [[Eval Awareness]], [[Eval Infrastructure Noise]], [[Harness Design Patterns]], [[Harness Staleness]], [[Minimal Footprint Principle]], [[Permission Classifier]], [[Permission Model]], [[Progressive Disclosure]], [[Prompt Injection]], [[Reranking]], [[Sandbagging]], [[Think Tool]], [[Trace-Based Evaluation]]
+- New entities (10): [[Agent Skills]], [[brain/03_Resources/wiki/entities/Anthropic]], [[BrowseComp]], [[Claude 3.5 Sonnet]], [[Claude Code]], [[Claude Desktop]], [[Claude Opus 4.6]], [[DXT]], [[SWE-bench]], [[SWE-bench Verified]]
+- New concepts (~27): [[Agent Eval Pyramid]], [[Agent Interface Contracts]], [[Agent Sandboxing]], [[Agentic Coding Slash Commands]], [[Agentic Harness]], [[AI Tool Fluency]], [[AI-Resistant Evaluation Design]], [[BM25 and Hybrid Retrieval]], [[Cache Invalidation Cascade]], [[brain/03_Resources/wiki/concepts/CLAUDE]], [[Config Type Safety]], [[Context Anxiety]], [[Context Assembly Pipeline]], [[Contextual Retrieval]], [[Eval Awareness]], [[Eval Infrastructure Noise]], [[Harness Design Patterns]], [[Harness Staleness]], [[Minimal Footprint Principle]], [[Permission Classifier]], [[Permission Model]], [[Progressive Disclosure]], [[Prompt Injection]], [[Reranking]], [[Sandbagging]], [[Think Tool]], [[Trace-Based Evaluation]]
 - Contradictions surfaced: (1) [[Multi-Agent Systems]] earlier claim ("coding tasks less parallelizable") vs [[Building C Compiler with Parallel Claudes]] — reconciled with `[!contradiction]` callout; carve-out applies to tightly-coupled code, not modular codebases with clean interface contracts.
 - Cross-cutting themes: (a) **eval validity** as the unifying problem across [[AI-Resistant Evaluation Design]], [[Eval Awareness]], [[Eval Infrastructure Noise]], [[LLM-as-Judge Evaluation]], [[Pass^k Reliability Metric]]; (b) **harness as first-class engineering artifact** across [[Harness Design Patterns]], [[Meta-Harness]], [[Agentic Harness]], [[Long-Horizon Context Management]]; (c) **MCP token economics** across [[Code Execution with MCP]], [[Advanced Tool Use]], [[Tool Search Tool]], [[Programmatic Tool Calling]], [[DXT]].
 - Backlog: `wiki/sources/_index.md` and `wiki/concepts/_index.md` had heavy parallel contention during ingest; next lint pass should reconcile counts and verify all new pages are listed. Dates on most new files default to 2026-05-13 (ingest date) — backfill publish dates from URL paths in a future pass.
@@ -106,7 +153,7 @@ Ops: `init`, `ingest`, `query`, `lint`, `refactor`, `save`, `autoresearch`, `man
 - Source: `.raw/articles/2024-06-17 - Yao et al - tau-bench.md` (arXiv 2406.12045)
 - Summary: [[2024-06-17 - Yao et al - tau-bench]]
 - Pages created: [[2024-06-17 - Yao et al - tau-bench]], [[Pass^k Reliability Metric]], [[User Simulator Evaluation]], [[tau-bench]], [[Sierra]]
-- Pages updated: [[index]], [[hot]], [[AI-Agents]], [[Workflows Beat Agents for Most Production]], [[Autonomous Agents]], [[LLM-as-Judge Evaluation]], `wiki/sources/_index.md`, `wiki/entities/_index.md`, `wiki/concepts/_index.md`
+- Pages updated: [[brain/03_Resources/wiki/index]], [[hot]], [[AI-Agents]], [[Workflows Beat Agents for Most Production]], [[Autonomous Agents]], [[LLM-as-Judge Evaluation]], `wiki/sources/_index.md`, `wiki/entities/_index.md`, `wiki/concepts/_index.md`
 - Key insight: First wiki source to measure **reliability**, not capability. gpt-4o pass^1 ≈ 61% on retail collapses to pass^8 < 25% — same task, just different sampling. Strengthens [[Workflows Beat Agents for Most Production]]; supplies the long-missing eval primitive for [[Autonomous Agents]].
 
 ## [2026-05-11] init | vault restructured to claude-obsidian layout
@@ -120,4 +167,4 @@ Ops: `init`, `ingest`, `query`, `lint`, `refactor`, `save`, `autoresearch`, `man
 - Deleted: `AI-Agents/`, `LLM/` (scaffold only, no content), `Productivity/` (empty), and the earlier in-session scaffold at root (`CLAUDE.md`, `hot.md`, `Overview.md`, `index.md`, `log.md`).
 - Full pre-migration backup at `outputs/03_Resources-backup-20260511-045630.tar.gz`.
 - Plugin NOT yet installed. Nick to run: `claude plugin marketplace add AgriciDaniel/claude-obsidian`.
-- pages: [[WIKI]], [[CLAUDE]], [[index]], [[hot]], [[overview]], [[AI-Agents]], plus 39 migrated content pages
+- pages: [[WIKI]], [[brain/03_Resources/wiki/concepts/CLAUDE]], [[brain/03_Resources/wiki/index]], [[hot]], [[overview]], [[AI-Agents]], plus 39 migrated content pages

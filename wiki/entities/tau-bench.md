@@ -14,6 +14,7 @@ related:
 - "[[Pass^k Reliability Metric]]"
 - "[[User Simulator Evaluation]]"
 - "[[2024-06-17 - Yao et al - tau-bench]]"
+- "[[Online Evaluation]]"
 sources:
 - "[[2024-06-17 - Yao et al - tau-bench]]"
 - "[[2025-03-20 - Anthropic - The Think Tool]]"
@@ -65,8 +66,13 @@ For reliability under repeated trials, see [[Pass^k Reliability Metric]] — gpt
 - [[2025-03-20 - Anthropic - The Think Tool]] — Anthropic tested the [[Think Tool]] on τ-bench; ~6–7% pass^1 improvement on τ-airline (policy-heavy), ~4% on τ-retail. First source in the wiki to report τ-bench results for a specific intervention rather than baseline model capability.
 - [[2026-05-13 - Anthropic - Demystifying Evals for AI Agents]] — cross-validates τ-bench's environment-state reward approach as the reference implementation for Tier 3 end-to-end evals; confirms user-simulator info-asymmetry design is canonical.
 
+## Sibling benchmarks
+
+τ-bench is the **reliability/depth** pole of the tool-use benchmark cluster. Compared with [[BFCL]] (correctness at scale, AST grading) and [[ToolBench]] (generalization across 16k APIs, LLM-judge grading) in [[Tool-Use Benchmarks - BFCL vs tau-bench vs ToolBench]]. It is the only one of the three with a live user simulator and the only one measuring consistency via [[Pass^k Reliability Metric]] rather than peak capability.
+
 ## Connections
 
+- [[Tool-Use Benchmarks - BFCL vs tau-bench vs ToolBench]] — situates τ-bench among [[BFCL]] and [[ToolBench]]
 - [[Sierra]] — owning org
 - [[2024-06-17 - Yao et al - tau-bench]] — origin paper
 - [[Pass^k Reliability Metric]] · [[User Simulator Evaluation]] — methodology
