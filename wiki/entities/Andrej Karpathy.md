@@ -2,22 +2,26 @@
 type: entity
 title: "Andrej Karpathy"
 created: 2026-05-20
-updated: 2026-05-20
+updated: 2026-05-22
 tags:
   - ai-agents
   - llm
   - entity
   - person
-status: seed
+status: developing
 entity_type: person
 role: "AI researcher and educator; coined 'Software 2.0' (2017) and 'Software 3.0' / LLM-as-OS framing (2025). Former Director of AI at Tesla, founding member of OpenAI."
 first_mentioned: 2026-05-20
 related:
   - "[[Software 2.0]]"
+  - "[[Software 3.0]]"
+  - "[[Agentic Engineering]]"
+  - "[[Verifiability]]"
   - "[[Model-Centric Architecture]]"
   - "[[The Bitter Lesson]]"
 sources:
   - "[[2017-11-11 - Karpathy - Software 2.0]]"
+  - "[[2026-05-22 - Karpathy - Sequoia Ascent 2026]]"
 ---
 
 # Andrej Karpathy
@@ -30,12 +34,18 @@ AI researcher and educator known for articulating how the software stack itself 
 
 Karpathy is the clearest articulator of the historical arc behind [[Model-Centric Architecture]]: logic steadily migrating out of hand-written code and into the model. His "keep a human-controllable autonomy slider" stance also supplies the *user keeps final control* leg of the model-centric thesis.
 
+At **Sequoia Ascent 2026** he developed the agentic-engineering theory: the December-2025 reliability jump in coding agents, [[Software 3.0]] as natural-language programming, [[Verifiability]] as the engine of progress, [[Jagged Intelligence]] ("ghosts, not animals"), [[Vibe Coding]] vs [[Agentic Engineering]], and [[Agent-Native Infrastructure]]. His education thesis there — "you can outsource your thinking, but you can't outsource your understanding" — directly motivates the LLM-wiki pattern.
+
 ## Connections
 
 - [[Software 2.0]] — the concept he named
+- [[Software 3.0]] — the natural-language-programming successor
+- [[Agentic Engineering]] / [[Vibe Coding]] — the ceiling/floor split
+- [[Verifiability]] / [[Jagged Intelligence]] — where models get good, and why unevenly
 - [[The Bitter Lesson]] — Sutton's complementary scaling argument
 - [[Richard Sutton]] — author of The Bitter Lesson
 
 ## Sources
 
 - [[2017-11-11 - Karpathy - Software 2.0]]
+- [[2026-05-22 - Karpathy - Sequoia Ascent 2026]]

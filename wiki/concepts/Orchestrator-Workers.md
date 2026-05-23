@@ -58,10 +58,15 @@ This is closer to [[Autonomous Agents]] than to a workflow — the LLM, not code
 
 [[Scaling Managed Agents]] reframes the orchestrator role: under a [[Meta-Harness]], the orchestrator (harness + brain combined) becomes **stateless and reprovisionable** — failures recover by re-spawning, not by nursing state back. State lives in [[Session as Event Log]], not in the orchestrator process. This applies equally to both variants but matters more for the agent variant where lead-agent crashes were previously catastrophic.
 
+## OpenAI's vocabulary: the Manager pattern
+
+OpenAI's [[2025 - OpenAI - A Practical Guide to Building Agents]] names essentially this pattern the **[[Manager Pattern]]** ("agents as tools"): a central manager calls specialized agents *as tools* and synthesizes their results, keeping control and user access. It maps most closely to **Variant 1** (specialists are predefined, invoked synchronously and returning to the manager), though it can host runtime-dynamic selection. Its decentralized sibling, [[Agent Handoffs]], corresponds to [[Routing]] taken to peer-to-peer transfer. See [[OpenAI Practical Guide vs Anthropic Building Effective Agents]].
+
 ## Connections
 
 - Built from: [[Augmented LLM]]
 - Family: [[Workflows vs Agents]]
+- OpenAI vocabulary: [[Manager Pattern]] (agents-as-tools)
 - Agent variant generalizes to: [[Multi-Agent Systems]]
 - Compares to: [[Parallelization]] (static, no orchestrator) · [[Autonomous Agents]] (no fixed orchestrator role; the model is the orchestrator throughout)
 - Runtime: [[Meta-Harness]] · [[Managed Agents]] (stateless cattle pattern)

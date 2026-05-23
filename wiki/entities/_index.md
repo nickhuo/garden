@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Entities Index"
-updated: 2026-05-20
+updated: 2026-05-22
 ---
 
 # Entities
@@ -15,6 +15,7 @@ Named things: people, organizations, products, repositories, frameworks, places.
 - [[Thinking Machines Lab]] — AI research lab; publishes the *Connectionism* blog. 5 sources. Themes: numerical foundations, optimization theory, post-training, real-time architecture. Authors covered: Schulman, He, Lu, Bernstein.
 - [[Gorilla]] — UC Berkeley (Patil, Stoica, Gonzalez) tool-use project; produced the Gorilla model, APIBench, and [[BFCL]]. **Cited in:** [[2025-07 - Patil et al - BFCL]].
 - [[OpenBMB]] — Tsinghua NLP / ModelBest open big-model ecosystem; maintains [[ToolBench]]/ToolLLM. **Cited in:** [[2023-07-31 - Qin et al - ToolLLM]].
+- [[OpenAI]] — AI research & deployment company; maker of GPT/o-series, the Agents SDK, the moderation API. **Cited in:** [[2025 - OpenAI - A Practical Guide to Building Agents]].
 
 ## Products / Frameworks / Benchmarks
 
@@ -32,6 +33,7 @@ Named things: people, organizations, products, repositories, frameworks, places.
 - [[BFCL]] — Berkeley Function Calling Leaderboard; de facto function-calling standard, AST-based grading. **Cited in:** [[2025-07 - Patil et al - BFCL]].
 - [[ToolBench]] — Tsinghua/OpenBMB tool-use dataset+benchmark over 16k+ real APIs; ToolLLaMA + ToolEval. **Cited in:** [[2023-07-31 - Qin et al - ToolLLM]].
 - [[Letta]] — agent framework built from MemGPT; productizes self-editing memory. **Cited in:** [[2023-10-12 - Packer et al - MemGPT - LLMs as Operating Systems]].
+- [[OpenAI Agents SDK]] — OpenAI's code-first agent orchestration framework: `Agent`, `Runner.run()`, handoffs, first-class guardrails. **Cited in:** [[2025 - OpenAI - A Practical Guide to Building Agents]].
 
 ## People
 

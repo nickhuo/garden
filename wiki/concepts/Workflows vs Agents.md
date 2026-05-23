@@ -53,9 +53,14 @@ Token multipliers from [[Token Economics]] (Anthropic 2025-06).
 4. If additionally task parallelizes and exceeds context: multi-agent.
 5. **Coding** is currently workflow-territory by Anthropic's own admission.
 
+## OpenAI's parallel framing (2026-05-22)
+
+OpenAI's [[2025 - OpenAI - A Practical Guide to Building Agents]] reaches the same caution from a different axis. Where Anthropic's load-bearing choice is *workflow vs agent* (who decides the next step), OpenAI mostly assumes you're building an agent and asks *single vs multi-agent* — advising **"maximize a single agent's capabilities first,"** which is the same "use the simplest thing that works" instinct. Split to multi-agent only on **complex logic** (many conditional branches) or **tool overload** (similarity/overlap, not raw count). Its two multi-agent patterns — [[Manager Pattern]] (≈ [[Orchestrator-Workers]]) and [[Agent Handoffs]] (≈ [[Routing]]) — slot under the agent/multi-agent side here. Full mapping: [[OpenAI Practical Guide vs Anthropic Building Effective Agents]].
+
 ## Connections
 
 - Foundational primitive: [[Augmented LLM]]
+- OpenAI's parallel framing: [[OpenAI Practical Guide vs Anthropic Building Effective Agents]], [[Manager Pattern]], [[Agent Handoffs]]
 - Workflow patterns: [[Prompt Chaining]] · [[Routing]] · [[Parallelization]] · [[Orchestrator-Workers]] · [[Evaluator-Optimizer]]
 - Agent pattern: [[Autonomous Agents]]
 - Multi-agent: [[Multi-Agent Systems]]

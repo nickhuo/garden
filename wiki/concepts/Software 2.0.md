@@ -10,10 +10,12 @@ tags:
   - architecture
 status: developing
 related:
+  - "[[Software 3.0]]"
   - "[[Model-Centric Architecture]]"
   - "[[The Bitter Lesson]]"
 sources:
   - "[[2017-11-11 - Karpathy - Software 2.0]]"
+  - "[[2026-05-22 - Karpathy - Sequoia Ascent 2026]]"
 ---
 
 # Software 2.0
@@ -37,6 +39,7 @@ The architectural companion to [[The Bitter Lesson]] (scaling general methods) â
 
 ## Connections
 
+- [[Software 3.0]] â€” the natural-language-programming successor, developed at length in [[2026-05-22 - Karpathy - Sequoia Ascent 2026]]
 - [[Model-Centric Architecture]]
 - [[The Bitter Lesson]]
 - [[Context Engineering]]

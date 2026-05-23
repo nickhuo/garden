@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Wiki Index"
-updated: 2026-05-20
+updated: 2026-05-22
 ---
 
 # Wiki Index
@@ -13,7 +13,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[AI-Agents]] — agentic systems, tool use, orchestration, harnesses, evals, MCP
 - [[LLM]] — model internals, training, inference, optimization, alignment. Seeded 2026-05-14 with 5 Thinking Machines Lab sources.
 
-## Entities (28)
+## Entities (30)
 
 - [[Agent Skills]]
 - [[Andrej Karpathy]]
@@ -33,6 +33,8 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Managed Agents]]
 - [[Manus]]
 - [[MCP]]
+- [[OpenAI]]
+- [[OpenAI Agents SDK]]
 - [[OpenBMB]]
 - [[Gorilla]]
 - [[Richard Sutton]]
@@ -44,16 +46,22 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[tau-bench]]
 - [[Thinking Machines Lab]]
 
-## Concepts (91)
+## Concepts (103)
 
 - [[A-B Testing for Agents]]
 - [[ACI - Agent-Computer Interface]]
 - [[Activation Steering / Representation Engineering]]
 - [[Agent Eval Pyramid]]
+- [[Agent Guardrails]]
+- [[Agent Handoffs]]
 - [[Agent Interface Contracts]]
 - [[Agent Memory Taxonomy]]
+- [[Agent-Native Infrastructure]]
+- [[Agent Run Loop]]
 - [[Agent Sandboxing]]
+- [[Agent Tool Categories]]
 - [[Agentic Coding Slash Commands]]
+- [[Agentic Engineering]]
 - [[Agentic Harness]]
 - [[AI Tool Fluency]]
 - [[AI-Resistant Evaluation Design]]
@@ -81,9 +89,11 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Floating-Point Non-Associativity]]
 - [[Harness Design Patterns]]
 - [[Harness Staleness]]
+- [[Human-in-the-Loop Intervention]]
 - [[Implicit Feedback Signals]]
 - [[In-Context Learning]]
 - [[Interaction Model Architecture]]
+- [[Jagged Intelligence]]
 - [[Just-in-Time Context Retrieval]]
 - [[KV-Cache Discipline]]
 - [[Learning from Implicit Feedback]]
@@ -92,6 +102,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Logit Masking]]
 - [[Long-Horizon Context Management]]
 - [[LoRA]]
+- [[Manager Pattern]]
 - [[Manifold Muon]]
 - [[Manifold Optimization]]
 - [[MemGPT]]
@@ -125,6 +136,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Self-Editing Memory]]
 - [[Session as Event Log]]
 - [[Software 2.0]]
+- [[Software 3.0]]
 - [[Stiefel Manifold]]
 - [[Test-Time Adaptation]]
 - [[The Bitter Lesson]]
@@ -136,11 +148,15 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Trainer-Sampler Determinism]]
 - [[Tree of Thoughts]]
 - [[User Simulator Evaluation]]
+- [[Verifiability]]
+- [[Vibe Coding]]
 - [[Workflows vs Agents]]
 
-## Sources (48)
+## Sources (50)
 
 - [[2017-11-11 - Karpathy - Software 2.0]]
+- [[2025 - OpenAI - A Practical Guide to Building Agents]]
+- [[2026-05-22 - Karpathy - Sequoia Ascent 2026]]
 - [[2023-07-31 - Qin et al - ToolLLM]]
 - [[2019-03-13 - Sutton - The Bitter Lesson]]
 - [[2022-03-04 - Ouyang et al - InstructGPT]]
@@ -196,8 +212,9 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Static Action Spaces vs Dynamic Tool Discovery]]
 - [[Workflows Beat Agents for Most Production]]
 
-## Comparisons (1)
+## Comparisons (2)
 
+- [[OpenAI Practical Guide vs Anthropic Building Effective Agents]]
 - [[Tool-Use Benchmarks - BFCL vs tau-bench vs ToolBench]]
 
 ## Questions (6)
@@ -217,4 +234,4 @@ Master catalog of all wiki pages. Refresh on every ingest.
 
 ---
 
-Total: ~152 wiki pages, 34 raw sources. Last full refresh: 2026-05-20 (autoresearch: continually-learning model-centric systems — 4 directions, 37 new pages).
+Total: ~169 wiki pages, 36 raw sources. Last full refresh: 2026-05-20 (autoresearch: continually-learning model-centric systems — 4 directions, 37 new pages). Last ingest: 2026-05-22 (OpenAI — A Practical Guide to Building Agents; 6 concepts + 2 entities + 1 comparison + 1 source).

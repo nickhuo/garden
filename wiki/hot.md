@@ -1,12 +1,16 @@
 ---
 type: meta
 title: "Hot Cache"
-updated: 2026-05-20
+updated: 2026-05-22
 ---
 
 # Recent Context
 
 ## Last Updated
+
+2026-05-22 — ingested **OpenAI, A Practical Guide to Building Agents** ([[2025 - OpenAI - A Practical Guide to Building Agents]]). The OpenAI-side counterpart to Anthropic's [[2024-12-19 - Anthropic - Building Effective Agents]] — see the new comparison [[OpenAI Practical Guide vs Anthropic Building Effective Agents]]. Convergent advice under different vocabulary: "maximize a single agent first" ≈ Anthropic's "simplest thing that works." Two multi-agent patterns: **[[Manager Pattern]]** (agents-as-tools, central control — ≈ [[Orchestrator-Workers]]) vs **[[Agent Handoffs]]** (decentralized peer transfer — ≈ [[Routing]]). New: [[Agent Tool Categories]] (Data/Action/Orchestration), [[Agent Run Loop]] (`Runner.run()` until exit condition), [[Agent Guardrails]] (layered typology + optimistic tripwires), [[Human-in-the-Loop Intervention]] (failure-threshold + high-risk triggers). Entities: [[OpenAI]], [[OpenAI Agents SDK]] (code-first, anti-declarative-graph). Guardrail tool-safeguards risk ratings connect to [[Permission Model]].
+
+2026-05-22 — ingested **Karpathy, Sequoia Ascent 2026** ([[2026-05-22 - Karpathy - Sequoia Ascent 2026]]). The era-level capstone over the agent corpus: [[Software 3.0]] (programming LLMs in natural language, above [[Software 2.0]]), [[Verifiability]] ("traditional software automates what you can specify; LLMs automate what you can verify" — the engine behind the Dec-2025 coding-agent jump and the [[The Bitter Lesson]]/RL story), [[Jagged Intelligence]] ("ghosts, not animals"; capability ≈ verifiability × training attention × data × value; "are you on the model's rails?"), [[Vibe Coding]] (raises the floor) vs [[Agentic Engineering]] (raises the ceiling), and [[Agent-Native Infrastructure]] (sensors/actuators — generalizes [[ACI - Agent-Computer Interface]]). Education thesis: "you can outsource your thinking, but you can't outsource your understanding" — the rationale for this very wiki.
 
 2026-05-22 — ingested the **tool-use benchmark cluster**: [[BFCL]] ([[2025-07 - Patil et al - BFCL]]) + [[ToolBench]]/ToolLLM ([[2023-07-31 - Qin et al - ToolLLM]]), joining the existing [[tau-bench]]. New synthesis: [[Tool-Use Benchmarks - BFCL vs tau-bench vs ToolBench]] (first comparison page). The three measure orthogonal axes — **correctness at scale** (BFCL, AST), **reliability under interaction** (τ-bench, pass^k + deterministic DB reward), **generalization across 16k+ APIs** (ToolBench, LLM-judge ToolEval). Grading runs deterministic→LLM-judged; faithfulness trades against scale.
 

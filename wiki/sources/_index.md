@@ -1,15 +1,17 @@
 ---
 type: meta
 title: "Sources Index"
-updated: 2026-05-20
+updated: 2026-05-22
 ---
 
 # Sources
 
-One summary page per ingested source. Body cites verbatim where load-bearing; synthesis lives on entity/concept pages. **45 sources** currently.
+One summary page per ingested source. Body cites verbatim where load-bearing; synthesis lives on entity/concept pages. **47 sources** currently.
 
 ## Chronological (newest first)
 
+- [[2026-05-22 - Karpathy - Sequoia Ascent 2026]]
+- [[2025 - OpenAI - A Practical Guide to Building Agents]]
 - [[2026-05-13 - Anthropic - Agent Skills]]
 - [[2026-05-11 - Thinking Machines - Interaction Models]]
 - [[2026-05-13 - Anthropic - Claude Code Best Practices]]

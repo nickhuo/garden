@@ -112,6 +112,23 @@ A new cross-cutting layer from the autoresearch pass. The agent-facing pillars:
 - **Memory persistence** — [[Memory Stream]], [[Persona Vectors vs Memory Files]], [[Letta]]; extends [[Agent Memory Taxonomy]], [[Self-Editing Memory]], [[MemGPT]].
 - **Architecture** — [[Model-Centric Architecture]], [[Code-to-the-Side vs Orchestration]]; the counter-pole to [[Agentic Harness]]/[[Meta-Harness]]. Umbrella: [[Research - Continually-Learning Model-Centric Systems]].
 
+## OpenAI agent doctrine (2026-05-22)
+
+[[2025 - OpenAI - A Practical Guide to Building Agents]] adds the **OpenAI-side canon** alongside Anthropic's. Direct comparison: [[OpenAI Practical Guide vs Anthropic Building Effective Agents]].
+- **Orchestration patterns** — [[Manager Pattern]] (agents-as-tools; ≈ [[Orchestrator-Workers]]) vs [[Agent Handoffs]] (decentralized peer transfer; ≈ [[Routing]]); both are [[Multi-Agent Systems]] shapes. [[Agent Run Loop]] (`Runner.run()` until exit condition) is the single-agent core.
+- **Tools** — [[Agent Tool Categories]]: Data / Action / Orchestration; standardized definitions, kin to [[ACI - Agent-Computer Interface]] / [[Agent Interface Contracts]].
+- **Safety** — [[Agent Guardrails]] (relevance/safety/PII/moderation/tool-safeguards/rules/output-validation, optimistic tripwires) + [[Human-in-the-Loop Intervention]]; tool-safeguard risk ratings extend [[Permission Model]] / [[Minimal Footprint Principle]].
+- **Entities** — [[OpenAI]], [[OpenAI Agents SDK]] (code-first vs declarative-graph frameworks).
+
+## Software 3.0 & agentic engineering (2026-05-22)
+
+Karpathy's [[2026-05-22 - Karpathy - Sequoia Ascent 2026]] supplies the era-level framing over the operational corpus:
+- **[[Software 3.0]]** — programming LLMs in natural language; the successor to [[Software 2.0]] and the rhetorical frame above [[Model-Centric Architecture]]. Sometimes the app *disappears* into a direct model transformation.
+- **[[Verifiability]]** — "automate what you can verify"; the engine behind the December-2025 coding-agent jump and the [[The Bitter Lesson]] / RL story. The founder wedge: valuable + verifiable + undertrained domains.
+- **[[Jagged Intelligence]]** — capability ≈ verifiability × training attention × data × value; "ghosts, not animals"; the "are you on the model's rails?" test.
+- **[[Vibe Coding]]** (raises the floor) vs **[[Agentic Engineering]]** (raises the ceiling) — the latter is the human discipline wrapping fallible agents; pairs with the eval/harness/permission stack above.
+- **[[Agent-Native Infrastructure]]** — build for the human's agent: sensors + actuators, [[MCP]], CLIs, schemas, permissioning. Generalizes [[ACI - Agent-Computer Interface]] and [[Agent Interface Contracts]] to the whole product.
+
 ## Navigation
 
 - [[brain/03_Resources/wiki/index]] — full page catalog (read this first)

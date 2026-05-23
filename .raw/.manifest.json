@@ -1,5 +1,56 @@
 {
   "sources": {
+    ".raw/articles/a-practical-guide-to-building-agents-2026-05-22.md": {
+      "hash": "20e51e9a9c38d4990a0a589b1cce5f84",
+      "source_url": "https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/",
+      "ingested_at": "2026-05-22",
+      "pages_created": [
+        "wiki/sources/2025 - OpenAI - A Practical Guide to Building Agents.md",
+        "wiki/entities/OpenAI.md",
+        "wiki/entities/OpenAI Agents SDK.md",
+        "wiki/concepts/Manager Pattern.md",
+        "wiki/concepts/Agent Handoffs.md",
+        "wiki/concepts/Agent Tool Categories.md",
+        "wiki/concepts/Agent Run Loop.md",
+        "wiki/concepts/Agent Guardrails.md",
+        "wiki/concepts/Human-in-the-Loop Intervention.md",
+        "wiki/comparisons/OpenAI Practical Guide vs Anthropic Building Effective Agents.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md",
+        "wiki/domains/AI-Agents.md",
+        "wiki/concepts/_index.md",
+        "wiki/entities/_index.md",
+        "wiki/sources/_index.md",
+        "wiki/comparisons/_index.md",
+        "wiki/concepts/Workflows vs Agents.md",
+        "wiki/concepts/Orchestrator-Workers.md"
+      ]
+    },
+    ".raw/articles/sequoia-ascent-2026-2026-05-22.md": {
+      "hash": "2190188870fd92429b2722f5425c9367",
+      "source_url": "https://karpathy.bearblog.dev/sequoia-ascent-2026/",
+      "ingested_at": "2026-05-22",
+      "pages_created": [
+        "wiki/sources/2026-05-22 - Karpathy - Sequoia Ascent 2026.md",
+        "wiki/concepts/Software 3.0.md",
+        "wiki/concepts/Verifiability.md",
+        "wiki/concepts/Jagged Intelligence.md",
+        "wiki/concepts/Vibe Coding.md",
+        "wiki/concepts/Agentic Engineering.md",
+        "wiki/concepts/Agent-Native Infrastructure.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md",
+        "wiki/domains/AI-Agents.md",
+        "wiki/entities/Andrej Karpathy.md",
+        "wiki/concepts/Software 2.0.md"
+      ]
+    },
     ".raw/articles/2025-07 - Patil et al - BFCL.md": {
       "hash": "fedcac6306e766d6017f818683ab7064",
       "source_url": "https://proceedings.mlr.press/v267/patil25a.html",

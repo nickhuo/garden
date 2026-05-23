@@ -1,12 +1,12 @@
 ---
 type: meta
 title: "Concepts Index"
-updated: 2026-05-20
+updated: 2026-05-22
 ---
 
 # Concepts
 
-Ideas, patterns, frameworks. Domain-agnostic in form, domain-tagged in content. **85 concept pages** currently.
+Ideas, patterns, frameworks. Domain-agnostic in form, domain-tagged in content. **97 concept pages** currently.
 
 ## Architecture and primitives
 
@@ -141,6 +141,24 @@ Ideas, patterns, frameworks. Domain-agnostic in form, domain-tagged in content. 
 - [[Code-to-the-Side vs Orchestration]] — which side-code is scaffolding (scaling absorbs) vs guarantees (persists)
 - [[Software 2.0]] — Karpathy's "neural nets eat code" framing; the scaling argument for model-centrism
 - [[The Bitter Lesson]] — Sutton's argument that general methods + compute beat hand-engineered knowledge
+
+## OpenAI agent doctrine (2026-05-22)
+
+- [[Agent Run Loop]] — the central while-loop ("run") that drives any agent until an exit condition
+- [[Agent Tool Categories]] — Data / Action / Orchestration; the read-vs-write split that feeds tool safeguards
+- [[Manager Pattern]] — central manager coordinates specialists as tools (≈ [[Orchestrator-Workers]])
+- [[Agent Handoffs]] — decentralized one-way peer transfers (≈ [[Routing]])
+- [[Agent Guardrails]] — layered defense typology + optimistic tripwire execution
+- [[Human-in-the-Loop Intervention]] — failure-threshold and high-risk escalation to a human
+
+## Software 3.0 era — agentic engineering (2026-05-22)
+
+- [[Software 3.0]] — programming LLMs in natural language; the successor to [[Software 2.0]], the era-level frame over the agent corpus
+- [[Verifiability]] — "automate what you can verify"; explains where AI moves fastest, and the valuable-verifiable-undertrained founder wedge
+- [[Jagged Intelligence]] — capability ≈ verifiability × training attention × data × value; "ghosts, not animals"; "are you on the model's rails?"
+- [[Vibe Coding]] — building by description; raises the floor
+- [[Agentic Engineering]] — professional discipline over fallible agents; raises the ceiling; the orchestrator stance
+- [[Agent-Native Infrastructure]] — build for the human's agent (sensors + actuators); generalizes [[ACI - Agent-Computer Interface]] to the whole product
 
 ## Promotion policy
 

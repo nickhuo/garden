@@ -19,6 +19,20 @@ Ops: `init`, `ingest`, `query`, `lint`, `refactor`, `save`, `autoresearch`, `man
 
 ---
 
+## [2026-05-22] ingest | OpenAI — A Practical Guide to Building Agents
+- **Trigger:** user — `/wiki-ingest https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/`. Page 403'd WebFetch; fetched the official PDF from cdn.openai.com and extracted text via pypdf (34 pages).
+- **Source:** `.raw/articles/a-practical-guide-to-building-agents-2026-05-22.md`. Summary: [[2025 - OpenAI - A Practical Guide to Building Agents]].
+- **Pages created:** [[OpenAI]], [[OpenAI Agents SDK]] (entities); [[Manager Pattern]], [[Agent Handoffs]], [[Agent Tool Categories]], [[Agent Run Loop]], [[Agent Guardrails]], [[Human-in-the-Loop Intervention]] (concepts); [[OpenAI Practical Guide vs Anthropic Building Effective Agents]] (comparison).
+- **Pages updated:** index, hot, log, [[AI-Agents]], concepts/_index, entities/_index, sources/_index, comparisons/_index, [[Workflows vs Agents]], [[Orchestrator-Workers]].
+- **Key insight:** the OpenAI-side canon to Anthropic's [[2024-12-19 - Anthropic - Building Effective Agents]] — convergent advice ("maximize a single agent first" ≈ "use the simplest thing"), different vocabulary. Vocabulary map: Manager pattern ≈ [[Orchestrator-Workers]], handoffs ≈ [[Routing]]. OpenAI's strongest unique contribution is the concrete **guardrail typology** (relevance/safety/PII/moderation/tool-safeguards/rules/output-validation, optimistic tripwires) + human-in-the-loop triggers. Tool safeguards' risk ratings tie into [[Permission Model]].
+
+## [2026-05-22] ingest | Karpathy — Sequoia Ascent 2026 (Software 3.0 & agentic engineering)
+- **Trigger:** user — `/wiki-ingest https://karpathy.bearblog.dev/sequoia-ascent-2026/`
+- **Source:** `.raw/articles/sequoia-ascent-2026-2026-05-22.md` (Karpathy, Sequoia Ascent 2026 bearblog companion). Summary: [[2026-05-22 - Karpathy - Sequoia Ascent 2026]].
+- **Pages created:** [[Software 3.0]], [[Verifiability]], [[Jagged Intelligence]], [[Vibe Coding]], [[Agentic Engineering]], [[Agent-Native Infrastructure]] (concepts); source page above.
+- **Pages updated:** [[Andrej Karpathy]] (Sequoia section + sources), [[Software 2.0]] (3.0 cross-link), [[AI-Agents]] (new Software 3.0 section), index, hot, log.
+- **Key insight:** December 2025 was the agentic inflection — programming shifts from lines to delegated macro actions. [[Software 3.0]] (natural-language programming) sits above [[Software 2.0]]; [[Verifiability]] ("automate what you can verify") explains where models get good; [[Jagged Intelligence]] ("ghosts, not animals") explains where they fail. [[Vibe Coding]] raises the floor, [[Agentic Engineering]] raises the ceiling, and [[Agent-Native Infrastructure]] (sensors/actuators) generalizes [[ACI - Agent-Computer Interface]] to the whole product. Capstone framing over the existing agent corpus.
+
 ## [2026-05-22] ingest | BFCL + ToolLLM (tool-use benchmark cluster)
 - **Trigger:** user — "BFCL, τ-bench, ToolBench — find the paper about these three concept." τ-bench already in wiki; found + ingested the other two papers and built the synthesis.
 - **Sources:** `.raw/articles/2025-07 - Patil et al - BFCL.md` (ICML 2025), `.raw/articles/2023-07-31 - Qin et al - ToolLLM.md` (ICLR'24).
