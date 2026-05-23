@@ -19,6 +19,16 @@ Ops: `init`, `ingest`, `query`, `lint`, `refactor`, `save`, `autoresearch`, `man
 
 ---
 
+## [2026-05-23] autoresearch | Online Evaluation in Production (agent applications)
+- **Trigger:** user — `/autoresearch` on online evaluation of agent AI applications (4 questions: industry practice, methods + gaps, why online beats offline, bottlenecks). Branch `research/online-eval-agents`.
+- **Rounds:** 2 (broad + gap-fill); ~7 searches, 7 fetches. Deepening pass — vault already had the Online Evaluation cluster (2026-05-20).
+- **Scope (confirmed with Nick):** English; concept/method-focused (no tool entity pages); neutral external survey (no tie-back to Compass/Donut/Beckman — that view lives in [[Research - Online Evaluation]]).
+- **Pages created (12):** sources [[2025-03-20 - Yehudai et al - Survey on Evaluation of LLM-based Agents]], [[2025-07-29 - Mohammadi et al - Evaluation and Benchmarking of LLM Agents]], [[2024-10-14 - Zhuge et al - Agent-as-a-Judge]], [[2025-03-28 - Guan et al - Multi-Turn Conversational Agent Evaluation Survey]], [[2025 - LangChain - LLM Observability and Monitoring]], [[2025 - Goodeye Labs - LLM Evaluation 2025 Review]]; concepts [[Continuous Evaluation]], [[Online LLM-as-Judge]], [[Agent-as-a-Judge]], [[Offline-Online Evaluation Gap]], [[Online Evaluation Bottlenecks]]; synthesis [[Research - Online Evaluation in Production]].
+- **Pages updated:** [[A-B Testing for Agents]] (added 10k-trajectory/arm power, OEC pre-registration, baseline-drift gap), [[Online Evaluation]] (production view + cross-links), [[LLM-as-Judge Evaluation]] (cost/drift open questions answered), index, hot, concepts/_index, sources/_index, [[AI-Agents]].
+- **Key finding:** the production loop is **trace → sample → judge → alert** with tiered judges (distilled at ~1/30 cost on 100% traffic, [[Agent-as-a-Judge]] on anomalies); the empirical case for online is the [[Offline-Online Evaluation Gap]] (LiveCodeBench −20-30% on novel problems, 6-12mo benchmark contamination); the binding limits are operational ([[Online Evaluation Bottlenecks]]: judge cost/latency, 10k+ trajectories/arm for A/B power, multi-turn credit assignment, baseline drift).
+
+---
+
 ## [2026-05-22] ingest | OpenAI — A Practical Guide to Building Agents
 - **Trigger:** user — `/wiki-ingest https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/`. Page 403'd WebFetch; fetched the official PDF from cdn.openai.com and extracted text via pypdf (34 pages).
 - **Source:** `.raw/articles/a-practical-guide-to-building-agents-2026-05-22.md`. Summary: [[2025 - OpenAI - A Practical Guide to Building Agents]].

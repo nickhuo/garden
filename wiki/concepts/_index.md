@@ -1,12 +1,12 @@
 ---
 type: meta
 title: "Concepts Index"
-updated: 2026-05-22
+updated: 2026-05-23
 ---
 
 # Concepts
 
-Ideas, patterns, frameworks. Domain-agnostic in form, domain-tagged in content. **97 concept pages** currently.
+Ideas, patterns, frameworks. Domain-agnostic in form, domain-tagged in content. **102 concept pages** currently.
 
 ## Architecture and primitives
 
@@ -141,6 +141,14 @@ Ideas, patterns, frameworks. Domain-agnostic in form, domain-tagged in content. 
 - [[Code-to-the-Side vs Orchestration]] — which side-code is scaffolding (scaling absorbs) vs guarantees (persists)
 - [[Software 2.0]] — Karpathy's "neural nets eat code" framing; the scaling argument for model-centrism
 - [[The Bitter Lesson]] — Sutton's argument that general methods + compute beat hand-engineered knowledge
+
+## Online evaluation in production (2026-05-23)
+
+- [[Continuous Evaluation]] — always-on sampled eval over live traffic (trace → sample → judge → alert)
+- [[Online LLM-as-Judge]] — running judges on live traffic; tiered distilled + agentic
+- [[Agent-as-a-Judge]] — step-level agentic evaluation (Zhuge et al., DevAI)
+- [[Offline-Online Evaluation Gap]] — empirical why-online (benchmark contamination, LiveCodeBench drops)
+- [[Online Evaluation Bottlenecks]] — operational limits: cost/latency, statistical power, credit assignment, drift
 
 ## OpenAI agent doctrine (2026-05-22)
 

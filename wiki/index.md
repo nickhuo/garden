@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Wiki Index"
-updated: 2026-05-22
+updated: 2026-05-23
 ---
 
 # Wiki Index
@@ -46,7 +46,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[tau-bench]]
 - [[Thinking Machines Lab]]
 
-## Concepts (103)
+## Concepts (108)
 
 - [[A-B Testing for Agents]]
 - [[ACI - Agent-Computer Interface]]
@@ -60,6 +60,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Agent Run Loop]]
 - [[Agent Sandboxing]]
 - [[Agent Tool Categories]]
+- [[Agent-as-a-Judge]]
 - [[Agentic Coding Slash Commands]]
 - [[Agentic Engineering]]
 - [[Agentic Harness]]
@@ -79,6 +80,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Context Decomposition vs Problem Decomposition]]
 - [[Context Engineering]]
 - [[Contextual Retrieval]]
+- [[Continuous Evaluation]]
 - [[Empirical Neural Tangent Kernel]]
 - [[Error Trace Retention]]
 - [[Eval Awareness]]
@@ -111,9 +113,12 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Minimal Footprint Principle]]
 - [[Model-Centric Architecture]]
 - [[Multi-Agent Systems]]
+- [[Offline-Online Evaluation Gap]]
 - [[On-Policy Distillation]]
 - [[Online Evaluation]]
+- [[Online Evaluation Bottlenecks]]
 - [[Online Learning from Interaction]]
+- [[Online LLM-as-Judge]]
 - [[Orchestrator-Workers]]
 - [[Parallelization]]
 - [[Pass^k Reliability Metric]]
@@ -152,8 +157,14 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Vibe Coding]]
 - [[Workflows vs Agents]]
 
-## Sources (50)
+## Sources (56)
 
+- [[2024-10-14 - Zhuge et al - Agent-as-a-Judge]]
+- [[2025-03-20 - Yehudai et al - Survey on Evaluation of LLM-based Agents]]
+- [[2025-03-28 - Guan et al - Multi-Turn Conversational Agent Evaluation Survey]]
+- [[2025-07-29 - Mohammadi et al - Evaluation and Benchmarking of LLM Agents]]
+- [[2025 - LangChain - LLM Observability and Monitoring]]
+- [[2025 - Goodeye Labs - LLM Evaluation 2025 Review]]
 - [[2017-11-11 - Karpathy - Software 2.0]]
 - [[2025 - OpenAI - A Practical Guide to Building Agents]]
 - [[2026-05-22 - Karpathy - Sequoia Ascent 2026]]
@@ -217,7 +228,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[OpenAI Practical Guide vs Anthropic Building Effective Agents]]
 - [[Tool-Use Benchmarks - BFCL vs tau-bench vs ToolBench]]
 
-## Questions (6)
+## Questions (7)
 
 - [[How to Ensure Agent Reliability]]
 - [[Research - Continually-Learning Model-Centric Systems]]
@@ -225,6 +236,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Research - Persistent Memory and Persona Vectors]]
 - [[Research - Model-Centric Architecture]]
 - [[Research - Online Evaluation]]
+- [[Research - Online Evaluation in Production]]
 
 ## Meta
 
@@ -234,4 +246,4 @@ Master catalog of all wiki pages. Refresh on every ingest.
 
 ---
 
-Total: ~169 wiki pages, 36 raw sources. Last full refresh: 2026-05-20 (autoresearch: continually-learning model-centric systems — 4 directions, 37 new pages). Last ingest: 2026-05-22 (OpenAI — A Practical Guide to Building Agents; 6 concepts + 2 entities + 1 comparison + 1 source).
+Total: ~181 wiki pages, 36 raw sources. Last full refresh: 2026-05-20 (autoresearch: continually-learning model-centric systems — 4 directions, 37 new pages). Last autoresearch: 2026-05-23 (Online Evaluation in Production — 5 concepts + 6 sources + 1 synthesis).
