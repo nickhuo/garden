@@ -18,6 +18,8 @@ related:
   - "[[BM25 and Hybrid Retrieval]]"
   - "[[Augmented LLM]]"
   - "[[Token Economics]]"
+  - "[[Attributed Text Generation]]"
+  - "[[Citation Verification Pipeline]]"
 sources:
   - "[[2024-09-19 - Anthropic - Contextual Retrieval]]"
 ---
@@ -71,6 +73,7 @@ Skip reranking (use hybrid retrieval only) when cost or latency is constrained.
 - [[Contextual Retrieval]] — improves the quality of candidates fed to the reranker
 - [[BM25 and Hybrid Retrieval]] — the prior stage before reranking
 - [[Token Economics]] — reranking adds per-query model calls; budget accordingly
+- [[Attributed Text Generation]] / [[Citation Verification Pipeline]] — reranking is the precision lever in a citation pipeline (better candidates → better-grounded citations)
 
 ## Sources
 
