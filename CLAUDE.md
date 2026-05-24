@@ -62,15 +62,42 @@ Wikilinks use `[[Note Name]]` — filenames are vault-unique so paths aren't nee
 
 ## Operations
 
-- **Ingest:** drop source in `.raw/`, say "ingest [filename]" or "ingest [URL]"
+- **Ingest:** drop source in `.raw/`, say "ingest [filename]" or "ingest [URL]". Every source passes the **seed gate** (`_rubrics/source-quality.md`) first, then a **one-hop citation chase** — see Vault-specific deltas → Source-Quality Gate & Citation Lineage.
 - **Query:** ask any question — read `hot.md` → `index.md` → 3-5 relevant pages, then synthesize
 - **Lint:** say "lint the wiki" for a health check report
 - **Save:** say "save this" mid-chat to file the conversation as a source
-- **Autoresearch:** say "research [topic]". Confirms scope, then runs paused rounds (pause after each round per `WIKI.md`). **Always runs on a dedicated `research/<topic-slug>` branch — never commit autoresearch output directly to `main`.** On completion, auto-finalize without asking: commit the new/updated pages on the branch, push the branch, and open a PR to `main` with `gh pr create`, then report the PR link for Nick to review. **Do not merge — Nick reviews and merges.** PR title `Autoresearch: <Topic>`; body summarizes rounds, pages created, key findings, and open questions (mirror the skill's completion report). This auto-push of the `research/*` branch is the one sanctioned exception to the global "confirm before pushing" rule; `main` is still never pushed by autoresearch. Per Nick's global rule, **do not add a Claude co-author/attribution line** to the PR.
+- **Autoresearch:** say "research [topic]". Confirms scope, then runs paused rounds (pause after each round per `WIKI.md`). Every candidate source passes the **seed gate** before filing, and core sources get the **one-hop citation chase** (see Vault-specific deltas). **Always runs on a dedicated `research/<topic-slug>` branch — never commit autoresearch output directly to `main`.** On completion, auto-finalize without asking: commit the new/updated pages on the branch, push the branch, and open a PR to `main` with `gh pr create`, then report the PR link for Nick to review. **Do not merge — Nick reviews and merges.** PR title `Autoresearch: <Topic>`; body summarizes rounds, pages created, key findings, and open questions (mirror the skill's completion report). This auto-push of the `research/*` branch is the one sanctioned exception to the global "confirm before pushing" rule; `main` is still never pushed by autoresearch. Per Nick's global rule, **do not add a Claude co-author/attribution line** to the PR.
 
 See `WIKI.md` for full operation definitions and anti-patterns.
 
 ## Vault-specific deltas
+
+### Source-Quality Gate & Citation Lineage
+
+**Binding for both Ingest and Autoresearch.** This overrides the plugin skills and `program.md`'s confidence/source-preference rules wherever they differ. The rubric itself lives in `_rubrics/source-quality.md` (Nick-editable); this section defines how it is applied.
+
+**The gate (runs before any source page is written):**
+
+1. Score the candidate against `_rubrics/source-quality.md`.
+2. **Pass** → file the source page. Record `seed_score` (e.g. `12/14`) and set `confidence` per the rubric's score→confidence mapping. Then run the citation chase below.
+3. **Fail** → **do not file.** Report a compact card: total score, per-dimension breakdown, the specific reasons it fell short, and concrete suggestions (e.g. "this is secondary — its primary source appears to be X; want me to chase/ingest that instead?"). Then ask whether to override. File only on explicit override, and when overridden, set `confidence: low` and add a `> [!gap]` quality-caveat callout to the page body.
+
+In **autoresearch**, the gate runs on every candidate the search surfaces — only gate-passing sources are filed; rejected candidates are reported with reasons.
+
+**One-hop citation chase (after a source qualifies):**
+
+1. Extract the external sources the qualified source cites (links, references, "via", named papers/posts).
+2. De-dupe against `wiki/index.md` and `.raw/.manifest.json` — don't re-fetch what's already in the wiki.
+3. Fetch each candidate (WebFetch; `defuddle` if available) and run the **same gate** on it.
+4. Each upstream source that **passes** → save to `.raw/` and build a full `wiki/sources/` page with the normal ingest treatment (entities, concepts, index, hot, log — and DragonScale address if enabled).
+5. Upstream sources that **fail** → do **not** build a page; list them in the parent's lineage section as "cited but below bar (reason)".
+6. **Stop at one hop.** Never chase the citations of the chased sources — no recursion.
+7. Cross-link: the parent page gets a `cited_sources:` frontmatter list of `"[[Upstream Source]]"` wikilinks plus a `## Lineage / 引用脉络` body section summarizing each upstream source and what it contributes; each child page notes it was reached via the parent.
+
+**Interaction with existing limits/mechanisms:**
+
+- Autoresearch's `max pages` budget (default 15, `program.md`) still binds; citation-chase pages count toward it. When the budget is hit, prefer the parent plus the highest-scoring upstream sources; list the rest under Open Questions.
+- The DragonScale single-writer address-allocation rule still holds — the chase runs inline, never via parallel sub-agents.
 
 ### Topic boundaries
 

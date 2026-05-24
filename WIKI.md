@@ -119,7 +119,7 @@ sources:
 
 ### Type-specific additions
 
-- **source**: `source_type`, `author`, `date_published`, `url`, `confidence` (high|medium|low), `key_claims` (list)
+- **source**: `source_type`, `author`, `date_published`, `url`, `confidence` (high|medium|low), `key_claims` (list), `seed_score` (rubric result, e.g. `12/14`), `cited_sources` (list of `"[[Upstream Source]]"` wikilinks — the one-hop lineage; empty list allowed). See `_rubrics/source-quality.md` for the gate that sets `seed_score`/`confidence` and `CLAUDE.md` → Source-Quality Gate & Citation Lineage for how `cited_sources` is populated.
 - **entity**: `entity_type` (person|organization|product|repository|place), `role`, `first_mentioned`
 - **concept**: `complexity` (basic|intermediate|advanced), `domain`, `aliases` (list)
 - **comparison**: `subjects` (list of wikilinks), `dimensions` (list), `verdict` (one line)
@@ -146,15 +146,17 @@ Trigger: setting up a new vault. Already done for `03_Resources/`. See `CLAUDE.m
 Trigger: Nick drops a file into `.raw/` or pastes content and says "ingest [filename]" or "ingest [URL]".
 
 1. Read the source completely.
-2. Discuss key takeaways with Nick. Don't dump. Skip only if Nick says "just ingest it."
-3. Create source summary in `wiki/sources/`.
-4. Create or update entity pages for every person/org/product/repo mentioned.
-5. Create or update concept pages for significant ideas.
-6. Update relevant domain pages.
-7. Update `wiki/overview.md` if the big picture changed.
-8. Update `wiki/index.md` — add entries for all new pages.
-9. Update `wiki/hot.md` with this ingest's context.
-10. Append to `wiki/log.md` (new entries at TOP):
+2. **Seed gate.** Score the source against `_rubrics/source-quality.md`. **Fail → do not file; report the score card and stop for Nick's override** (see `CLAUDE.md` → Source-Quality Gate & Citation Lineage). Only continue on pass or explicit override.
+3. Discuss key takeaways with Nick. Don't dump. Skip only if Nick says "just ingest it."
+4. Create source summary in `wiki/sources/` (set `seed_score` + `confidence` per the rubric).
+5. **One-hop citation chase.** Extract the external sources this one cites, gate each, build the passers into their own full source pages, and link them via `cited_sources` + a "## Lineage / 引用脉络" section. **One hop only — no recursion.** See `CLAUDE.md` for the protocol.
+6. Create or update entity pages for every person/org/product/repo mentioned.
+7. Create or update concept pages for significant ideas.
+8. Update relevant domain pages.
+9. Update `wiki/overview.md` if the big picture changed.
+10. Update `wiki/index.md` — add entries for all new pages.
+11. Update `wiki/hot.md` with this ingest's context.
+12. Append to `wiki/log.md` (new entries at TOP):
 
    ```
    ## [2026-05-10] ingest | Source Title
@@ -165,7 +167,7 @@ Trigger: Nick drops a file into `.raw/` or pastes content and says "ingest [file
    - Key insight: One sentence on what is new.
    ```
 
-11. Flag contradictions with `> [!contradiction]` callouts on both pages.
+13. Flag contradictions with `> [!contradiction]` callouts on both pages.
 
 A single source typically touches 8-15 wiki pages.
 
@@ -206,9 +208,9 @@ Output: `wiki/meta/lint-report-YYYY-MM-DD.md`. **Don't auto-fix without confirma
 
 Trigger: Nick says "autoresearch [topic]" or "research [topic]". Requires preconfigured objectives if you want them; otherwise asks Nick what depth/sources he wants.
 
-1. Round 1: web search, fetch top sources, save to `.raw/articles/`, summarize.
-2. Round 2: identify gaps, search missing angles.
-3. Round 3+: synthesize, resolve contradictions, file as wiki pages.
+1. Round 1: web search, fetch top sources, **gate each candidate against `_rubrics/source-quality.md` — only gate-passing sources are filed** (save to `.raw/articles/`, summarize). Report rejected candidates and why.
+2. Round 2: identify gaps, search missing angles (gate applies here too).
+3. Round 3+: synthesize, resolve contradictions, file as wiki pages. **Run the one-hop citation chase on the core qualified sources** (see `CLAUDE.md`). The `max pages` budget binds — chase pages count toward it; overflow goes to Open Questions.
 4. **Finalize on a branch + PR.** Autoresearch always runs on a `research/<topic-slug>` branch and **never commits to `main`**. After the final round, commit the filed pages on the branch, push it, and open a PR to `main` for Nick's review (auto-created — report the link). Don't merge; Nick reviews and merges. See `CLAUDE.md` Operations → Autoresearch for the binding rule.
 
 **Pause after each round.** Confirm with Nick before continuing. Anti-pattern from AI-Agents/CLAUDE.md still applies: don't ingest 5 sources in one go without discussion.
