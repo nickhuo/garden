@@ -16,6 +16,7 @@ Named things: people, organizations, products, repositories, frameworks, places.
 - [[Gorilla]] — UC Berkeley (Patil, Stoica, Gonzalez) tool-use project; produced the Gorilla model, APIBench, and [[BFCL]]. **Cited in:** [[2025-07 - Patil et al - BFCL]].
 - [[OpenBMB]] — Tsinghua NLP / ModelBest open big-model ecosystem; maintains [[ToolBench]]/ToolLLM. **Cited in:** [[2023-07-31 - Qin et al - ToolLLM]].
 - [[OpenAI]] — AI research & deployment company; maker of GPT/o-series, the Agents SDK, the moderation API. **Cited in:** [[2025 - OpenAI - A Practical Guide to Building Agents]].
+- [[Prime Intellect]] — open-source / decentralized RL company focused on **self-improving AI systems**; ships `prime-rl`, `verifiers`, `renderers`, `general-agent`; runs the Prime Sprints program. 5 sources. **Cited in:** the Prime Intellect batch (reward-hacking, general-agent, auto-nanogpt, renderers, RLM). Peer to [[Thinking Machines Lab]].
 
 ## Products / Frameworks / Benchmarks
 

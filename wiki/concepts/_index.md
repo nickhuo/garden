@@ -160,6 +160,13 @@ Ideas, patterns, frameworks. Domain-agnostic in form, domain-tagged in content. 
 - [[Agentic Engineering]] — professional discipline over fallible agents; raises the ceiling; the orchestrator stance
 - [[Agent-Native Infrastructure]] — build for the human's agent (sensors + actuators); generalizes [[ACI - Agent-Computer Interface]] to the whole product
 
+## Prime Intellect self-improvement stack (2026-05-24)
+
+- [[Reward Hacking]] — reframed as gradient-budget competition; "hacking is what happens when there's gradient budget left over and a side channel to absorb it"
+- [[Self-Evolving Agent Environments]] — synthesizer↔solver loop auto-grows a difficulty-calibrated RL task corpus; structural defense against reward hacking
+- [[Token-In Token-Out]] — byte-faithful inference for agentic RL; prefix continuity → ~3x less compute
+- [[Autonomous Research Agents]] — agents doing ML research; search & recombine well, can't yet originate ideas (novelty gate)
+
 ## Promotion policy
 
 Create a concept page when:

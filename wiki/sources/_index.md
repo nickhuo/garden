@@ -87,6 +87,15 @@ Single source from a 2nd-tier player; useful as a sanity check against Anthropic
 
 First non-Anthropic systematic corpus. All from the *Connectionism* blog, Sep 2025 – May 2026. Coverage: inference numerics ([[2025-09-10 - He - Defeating Nondeterminism in LLM Inference]]), optimization theory ([[2025-09-26 - Bernstein - Modular Manifolds]]), parameter-efficient fine-tuning ([[2025-09-29 - Schulman - LoRA Without Regret]]), post-training ([[2025-10-27 - Lu - On-Policy Distillation]]), real-time multimodal architecture ([[2026-05-11 - Thinking Machines - Interaction Models]]). Seeds the [[LLM]] domain.
 
+## Prime Intellect (2026-05-24)
+
+Five blog posts from [[Prime Intellect]] (Jan–May 2026), one open-source self-improvement stack — synthesis [[Prime Intellect Self-Improvement Stack]]. Second non-Anthropic, non-TML voice; first sustained **open-RL / self-improving** corpus.
+- [[2026-05-20 - Prime Intellect - Systematic Reward Hacking]] (Jessica Li) — reward hacking as gradient-budget dynamics
+- [[2026-05-18 - Prime Intellect - General Agent]] (Mika) — self-evolving synthetic agent environment
+- [[2026-05-14 - Prime Intellect - Autonomous AI Research for nanogpt Speedrun]] — autonomous research agents beat human baseline
+- [[2026-05-12 - Prime Intellect - Renderers]] — token-level templating for agentic RL
+- [[2026-01-01 - Prime Intellect - Recursive Language Models]] (Sebastian) — RLM implementation; 2nd source for [[Recursive Language Models]]
+
 ## Coverage gaps
 
 - No OpenAI sources yet (their agent work since 2024 is underrepresented).
@@ -95,7 +104,7 @@ First non-Anthropic systematic corpus. All from the *Connectionism* blog, Sep 20
 - No critical/contrarian sources — corpus skews toward "agent boosters" (τ-bench partially closes this).
 - ~~Tool-use benchmarks under-covered~~ — closed 2026-05-22 with [[BFCL]] + [[ToolBench]] joining [[tau-bench]]; see [[Tool-Use Benchmarks - BFCL vs tau-bench vs ToolBench]].
 - No non-Anthropic harness postmortems.
-- LLM domain is single-lab (TML only) — Karpathy materials still untouched.
+- ~~LLM domain is single-lab (TML only)~~ — partially closed 2026-05-24 ([[Prime Intellect]] adds open-RL reward/infra sources). Karpathy materials still untouched.
 
 ## Raw-source links
 

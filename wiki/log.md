@@ -19,6 +19,13 @@ Ops: `init`, `ingest`, `query`, `lint`, `refactor`, `save`, `autoresearch`, `man
 
 ---
 
+## [2026-05-24] ingest | Prime Intellect batch — 5 research blog posts
+- **Trigger:** user — `/wiki-ingest` with 5 PrimeIntellect URLs; "看看有什么 insight" on this self-improving-focused company.
+- **Sources:** `.raw/articles/{reward-hacking,general-agent,auto-nanogpt,renderers,rlm}-2026-05-24.md` → [[2026-05-20 - Prime Intellect - Systematic Reward Hacking]], [[2026-05-18 - Prime Intellect - General Agent]], [[2026-05-14 - Prime Intellect - Autonomous AI Research for nanogpt Speedrun]], [[2026-05-12 - Prime Intellect - Renderers]], [[2026-01-01 - Prime Intellect - Recursive Language Models]].
+- **Pages created:** [[Prime Intellect]] (entity); [[Reward Hacking]], [[Self-Evolving Agent Environments]], [[Token-In Token-Out]], [[Autonomous Research Agents]] (concepts); [[Prime Intellect Self-Improvement Stack]] (comparison/synthesis).
+- **Pages updated:** [[Recursive Language Models]] (now cites 2nd independent source — Prime Intellect impl, partially closing the replication gap), index, log, hot, [[AI-Agents]], [[LLM]], sub-indexes.
+- **Key insight:** the 5 posts are one bet — an open-source *self-improvement stack* (environments → RL plumbing → reward science → context scaling → autonomous research). Recurring obsession: **faithfulness** (byte-exact tokens, faithful reward, verification grounding). The honest ceiling: the nanogpt speedrun's **novelty gate** shows frontier agents search/recombine superbly but cannot yet *originate* ideas — self-improvement is currently human-seeded.
+
 ## [2026-05-23] manual | Keep zELO paper only (ZeroEntropy autoresearch trimmed)
 - Autoresearch on ZeroEntropy / zerank ran 3 rounds; per Nick's call, kept **only** the source page [[2025-09-16 - Pipitone et al - zELO]] (flagged by Nick as a strong commercialization angle). Deleted the other 9 pages (4 sources, ZeroEntropy entity, 3 concepts, 1 synthesis) and reverted updates to [[Reranking]], index, hot.
 - Page kept: [[2025-09-16 - Pipitone et al - zELO]] — zELO trains rerankers on LLM-ensemble pairwise preferences converted to absolute Elo scores (no human annotation, regenerable as base LLMs improve). Branch `research/zeroentropy-evals`.

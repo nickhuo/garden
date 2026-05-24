@@ -56,6 +56,13 @@ Expansion beyond the TML seed via the autoresearch pass:
 - **Persona / representation** — [[Persona Vectors]], [[Activation Steering / Representation Engineering]]: causal linear directions in activation space; preventative steering during finetuning preserves capability. The parametric pole of [[Persona Vectors vs Memory Files]].
 - **Foundations** — [[2022-03-04 - Ouyang et al - InstructGPT]] (RLHF / reward modeling lineage). Umbrella: [[Research - Continually-Learning Model-Centric Systems]].
 
+## RL infrastructure & reward dynamics (2026-05-24)
+
+[[Prime Intellect]]'s batch lands the **open-RL training stack** in this domain (synthesis: [[Prime Intellect Self-Improvement Stack]]):
+- **[[Reward Hacking]]** — reframed from a specification problem to a *gradient-budget competition* problem; "hacking is what happens when there's gradient budget left over and a side channel to absorb it." Mitigate via difficulty calibration, not just tighter specs.
+- **[[Token-In Token-Out]]** (`renderers`) — byte-faithful token streams for agentic RL; the agentic-RL analog of TML's [[Defeating Nondeterminism in LLM Inference]] / [[Trainer-Sampler Determinism]]. Shared *faithfulness* stance with [[Thinking Machines Lab]].
+- These tie into the [[Welcome to the Era of Experience|experience]] paradigm via [[Self-Evolving Agent Environments]] (manufactured, calibrated reward).
+
 ## Open questions for this domain
 
 - Do batch-invariant kernels see adoption in major inference servers (vLLM, SGLang) by EOY 2026?

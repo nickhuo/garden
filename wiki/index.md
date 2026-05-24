@@ -13,7 +13,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[AI-Agents]] — agentic systems, tool use, orchestration, harnesses, evals, MCP
 - [[LLM]] — model internals, training, inference, optimization, alignment. Seeded 2026-05-14 with 5 Thinking Machines Lab sources.
 
-## Entities (30)
+## Entities (31)
 
 - [[Agent Skills]]
 - [[Andrej Karpathy]]
@@ -36,6 +36,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[OpenAI]]
 - [[OpenAI Agents SDK]]
 - [[OpenBMB]]
+- [[Prime Intellect]]
 - [[Gorilla]]
 - [[Richard Sutton]]
 - [[Shunyu Yao]]
@@ -46,12 +47,13 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[tau-bench]]
 - [[Thinking Machines Lab]]
 
-## Concepts (103)
+## Concepts (107)
 
 - [[A-B Testing for Agents]]
 - [[ACI - Agent-Computer Interface]]
 - [[Activation Steering / Representation Engineering]]
 - [[Agent Eval Pyramid]]
+- [[Autonomous Research Agents]]
 - [[Agent Guardrails]]
 - [[Agent Handoffs]]
 - [[Agent Interface Contracts]]
@@ -130,10 +132,12 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Reranking]]
 - [[ReAct]]
 - [[Reverse KL Divergence]]
+- [[Reward Hacking]]
 - [[Reward Modeling]]
 - [[Routing]]
 - [[Sandbagging]]
 - [[Self-Editing Memory]]
+- [[Self-Evolving Agent Environments]]
 - [[Session as Event Log]]
 - [[Software 2.0]]
 - [[Software 3.0]]
@@ -142,6 +146,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[The Bitter Lesson]]
 - [[Think Tool]]
 - [[Token Economics]]
+- [[Token-In Token-Out]]
 - [[Tool Search Tool]]
 - [[Tool Use Examples]]
 - [[Trace-Based Evaluation]]
@@ -152,9 +157,14 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Vibe Coding]]
 - [[Workflows vs Agents]]
 
-## Sources (51)
+## Sources (56)
 
 - [[2017-11-11 - Karpathy - Software 2.0]]
+- [[2026-01-01 - Prime Intellect - Recursive Language Models]]
+- [[2026-05-12 - Prime Intellect - Renderers]]
+- [[2026-05-14 - Prime Intellect - Autonomous AI Research for nanogpt Speedrun]]
+- [[2026-05-18 - Prime Intellect - General Agent]]
+- [[2026-05-20 - Prime Intellect - Systematic Reward Hacking]]
 - [[2025 - OpenAI - A Practical Guide to Building Agents]]
 - [[2026-05-22 - Karpathy - Sequoia Ascent 2026]]
 - [[2023-07-31 - Qin et al - ToolLLM]]
@@ -213,9 +223,10 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Static Action Spaces vs Dynamic Tool Discovery]]
 - [[Workflows Beat Agents for Most Production]]
 
-## Comparisons (2)
+## Comparisons (3)
 
 - [[OpenAI Practical Guide vs Anthropic Building Effective Agents]]
+- [[Prime Intellect Self-Improvement Stack]]
 - [[Tool-Use Benchmarks - BFCL vs tau-bench vs ToolBench]]
 
 ## Questions (6)
@@ -235,4 +246,4 @@ Master catalog of all wiki pages. Refresh on every ingest.
 
 ---
 
-Total: ~169 wiki pages, 36 raw sources. Last full refresh: 2026-05-20 (autoresearch: continually-learning model-centric systems — 4 directions, 37 new pages). Last ingest: 2026-05-22 (OpenAI — A Practical Guide to Building Agents; 6 concepts + 2 entities + 1 comparison + 1 source).
+Total: ~180 wiki pages, 41 raw sources. Last full refresh: 2026-05-20 (autoresearch: continually-learning model-centric systems — 4 directions, 37 new pages). Last ingest: 2026-05-24 (Prime Intellect batch — 5 blog posts; 1 entity + 4 concepts + 5 sources + 1 comparison, RLM concept updated).

@@ -129,6 +129,13 @@ Karpathy's [[2026-05-22 - Karpathy - Sequoia Ascent 2026]] supplies the era-leve
 - **[[Vibe Coding]]** (raises the floor) vs **[[Agentic Engineering]]** (raises the ceiling) — the latter is the human discipline wrapping fallible agents; pairs with the eval/harness/permission stack above.
 - **[[Agent-Native Infrastructure]]** — build for the human's agent: sensors + actuators, [[MCP]], CLIs, schemas, permissioning. Generalizes [[ACI - Agent-Computer Interface]] and [[Agent Interface Contracts]] to the whole product.
 
+## Prime Intellect self-improvement stack (2026-05-24)
+
+[[Prime Intellect]]'s 5-post batch adds an **open-RL, self-improving** lens — see synthesis [[Prime Intellect Self-Improvement Stack]]. Agent-side pieces:
+- **[[Self-Evolving Agent Environments]]** (`general-agent`) — synthesizer↔solver loop auto-grows a difficulty-calibrated tool-use corpus; production-scale counterpart to [[tau-bench]]/[[BFCL]]/[[ToolBench]], and a structural defense against [[Reward Hacking]].
+- **[[Autonomous Research Agents]]** (nanogpt speedrun) — agents (Codex, [[Claude Code]]) beat a human optimizer baseline. Clean [[Agentic Harness]] / durable-log ([[Session as Event Log]]) instance. **Novelty gate:** agents search & recombine but can't originate ideas.
+- **[[Recursive Language Models]]** — now corroborated by a 2nd independent source (Prime Intellect impl), partially closing the replication gap flagged above.
+
 ## Navigation
 
 - [[brain/03_Resources/wiki/index]] — full page catalog (read this first)

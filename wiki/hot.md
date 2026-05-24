@@ -1,12 +1,14 @@
 ---
 type: meta
 title: "Hot Cache"
-updated: 2026-05-22
+updated: 2026-05-24
 ---
 
 # Recent Context
 
 ## Last Updated
+
+2026-05-24 — ingested a **5-post [[Prime Intellect]] batch** on self-improving AI systems. They read as **one open-source self-improvement stack** — synthesis: [[Prime Intellect Self-Improvement Stack]]. Five layers: **environments** ([[Self-Evolving Agent Environments]] / `general-agent` — synthesizer↔solver loop auto-grows a difficulty-calibrated task corpus, 4,504 tasks/1,040 domains), **RL plumbing** ([[Token-In Token-Out]] / `renderers` — byte-exact tokens so "on-policy" is actually true; ≈ TML's [[Defeating Nondeterminism in LLM Inference]]), **reward science** ([[Reward Hacking]] — "hacking is what happens when there's gradient budget left over and a side channel to absorb it"; mitigate by keeping the visible reward *live & improvable*, not just tighter specs), **context scaling** ([[Recursive Language Models]] — now has a 2nd independent source, Prime Intellect's impl, partially closing the replication gap), and **autonomous research** ([[Autonomous Research Agents]] / nanogpt speedrun — Claude Code + Codex beat the human baseline). **The honest ceiling:** the speedrun's *novelty gate* showed agents search & recombine superbly but **cannot yet originate ideas** — self-improvement is currently human-seeded. Recurring obsession across all five: **faithfulness** of the training signal.
 
 2026-05-22 — ingested **OpenAI, A Practical Guide to Building Agents** ([[2025 - OpenAI - A Practical Guide to Building Agents]]). The OpenAI-side counterpart to Anthropic's [[2024-12-19 - Anthropic - Building Effective Agents]] — see the new comparison [[OpenAI Practical Guide vs Anthropic Building Effective Agents]]. Convergent advice under different vocabulary: "maximize a single agent first" ≈ Anthropic's "simplest thing that works." Two multi-agent patterns: **[[Manager Pattern]]** (agents-as-tools, central control — ≈ [[Orchestrator-Workers]]) vs **[[Agent Handoffs]]** (decentralized peer transfer — ≈ [[Routing]]). New: [[Agent Tool Categories]] (Data/Action/Orchestration), [[Agent Run Loop]] (`Runner.run()` until exit condition), [[Agent Guardrails]] (layered typology + optimistic tripwires), [[Human-in-the-Loop Intervention]] (failure-threshold + high-risk triggers). Entities: [[OpenAI]], [[OpenAI Agents SDK]] (code-first, anti-declarative-graph). Guardrail tool-safeguards risk ratings connect to [[Permission Model]].
 

@@ -13,6 +13,7 @@ status: developing
 related: []
 sources:
 - "[[2025-10 - Zhang Khattab - Recursive Language Models]]"
+- "[[2026-01-01 - Prime Intellect - Recursive Language Models]]"
 aliases:
 - RLM
 - Recursive LM
@@ -129,6 +130,18 @@ The recursion-trajectory (how the root LM chooses to chunk and recurse) is "enti
 - **Composability with [[Tool Search Tool]] and [[Logit Masking]].** All three respond to context-scale at different layers (context-processing / tool-defs / action-selection). Are they composable, or does one dominate?
 - **Long-tail effect on model training.** If RLMs become the default inference pattern, what changes about training distribution? Smaller bounded-context examples would dominate; long-context training data becomes less necessary.
 
+## Second source: Prime Intellect implementation (2026-01)
+
+[[2026-01-01 - Prime Intellect - Recursive Language Models]] is an independent **engineering implementation and endorsement** that calls RLMs "the simplest, most flexible method for context folding" and frames them as the long-context paradigm of 2026. It agrees with Zhang & Khattab on the core mechanism and adds concrete design choices:
+
+- **Tools restricted to sub-LLMs only** — the root model never calls tools directly, keeping its context lean.
+- **`llm_batch`** for parallel sub-LLM calls (parallel map over chunks).
+- **Dict-based answers** (`{"content", "ready"}`) enabling iterative refinement vs a one-shot `FINAL()`.
+- Fresh eval slate (DeepDive, math-python, Oolong ~1.5M chars, verbatim-copy): RLM wins on long-context and verbatim, *underperforms* on math-python — decomposition doesn't help every domain without training.
+
+It is part of [[Prime Intellect]]'s self-improvement stack (RLM is also one of the solver backends in [[Self-Evolving Agent Environments|general-agent]]). Both sources flag that the real unlock is **RL-trained recursion** — still unpublished as of their dates. This is the first **independent corroboration outside Khattab's orbit** the wiki flagged as an open question.
+
 ## Sources
 
 - [[2025-10 - Zhang Khattab - Recursive Language Models]] (Zhang & Khattab, 2025-10)
+- [[2026-01-01 - Prime Intellect - Recursive Language Models]] (Prime Intellect, 2026-01)
