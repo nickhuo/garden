@@ -96,6 +96,10 @@ Five blog posts from [[Prime Intellect]] (Jan–May 2026), one open-source self-
 - [[2026-05-12 - Prime Intellect - Renderers]] — token-level templating for agentic RL
 - [[2026-01-01 - Prime Intellect - Recursive Language Models]] (Sebastian) — RLM implementation; 2nd source for [[Recursive Language Models]]
 
+## Agentic coding (2026-05-24)
+
+- [[2026-01-17 - Geoffrey Huntley - Everything is a Ralph Loop]] (Geoffrey Huntley) — manifesto for the monolithic [[Ralph Loop]]; first non-vendor practitioner source; anti-multi-agent.
+
 ## Coverage gaps
 
 - No OpenAI sources yet (their agent work since 2024 is underrepresented).

@@ -29,6 +29,8 @@ Per [[Building Effective Agents]]: systems where the LLM **plans and executes in
 - Continues until task completion, max-step limit, or human stop signal
 - Often pairs with sandboxed environments to bound damage
 
+See [[Ralph Loop]] for a strongly-opinionated, monolithic instantiation of this loop applied to coding (one task per loop, single process, human-as-loop-watcher).
+
 ## When to use
 
 When the problem space is open-ended, the number of steps is unpredictable, and pre-defining a workflow is intractable. **Costs:** compounding errors over long horizons, latency, expense.

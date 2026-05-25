@@ -167,6 +167,10 @@ Ideas, patterns, frameworks. Domain-agnostic in form, domain-tagged in content. 
 - [[Token-In Token-Out]] — byte-faithful inference for agentic RL; prefix continuity → ~3x less compute
 - [[Autonomous Research Agents]] — agents doing ML research; search & recombine well, can't yet originate ideas (novelty gate)
 
+## Agentic coding — monolithic loop (2026-05-24)
+
+- [[Ralph Loop]] — Geoffrey Huntley's monolithic, single-process, one-task-per-loop coding agent; "everything is a ralph loop"; the anti-multi-agent pole; operationalizes [[Context Engineering]]
+
 ## Promotion policy
 
 Create a concept page when:

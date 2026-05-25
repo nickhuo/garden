@@ -84,6 +84,10 @@ Cross-cutting observation: Manus and Anthropic agree on the **what** (context di
 
 The three sit at different points in the context lifecycle: discovery (Tool Search), execution (PTC), and authoring (Examples). A production agent designs all three concurrently rather than treating them as alternatives.
 
+## Operationalized as a coding method (per Huntley 2026-01)
+
+[[2026-01-17 - Geoffrey Huntley - Everything is a Ralph Loop]] turns context engineering into a named practitioner recipe: the [[Ralph Loop]]. Huntley's claim — "ralph is about getting the most out of how the underlying models work through context engineering" — frames a monolithic single-process coding agent as *primarily* a context-engineering exercise (goal recitation + backing specs + accumulated failure-fixes per loop), explicitly *against* multi-agent orchestration. A grassroots, benchmark-free counterpart to the Anthropic/Manus framing above.
+
 ## Connections
 
 - Subsumes: prompt engineering (no separate page; handled here)

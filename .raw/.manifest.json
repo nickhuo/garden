@@ -10,7 +10,12 @@
         "wiki/concepts/Reward Hacking.md",
         "wiki/comparisons/Prime Intellect Self-Improvement Stack.md"
       ],
-      "pages_updated": ["wiki/index.md", "wiki/log.md", "wiki/hot.md", "wiki/domains/LLM.md"]
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md",
+        "wiki/domains/LLM.md"
+      ]
     },
     ".raw/articles/general-agent-2026-05-24.md": {
       "hash": "739ec6b52f2811f4e707b8de81cfd9f3",
@@ -20,7 +25,12 @@
         "wiki/sources/2026-05-18 - Prime Intellect - General Agent.md",
         "wiki/concepts/Self-Evolving Agent Environments.md"
       ],
-      "pages_updated": ["wiki/index.md", "wiki/log.md", "wiki/hot.md", "wiki/domains/AI-Agents.md"]
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md",
+        "wiki/domains/AI-Agents.md"
+      ]
     },
     ".raw/articles/auto-nanogpt-2026-05-24.md": {
       "hash": "64cde08134046ee287207c4057a536ae",
@@ -30,7 +40,12 @@
         "wiki/sources/2026-05-14 - Prime Intellect - Autonomous AI Research for nanogpt Speedrun.md",
         "wiki/concepts/Autonomous Research Agents.md"
       ],
-      "pages_updated": ["wiki/index.md", "wiki/log.md", "wiki/hot.md", "wiki/domains/AI-Agents.md"]
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md",
+        "wiki/domains/AI-Agents.md"
+      ]
     },
     ".raw/articles/renderers-2026-05-24.md": {
       "hash": "d8155d8bdb4486e95bc29d276ec96d40",
@@ -40,7 +55,12 @@
         "wiki/sources/2026-05-12 - Prime Intellect - Renderers.md",
         "wiki/concepts/Token-In Token-Out.md"
       ],
-      "pages_updated": ["wiki/index.md", "wiki/log.md", "wiki/hot.md", "wiki/domains/LLM.md"]
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md",
+        "wiki/domains/LLM.md"
+      ]
     },
     ".raw/articles/rlm-2026-05-24.md": {
       "hash": "a387290d859a78da16135bd911ac207a",
@@ -49,7 +69,12 @@
       "pages_created": [
         "wiki/sources/2026-01-01 - Prime Intellect - Recursive Language Models.md"
       ],
-      "pages_updated": ["wiki/index.md", "wiki/log.md", "wiki/hot.md", "wiki/concepts/Recursive Language Models.md"]
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md",
+        "wiki/concepts/Recursive Language Models.md"
+      ]
     },
     ".raw/articles/a-practical-guide-to-building-agents-2026-05-22.md": {
       "hash": "20e51e9a9c38d4990a0a589b1cce5f84",
@@ -175,6 +200,27 @@
         "wiki/hot.md",
         "wiki/domains/AI-Agents.md",
         "wiki/concepts/Agent Memory Taxonomy.md"
+      ]
+    },
+    ".raw/articles/loop-2026-05-24.md": {
+      "hash": "4bcf6ad0d8d773cc46f354a6733f7aaa",
+      "ingested_at": "2026-05-24",
+      "pages_created": [
+        "wiki/sources/2026-01-17 - Geoffrey Huntley - Everything is a Ralph Loop.md",
+        "wiki/concepts/Ralph Loop.md",
+        "wiki/entities/Geoffrey Huntley.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Multi-Agent Systems.md",
+        "wiki/concepts/Context Engineering.md",
+        "wiki/concepts/Autonomous Agents.md",
+        "wiki/domains/AI-Agents.md",
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md",
+        "wiki/concepts/_index.md",
+        "wiki/entities/_index.md",
+        "wiki/sources/_index.md"
       ]
     }
   }

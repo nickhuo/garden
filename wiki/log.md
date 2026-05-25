@@ -19,6 +19,13 @@ Ops: `init`, `ingest`, `query`, `lint`, `refactor`, `save`, `autoresearch`, `man
 
 ---
 
+## [2026-05-24] ingest | Everything is a Ralph Loop (Geoffrey Huntley)
+- **Trigger:** user — `/wiki-ingest https://ghuntley.com/loop/`.
+- **Source:** `.raw/articles/loop-2026-05-24.md` → [[2026-01-17 - Geoffrey Huntley - Everything is a Ralph Loop]] (first non-vendor *practitioner* source in the wiki).
+- **Pages created:** [[Ralph Loop]] (concept); [[Geoffrey Huntley]] (entity). _(Steve Yegge and The Weaving Loom entities created then removed same session — thin/stub, folded to plain text on [[Ralph Loop]] and [[Geoffrey Huntley]].)_
+- **Pages updated:** [[Multi-Agent Systems]] (counter-position contradiction callout), [[Context Engineering]] ("operationalized as a coding method"), [[Autonomous Agents]], [[AI-Agents]], index, sub-indexes, hot.
+- **Key insight:** Ralph is the **opinionated monolithic pole** — a single-process, one-task-per-loop coding agent that frames agentic coding as *[[Context Engineering]], not multi-agent orchestration* ("agents are non-deterministic → multiplexing is premature complexity"). Direct counter-position to Anthropic's coordinator+workers framing; endpoint is "The Weaving Loom" (revenue-optimizing evolutionary software). Polemical, benchmark-free — confidence on the *technique* > the *economic claims*.
+
 ## [2026-05-24] ingest | Prime Intellect batch — 5 research blog posts
 - **Trigger:** user — `/wiki-ingest` with 5 PrimeIntellect URLs; "看看有什么 insight" on this self-improving-focused company.
 - **Sources:** `.raw/articles/{reward-hacking,general-agent,auto-nanogpt,renderers,rlm}-2026-05-24.md` → [[2026-05-20 - Prime Intellect - Systematic Reward Hacking]], [[2026-05-18 - Prime Intellect - General Agent]], [[2026-05-14 - Prime Intellect - Autonomous AI Research for nanogpt Speedrun]], [[2026-05-12 - Prime Intellect - Renderers]], [[2026-01-01 - Prime Intellect - Recursive Language Models]].

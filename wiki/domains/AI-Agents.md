@@ -2,7 +2,7 @@
 type: domain
 title: AI-Agents
 created: 2026-05-04
-updated: 2026-05-20
+updated: 2026-05-24
 tags:
 - ai-agents
 - domain
@@ -45,6 +45,7 @@ Foundation:
 - [[2025-10 - Zhang Khattab - Recursive Language Models]] (Zhang+Khattab MIT) — RLM inference strategy
 - [[2025-11-24 - Anthropic - Advanced Tool Use]] (Anthropic) — Tool Search Tool · PTC · Tool Use Examples
 - [[Scaling Managed Agents]] (2026-04-08, Anthropic) — meta-harness, infra-side scaling
+- [[2026-01-17 - Geoffrey Huntley - Everything is a Ralph Loop]] (Geoffrey Huntley) — first practitioner/non-vendor source; the monolithic [[Ralph Loop]], anti-multi-agent stance
 
 **Working taxonomy:**
 
@@ -52,7 +53,7 @@ Foundation:
 - **Base primitive** — [[Augmented LLM]] (LLM + retrieval + tools + memory)
 - **Central distinction** — [[Workflows vs Agents]]: code-orchestrated vs. model-orchestrated, plus [[Multi-Agent Systems]] as a parallelism+context-budget variant
 - **Workflow patterns** — [[Prompt Chaining]] · [[Routing]] · [[Parallelization]] · [[Orchestrator-Workers]] · [[Evaluator-Optimizer]]
-- **Agent pattern** — [[Autonomous Agents]]
+- **Agent pattern** — [[Autonomous Agents]]; [[Ralph Loop]] (monolithic single-process, one-task-per-loop coding agent — the anti-multi-agent pole)
 - **Production discipline (Manus)** — [[KV-Cache Discipline]] · [[Logit Masking]] · [[Recitation]] · [[Error Trace Retention]] · [[Few-Shot Drift]]
 - **Production discipline (Anthropic postmortem)** — [[Cache Invalidation Cascade]] · [[Config Type Safety]] · [[Context Assembly Pipeline]]; failure modes of the same surface Manus optimizes
 - **Tool-use mechanisms** — [[Tool Search Tool]] · [[Programmatic Tool Calling]] · [[Tool Use Examples]] · [[Think Tool]] (reasoning scratchpad); [[Agent Interface Contracts]] and [[Progressive Disclosure]] govern tool authoring

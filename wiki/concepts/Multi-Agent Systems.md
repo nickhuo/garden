@@ -24,6 +24,9 @@ _legacy_source_count: 4
 
 Architectures where multiple LLM agents — typically a coordinator plus parallel subagents — collaborate on a task. Per [[How we built our multi-agent research system]] (Anthropic 2025-06): not magically smarter than single agents; rather a **parallelism harness** that spends more tokens in parallel.
 
+> [!contradiction] Counter-position: [[Ralph Loop]] (Geoffrey Huntley, 2026-01)
+> [[2026-01-17 - Geoffrey Huntley - Everything is a Ralph Loop]] argues multi-agent is **premature complexity** for coding: because agents are non-deterministic, multiplexing them multiplies failure surface for little gain. Huntley prefers a **monolithic, single-process** agent ([[Ralph Loop]]) scaling vertically. Not a hard contradiction — Ralph targets iterative single-repo *coding*, which Anthropic's own "when NOT to use" carve-out flags as poorly parallelizable. Read as the opinionated monolithic pole opposite this page's coordinator+workers framing.
+
 ## Architecture (Anthropic's Research feature)
 
 - **Lead agent** plans, persists plan to memory (context overflow protection)
@@ -94,6 +97,7 @@ This shifts the cost calculus. The 15× chat-token premium ([[Token Economics]])
 - Eval methodology: [[LLM-as-Judge Evaluation]]
 - One of four: [[Long-Horizon Context Management]]
 - Distinct from (clarifying note above): [[Recursive Language Models]] — single-agent recursive composition, not multi-agent
+- Counter-position: [[Ralph Loop]] — monolithic single-process pole, rejects multi-agent for coding
 - Cost discipline: [[Token Economics]]
 - Context discipline: [[Context Engineering]]
 

@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Wiki Index"
-updated: 2026-05-22
+updated: 2026-05-24
 ---
 
 # Wiki Index
@@ -13,7 +13,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[AI-Agents]] — agentic systems, tool use, orchestration, harnesses, evals, MCP
 - [[LLM]] — model internals, training, inference, optimization, alignment. Seeded 2026-05-14 with 5 Thinking Machines Lab sources.
 
-## Entities (31)
+## Entities (32)
 
 - [[Agent Skills]]
 - [[Andrej Karpathy]]
@@ -25,6 +25,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Claude Desktop]]
 - [[Claude Opus 4.6]]
 - [[DXT]]
+- [[Geoffrey Huntley]]
 - [[Horace He]]
 - [[Jeremy Bernstein]]
 - [[John Schulman]]
@@ -47,7 +48,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[tau-bench]]
 - [[Thinking Machines Lab]]
 
-## Concepts (107)
+## Concepts (108)
 
 - [[A-B Testing for Agents]]
 - [[ACI - Agent-Computer Interface]]
@@ -129,6 +130,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Prompt Injection]]
 - [[Recitation]]
 - [[Recursive Language Models]]
+- [[Ralph Loop]]
 - [[Reranking]]
 - [[ReAct]]
 - [[Reverse KL Divergence]]
@@ -157,8 +159,9 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Vibe Coding]]
 - [[Workflows vs Agents]]
 
-## Sources (56)
+## Sources (57)
 
+- [[2026-01-17 - Geoffrey Huntley - Everything is a Ralph Loop]]
 - [[2017-11-11 - Karpathy - Software 2.0]]
 - [[2026-01-01 - Prime Intellect - Recursive Language Models]]
 - [[2026-05-12 - Prime Intellect - Renderers]]

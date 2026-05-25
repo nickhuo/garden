@@ -45,6 +45,10 @@ Named things: people, organizations, products, repositories, frameworks, places.
 - [[Andrej Karpathy]] — author of [[2017-11-11 - Karpathy - Software 2.0]]; the model-centric / "neural nets eat code" framing.
 - [[Richard Sutton]] — author of [[2019-03-13 - Sutton - The Bitter Lesson]] and co-author of [[2025-04-11 - Silver Sutton - Welcome to the Era of Experience]]; RL pioneer, the scaling-over-hand-engineering argument.
 
+## Agentic coding (2026-05-24)
+
+- [[Geoffrey Huntley]] — engineer/blogger; coined the [[Ralph Loop]]; "agentic coding is context engineering, not multi-agent." (His "Weaving Loom" / Gas Town automation-levels framing is covered inline on [[Ralph Loop]].)
+
 ## Promotion policy
 
 Create an entity page when:
