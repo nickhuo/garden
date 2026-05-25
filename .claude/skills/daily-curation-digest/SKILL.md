@@ -1,12 +1,12 @@
 ---
 name: daily-curation-digest
-description: 合并 daily-intel-digest（HN + GitHub Trending）与 daily-hf-paper-digest（HuggingFace Daily Papers）两条管线，每日产出一份统一策展报告。在用户说"跑今天的 curation / 出今天的策展 / process today's curation"时触发；也可作为 scheduled task 每日自动运行。本 SKILL 取代 `daily-intel-digest` 与 `daily-hf-paper-digest` 两个旧任务。
+description: 每日产出一份统一策展报告。在用户说"跑今天的 curation / 出今天的策展 / process today's curation"时触发；也可作为 scheduled task 每日自动运行。
 ---
 
-> **位置（canonical）：** `/Users/nickhuo/Documents/Core/brain/02_Areas/Digest/curation/SKILL.md`
-> 当前两个 scheduled task（`daily-intel-digest`、`daily-hf-paper-digest`）仍指向旧 SKILL 路径。要让自动调度切到本 skill：
-> 1. 创建一个新 scheduled task `daily-curation-digest` 指向本文件，建议 cron `0 5 * * *`（America/Chicago 凌晨）。
-> 2. 禁用旧的两个 task，避免重复产出。
+> **位置（canonical）：** `/Users/nickhuo/Core/brain/03_Resources/.claude/skills/daily-curation-digest/SKILL.md`
+> 现已是 `03_Resources/.claude/skills/` 下的**项目级 skill**，Claude Code 在 workspace=`03_Resources` 时自动发现，按 `name` / 触发语自动加载（无需按路径 `Read`）。原 `digest/curation/SKILL.md` 已迁入此处。
+> **定时调度：** 已由 Superset automation **"Daily Curation Digest"**（id `8ce4a592-5adb-4cf0-b20d-4405c54dde32`）每天凌晨 2:00（America/Chicago）跑本 skill，跑在 Nick 的 Mac 上（workspace = `03_Resources`）。旧的 `daily-intel-digest` / `daily-hf-paper-digest` 已被本 skill 取代，勿重复创建。
+> 管理：`superset automations {get|run|logs|pause|resume} 8ce4a592-5adb-4cf0-b20d-4405c54dde32`。
 
 你是 Nick（@heynickhuo, nickhuo.com）的信息策展 Agent / Digital Twin。每天运行一次，从 **HN + GitHub Trending + HuggingFace Daily Papers** 三源策展与 Nick 高度相关的内容，输出一份混合中英文的策展报告。Nick 的目标：求职（2026 AI Eng / SDE offer）、影响力（X / blog）、技术资本（OSS）。
 
@@ -23,11 +23,10 @@ description: 合并 daily-intel-digest（HN + GitHub Trending）与 daily-hf-pap
 
 ## 权威 inputs（每次运行先读）
 
-1. **`/Users/nickhuo/Documents/Core/brain/02_Areas/Digest/interest_graph.md`** — Layer 1–4 主题、加分修正项、反感清单、行为阈值、产出渠道映射。**HN + GitHub Trending 评分的唯一来源。**
-2. **`/Users/nickhuo/Documents/Core/02_Areas/Career/research-digests/screening-criteria.md`** — HuggingFace papers 的 keep/drop rubric。读取 `criteria_version` 写入 frontmatter。
-3. **`/Users/nickhuo/Documents/Core/02_Areas/Career/research-digests/README.md`** — papers 的 tag legend、per-paper 格式、cluster 顺序。
+1. **`/Users/nickhuo/Core/brain/03_Resources/digest/interest.md`** — Layer 1–4 主题、加分修正项、反感清单、行为阈值、产出渠道映射。**三源（HN + GitHub Trending + papers）评分的唯一来源。** 路径相对 vault root 即 `03_Resources/digest/interest.md`。
+2. **（可选）独立 papers 筛选 rubric** — 当前不存在专门的 `screening-criteria.md`；papers 直接并入 `interest.md` 评分（Layer 3 paper +1，叠加 benchmark/评估 +2 等修正项），与 HN/GitHub 同一套系统。若将来 Nick 新建独立 rubric 文件，再在此登记其路径与 `criteria_version`。
 
-> 任一文件不可读：在报告对应 section 头部 ⚠️ 标注「评分/筛选依据缺失，回退到 raw 列表」并继续。
+> `interest.md` 不可读：在报告头部 ⚠️ 标注「评分依据缺失，回退到 raw 列表不评分」并继续。
 
 ---
 
@@ -54,7 +53,7 @@ Algolia HN Search API（无需 key）。最近 24h，UNIX_24H_AGO = 当前 unix 
 
 ### A.3 评分
 
-读 `interest_graph.md`，按其完整评分系统（0–10）打分。关键规则提醒：
+读 `interest.md`，按其完整评分系统（0–10）打分。关键规则提醒：
 
 - Layer 1 命中 +5、Layer 2 +3、Layer 3 +1、Layer 4 反感 −5
 - 求职杠杆 +3（当前 phase 最大权重）
@@ -82,19 +81,17 @@ Algolia HN Search API（无需 key）。最近 24h，UNIX_24H_AGO = 当前 unix 
 
 ### B.2 fetch papers
 
-```
-python3 /Users/nickhuo/Documents/Core/02_Areas/Career/research-digests/fetch_papers.py {TODAY}
-```
+无独立 fetch 脚本（旧 `fetch_papers.py` 不存在）。直接 WebFetch HuggingFace daily papers 页面：
 
-输出 JSON：`{date, count, papers:[{id,title,summary,github,stars,upvotes,ai_keywords,arxiv_pdf,hf_page}...]}`。
+- `https://huggingface.co/papers/date/{TODAY}`
 
-`count == 0` → papers section 写一句「no papers published today」，不影响 intel section 产出。
+提取每篇：title、arxiv id、summary/abstract、upvotes、（如有）GitHub repo + stars。需要 abstract 细节时再 WebFetch `https://huggingface.co/papers/{id}` 或 arxiv abstract 页。
 
-脚本失败（网络 / HF schema 变更）→ ⚠️ 标注 papers 源失败、贴 error，不要捏造内容。
+**当日为空（周末常见）→ 回退到最近一个有论文的日期**（依次试 {TODAY}−1、−2…），并在 papers 专节标题与报告头部 ⚠️ 注明实际回退到哪一天。彻底取不到 → ⚠️ 标注 papers 源失败、贴 error，不要捏造内容。
 
 ### B.3 filter
 
-对每篇 paper，读 `title + summary + ai_keywords`，按 `screening-criteria.md` 判 keep/drop。**用判断而非纯关键词匹配** —— 看方法可迁移性、角度、与 Nick 的 agenda 关联度。
+对每篇 paper，读 `title + summary`，按 `interest.md` 同一套评分系统判 keep/drop（Layer 3 paper +1，叠加 benchmark/评估、求职杠杆等修正项；< 5 drop）。**用判断而非纯关键词匹配** —— 看方法可迁移性、角度、与 Nick 的 agenda（求职 / 影响力 / OSS）关联度。
 
 不限 keep 数量也不强行凑数。5 篇就 5 篇，25 篇就 25 篇。criteria 说 drop 就 drop。
 
@@ -142,7 +139,7 @@ python3 /Users/nickhuo/Documents/Core/02_Areas/Career/research-digests/fetch_pap
 
 ## Step 6 — 输出报告
 
-**写入路径（唯一）：** `/Users/nickhuo/Documents/Core/brain/02_Areas/Digest/curation/{TODAY}.md`，存在则覆盖。
+**写入路径（唯一）：** `/Users/nickhuo/Core/brain/03_Resources/digest/curation/{TODAY}.md`，存在则覆盖。
 
 > 路径不可写时回退当前 session outputs 目录，并在文件末尾标注实际写入路径。
 
@@ -152,9 +149,8 @@ python3 /Users/nickhuo/Documents/Core/02_Areas/Career/research-digests/fetch_pap
 ---
 date: {TODAY}
 weekday: {Mon/Tue/.../Sun}
-scoring_source: interest_graph.md
+scoring_source: 03_Resources/digest/interest.md
 scoring_read_at: "HH:MM TZ"
-screening_criteria_version: {从 screening-criteria.md frontmatter 读}
 sources:
   - HN Algolia API (story score ≥ 50, last 24h)
   - HN Ask HN / Show HN (last 24h)
@@ -172,7 +168,7 @@ tags: [curation, intel, research-digest]
 ```markdown
 # 每日策展 — {TODAY} ({weekday})
 
-> 评分依据：`interest_graph.md`（读取于 HH:MM）+ `screening-criteria.md` v{version}
+> 评分依据：`03_Resources/digest/interest.md`（读取于 HH:MM）
 > 数据范围：HN 过去 24h（共 X 条 score≥50）+ GitHub Trending 4 列表 + HF Daily Papers（{papers_scanned} 篇）
 > {若有源失败，⚠️ 标注于此}
 
@@ -258,4 +254,4 @@ repo URL / star 数 / 为什么 Nick 的 Donut Labs / Skills 经验能贡献。
 - Papers：scanned {N} / kept {K}
 - 1–2 句话点出今日最值得看的 1–2 个 item（可跨 source）
 - 任何源失败 / 异常 → 明确列出
-- （可选）若近几日 pattern 显示 Nick 的兴趣已偏移 → 提示「考虑更新 interest_graph.md / screening-criteria.md」，**但不要单方面改这两个文件**。
+- （可选）若近几日 pattern 显示 Nick 的兴趣已偏移 → 提示「考虑更新 `interest.md`」，**但不要单方面改它**。
