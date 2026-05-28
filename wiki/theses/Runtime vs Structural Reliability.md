@@ -80,7 +80,7 @@ The framing is most useful as an **allocation heuristic**, not a categorical cla
 
 - Maintenance discipline: [[Harness Staleness]] · [[Meta-Harness]]
 - Structural primitives: [[Agent Sandboxing]] · [[Permission Model]] · [[Minimal Footprint Principle]] · [[ACI - Agent-Computer Interface]]
-- Runtime primitives: [[LLM-as-Judge Evaluation]] · [[Permission Classifier]] · [[Error Trace Retention]] · [[Trace-Based Evaluation]]
+- Runtime primitives: [[LLM-as-Judge]] · [[Permission Classifier]] · [[Error Trace Retention]] · [[Trace-Based Evaluation]]
 - Failure modes that resist runtime: [[Eval Awareness]] · [[Sandbagging]] · [[AI-Resistant Evaluation Design]]
 - Measurement: [[Pass^k Reliability Metric]] · [[Agent Eval Pyramid]]
 - Related thesis: [[Workflows Beat Agents for Most Production]] (workflows reduce surface area structurally; this thesis generalizes the principle)

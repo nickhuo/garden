@@ -14,7 +14,7 @@ aliases:
   - AI-proof evals
   - AI-resistant hiring
 related:
-  - "[[LLM-as-Judge Evaluation]]"
+  - "[[LLM-as-Judge]]"
   - "[[AI Tool Fluency]]"
   - "[[Pass^k Reliability Metric]]"
   - "[[User Simulator Evaluation]]"
@@ -28,7 +28,7 @@ The practice of designing evaluations — whether for hiring, model capability, 
 
 ## Core problem
 
-Any evaluation that tests a capability AI can perform becomes a proxy measure once AI tools are accessible to test-takers. Signal collapses: scores no longer discriminate candidates who understand from candidates who can prompt. The failure mode is not unique to hiring — [[LLM-as-Judge Evaluation]] and benchmark saturation face the same proxy-gaming dynamic.
+Any evaluation that tests a capability AI can perform becomes a proxy measure once AI tools are accessible to test-takers. Signal collapses: scores no longer discriminate candidates who understand from candidates who can prompt. The failure mode is not unique to hiring — [[LLM-as-Judge]] and benchmark saturation face the same proxy-gaming dynamic.
 
 ## Design principles
 
@@ -48,7 +48,7 @@ Any evaluation that tests a capability AI can perform becomes a proxy measure on
 ## Relation to broader eval philosophy
 
 The generalized principle — **measure ground truth, not a gameable proxy** — applies identically to:
-- LLM capability benchmarks (see [[LLM-as-Judge Evaluation]])
+- LLM capability benchmarks (see [[LLM-as-Judge]])
 - Agent reliability evaluation (see [[Pass^k Reliability Metric]])
 - Hiring technical screens (this concept's primary context)
 
@@ -63,4 +63,4 @@ Anthropic explicitly draws this connection in their engineering blog: the same f
 ## See also
 
 - [[AI Tool Fluency]] — the competency these evals are designed to surface
-- [[LLM-as-Judge Evaluation]] — the parallel eval-design problem in LLM assessment
+- [[LLM-as-Judge]] — the parallel eval-design problem in LLM assessment

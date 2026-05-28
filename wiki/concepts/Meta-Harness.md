@@ -61,7 +61,7 @@ The meta-harness pattern is intentionally framed as architectural, not product-s
 - Extends: [[ACI - Agent-Computer Interface]] from tool design to system-layer interfaces
 - Substrate for: [[Long-Horizon Context Management]] (session log underneath all three techniques)
 - Implementation surface for: [[Just-in-Time Context Retrieval]] (`getEvents()` is JIT over event log)
-- Specializes: [[Harness Design Patterns]] — meta-harness is the hosted/scaled variant of the general harness design vocabulary; [[Agentic Harness]] is the lightweight, task-scoped end of the same spectrum
+- Specializes: [[Agentic Harness]] — meta-harness is the hosted/scaled variant of the general harness design vocabulary, of which the agentic harness is the lightweight, task-scoped end of the same spectrum
 
 ## Layered implementation (per Anthropic 2026-05)
 

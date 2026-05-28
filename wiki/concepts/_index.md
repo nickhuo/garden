@@ -34,12 +34,11 @@ Ideas, patterns, frameworks. Domain-agnostic in form, domain-tagged in content. 
 - [[Autonomous Agents]]
 - [[Multi-Agent Systems]]
 - [[Agent Interface Contracts]] — orchestrator-defined specs enabling isolated parallel worker agents; interface quality is the bottleneck
-- [[Agentic Harness]] — minimal scaffold wrapping an LLM for agentic behavior; simplicity finding from SWE-bench Verified
 
 ## Harness design
 
 - [[Meta-Harness]] — Anthropic's Brain/Hands/Session hosting abstraction above harness implementations
-- [[Harness Design Patterns]] — catalog of production patterns and anti-patterns for long-running agent harnesses
+- [[Agentic Harness]] — minimal scaffold wrapping an LLM (tools, loop, stop); SWE-bench simplicity finding, plus the catalog of production patterns and anti-patterns for long-running harnesses
 - [[Harness Staleness]] — Bitter Lesson applied to harnesses: assumptions about model limits go stale as models improve
 - [[Context Anxiety]] — harness-induced model behavior when context resets approach; coping behaviors that hurt task quality
 
@@ -77,7 +76,7 @@ Ideas, patterns, frameworks. Domain-agnostic in form, domain-tagged in content. 
 
 ## Evaluation
 
-- [[LLM-as-Judge Evaluation]]
+- [[LLM-as-Judge]]
 - [[Pass^k Reliability Metric]]
 - [[User Simulator Evaluation]]
 - [[Agent Eval Pyramid]] — three-tier eval strategy (unit tests → LLM judge → simulated-user E2E)
@@ -126,8 +125,7 @@ Ideas, patterns, frameworks. Domain-agnostic in form, domain-tagged in content. 
 - [[Online Learning from Interaction]] — the umbrella concept; learning from live interaction as a durability spectrum
 - [[In-Context Learning]] — learning within the context window; the cheapest, most reversible end of the spectrum
 - [[Test-Time Adaptation]] — updating at inference; test-time training as the surprising-effectiveness midpoint
-- [[Learning from Implicit Feedback]] — turning behavioral signals into a learning signal
-- [[Implicit Feedback Signals]] — the observable signals (edits, retries, dwell) that feed online evaluation
+- [[Implicit Feedback Signals]] — the observable signals (edits, retries, dwell) that feed online evaluation *and* serve as the reward stream for real-time learning
 - [[Reward Modeling]] — converting human/behavioral preferences into a differentiable training signal (RLHF lineage)
 - [[Online Evaluation]] — the conduit from live interaction to durable change
 - [[LLM-as-Judge]] — model-scored evaluation; debiasing reaches >80% human agreement

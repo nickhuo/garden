@@ -11,7 +11,7 @@ date_published: 2022-03-04
 url: https://arxiv.org/abs/2203.02155
 confidence: high
 aliases: ["2022 - Ouyang et al - InstructGPT", "InstructGPT"]
-related: ["[[Reward Modeling]]", "[[Learning from Implicit Feedback]]", "[[Online Learning from Interaction]]", "[[Online Evaluation]]"]
+related: ["[[Reward Modeling]]", "[[Implicit Feedback Signals]]", "[[Online Learning from Interaction]]", "[[Online Evaluation]]"]
 sources: []
 key_claims:
   - "A 1.3B InstructGPT model is preferred to the 175B GPT-3 in human evaluation despite 100x fewer parameters — alignment via human feedback beats raw scale on instruction-following."

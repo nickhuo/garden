@@ -43,7 +43,7 @@ Online evaluation is the conduit from a single live interaction to a durable cha
 
 ## Key Concepts
 
-[[Online Evaluation]] · [[LLM-as-Judge]] (and existing [[LLM-as-Judge Evaluation]]) · [[Implicit Feedback Signals]] · [[Reward Modeling]] · [[A/B Testing for Agents]] · [[Eval Validity]] · [[Agent Eval Pyramid]] · [[Trace-Based Evaluation]] · [[Eval Awareness]]
+[[Online Evaluation]] · [[LLM-as-Judge]] · [[Implicit Feedback Signals]] · [[Reward Modeling]] · [[A/B Testing for Agents]] · [[Eval Validity]] · [[Agent Eval Pyramid]] · [[Trace-Based Evaluation]] · [[Eval Awareness]]
 
 ## Contradictions
 

@@ -32,7 +32,7 @@ Foundation:
 - [[2026-05-13 - Anthropic - Writing Effective Tools for Agents]] (Anthropic) — tool authoring discipline; [[Agent Interface Contracts]], [[Progressive Disclosure]]
 - [[2026-05-13 - Anthropic - Agent Skills]] (Anthropic) — skills as discoverable, composable capabilities; [[Progressive Disclosure]] applied to tool surfaces
 - [[2026-05-13 - Anthropic - Claude Code Sandboxing]] (Anthropic) — [[Agent Sandboxing]], [[Permission Classifier]], [[Permission Model]]; safe execution boundaries
-- [[2026-05-13 - Anthropic - Effective Harnesses for Long-Running Agents]] (Anthropic) — [[Harness Design Patterns]], [[Context Anxiety]], [[Harness Staleness]], [[Minimal Footprint Principle]]
+- [[2026-05-13 - Anthropic - Effective Harnesses for Long-Running Agents]] (Anthropic) — [[Agentic Harness]], [[Context Anxiety]], [[Harness Staleness]], [[Minimal Footprint Principle]]
 - [[2026-02-05 - Anthropic - Building C Compiler with Parallel Claudes]] (Anthropic) — multi-agent coding case study; orchestrator-worker decomposition in practice
 - [[2026-05-13 - Anthropic - Code Execution with MCP]] (Anthropic) — code execution as an MCP primitive; programmatic tool composition
 - [[2025-06-26 - Anthropic - Desktop Extensions]] (Anthropic) — distribution layer for agent tools; packaging and discoverability
@@ -49,7 +49,7 @@ Foundation:
 
 **Working taxonomy:**
 
-- **Runtime layer** — [[Meta-Harness]] (e.g., [[Managed Agents]]); virtualizes Brain / Hands / [[Session as Event Log]]. [[Agentic Harness]] is the minimal-wrapping pattern; [[Harness Design Patterns]] catalogs the choices; [[Minimal Footprint Principle]] is the design north star; [[Harness Staleness]] is the failure mode when scaffolds outlive their assumptions.
+- **Runtime layer** — [[Meta-Harness]] (e.g., [[Managed Agents]]); virtualizes Brain / Hands / [[Session as Event Log]]. [[Agentic Harness]] is the minimal-wrapping pattern and catalogs the production design choices; [[Minimal Footprint Principle]] is the design north star; [[Harness Staleness]] is the failure mode when scaffolds outlive their assumptions.
 - **Base primitive** — [[Augmented LLM]] (LLM + retrieval + tools + memory)
 - **Central distinction** — [[Workflows vs Agents]]: code-orchestrated vs. model-orchestrated, plus [[Multi-Agent Systems]] as a parallelism+context-budget variant
 - **Workflow patterns** — [[Prompt Chaining]] · [[Routing]] · [[Parallelization]] · [[Orchestrator-Workers]] · [[Evaluator-Optimizer]]
@@ -61,10 +61,10 @@ Foundation:
 - **Tool-design framing** — [[ACI - Agent-Computer Interface]] (return-format precision + discoverability + input_examples); now sits alongside [[Agent Interface Contracts]] as the system-layer expression
 - **Coding-agent ergonomics** — [[Agentic Coding Slash Commands]] · [[AI Tool Fluency]] · [[Context Anxiety]] (model behavior when context budget tightens)
 - **Safety & isolation** — [[Agent Sandboxing]] · [[Permission Model]] · [[Permission Classifier]]; the runtime side of letting agents act
-- **Evaluation** — [[LLM-as-Judge Evaluation]] · [[Pass^k Reliability Metric]] · [[User Simulator Evaluation]] · [[Trace-Based Evaluation]] · [[Agent Eval Pyramid]] · [[tau-bench]] · [[BFCL]] · [[ToolBench]] · [[Tool-Use Benchmarks - BFCL vs tau-bench vs ToolBench]] · [[SWE-bench]] · [[SWE-bench Verified]] · [[Eval Infrastructure Noise]] · [[Eval Awareness]] · [[Sandbagging]] · [[AI-Resistant Evaluation Design]] · [[AI Tool Fluency]]
+- **Evaluation** — [[LLM-as-Judge]] · [[Pass^k Reliability Metric]] · [[User Simulator Evaluation]] · [[Trace-Based Evaluation]] · [[Agent Eval Pyramid]] · [[tau-bench]] · [[BFCL]] · [[ToolBench]] · [[Tool-Use Benchmarks - BFCL vs tau-bench vs ToolBench]] · [[SWE-bench]] · [[SWE-bench Verified]] · [[Eval Infrastructure Noise]] · [[Eval Awareness]] · [[Sandbagging]] · [[AI-Resistant Evaluation Design]] · [[AI Tool Fluency]]
 - **Retrieval substrate** — [[BM25 and Hybrid Retrieval]] · [[Contextual Retrieval]] · [[Reranking]]; the retrieval half of context engineering
 - **Protocol bet** — [[MCP]]
-- **Operational decision tools** — [[Token Economics]] (4× / 15× + attention budget + KV-cache hit rate + smaller-model-in-scaffold) · [[LLM-as-Judge Evaluation]]
+- **Operational decision tools** — [[Token Economics]] (4× / 15× + attention budget + KV-cache hit rate + smaller-model-in-scaffold) · [[LLM-as-Judge]]
 - **Context discipline** — [[Context Engineering]] · [[Just-in-Time Context Retrieval]] · [[Long-Horizon Context Management]] (4 techniques: compaction · notes · sub-agents · RLM-recursion)
 
 ## Running theses
@@ -83,7 +83,7 @@ Eight threads now structure the worldview:
 5. **The action-space fault line: static vs dynamic.** First load-bearing cross-vendor disagreement in the wiki. See [[Static Action Spaces vs Dynamic Tool Discovery]].
 6. **A new architectural axis: context vs problem decomposition.** RLM names it; the rest of the wiki sits mostly on the problem side.
 7. **Evaluation is now its own discipline, not a footnote.** [[Agent Eval Pyramid]] organizes the layers; [[Trace-Based Evaluation]] is the operational primitive; [[Eval Infrastructure Noise]], [[Eval Awareness]], and [[Sandbagging]] are the three confound classes that make naive benchmark numbers untrustworthy. [[AI-Resistant Evaluation Design]] generalizes the lesson back to human hiring.
-8. **The harness has matured into a first-class artifact.** [[Harness Design Patterns]], [[Minimal Footprint Principle]], [[Harness Staleness]], [[Agent Sandboxing]], and [[Permission Model]]/[[Permission Classifier]] form a coherent runtime stack. Anthropic's postmortem ([[Cache Invalidation Cascade]], [[Config Type Safety]], [[Context Assembly Pipeline]]) reveals these as the layers that actually fail in production — vindicating Manus's KV-cache primacy from the opposite direction (failure-mode evidence vs design-principle evidence).
+8. **The harness has matured into a first-class artifact.** [[Agentic Harness]], [[Minimal Footprint Principle]], [[Harness Staleness]], [[Agent Sandboxing]], and [[Permission Model]]/[[Permission Classifier]] form a coherent runtime stack. Anthropic's postmortem ([[Cache Invalidation Cascade]], [[Config Type Safety]], [[Context Assembly Pipeline]]) reveals these as the layers that actually fail in production — vindicating Manus's KV-cache primacy from the opposite direction (failure-mode evidence vs design-principle evidence).
 
 ## Gaps to fill via next ingests
 
@@ -109,7 +109,7 @@ Eight threads now structure the worldview:
 
 A new cross-cutting layer from the autoresearch pass. The agent-facing pillars:
 - **Online evaluation** — [[Online Evaluation]], [[LLM-as-Judge]], [[Implicit Feedback Signals]], [[A/B Testing for Agents]], [[Eval Validity]]; extends the existing eval stack ([[Agent Eval Pyramid]], [[Trace-Based Evaluation]], [[Eval Awareness]], [[tau-bench]]) from offline benchmarks to live signals.
-- **Real-time learning** — [[Online Learning from Interaction]], [[Learning from Implicit Feedback]]; the durability spectrum from in-context to online RL.
+- **Real-time learning** — [[Online Learning from Interaction]], [[Implicit Feedback Signals]]; the durability spectrum from in-context to online RL.
 - **Memory persistence** — [[Memory Stream]], [[Persona Vectors vs Memory Files]], [[Letta]]; extends [[Agent Memory Taxonomy]], [[Self-Editing Memory]], [[MemGPT]].
 - **Architecture** — [[Model-Centric Architecture]], [[Code-to-the-Side vs Orchestration]]; the counter-pole to [[Agentic Harness]]/[[Meta-Harness]]. Umbrella: [[Research - Continually-Learning Model-Centric Systems]].
 

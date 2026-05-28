@@ -55,7 +55,7 @@ Unmeasured reliability does not exist. From [[Agent Eval Pyramid]] and [[Pass^k 
 | Tier | Content | Cost | Note |
 |------|---------|------|------|
 | **Tier 1 — Unit tests** | format / schema / boundary checks | very low | **Underused** — many agent behaviors are crisply deterministic and shouldn't burn a judge call |
-| **Tier 2 — [[LLM-as-Judge Evaluation]]** | semantic, single judge call, multi-axis rubric | medium | needs 50–200 human-labeled calibration examples; judge drift is real |
+| **Tier 2 — [[LLM-as-Judge]]** | semantic, single judge call, multi-axis rubric | medium | needs 50–200 human-labeled calibration examples; judge drift is real |
 | **Tier 3 — [[User Simulator Evaluation]] + Pass^k** | end-to-end multi-turn, simulated user | high | reserve for capability claims, not every PR |
 
 **Pass^k** ([[Pass^k Reliability Metric]]): pass^1 ≈ 61% but pass^8 < 25% on tau-bench retail / gpt-4o. Single-shot success rate lies; production cares about the **pass^k decay slope**. Measuring it needs ≥8 trials/task (doubles eval cost), and [[Eval Infrastructure Noise]] must be characterized first — infra variance sets a floor on measured pass^k independent of model quality.

@@ -48,7 +48,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[tau-bench]]
 - [[Thinking Machines Lab]]
 
-## Concepts (108)
+## Concepts (105)
 
 - [[A-B Testing for Agents]]
 - [[ACI - Agent-Computer Interface]]
@@ -90,7 +90,6 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Evaluator-Optimizer]]
 - [[Few-Shot Drift]]
 - [[Floating-Point Non-Associativity]]
-- [[Harness Design Patterns]]
 - [[Harness Staleness]]
 - [[Human-in-the-Loop Intervention]]
 - [[Implicit Feedback Signals]]
@@ -99,9 +98,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Jagged Intelligence]]
 - [[Just-in-Time Context Retrieval]]
 - [[KV-Cache Discipline]]
-- [[Learning from Implicit Feedback]]
 - [[LLM-as-Judge]]
-- [[LLM-as-Judge Evaluation]]
 - [[Logit Masking]]
 - [[Long-Horizon Context Management]]
 - [[LoRA]]
@@ -249,4 +246,4 @@ Master catalog of all wiki pages. Refresh on every ingest.
 
 ---
 
-Total: ~180 wiki pages, 41 raw sources. Last full refresh: 2026-05-20 (autoresearch: continually-learning model-centric systems — 4 directions, 37 new pages). Last ingest: 2026-05-24 (Prime Intellect batch — 5 blog posts; 1 entity + 4 concepts + 5 sources + 1 comparison, RLM concept updated).
+Total: ~177 wiki pages, 41 raw sources. Last full refresh: 2026-05-20 (autoresearch: continually-learning model-centric systems — 4 directions, 37 new pages). Last ingest: 2026-05-24 (Prime Intellect batch — 5 blog posts; 1 entity + 4 concepts + 5 sources + 1 comparison, RLM concept updated). Last maintenance: 2026-05-28 (concept dedup — 3 merges, 108→105 concepts).

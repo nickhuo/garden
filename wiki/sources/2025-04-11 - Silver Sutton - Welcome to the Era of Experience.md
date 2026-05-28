@@ -11,7 +11,7 @@ date_published: 2025-04-11
 url: https://storage.googleapis.com/deepmind-media/Era-of-Experience%20/The%20Era%20of%20Experience%20Paper.pdf
 confidence: high
 aliases: ["Welcome to the Era of Experience", "The Era of Experience", "Era of Experience", "2025 - Silver & Sutton - The Era of Experience"]
-related: ["[[Online Learning from Interaction]]", "[[Learning from Implicit Feedback]]", "[[In-Context Learning]]", "[[Test-Time Adaptation]]"]
+related: ["[[Online Learning from Interaction]]", "[[Implicit Feedback Signals]]", "[[In-Context Learning]]", "[[Test-Time Adaptation]]"]
 sources: []
 key_claims:
   - "The era of learning predominantly from human data is ending; high-quality human data in math, code, and science approaches its limit."
@@ -37,4 +37,4 @@ Position paper by David Silver and Richard Sutton (DeepMind / University of Albe
 - Makes the distinction between **human-prejudgment reward** (RLHF-style, scores a response before its effect is known) and **grounded reward** (scores the effect) — a useful lens for designing real production feedback loops.
 - Provides the "why now": data-limit pressure pushes the field toward experience as the next data source.
 
-> [!gap] The paper is a manifesto, not an empirical method. It does not specify how to do safe, low-variance online weight updates in deployed LLM agents; that gap is filled by [[Test-Time Adaptation]], [[Learning from Implicit Feedback]], and continual-learning work.
+> [!gap] The paper is a manifesto, not an empirical method. It does not specify how to do safe, low-variance online weight updates in deployed LLM agents; that gap is filled by [[Test-Time Adaptation]], [[Implicit Feedback Signals]], and continual-learning work.

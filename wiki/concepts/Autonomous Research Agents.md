@@ -50,7 +50,7 @@ Other limits observed: poor task sequencing, reluctance to prune (bias toward ad
 ## Connections
 
 - The hardest frontier of the [[Welcome to the Era of Experience|experience]] loop: an agent improving *the science itself*.
-- Harness design: [[Agentic Harness]], [[Harness Design Patterns]], durable logs ([[Session as Event Log]]).
+- Harness design: [[Agentic Harness]], durable logs ([[Session as Event Log]]).
 - Capability/reliability gap: [[Jagged Intelligence]], [[Verifiability]] (the speedrun is highly verifiable, which is *why* it worked).
 
 ## Open questions

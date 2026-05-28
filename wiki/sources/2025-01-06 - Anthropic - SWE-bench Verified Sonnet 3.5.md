@@ -68,7 +68,7 @@ No special retrieval tricks. No parallel sampling. Autonomous, single-pass.
 
 ## Connections
 
-- **Benchmark:** [[SWE-bench Verified]] — the eval surface; connects to [[LLM-as-Judge Evaluation]] critique (here eval is objective, not LLM-judged)
+- **Benchmark:** [[SWE-bench Verified]] — the eval surface; connects to [[LLM-as-Judge]] critique (here eval is objective, not LLM-judged)
 - **Agent pattern:** [[Autonomous Agents]] — model-chosen action loop
 - **Tool use:** [[Augmented LLM]], [[ACI - Agent-Computer Interface]]
 - **Reliability gap:** [[Pass^k Reliability Metric]] — 49% capability ≠ production reliability

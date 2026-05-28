@@ -21,7 +21,7 @@ related:
   - "[[SWE-bench]]"
   - "[[Eval Infrastructure Noise]]"
   - "[[tau-bench]]"
-  - "[[LLM-as-Judge Evaluation]]"
+  - "[[LLM-as-Judge]]"
   - "[[Meta-Harness]]"
 sources:
   - "[[.raw/articles/2026-02-05 - Anthropic - Infrastructure Noise Agentic Coding Evals.md]]"
@@ -87,6 +87,6 @@ This post is the first source in the wiki to apply [[Pass^k Reliability Metric]]
 
 - [[Pass^k Reliability Metric]] — this post extends the metric's scope from interactive (tau-bench) to coding (SWE-bench) evals
 - [[Meta-Harness]] — hermetic eval infrastructure described here is a specialized form of the meta-harness pattern
-- [[LLM-as-Judge Evaluation]] — orthogonal; pass^k is about consistency, LLM-judge is about scoring quality of one trial
+- [[LLM-as-Judge]] — orthogonal; pass^k is about consistency, LLM-judge is about scoring quality of one trial
 - [[SWE-bench]] — the primary benchmark studied; entity page created from this source
 - [[Eval Infrastructure Noise]] — concept page created from this source

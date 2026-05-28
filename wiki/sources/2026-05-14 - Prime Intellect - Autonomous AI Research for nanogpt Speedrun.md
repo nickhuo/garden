@@ -77,7 +77,7 @@ The **novelty gate** experiment is the sharpest result: when agents were *requir
 - Mechanism / synthesis page: [[Autonomous Research Agents]].
 - This is the "[[Welcome to the Era of Experience|experience]]" loop's hardest frontier — an agent improving *the science itself*, not just task performance.
 - Contrast with the human-out-of-loop ideal: [[Human-in-the-Loop Intervention]] was needed ~100 times, mostly to re-assert that agents should keep beating each new record.
-- Harness design mirrors Anthropic's [[Harness Design Patterns]] and the durable-log pattern in [[Session as Event Log]].
+- Harness design mirrors Anthropic's [[Agentic Harness]] and the durable-log pattern in [[Session as Event Log]].
 
 > [!key-insight] Search, not invention
 > The novelty gate is the headline: today's frontier agents extend a human-seeded idea pool extremely well but cannot yet originate the seeds. Autonomous self-improvement is currently bottlenecked on idea generation, not on execution or search.

@@ -69,12 +69,12 @@ LLM-based (ChatGPT) automatic evaluator with two metrics:
 - **Pass Rate** — fraction of instructions completed within budget. ToolLLaMA ≈ 50% in DFS multi-API settings; ChatGPT/GPT-4 baseline ≈ 60% on large-scale tasks.
 - **Win Rate** — pairwise ChatGPT-judged comparison of two solution paths against a reference.
 
-This is a pure [[LLM-as-Judge Evaluation]] design — contrast with τ-bench's deterministic database-state reward and BFCL's AST match. It's the most scalable of the three and the least faithful (inherits judge bias).
+This is a pure [[LLM-as-Judge]] design — contrast with τ-bench's deterministic database-state reward and BFCL's AST match. It's the most scalable of the three and the least faithful (inherits judge bias).
 
 ## Connections to existing wiki
 
 - **[[Tool-Use Benchmarks - BFCL vs tau-bench vs ToolBench]]** — the synthesis page that situates all three.
-- **[[LLM-as-Judge Evaluation]]** — ToolEval is the LLM-judge end of the benchmark-grading spectrum.
+- **[[LLM-as-Judge]]** — ToolEval is the LLM-judge end of the benchmark-grading spectrum.
 - **[[Tree of Thoughts]] / [[ReAct]]** — DFSDT is a search-augmented upgrade over linear ReAct, ToT-flavored.
 - **[[Tool Search Tool]]** — the neural API retriever prefigures retrieve-don't-list tool exposure.
 - **[[Few-Shot Drift]]** — fully ChatGPT-generated data risks distilling ChatGPT's own biases into ToolLLaMA.

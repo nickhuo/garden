@@ -15,7 +15,7 @@ url: https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues
 confidence: high
 related:
   - "[[KV-Cache Discipline]]"
-  - "[[LLM-as-Judge Evaluation]]"
+  - "[[LLM-as-Judge]]"
   - "[[Token Economics]]"
   - "[[brain/03_Resources/digest/sources/anthropic]]"
 sources:
@@ -49,7 +49,7 @@ See concept: [[Config Type Safety]]
 
 A buffer boundary condition at exactly 4,096-byte chunk multiples overwrote the tail of the system prompt with the head of retrieval results. The model received corrupted context but produced coherent-looking wrong answers. Detection: user reports (hours delay). Resolution: 6 hours.
 
-**Fixes:** fuzz/property-based testing for context assembly; [[LLM-as-Judge Evaluation]] on production traffic sample; static analysis on byte-level string operations.
+**Fixes:** fuzz/property-based testing for context assembly; [[LLM-as-Judge]] on production traffic sample; static analysis on byte-level string operations.
 
 See concept: [[Context Assembly Pipeline]]
 
@@ -71,7 +71,7 @@ See concept: [[KV-Cache Discipline]], [[Cache Invalidation Cascade]]
 
 ## Systemic Investments
 
-1. **Production traffic evaluation harness** — LLM-as-judge on live traffic sample for quality regression detection. See [[LLM-as-Judge Evaluation]].
+1. **Production traffic evaluation harness** — LLM-as-judge on live traffic sample for quality regression detection. See [[LLM-as-Judge]].
 2. **Change management integration** — unified view of deployments, configs, and maintenance operations for on-call engineers.
 3. **Resilience testing / chaos engineering** — fault injection to validate load shedding, caching, and degradation paths under realistic traffic.
 
@@ -85,7 +85,7 @@ See concept: [[KV-Cache Discipline]], [[Cache Invalidation Cascade]]
 ## Connections
 
 - [[KV-Cache Discipline]] — Incident 3 is a real production failure mode for cache discipline. Adds industrial evidence.
-- [[LLM-as-Judge Evaluation]] — Anthropic is now deploying this on live traffic; validates the concept's practical utility.
+- [[LLM-as-Judge]] — Anthropic is now deploying this on live traffic; validates the concept's practical utility.
 - [[Token Economics]] — KV-cache hit rate is directly linked to cost and latency at Anthropic's scale.
 - [[Context Engineering]] — Incident 2's root cause lives in the context assembly pipeline.
 - [[brain/03_Resources/digest/sources/anthropic]] — entity producing this source.

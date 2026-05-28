@@ -50,12 +50,12 @@ The result was coherent but wrong responses. This was detected by user reports, 
 ## Corrective Patterns
 
 1. **Fuzz/property-based testing** — generate inputs at and around chunk boundaries to exercise boundary conditions systematically.
-2. **LLM-as-judge on production traffic** — semantic evaluation on a sample of live responses can catch quality regressions invisible to error-rate metrics. See [[LLM-as-Judge Evaluation]].
+2. **LLM-as-judge on production traffic** — semantic evaluation on a sample of live responses can catch quality regressions invisible to error-rate metrics. See [[LLM-as-Judge]].
 3. **Static analysis on byte-level operations** — flag code paths involving buffer operations without explicit boundary tests.
 
 ## Connections
 
 - [[Context Engineering]] — context assembly is the implementation layer beneath context engineering strategy.
-- [[LLM-as-Judge Evaluation]] — the detection mechanism Anthropic is deploying in response to this incident.
+- [[LLM-as-Judge]] — the detection mechanism Anthropic is deploying in response to this incident.
 - [[Long-Horizon Context Management]] — multi-turn, multi-document contexts are more complex to assemble and more likely to hit boundary conditions.
 - [[Error Trace Retention]] — preserving assembly steps in logs aids debugging when corruption is suspected.

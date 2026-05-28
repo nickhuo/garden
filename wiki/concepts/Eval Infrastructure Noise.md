@@ -20,7 +20,7 @@ related:
   - "[[SWE-bench]]"
   - "[[tau-bench]]"
   - "[[Meta-Harness]]"
-  - "[[LLM-as-Judge Evaluation]]"
+  - "[[LLM-as-Judge]]"
   - "[[User Simulator Evaluation]]"
 sources:
   - "[[2026-02-05 - Anthropic - Infrastructure Noise Agentic Coding Evals]]"
@@ -73,7 +73,7 @@ Anthropic's prescribed remedy: maintain **separate retry budgets** for infrastru
 
 - [[Pass^k Reliability Metric]] — infrastructure noise is a critical prerequisite concern before pass^k is interpretable
 - [[User Simulator Evaluation]] — tau-bench's noise is dominated by user-simulator stochasticity (a feature, not a bug); SWE-bench's noise is dominated by infrastructure (a bug)
-- [[LLM-as-Judge Evaluation]] — orthogonal; this concept is about consistency across trials, LLM-judge is about scoring quality within one trial
+- [[LLM-as-Judge]] — orthogonal; this concept is about consistency across trials, LLM-judge is about scoring quality within one trial
 - [[Meta-Harness]] — hermetic eval infrastructure described here is a specialized instantiation of the meta-harness pattern: a layer that virtualizes and stabilizes the execution environment
 
 ## Broader Implication

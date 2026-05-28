@@ -16,7 +16,7 @@ aliases:
   - execution trace grading
 related:
   - "[[Agent Eval Pyramid]]"
-  - "[[LLM-as-Judge Evaluation]]"
+  - "[[LLM-as-Judge]]"
   - "[[Pass^k Reliability Metric]]"
   - "[[User Simulator Evaluation]]"
   - "[[Session as Event Log]]"
@@ -60,7 +60,7 @@ Structured logging of every agent action — tool calls, inputs, outputs, timing
 
 - **[[Session as Event Log]]** — a runtime design pattern for agents to maintain state; traces are the eval-side complement. Both treat the agent's history as a first-class artifact.
 - **[[Error Trace Retention]]** — Manus's pattern of keeping error stacks in context for LLM reasoning; trace-based eval makes those same error stacks available to the eval infrastructure.
-- **[[LLM-as-Judge Evaluation]]** — judges typically grade final output; with traces, a judge can also grade intermediate steps (e.g., "was the correct tool selected at step 4?").
+- **[[LLM-as-Judge]]** — judges typically grade final output; with traces, a judge can also grade intermediate steps (e.g., "was the correct tool selected at step 4?").
 - **[[Pass^k Reliability Metric]]** — traces across k runs of the same task enable per-step variance analysis: is the failure consistent at the same step, or does it vary?
 
 ## Limitations

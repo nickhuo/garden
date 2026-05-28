@@ -94,7 +94,7 @@ This shifts the cost calculus. The 15× chat-token premium ([[Token Economics]])
 - Strengthens (with carve-outs): [[Workflows Beat Agents for Most Production]]
 - Architectural variant of: [[Orchestrator-Workers]] (agent variant — dynamic spawning, not predefined dispatch)
 - Built on: [[Augmented LLM]]
-- Eval methodology: [[LLM-as-Judge Evaluation]]
+- Eval methodology: [[LLM-as-Judge]]
 - One of four: [[Long-Horizon Context Management]]
 - Distinct from (clarifying note above): [[Recursive Language Models]] — single-agent recursive composition, not multi-agent
 - Counter-position: [[Ralph Loop]] — monolithic single-process pole, rejects multi-agent for coding

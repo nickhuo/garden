@@ -16,7 +16,7 @@ aliases:
   - three-tier eval
   - agent evaluation hierarchy
 related:
-  - "[[LLM-as-Judge Evaluation]]"
+  - "[[LLM-as-Judge]]"
   - "[[User Simulator Evaluation]]"
   - "[[Pass^k Reliability Metric]]"
   - "[[Trace-Based Evaluation]]"
@@ -59,7 +59,7 @@ When correctness is semantic rather than structural:
 - Calibrated periodically against human-labeled sets (50–200 examples)
 - Judges final state, not trajectory (usually)
 
-See [[LLM-as-Judge Evaluation]] for full treatment.
+See [[LLM-as-Judge]] for full treatment.
 
 ### Tier 3 — End-to-end with simulated users
 
@@ -89,7 +89,7 @@ Reference implementation: [[tau-bench]] (Sierra, 2024). Matches Anthropic's Tier
 ## Connection to broader wiki
 
 - [[Workflows Beat Agents for Most Production]] — workflows have more Tier-1-testable surfaces than agents; the pyramid asymmetry partially explains why workflows are easier to trust in production.
-- [[LLM-as-Judge Evaluation]] — Tier 2 in full detail.
+- [[LLM-as-Judge]] — Tier 2 in full detail.
 - [[User Simulator Evaluation]] — Tier 3 in full detail.
 - [[Pass^k Reliability Metric]] — the metric that Tier 3 requires.
 - [[tau-bench]] — reference Tier 3 implementation.

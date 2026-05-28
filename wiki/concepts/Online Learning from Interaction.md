@@ -5,7 +5,7 @@ created: 2026-05-20
 updated: 2026-05-20
 tags: [ai-agents, llm, real-time-learning, continual-learning, reinforcement-learning]
 status: developing
-related: ["[[In-Context Learning]]", "[[Test-Time Adaptation]]", "[[Learning from Implicit Feedback]]", "[[Agent Memory Taxonomy]]", "[[Self-Editing Memory]]", "[[Session as Event Log]]"]
+related: ["[[In-Context Learning]]", "[[Test-Time Adaptation]]", "[[Implicit Feedback Signals]]", "[[Agent Memory Taxonomy]]", "[[Self-Editing Memory]]", "[[Session as Event Log]]"]
 sources: ["[[2025-04-11 - Silver Sutton - Welcome to the Era of Experience]]"]
 ---
 
@@ -24,7 +24,7 @@ The umbrella concept for **real-time learning**: an agent improves from its own 
 | Test-time training | weights, transiently | per task | [[Test-Time Adaptation]] |
 | Continual / online RL | weights, permanently | lifelong | this page |
 
-Silence and disengagement are signals too: absence of a follow-up correction is weak positive evidence; abandonment is negative ([[Learning from Implicit Feedback]]).
+Silence and disengagement are signals too: absence of a follow-up correction is weak positive evidence; abandonment is negative ([[Implicit Feedback Signals]]).
 
 ## Why it matters
 

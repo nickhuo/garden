@@ -13,7 +13,7 @@ related:
   - "[[Claude 3.5 Sonnet]]"
   - "[[Agentic Harness]]"
   - "[[Pass^k Reliability Metric]]"
-  - "[[LLM-as-Judge Evaluation]]"
+  - "[[LLM-as-Judge]]"
   - "[[Autonomous Agents]]"
 sources:
   - "[[2025-01-06 - Anthropic - SWE-bench Verified Sonnet 3.5]]"
@@ -30,7 +30,7 @@ SWE-bench Verified is a human-curated subset of the original SWE-bench benchmark
 
 **"Verified"** distinguishes it from the original SWE-bench: issues were manually reviewed to ensure the test suites actually validate the intended behavior. This filters out poorly specified issues and makes the benchmark a more honest capability signal.
 
-**Evaluation:** Objective test pass/fail — not LLM-judged. This makes it more trustworthy than [[LLM-as-Judge Evaluation]] setups.
+**Evaluation:** Objective test pass/fail — not LLM-judged. This makes it more trustworthy than [[LLM-as-Judge]] setups.
 
 ## Why it matters for agent evaluation
 

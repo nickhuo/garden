@@ -10,7 +10,7 @@ author: Eric Han, Jun Chen, Karthik Abinav Sankararaman, et al. (Meta)
 date_published: 2025-05-21
 url: https://arxiv.org/abs/2505.14946
 confidence: medium
-related: ["[[Learning from Implicit Feedback]]", "[[Online Learning from Interaction]]"]
+related: ["[[Implicit Feedback Signals]]", "[[Online Learning from Interaction]]"]
 sources: []
 key_claims:
   - "Implicit production signals (engagement, selection, follow-up behavior) can train preference models competitive with explicit-rating reward models."

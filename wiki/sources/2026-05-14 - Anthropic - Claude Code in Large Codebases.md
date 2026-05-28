@@ -19,7 +19,6 @@ related:
   - "[[brain/CLAUDE]]"
   - "[[Agent Skills]]"
   - "[[Agentic Harness]]"
-  - "[[Harness Design Patterns]]"
   - "[[MCP]]"
   - "[[Context Engineering]]"
   - "[[2026-05-13 - Anthropic - Claude Code Best Practices]]"
@@ -93,7 +92,7 @@ Plus:
 - [[brain/CLAUDE]] — layering and subdirectory-first initialization explicitly recommended
 - [[Agent Skills]] — path-scoping called out as the key feature at scale
 - [[Agentic Harness]] — this post is a direct case study of the harness concept
-- [[Harness Design Patterns]] — the 5-layer extension model
+- [[Agentic Harness]] — the 5-layer extension model
 - [[Harness Staleness]] — 3-6 month review cadence as the operational discipline
 - [[Context Engineering]] — codebase legibility is context engineering at the repo-architecture level
 - [[Just-in-Time Context Retrieval]] — agentic search is exactly this pattern applied to source code

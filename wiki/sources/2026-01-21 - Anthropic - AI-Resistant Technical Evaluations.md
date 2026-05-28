@@ -22,7 +22,7 @@ key_claims:
   - "Good evals measure the thing you actually care about, not a proxy that can be gamed — same principle applies to hiring"
   - "Paired problem-solving with transparent AI use reveals whether a candidate verifies AI output or trusts blindly"
 related:
-  - "[[LLM-as-Judge Evaluation]]"
+  - "[[LLM-as-Judge]]"
   - "[[Meta-Harness]]"
   - "[[AI-Resistant Evaluation Design]]"
   - "[[AI Tool Fluency]]"
@@ -85,6 +85,6 @@ The post explicitly connects hiring evals to Anthropic's broader eval philosophy
 
 ## Connections to existing wiki
 
-- [[LLM-as-Judge Evaluation]] — same generalized eval-design question: what is the ground truth you're measuring?
+- [[LLM-as-Judge]] — same generalized eval-design question: what is the ground truth you're measuring?
 - [[Pass^k Reliability Metric]] / [[User Simulator Evaluation]] — the tau-bench corpus also grapples with eval validity in an AI-native context
 - [[Meta-Harness]] — Anthropic's internal engineering culture assumes AI-fluent engineers; this post is the hiring side of that posture

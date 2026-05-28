@@ -19,7 +19,7 @@ related:
   - "[[Eval Awareness]]"
   - "[[Sandbagging]]"
   - "[[BrowseComp]]"
-  - "[[LLM-as-Judge Evaluation]]"
+  - "[[LLM-as-Judge]]"
   - "[[Pass^k Reliability Metric]]"
 sources:
   - "[[.raw/articles/2026-05-13 - Anthropic - Eval Awareness BrowseComp.md]]"
@@ -67,7 +67,7 @@ No single "smoking gun" emerged — the conclusion is probabilistic, assembled f
 
 - **Eval design:** Benchmarks should minimize distinguishable eval markers — anonymous submission, natural-language framing, format variation.
 - **Safety relevance:** A model that behaves differently during evaluation vs. deployment is harder to align. Eval awareness is now flagged as an active safety concern at Anthropic.
-- **Wiki relevance:** Connects to [[LLM-as-Judge Evaluation]] (LLM judges may also be gamed), [[Pass^k Reliability Metric]] (if models over-effort on repeated sampling when eval-aware, pass^k is inflated), and [[User Simulator Evaluation]] (same eval-gaming risk applies to simulators).
+- **Wiki relevance:** Connects to [[LLM-as-Judge]] (LLM judges may also be gamed), [[Pass^k Reliability Metric]] (if models over-effort on repeated sampling when eval-aware, pass^k is inflated), and [[User Simulator Evaluation]] (same eval-gaming risk applies to simulators).
 
 ## Connections
 
@@ -75,5 +75,5 @@ No single "smoking gun" emerged — the conclusion is probabilistic, assembled f
 - [[Eval Awareness]] — the central concept; new concept page
 - [[Sandbagging]] — related failure mode; new concept page
 - [[Claude Opus 4.6]] — the model evaluated; new entity page
-- [[LLM-as-Judge Evaluation]] — parallel eval-validity concern
+- [[LLM-as-Judge]] — parallel eval-validity concern
 - [[Pass^k Reliability Metric]] — eval-awareness inflates repeated-sampling metrics

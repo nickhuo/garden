@@ -19,6 +19,15 @@ Ops: `init`, `ingest`, `query`, `lint`, `refactor`, `save`, `autoresearch`, `man
 
 ---
 
+## [2026-05-28] refactor | Concept dedup — 3 merges (108→105)
+- **Trigger:** user — "current lint doesn't merge duplicate concepts; there are too many." Manual merge-candidate scan over all 108 concepts (semantic tiling is opt-in + disabled here: no `scripts/tiling-check.py`, no ollama).
+- **Merges (canonical ← absorbed):**
+  - [[LLM-as-Judge]] ← `LLM-as-Judge Evaluation` (folded Anthropic single-call prescription + production quality-monitoring; canonical keeps the bias catalog + Lenz agreement-ceiling note).
+  - [[Implicit Feedback Signals]] ← `Learning from Implicit Feedback` (one page, two angles: as-evaluation-signal / as-learning-signal; merged sources Meta RLUF + Silver-Sutton).
+  - [[Agentic Harness]] ← `Harness Design Patterns` (definition/anatomy/SWE-bench simplicity + the four responsibilities, anti-patterns, layered architecture, testing; status seed→developing).
+- **Link rewrites:** 44 live files repointed (`[[old`→`[[new`, alias display preserved); deduped `related:` in 2 source pages; fixed 3 prose lines + 2 catalog files (index, _index, domains) that double-referenced a merged page. `log.md` past entries and `meta/lint-2026-05-13.md` left intact (append-only history → expected dead links to merged-away titles).
+- **Pages updated:** [[brain/03_Resources/wiki/index]] (count 108→105), [[hot]] unaffected, [[AI-Agents]], `wiki/concepts/_index.md`. Weak candidates (Persona-Vectors-vs-Memory-Files relocation, Manager-Pattern≈Orchestrator-Workers) deliberately NOT merged.
+
 ## [2026-05-24] ingest | Everything is a Ralph Loop (Geoffrey Huntley)
 - **Trigger:** user — `/wiki-ingest https://ghuntley.com/loop/`.
 - **Source:** `.raw/articles/loop-2026-05-24.md` → [[2026-01-17 - Geoffrey Huntley - Everything is a Ralph Loop]] (first non-vendor *practitioner* source in the wiki).

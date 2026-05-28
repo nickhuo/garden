@@ -14,7 +14,7 @@ related:
 - "[[tau-bench]]"
 - "[[ToolBench]]"
 - "[[Agent Eval Pyramid]]"
-- "[[LLM-as-Judge Evaluation]]"
+- "[[LLM-as-Judge]]"
 - "[[Pass^k Reliability Metric]]"
 sources:
 - "[[2025-07 - Patil et al - BFCL]]"
@@ -34,7 +34,7 @@ The three benchmarks most cited for LLM tool/function-calling evaluation. They a
 | Paper | [[2025-07 - Patil et al - BFCL]] | [[2024-06-17 - Yao et al - tau-bench]] | [[2023-07-31 - Qin et al - ToolLLM]] |
 | **Measures** | call **correctness** at scale | task **reliability** under interaction | **generalization** across many APIs |
 | Scale | 1000s of functions | 165 tasks, 2 domains | 16,464 real APIs, 49 categories |
-| Grading | **AST match** (+ executable) | **DB-state equality** (deterministic) | **ToolEval** ([[LLM-as-Judge Evaluation]]) |
+| Grading | **AST match** (+ executable) | **DB-state equality** (deterministic) | **ToolEval** ([[LLM-as-Judge]]) |
 | User in loop | no (scripted turns) | **yes** (LM user simulator) | no |
 | Key metric | accuracy per category | **pass^k** ([[Pass^k Reliability Metric]]) | Pass Rate / Win Rate |
 | Faithfulness | high (structural) | **highest** (ground truth) | lowest (judge bias) |
@@ -57,7 +57,7 @@ The three benchmarks most cited for LLM tool/function-calling evaluation. They a
 Deterministic ←──────────────────→ LLM-judged
 **τ-bench** (DB-state) · **BFCL** (AST) · **ToolBench** (ToolEval)
 
-Faithfulness trades against scalability. τ-bench's determinism requires artificially unique outcomes (only works in rule-constrained domains); ToolBench's LLM judge works anywhere but inherits judge bias (see [[Eval Validity]], [[LLM-as-Judge Evaluation]]).
+Faithfulness trades against scalability. τ-bench's determinism requires artificially unique outcomes (only works in rule-constrained domains); ToolBench's LLM judge works anywhere but inherits judge bias (see [[Eval Validity]], [[LLM-as-Judge]]).
 
 ## Practical takeaway
 

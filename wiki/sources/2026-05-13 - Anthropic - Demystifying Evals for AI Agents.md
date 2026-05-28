@@ -13,7 +13,7 @@ tags:
   - methodology
 status: developing
 related:
-  - "[[LLM-as-Judge Evaluation]]"
+  - "[[LLM-as-Judge]]"
   - "[[User Simulator Evaluation]]"
   - "[[Pass^k Reliability Metric]]"
   - "[[tau-bench]]"
@@ -72,7 +72,7 @@ See [[Trace-Based Evaluation]].
 
 A critical anti-pattern: letting LLM judges conflate factual accuracy with formatting or tone. Multi-axis rubrics must score these independently. A well-formatted wrong answer should fail; a clunkily formatted correct answer should pass.
 
-Builds on [[LLM-as-Judge Evaluation]] — extends its multi-axis prescription with an explicit correctness/style split.
+Builds on [[LLM-as-Judge]] — extends its multi-axis prescription with an explicit correctness/style split.
 
 ### 4. Judge calibration
 
@@ -88,7 +88,7 @@ Three challenges in agent eval: multiple valid paths to goal, long-horizon credi
 
 ## Connections
 
-- Directly enriches [[LLM-as-Judge Evaluation]] — adds calibration sets, correctness/style split, single-call preference.
+- Directly enriches [[LLM-as-Judge]] — adds calibration sets, correctness/style split, single-call preference.
 - Directly enriches [[User Simulator Evaluation]] — reaffirms the simulated-user pattern as Tier 3, adds info-asymmetry constraint.
 - Directly enriches [[Pass^k Reliability Metric]] — explains the mechanism (multi-turn stochasticity accumulation).
 - Cross-validates [[tau-bench]]'s methodology from an Anthropic perspective — confirms environment-state reward > LLM-judge for constrained domains.

@@ -49,7 +49,7 @@ A citable benchmark distinct from its paper, and the most-cited "open-source too
 
 ## Position in the benchmark space
 
-The **breadth/generalization** pole — thousands of real APIs, fully automated grading via [[LLM-as-Judge Evaluation]] (ToolEval). Most scalable, least faithful of the three. See [[Tool-Use Benchmarks - BFCL vs tau-bench vs ToolBench]].
+The **breadth/generalization** pole — thousands of real APIs, fully automated grading via [[LLM-as-Judge]] (ToolEval). Most scalable, least faithful of the three. See [[Tool-Use Benchmarks - BFCL vs tau-bench vs ToolBench]].
 
 ## Known issue / successor
 

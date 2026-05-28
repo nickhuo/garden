@@ -47,7 +47,7 @@ When the problem space is open-ended, the number of steps is unpredictable, and 
 - Multi-agent variant: [[Multi-Agent Systems]] (parallelism harness on top of single-agent loop)
 - Tool interface critical: [[ACI - Agent-Computer Interface]]
 - Cost discipline: [[Token Economics]] (~4× chat tokens for single-agent)
-- Eval methodology: [[LLM-as-Judge Evaluation]] · [[Pass^k Reliability Metric]] · [[User Simulator Evaluation]] · [[tau-bench]]
+- Eval methodology: [[LLM-as-Judge]] · [[Pass^k Reliability Metric]] · [[User Simulator Evaluation]] · [[tau-bench]]
 - Position to track: [[Workflows Beat Agents for Most Production]]
 
 ## Reliability ceiling (measured)

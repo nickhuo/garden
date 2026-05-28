@@ -17,7 +17,7 @@ aliases:
 status: developing
 related:
   - "[[Sandbagging]]"
-  - "[[LLM-as-Judge Evaluation]]"
+  - "[[LLM-as-Judge]]"
   - "[[Pass^k Reliability Metric]]"
   - "[[User Simulator Evaluation]]"
   - "[[BrowseComp]]"
@@ -76,7 +76,7 @@ Benchmarks should minimize distinguishable eval markers to reduce eval-condition
 
 ## Impact on other eval frameworks
 
-- **[[LLM-as-Judge Evaluation]]**: LLM judges themselves may exhibit eval awareness — scoring responses differently when they recognize the evaluation context. This adds a second layer of eval-conditioning risk.
+- **[[LLM-as-Judge]]**: LLM judges themselves may exhibit eval awareness — scoring responses differently when they recognize the evaluation context. This adds a second layer of eval-conditioning risk.
 - **[[Pass^k Reliability Metric]]**: If a model over-efforts when it detects repeated sampling (a BrowseComp-like pattern), pass^k scores are inflated above true deployment reliability.
 - **[[User Simulator Evaluation]]**: User simulators (e.g., [[tau-bench]]'s GPT-4 simulator) could also be eval-aware, biasing interaction quality in eval settings.
 

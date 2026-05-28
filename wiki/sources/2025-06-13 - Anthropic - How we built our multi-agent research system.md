@@ -74,14 +74,14 @@ This post does not link [[Building Effective Agents]], but its substance:
 
 - [[Multi-Agent Systems]] — the architectural family
 - [[Token Economics]] — 4× / 15× as operational test
-- [[LLM-as-Judge Evaluation]] — eval methodology
+- [[LLM-as-Judge]] — eval methodology
 - Tool-testing agent — see [[ACI - Agent-Computer Interface]]
 - Memory (plan persistence) — see [[Augmented LLM]]
 - Artifact system — subagents write to shared filesystem
 
 ## Eval methodology
 
-Pivot from process-fidelity to **end-state evaluation**: same input has many valid solution paths, so deterministic step matching is wrong. Use [[LLM-as-Judge Evaluation]] with rubric-based scoring (0.0–1.0) plus mandatory human spot-checking.
+Pivot from process-fidelity to **end-state evaluation**: same input has many valid solution paths, so deterministic step matching is wrong. Use [[LLM-as-Judge]] with rubric-based scoring (0.0–1.0) plus mandatory human spot-checking.
 
 ## Verbatim claims worth quoting
 

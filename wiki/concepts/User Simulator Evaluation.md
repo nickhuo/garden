@@ -12,7 +12,7 @@ status: developing
 related:
 - "[[Pass^k Reliability Metric]]"
 - "[[tau-bench]]"
-- "[[LLM-as-Judge Evaluation]]"
+- "[[LLM-as-Judge]]"
 - "[[Few-Shot Drift]]"
 sources:
 - "[[2024-06-17 - Yao et al - tau-bench]]"
@@ -56,7 +56,7 @@ User simulators surface conversational robustness as a measurable axis. Combined
 ## Connections
 
 - Composes with [[Pass^k Reliability Metric]] — the simulator is the entropy source that makes pass^k informative.
-- Contrast with [[LLM-as-Judge Evaluation]] — judge scores *agent output*; simulator generates *user input*. They sit at opposite ends of the closed loop.
+- Contrast with [[LLM-as-Judge]] — judge scores *agent output*; simulator generates *user input*. They sit at opposite ends of the closed loop.
 - Avoids the trajectory-grading trap discussed in [[Autonomous Agents]] open questions.
 - The simulator is a controlled instance of [[Few-Shot Drift]] — natural-language variation is the thing being measured rather than suppressed.
 

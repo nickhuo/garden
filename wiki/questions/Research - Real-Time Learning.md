@@ -5,7 +5,7 @@ created: 2026-05-20
 updated: 2026-05-20
 tags: [research, ai-agents, llm, real-time-learning]
 status: developing
-related: ["[[Online Learning from Interaction]]", "[[In-Context Learning]]", "[[Test-Time Adaptation]]", "[[Learning from Implicit Feedback]]", "[[Welcome to the Era of Experience]]", "[[2025-04-11 - Silver Sutton - Welcome to the Era of Experience]]", "[[2024-04-17 - Agarwal et al - Many-Shot In-Context Learning]]", "[[2025-05-21 - Meta - Reinforcement Learning from User Feedback]]", "[[Agent Memory Taxonomy]]", "[[Self-Editing Memory]]"]
+related: ["[[Online Learning from Interaction]]", "[[In-Context Learning]]", "[[Test-Time Adaptation]]", "[[Implicit Feedback Signals]]", "[[Welcome to the Era of Experience]]", "[[2025-04-11 - Silver Sutton - Welcome to the Era of Experience]]", "[[2024-04-17 - Agarwal et al - Many-Shot In-Context Learning]]", "[[2025-05-21 - Meta - Reinforcement Learning from User Feedback]]", "[[Agent Memory Taxonomy]]", "[[Self-Editing Memory]]"]
 sources: ["[[2025-04-11 - Silver Sutton - Welcome to the Era of Experience]]", "[[2024-04-17 - Agarwal et al - Many-Shot In-Context Learning]]", "[[2025-05-21 - Meta - Reinforcement Learning from User Feedback]]"]
 ---
 
@@ -34,7 +34,7 @@ Real-time learning is an agent improving from its immediate stream of interactio
 - [[Online Learning from Interaction]] — the umbrella; the full adaptation spectrum.
 - [[In-Context Learning]] — adapt the prompt, no weight change.
 - [[Test-Time Adaptation]] — transient per-task weight updates.
-- [[Learning from Implicit Feedback]] — the reward stream behind it all.
+- [[Implicit Feedback Signals]] — the reward stream behind it all.
 - Substrate: [[Agent Memory Taxonomy]], [[Self-Editing Memory]], [[Session as Event Log]].
 
 ## Contradictions

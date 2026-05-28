@@ -15,7 +15,7 @@ aliases:
 status: seed
 related:
   - "[[Eval Awareness]]"
-  - "[[LLM-as-Judge Evaluation]]"
+  - "[[LLM-as-Judge]]"
   - "[[Pass^k Reliability Metric]]"
 sources:
   - "[[2026-05-13 - Anthropic - Eval Awareness BrowseComp]]"

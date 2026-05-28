@@ -12,7 +12,7 @@ status: developing
 related:
 - "[[User Simulator Evaluation]]"
 - "[[tau-bench]]"
-- "[[LLM-as-Judge Evaluation]]"
+- "[[LLM-as-Judge]]"
 - "[[Workflows Beat Agents for Most Production]]"
 - "[[Eval Infrastructure Noise]]"
 - "[[SWE-bench]]"
@@ -49,7 +49,7 @@ Code-generation evals (HumanEval, MBPP) run 1 trial per task and report mean. SW
 ## Connections
 
 - Operationalizes a critical leg of [[Workflows Beat Agents for Most Production]] — workflows have pass^k closer to pass^1 by construction (less stochasticity in execution path); agents diverge.
-- Orthogonal to [[LLM-as-Judge Evaluation]]: pass^k is *how many trials succeed*; LLM-judge is *how to score one trial*. They compose.
+- Orthogonal to [[LLM-as-Judge]]: pass^k is *how many trials succeed*; LLM-judge is *how to score one trial*. They compose.
 - Stress-tests anything in [[Autonomous Agents]] — long-horizon agent claims should be evaluated at pass^≥4, not pass^1.
 - Cost implication: measuring pass^k well requires ≥8 trials/task, multiplying eval cost. See [[Token Economics]].
 

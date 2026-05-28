@@ -60,7 +60,7 @@ So the rule is roughly:
 - Tension with: [[KV-Cache Discipline]] (resolved by varying only the tail, not the prefix)
 - Related to: [[Recitation]] inverse — recitation reinforces a *desired* pattern; few-shot drift is reinforcement of an *undesired* one
 - Failure mode of: [[Autonomous Agents]] in long tasks with repetitive subtasks
-- Eval surface: [[LLM-as-Judge Evaluation]] should test for drift on batched-similar tasks
+- Eval surface: [[LLM-as-Judge]] should test for drift on batched-similar tasks
 
 ## Open questions
 

@@ -70,7 +70,7 @@ If error recovery is the marker of agentic behavior, then benchmarks that score 
 
 - Implements: [[Context Engineering]] (a discipline rule within it)
 - Cache-compatible with: [[KV-Cache Discipline]] (retention is append-only by default)
-- Eval gap: [[LLM-as-Judge Evaluation]] (judges currently score end-states, not recovery quality)
+- Eval gap: [[LLM-as-Judge]] (judges currently score end-states, not recovery quality)
 - Compaction interaction: [[Long-Horizon Context Management]] (preserve errors through summarization)
 
 ## Open questions

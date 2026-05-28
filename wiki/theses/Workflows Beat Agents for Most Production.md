@@ -73,7 +73,7 @@ Provisional endorsement of workflow-default with Anthropic's research carve-out.
 - Constrained-substrate agent design: [[Recursive Language Models]] (workflow-shaped REPL hosting an agentic LM)
 - Decomposition axis: [[Context Decomposition vs Problem Decomposition]]
 - Operational test: [[Token Economics]]
-- Eval framework: [[LLM-as-Judge Evaluation]]
+- Eval framework: [[LLM-as-Judge]]
 - Context discipline: [[Context Engineering]]
 - Production runtime: [[Meta-Harness]] · [[Managed Agents]]
 - Workflow patterns: [[Prompt Chaining]] · [[Routing]] · [[Parallelization]] · [[Orchestrator-Workers]] · [[Evaluator-Optimizer]]
