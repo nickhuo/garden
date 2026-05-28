@@ -128,4 +128,3 @@ In addition to those in `WIKI.md`:
 - Plugin: https://github.com/AgriciDaniel/claude-obsidian
 - WIKI.md (this vault): schema reference
 - Karpathy's gist: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
-- Migration backup: `outputs/03_Resources-backup-20260511-045630.tar.gz` (if you need to revert)
