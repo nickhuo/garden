@@ -96,6 +96,20 @@ gbrain does **not** require its own `people/companies/concepts/` layout.
 - **Don't:** run `gbrain skillpack scaffold` into this repo (it would collide with the existing
   llm-wiki / claude-obsidian / gstack skills), and don't restructure the wiki to gbrain's schema.
 
+**MCP registration (load-bearing flag).** Register at user scope with **`GBRAIN_NO_UPDATE_CHECK=1`**:
+
+```bash
+claude mcp add gbrain --scope user \
+  -e ZEROENTROPY_API_KEY=ze_… \
+  -e GBRAIN_NO_UPDATE_CHECK=1 \
+  -- /Users/nickhuo/.bun/bin/gbrain serve
+```
+
+⚠️ Without `GBRAIN_NO_UPDATE_CHECK=1`, `gbrain serve` hangs ~30s on a startup update-check and
+Claude Code marks the server **"✗ Failed to connect"** (the 85 tools never load). Do **not**
+substitute `GBRAIN_OFFLINE=1` — it also blocks the ZeroEntropy embedding calls that query-time
+search depends on. After registering, **restart the Claude session** so the tools load.
+
 Install / re-init mechanics live in the gstack **`setup-gbrain`** skill; maintenance in
 **`sync-gbrain`**.
 
