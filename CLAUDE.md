@@ -110,6 +110,40 @@ Claude Code marks the server **"✗ Failed to connect"** (the 85 tools never loa
 substitute `GBRAIN_OFFLINE=1` — it also blocks the ZeroEntropy embedding calls that query-time
 search depends on. After registering, **restart the Claude session** so the tools load.
 
+### Orchestration with claude-obsidian operations
+
+Two contracts bind gbrain into the plugin skills (`wiki-ingest`, `wiki-query`, `wiki-lint`,
+`save`, `autoresearch`). Like the Source-Quality Gate, **this overrides the plugin skills** where
+they differ.
+
+**The two contracts:**
+1. **Query-first** — before any read/judgement step, run `gbrain query` to locate relevant pages,
+   then read them. Don't rely on guessing pages from `index.md`.
+2. **Sync-after** — after any write to `wiki/` (ingest, save, autoresearch round, page edit), run
+   `gbrain sync` then `gbrain embed --stale`. The index must never drift from the wiki.
+
+**Per operation:**
+- **wiki-query** — `hot.md` (recency) → **`gbrain query`** (retrieval over all chunks) → read the
+  top-N real pages → synthesize with citations. gbrain replaces the "guess 3–5 pages" step.
+- **wiki-ingest** — *before writing*: `gbrain query` the source's main claims for a **collision
+  check** (already covered? update vs. create? contradicts an existing thesis?). *After writing*:
+  `gbrain sync` + `embed --stale`. This runs **after** the seed gate + citation chase, not instead.
+- **autoresearch** — *before searching*: `gbrain query` "what do we already know" to focus scope.
+  *After each round's pages* (on the `research/*` branch): `gbrain sync`.
+- **save** — after filing the conversation: `gbrain sync`.
+- **wiki-lint** — run gbrain's `doctor`, `orphans --json`, `lint` as an extra **data-layer** pass
+  alongside the plugin's wikilink-semantic checks.
+
+**Overlap / ownership (so the two systems don't double-work or fight):**
+- **Retrieval vs. synthesis** — gbrain owns *retrieval* (which pages are relevant); the wiki flow
+  owns *synthesis* (reading + writing the cited answer).
+- **lint** — wikilink-semantic health (orphans, dead links, missing backlinks) stays with the
+  plugin + Obsidian (they understand `[[wikilinks]]`); gbrain's `lint`/`doctor` only adds data-layer
+  checks (stale embeddings, frontmatter parse, placeholder text).
+- **link graph** — the `[[wikilink]]` graph belongs to Obsidian; gbrain's mention-graph is
+  supplementary. **Never** let gbrain edit wiki files to add backlinks (`check-backlinks fix` writes
+  files — forbidden: Nick doesn't hand-edit, gbrain doesn't touch content).
+
 Install / re-init mechanics live in the gstack **`setup-gbrain`** skill; maintenance in
 **`sync-gbrain`**.
 
