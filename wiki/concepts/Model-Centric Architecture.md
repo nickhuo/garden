@@ -21,6 +21,9 @@ sources:
 
 # Model-Centric Architecture
 
+> [!contradiction] Counter-pole: Heuristic Learning (Weng 2026)
+> This page (with [[Software 2.0]], [[The Bitter Lesson]]) argues the model is the locus and code moves to the side. [[Heuristic Learning]] pushes the **opposite** pole: a coding agent *evolves the code itself* as the learning loop, reaching Deep-RL-competitive control without training a network. Reconciliation: the Bitter Lesson assumed hand-engineering carries human maintenance cost — HL claims coding agents flip that cost curve, so the model-vs-code slider may not slide only one way. Unresolved; both readings are currently defensible.
+
 ## Summary
 
 An inversion of the usual agent pipeline. In most systems the model is a component at the *end* of a pipeline: memory, personalization, content selection, and interface logic sit outside it, with code orchestrating the model. The model-centric thesis flips three things (medium-high confidence):

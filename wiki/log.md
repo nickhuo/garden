@@ -19,6 +19,16 @@ Ops: `init`, `ingest`, `query`, `lint`, `refactor`, `save`, `autoresearch`, `man
 
 ---
 
+## [2026-05-29] ingest | Learning Beyond Gradients (Jiayi Weng)
+- Source: `.raw/articles/2026-05 - Weng - Learning Beyond Gradients.md` → [[2026-05 - Weng - Learning Beyond Gradients]]
+- Seed gate: **13/14 → high** (docked 1 on citation hygiene — blog, names baselines/repo not a formal bib).
+- gbrain collision check (query-first): no same-name page; nearest anchors = [[Online Learning from Interaction]] (0.91), [[Model-Centric Architecture]]/[[Software 2.0]]/[[The Bitter Lesson]], [[Evaluator-Optimizer]], [[Self-Evolving Agent Environments]]. → create, don't update.
+- Pages created: [[Heuristic Learning]] (concept), [[Jiayi Weng]] (entity), [[2026-05 - Weng - Learning Beyond Gradients]] (source).
+- Pages updated: [[Online Learning from Interaction]] (new "code edits" row on the adaptation spectrum), [[Model-Centric Architecture]] (contradiction callout: HL as counter-pole), [[brain/03_Resources/wiki/index]], [[hot]].
+- Key insight: a coding agent that **edits rule-based code from feedback** is itself a learning loop — Deep-RL-competitive on Atari/MuJoCo/VizDoom with no network; viable now because coding agents flip the heuristic-maintenance cost curve.
+- Citation chase: none filed — all external refs are code repos / RL baselines (EnvPool, CleanRL, PPO2), not chaseable article sources. `cited_sources: []`.
+- Reindex: `gbrain import wiki/ + .raw/` + `embed --stale` (pending).
+
 ## [2026-05-28] ingest | Your Evals Will Break and You Won't See It Coming (Lun Wang)
 - Source: `.raw/articles/your-evals-will-break-2026-05-28.md` → [[2026-05-17 - Lun Wang - Your Evals Will Break]] (blog, 2026-05-17). Seed gate **13/14 → high**.
 - Thesis: **eval — not compute/data/architecture — is the bottleneck for the next capability jump**; current evals are *structurally reactive* and have no *order parameter* to flag a capability phase transition before it ships.

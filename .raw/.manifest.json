@@ -1,5 +1,22 @@
 {
   "sources": {
+    ".raw/articles/2026-05 - Weng - Learning Beyond Gradients.md": {
+      "hash": "426d6517dcfc5ccbccab5bd5de09bde3",
+      "source_url": "https://trinkle23897.github.io/learning-beyond-gradients/",
+      "ingested_at": "2026-05-29",
+      "pages_created": [
+        "wiki/sources/2026-05 - Weng - Learning Beyond Gradients.md",
+        "wiki/concepts/Heuristic Learning.md",
+        "wiki/entities/Jiayi Weng.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Online Learning from Interaction.md",
+        "wiki/concepts/Model-Centric Architecture.md",
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md"
+      ]
+    },
     ".raw/articles/reward-hacking-2026-05-24.md": {
       "hash": "6db5afe5932ee4eb1c560d077b26a0ca",
       "source_url": "https://www.primeintellect.ai/blog/reward-hacking",

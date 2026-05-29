@@ -13,7 +13,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[AI-Agents]] — agentic systems, tool use, orchestration, harnesses, evals, MCP
 - [[LLM]] — model internals, training, inference, optimization, alignment. Seeded 2026-05-14 with 5 Thinking Machines Lab sources.
 
-## Entities (33)
+## Entities (34)
 
 - [[Agent Skills]]
 - [[Andrej Karpathy]]
@@ -28,6 +28,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Geoffrey Huntley]]
 - [[Horace He]]
 - [[Jeremy Bernstein]]
+- [[Jiayi Weng]]
 - [[John Schulman]]
 - [[Kevin Lu]]
 - [[Letta]]
@@ -49,7 +50,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[tau-bench]]
 - [[Thinking Machines Lab]]
 
-## Concepts (110)
+## Concepts (111)
 
 - [[A-B Testing for Agents]]
 - [[ACI - Agent-Computer Interface]]
@@ -95,6 +96,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Few-Shot Drift]]
 - [[Floating-Point Non-Associativity]]
 - [[Harness Staleness]]
+- [[Heuristic Learning]]
 - [[Human-in-the-Loop Intervention]]
 - [[Implicit Feedback Signals]]
 - [[In-Context Learning]]
@@ -162,8 +164,9 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Vibe Coding]]
 - [[Workflows vs Agents]]
 
-## Sources (58)
+## Sources (59)
 
+- [[2026-05 - Weng - Learning Beyond Gradients]]
 - [[2026-05-17 - Lun Wang - Your Evals Will Break]]
 - [[2026-01-17 - Geoffrey Huntley - Everything is a Ralph Loop]]
 - [[2017-11-11 - Karpathy - Software 2.0]]
@@ -253,4 +256,4 @@ Master catalog of all wiki pages. Refresh on every ingest.
 
 ---
 
-Total: ~177 wiki pages, 41 raw sources. Last full refresh: 2026-05-20 (autoresearch: continually-learning model-centric systems — 4 directions, 37 new pages). Last ingest: 2026-05-24 (Prime Intellect batch — 5 blog posts; 1 entity + 4 concepts + 5 sources + 1 comparison, RLM concept updated). Last maintenance: 2026-05-28 (concept dedup — 3 merges, 108→105 concepts).
+Total: ~180 wiki pages, 42 raw sources. Last full refresh: 2026-05-20 (autoresearch: continually-learning model-centric systems — 4 directions, 37 new pages). Last ingest: 2026-05-29 (Weng — Learning Beyond Gradients; 1 entity + 1 concept + 1 source; updated Online Learning + Model-Centric). Last maintenance: 2026-05-28 (concept dedup — 3 merges, 108→105 concepts).

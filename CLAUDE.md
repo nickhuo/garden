@@ -113,6 +113,12 @@ this is cheap to re-run after every ingest. Needs `ZEROENTROPY_API_KEY` (already
 pages live in the single `default` source (named/sub-dir sources don't work — `sync` needs a git
 root, `import` only targets `default`).
 
+⚠️ **MCP freshness gap.** PGLite is single-process: the long-running `gbrain serve` (MCP) caches its
+DB view at session start, so a CLI `import` reindex is **not visible to the MCP `query` tool until
+the Claude session restarts** (the CLI's own `gbrain query` sees it immediately). After an ingest,
+either (a) trust the reindex + restart the session before relying on MCP retrieval, or (b) verify
+via CLI `gbrain query`. The write always lands correctly on disk; only the live MCP view lags.
+
 **MCP registration (load-bearing flag).** Register at user scope with **`GBRAIN_NO_UPDATE_CHECK=1`**:
 
 ```bash
