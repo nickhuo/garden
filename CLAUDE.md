@@ -86,15 +86,32 @@ gbrain does **not** require its own `people/companies/concepts/` layout.
   retrieval** and **graph traversal** the curated path can't cheaply answer. They complement, not
   replace, each other (and Obsidian's own link graph).
 - **Scope:** indexes **`wiki/` + `.raw/`** only (not `digest/`, `portfolio/`, `Fundraising/`).
-- **Sync cadence:** after every **ingest** (or any non-trivial wiki edit), run `gbrain sync` (or the
-  `sync-gbrain` skill) so the index tracks the wiki. Search mode is **`balanced`** (12K budget,
-  ≤25 chunks, no LLM expansion).
+- **Reindex cadence:** after every **ingest** (or any non-trivial wiki edit), reindex with the
+  **Reindex command** below — **`gbrain import`, not `gbrain sync`**. Search mode is **`balanced`**
+  (12K budget, ≤25 chunks, no LLM expansion).
 - **Embeddings:** provider is **ZeroEntropy** (`zeroentropyai:zembed-1`, 2560-d). Key lives in
   `~/.zshrc` as `ZEROENTROPY_API_KEY`. ⚠️ The embedding model **sizes the PGLite schema at `init`
   time** — switching providers/dimensions later requires `gbrain init --pglite --embedding-model …`
   (which **wipes + re-imports**), not `config set`.
 - **Don't:** run `gbrain skillpack scaffold` into this repo (it would collide with the existing
   llm-wiki / claude-obsidian / gstack skills), and don't restructure the wiki to gbrain's schema.
+
+**Reindex command (the "reindex-after" step).** gbrain's `sync` is **git-based and only accepts a
+git-repo-root path** — pointing it at `03_Resources` pulls in `digest/`, `portfolio/`,
+`Fundraising/` (out of scope; and `digest/`'s bare `slug:` frontmatter trips `SLUG_MISMATCH` and
+blocks the whole sync), while pointing it at `wiki/` fails (`wiki/` is not a git root). So **do not
+use `gbrain sync` in this vault.** Reindex with path-scoped, git-free, incremental `import`:
+
+```bash
+gbrain import /Users/nickhuo/Core/brain/03_Resources/wiki  --no-embed && \
+gbrain import /Users/nickhuo/Core/brain/03_Resources/.raw  --no-embed && \
+gbrain embed --stale
+```
+
+`import` skips unchanged files (content-hash) and `embed --stale` only embeds new/changed chunks, so
+this is cheap to re-run after every ingest. Needs `ZEROENTROPY_API_KEY` (already in `~/.zshrc`). All
+pages live in the single `default` source (named/sub-dir sources don't work — `sync` needs a git
+root, `import` only targets `default`).
 
 **MCP registration (load-bearing flag).** Register at user scope with **`GBRAIN_NO_UPDATE_CHECK=1`**:
 
@@ -119,18 +136,19 @@ they differ.
 **The two contracts:**
 1. **Query-first** — before any read/judgement step, run `gbrain query` to locate relevant pages,
    then read them. Don't rely on guessing pages from `index.md`.
-2. **Sync-after** — after any write to `wiki/` (ingest, save, autoresearch round, page edit), run
-   `gbrain sync` then `gbrain embed --stale`. The index must never drift from the wiki.
+2. **Reindex-after** — after any write to `wiki/` (ingest, save, autoresearch round, page edit), run
+   the **Reindex command** above (`gbrain import …` + `embed --stale`, **not** `gbrain sync`). The
+   index must never drift from the wiki.
 
 **Per operation:**
 - **wiki-query** — `hot.md` (recency) → **`gbrain query`** (retrieval over all chunks) → read the
   top-N real pages → synthesize with citations. gbrain replaces the "guess 3–5 pages" step.
 - **wiki-ingest** — *before writing*: `gbrain query` the source's main claims for a **collision
   check** (already covered? update vs. create? contradicts an existing thesis?). *After writing*:
-  `gbrain sync` + `embed --stale`. This runs **after** the seed gate + citation chase, not instead.
+  the **Reindex command**. This runs **after** the seed gate + citation chase, not instead.
 - **autoresearch** — *before searching*: `gbrain query` "what do we already know" to focus scope.
-  *After each round's pages* (on the `research/*` branch): `gbrain sync`.
-- **save** — after filing the conversation: `gbrain sync`.
+  *After each round's pages* (on the `research/*` branch): the **Reindex command**.
+- **save** — after filing the conversation: the **Reindex command**.
 - **wiki-lint** — run gbrain's `doctor`, `orphans --json`, `lint` as an extra **data-layer** pass
   alongside the plugin's wikilink-semantic checks.
 
@@ -144,8 +162,8 @@ they differ.
   supplementary. **Never** let gbrain edit wiki files to add backlinks (`check-backlinks fix` writes
   files — forbidden: Nick doesn't hand-edit, gbrain doesn't touch content).
 
-Install / re-init mechanics live in the gstack **`setup-gbrain`** skill; maintenance in
-**`sync-gbrain`**.
+Install / re-init mechanics live in the gstack **`setup-gbrain`** skill. (The gstack `sync-gbrain`
+skill is for code repos and does **not** apply here — use the **Reindex command** instead.)
 
 ## Vault-specific deltas
 
