@@ -19,6 +19,14 @@ Ops: `init`, `ingest`, `query`, `lint`, `refactor`, `save`, `autoresearch`, `man
 
 ---
 
+## [2026-05-28] ingest | Your Evals Will Break and You Won't See It Coming (Lun Wang)
+- Source: `.raw/articles/your-evals-will-break-2026-05-28.md` → [[2026-05-17 - Lun Wang - Your Evals Will Break]] (blog, 2026-05-17). Seed gate **13/14 → high**.
+- Thesis: **eval — not compute/data/architecture — is the bottleneck for the next capability jump**; current evals are *structurally reactive* and have no *order parameter* to flag a capability phase transition before it ships.
+- Pages created: [[Lun Wang]], [[Capability Phase Transitions]], [[Order Parameters for Capability Transitions]], [[Adaptive Evaluation]], [[Eval as Upstream Constraint]], [[Strategic Information Withholding]].
+- Pages updated: [[brain/03_Resources/wiki/index]], [[LLM]], [[Eval Validity]], [[Eval Awareness]], [[AI-Resistant Evaluation Design]], [[2023-05 - Schaeffer et al - Emergent Abilities a Mirage]], [[hot]].
+- Key insight: extends [[Eval Validity]] from a *static* claim ("the metric is the construct") to a *dynamic* one ("the metric's validity expires at a capability boundary — Goodhart breaks at phase boundaries").
+- **Citation chase deferred** (no hyperlinks in source; 5 arXiv/PNAS papers — Wei'22, Power'22, Liu'22, Nanda'23, Shan'26 — surfaced for Nick to green-light rather than auto-filed; Schaeffer'23 already in wiki). See `> [!gap]` on the source page.
+
 ## [2026-05-28] refactor | Concept dedup — 3 merges (108→105)
 - **Trigger:** user — "current lint doesn't merge duplicate concepts; there are too many." Manual merge-candidate scan over all 108 concepts (semantic tiling is opt-in + disabled here: no `scripts/tiling-check.py`, no ollama).
 - **Merges (canonical ← absorbed):**

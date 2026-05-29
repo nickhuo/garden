@@ -222,6 +222,29 @@
         "wiki/entities/_index.md",
         "wiki/sources/_index.md"
       ]
+    },
+    ".raw/articles/your-evals-will-break-2026-05-28.md": {
+      "hash": "6bb98d63baeeba1d70f029fadd182c0f",
+      "ingested_at": "2026-05-28",
+      "pages_created": [
+        "wiki/sources/2026-05-17 - Lun Wang - Your Evals Will Break.md",
+        "wiki/entities/Lun Wang.md",
+        "wiki/concepts/Capability Phase Transitions.md",
+        "wiki/concepts/Order Parameters for Capability Transitions.md",
+        "wiki/concepts/Adaptive Evaluation.md",
+        "wiki/concepts/Eval as Upstream Constraint.md",
+        "wiki/concepts/Strategic Information Withholding.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md",
+        "wiki/domains/LLM.md",
+        "wiki/concepts/Eval Validity.md",
+        "wiki/concepts/Eval Awareness.md",
+        "wiki/concepts/AI-Resistant Evaluation Design.md",
+        "wiki/sources/2023-05 - Schaeffer et al - Emergent Abilities a Mirage.md"
+      ]
     }
   }
 }

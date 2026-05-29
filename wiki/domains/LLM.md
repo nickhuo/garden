@@ -63,6 +63,15 @@ Expansion beyond the TML seed via the autoresearch pass:
 - **[[Token-In Token-Out]]** (`renderers`) — byte-faithful token streams for agentic RL; the agentic-RL analog of TML's [[Defeating Nondeterminism in LLM Inference]] / [[Trainer-Sampler Determinism]]. Shared *faithfulness* stance with [[Thinking Machines Lab]].
 - These tie into the [[Welcome to the Era of Experience|experience]] paradigm via [[Self-Evolving Agent Environments]] (manufactured, calibrated reward).
 
+## Evaluation as the bottleneck (2026-05-28)
+
+[[2026-05-17 - Lun Wang - Your Evals Will Break]] ([[Lun Wang]], ex-DeepMind) plants an **eval-centric thesis** in this domain: *eval — not compute, data, or architecture — is the bottleneck for the next capability jump.* It extends the wiki's eval cluster from static validity to dynamic, capability-transition-aware evaluation:
+- **[[Capability Phase Transitions]]** — emergence (Wei) vs. mirage ([[2023-05 - Schaeffer et al - Emergent Abilities a Mirage]]) vs. grokking; either way, an eval built for the prior regime misreads the boundary.
+- **[[Order Parameters for Capability Transitions]]** — borrows statistical mechanics + mechanistic interpretability to seek a macroscopic signal of regime change (the gap behind eval skepticism).
+- **[[Adaptive Evaluation]]** — meta-signal monitoring, multi-dimensional scaling curves, self-evolving / auto-generated evals; overlaps [[Self-Evolving Agent Environments]].
+- **[[Eval as Upstream Constraint]]** — eval bounds training; "Goodhart breaks at phase boundaries." Connects to Karpathy's [[Verifiability]].
+- **[[Strategic Information Withholding]]** — a novel honesty-failure mode that evades statement-truth benchmarks; pairs with [[Eval Awareness]].
+
 ## Open questions for this domain
 
 - Do batch-invariant kernels see adoption in major inference servers (vLLM, SGLang) by EOY 2026?

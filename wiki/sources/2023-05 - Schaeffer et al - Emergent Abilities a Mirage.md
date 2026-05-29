@@ -18,6 +18,8 @@ related:
   - "[[Eval Validity]]"
   - "[[Online Evaluation]]"
   - "[[AI-Resistant Evaluation Design]]"
+  - "[[Capability Phase Transitions]]"
+  - "[[2026-05-17 - Lun Wang - Your Evals Will Break]]"
 sources: []
 ---
 

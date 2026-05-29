@@ -13,7 +13,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[AI-Agents]] — agentic systems, tool use, orchestration, harnesses, evals, MCP
 - [[LLM]] — model internals, training, inference, optimization, alignment. Seeded 2026-05-14 with 5 Thinking Machines Lab sources.
 
-## Entities (32)
+## Entities (33)
 
 - [[Agent Skills]]
 - [[Andrej Karpathy]]
@@ -31,6 +31,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[John Schulman]]
 - [[Kevin Lu]]
 - [[Letta]]
+- [[Lun Wang]]
 - [[Managed Agents]]
 - [[Manus]]
 - [[MCP]]
@@ -48,11 +49,12 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[tau-bench]]
 - [[Thinking Machines Lab]]
 
-## Concepts (105)
+## Concepts (110)
 
 - [[A-B Testing for Agents]]
 - [[ACI - Agent-Computer Interface]]
 - [[Activation Steering / Representation Engineering]]
+- [[Adaptive Evaluation]]
 - [[Agent Eval Pyramid]]
 - [[Autonomous Research Agents]]
 - [[Agent Guardrails]]
@@ -73,6 +75,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Batch Invariance]]
 - [[BM25 and Hybrid Retrieval]]
 - [[Cache Invalidation Cascade]]
+- [[Capability Phase Transitions]]
 - [[brain/03_Resources/wiki/concepts/CLAUDE]]
 - [[CoALA]]
 - [[Code-to-the-Side vs Orchestration]]
@@ -84,6 +87,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Contextual Retrieval]]
 - [[Empirical Neural Tangent Kernel]]
 - [[Error Trace Retention]]
+- [[Eval as Upstream Constraint]]
 - [[Eval Awareness]]
 - [[Eval Infrastructure Noise]]
 - [[Eval Validity]]
@@ -115,6 +119,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Online Evaluation]]
 - [[Online Learning from Interaction]]
 - [[Orchestrator-Workers]]
+- [[Order Parameters for Capability Transitions]]
 - [[Parallelization]]
 - [[Pass^k Reliability Metric]]
 - [[Permission Classifier]]
@@ -141,6 +146,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Software 2.0]]
 - [[Software 3.0]]
 - [[Stiefel Manifold]]
+- [[Strategic Information Withholding]]
 - [[Test-Time Adaptation]]
 - [[The Bitter Lesson]]
 - [[Think Tool]]
@@ -156,8 +162,9 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Vibe Coding]]
 - [[Workflows vs Agents]]
 
-## Sources (57)
+## Sources (58)
 
+- [[2026-05-17 - Lun Wang - Your Evals Will Break]]
 - [[2026-01-17 - Geoffrey Huntley - Everything is a Ralph Loop]]
 - [[2017-11-11 - Karpathy - Software 2.0]]
 - [[2026-01-01 - Prime Intellect - Recursive Language Models]]

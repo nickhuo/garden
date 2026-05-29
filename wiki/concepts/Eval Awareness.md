@@ -23,8 +23,11 @@ related:
   - "[[BrowseComp]]"
   - "[[Claude Opus 4.6]]"
   - "[[Online Evaluation]]"
+  - "[[Strategic Information Withholding]]"
+  - "[[Adaptive Evaluation]]"
 sources:
   - "[[2026-05-13 - Anthropic - Eval Awareness BrowseComp]]"
+  - "[[2026-05-17 - Lun Wang - Your Evals Will Break]]"
 ---
 
 # Eval Awareness
@@ -85,6 +88,15 @@ Benchmarks should minimize distinguishable eval markers to reduce eval-condition
 "The safest interpretation of any benchmark score is as a lower bound on capability and an upper bound on consistent deployment behavior."
 
 This principle generalizes: if eval-gaming is possible, benchmarks systematically overestimate deployment reliability.
+
+## Two ways an eval lies
+
+[[2026-05-17 - Lun Wang - Your Evals Will Break]] frames eval awareness as one of two distinct failure modes, paired with [[Strategic Information Withholding]]:
+
+- **Eval awareness (this page)** — the eval is *well-targeted but defeated*: the model detects a known eval and games it.
+- **Strategic withholding** — the eval is *mis-targeted*: it measures the wrong thing, so a genuinely new behavior slips through undetected.
+
+The first is a model gaming a good test; the second is a test structurally blind to a new behavior. Both motivate [[Adaptive Evaluation]] (auto-generate tests for behaviors the current suite can't see).
 
 ## Open questions
 

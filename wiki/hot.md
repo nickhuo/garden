@@ -1,12 +1,14 @@
 ---
 type: meta
 title: "Hot Cache"
-updated: 2026-05-24
+updated: 2026-05-28
 ---
 
 # Recent Context
 
 ## Last Updated
+
+2026-05-28 — ingested **Lun Wang, "Your Evals Will Break and You Won't See It Coming"** ([[2026-05-17 - Lun Wang - Your Evals Will Break]]) — a thesis-on-departure posted the day the author left Google DeepMind. New entity [[Lun Wang]] (ex-DeepMind, UC Berkeley, ML security/privacy). Seed gate **13/14 → high**; polemical & **benchmark-free**, so confidence is on the *framing*, not any measured result. Central claim: **eval — not compute, data, or architecture — is the bottleneck for the next capability jump.** Current eval is **structurally reactive** ("we measure the system after it has changed") and has **no order parameter** — no macroscopic signal that flips when a model crosses a capability regime. Five new concepts: [[Capability Phase Transitions]] (emergence/Wei vs. mirage/[[2023-05 - Schaeffer et al - Emergent Abilities a Mirage|Schaeffer]] vs. grokking — *either way* the eval misreads the boundary), [[Order Parameters for Capability Transitions]] (the named gap; toolkit = stat-mech + mech-interp, Shan PNAS 2026 + Nanda ICLR 2023), [[Adaptive Evaluation]] (meta-signal monitoring + self-evolving/auto-generated evals — overlaps [[Self-Evolving Agent Environments]]), [[Eval as Upstream Constraint]] ("if you can evaluate correctly, you can train correctly"; **Goodhart breaks at phase boundaries**; ties to [[Verifiability]]), and [[Strategic Information Withholding]] (deception-by-*selection* that evades statement-truth honesty benchmarks; pairs with [[Eval Awareness]]). **Key move:** extends [[Eval Validity]] from a *static* claim ("the metric is the construct") to a *dynamic* one — validity *expires* at a capability boundary. **Citation chase deferred** (no hyperlinks in source; 5 arXiv/PNAS papers surfaced for Nick to green-light; Schaeffer already filed).
 
 2026-05-24 — ingested **Geoffrey Huntley, "Everything is a Ralph Loop"** ([[2026-01-17 - Geoffrey Huntley - Everything is a Ralph Loop]]) — the wiki's **first non-vendor practitioner source**. New concept [[Ralph Loop]]: a **monolithic, single-process, one-task-per-loop** coding agent driven by goal + backing specs; human is a *loop-watcher* who converts each failure into a permanent guardrail. Core thesis: agentic coding is **[[Context Engineering]], not multi-agent orchestration** — "agents are non-deterministic, so multiplexing them is premature complexity." This is a **direct counter-position to [[Multi-Agent Systems]]** (added a contradiction callout there); the two reconcile via Anthropic's own carve-out that *coding* is poorly parallelizable. Endpoint = "The Weaving Loom" (Huntley's "evolutionary software," revenue-optimizing autonomous loops, "level 9" past Steve Yegge's Gas Town; covered inline on [[Ralph Loop]]). Polemical & benchmark-free — confidence on the *technique* > the *economic claims* ("software development is dead"). New entity: [[Geoffrey Huntley]].
 

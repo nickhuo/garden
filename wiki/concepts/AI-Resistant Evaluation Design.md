@@ -18,6 +18,7 @@ related:
   - "[[AI Tool Fluency]]"
   - "[[Pass^k Reliability Metric]]"
   - "[[User Simulator Evaluation]]"
+  - "[[Adaptive Evaluation]]"
 sources:
   - "[[2026-01-21 - Anthropic - AI-Resistant Technical Evaluations]]"
 ---

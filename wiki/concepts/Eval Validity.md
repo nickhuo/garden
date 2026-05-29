@@ -9,8 +9,11 @@ related:
   - "[[Online Evaluation]]"
   - "[[LLM-as-Judge]]"
   - "[[AI-Resistant Evaluation Design]]"
+  - "[[Eval as Upstream Constraint]]"
+  - "[[Capability Phase Transitions]]"
 sources:
   - "[[2023-05 - Schaeffer et al - Emergent Abilities a Mirage]]"
+  - "[[2026-05-17 - Lun Wang - Your Evals Will Break]]"
 ---
 
 # Eval Validity
@@ -27,7 +30,7 @@ Every online-evaluation signal is a proxy, so eval validity is the precondition 
 
 - **Metric artifacts** — discontinuous metrics fake sharp jumps (Schaeffer).
 - **Benchmark contamination/gaming** — training on test data, or [[Eval Awareness]] where a model detects and games the eval.
-- **Proxy drift** — the proxy and the true goal diverge over time under optimization (Goodhart).
+- **Proxy drift** — the proxy and the true goal diverge over time under optimization (Goodhart). [[2026-05-17 - Lun Wang - Your Evals Will Break]] sharpens this to its *dynamic* form: validity isn't just distorted, it **expires** at a [[Capability Phase Transitions|capability boundary]] — "Goodhart breaks at phase boundaries." See [[Eval as Upstream Constraint]].
 
 ## Connection to prior work
 
