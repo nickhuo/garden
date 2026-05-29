@@ -17,6 +17,11 @@ The wiki is the product. Chat is just the interface.
 
 Difference from RAG: the wiki is a persistent artifact. Cross-references are already there. Contradictions are flagged. Synthesis already reflects everything that was read. Knowledge compounds.
 
+> **gbrain layer (additive).** This vault is also indexed by [gbrain](https://github.com/garrytan/gbrain)
+> into a separate PGLite DB at `~/.gbrain/` (never committed), exposing semantic search + a
+> typed-link/timeline graph via the `gbrain` MCP. It is **non-destructive** — the schema below is the
+> source of truth; gbrain layers retrieval on top. See `CLAUDE.md` → "gbrain (semantic + knowledge-graph layer)".
+
 ---
 
 ## Architecture

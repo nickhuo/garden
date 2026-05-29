@@ -70,6 +70,35 @@ Wikilinks use `[[Note Name]]` — filenames are vault-unique so paths aren't nee
 
 See `WIKI.md` for full operation definitions and anti-patterns.
 
+## gbrain (semantic + knowledge-graph layer)
+
+This repo is also indexed by **gbrain** (`github.com/garrytan/gbrain`) — a semantic-search +
+typed-link/timeline knowledge graph that sits **on top of** the wiki. It is **non-destructive and
+additive**: gbrain imports the markdown into a **separate PGLite database at `~/.gbrain/`** (outside
+this repo, never committed) and never rewrites wiki files. The PARA + llm-wiki schema is unchanged —
+gbrain does **not** require its own `people/companies/concepts/` layout.
+
+- **Access:** query via the **`gbrain` MCP server** (stdio, registered at user scope → available in
+  every Claude session). Tools cover hybrid/keyword search, page reads, `backlinks`, `graph`, and
+  `timeline`. CLI equivalents: `gbrain query "…"`, `gbrain search "…"`, `gbrain graph <slug>`.
+- **Read-path discipline:** the curated path (`hot.md` → `index.md` → 3–5 pages) stays **primary**
+  for deliberate, high-signal context. Reach for the gbrain MCP for **fuzzy / semantic / cross-page
+  retrieval** and **graph traversal** the curated path can't cheaply answer. They complement, not
+  replace, each other (and Obsidian's own link graph).
+- **Scope:** indexes **`wiki/` + `.raw/`** only (not `digest/`, `portfolio/`, `Fundraising/`).
+- **Sync cadence:** after every **ingest** (or any non-trivial wiki edit), run `gbrain sync` (or the
+  `sync-gbrain` skill) so the index tracks the wiki. Search mode is **`balanced`** (12K budget,
+  ≤25 chunks, no LLM expansion).
+- **Embeddings:** provider is **ZeroEntropy** (`zeroentropyai:zembed-1`, 2560-d). Key lives in
+  `~/.zshrc` as `ZEROENTROPY_API_KEY`. ⚠️ The embedding model **sizes the PGLite schema at `init`
+  time** — switching providers/dimensions later requires `gbrain init --pglite --embedding-model …`
+  (which **wipes + re-imports**), not `config set`.
+- **Don't:** run `gbrain skillpack scaffold` into this repo (it would collide with the existing
+  llm-wiki / claude-obsidian / gstack skills), and don't restructure the wiki to gbrain's schema.
+
+Install / re-init mechanics live in the gstack **`setup-gbrain`** skill; maintenance in
+**`sync-gbrain`**.
+
 ## Vault-specific deltas
 
 ### Source-Quality Gate & Citation Lineage
