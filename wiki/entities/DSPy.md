@@ -6,8 +6,8 @@ updated: 2026-05-30
 tags: [llm, ai-agents, prompt-optimization, framework]
 status: seed
 entity_type: framework
-related: ["[[Omar Khattab]]", "[[Compound AI System]]", "[[GEPA]]", "[[Prompt Optimization]]"]
-sources: ["[[2026-02 - Agrawal et al - GEPA Reflective Prompt Evolution]]"]
+related: ["[[Omar Khattab]]", "[[Compound AI System]]", "[[GEPA]]", "[[MIPRO]]", "[[Prompt Optimization]]"]
+sources: ["[[2026-02 - Agrawal et al - GEPA Reflective Prompt Evolution]]", "[[2024-06 - Opsahl-Ong et al - MIPRO Optimizing Instructions and Demonstrations]]"]
 ---
 
 # DSPy
@@ -19,7 +19,7 @@ A framework for programming — rather than prompting — **[[Compound AI System
 DSPy's optimizers are the direct ancestors of the [[GEPA]] work:
 
 - **Few-shot bootstrapping** — search/select demonstrations.
-- **MIPROv2** (Opsahl-Ong et al. 2024) — jointly optimizes instructions + few-shot examples via Bayesian optimization. The SOTA baseline GEPA beats.
+- **[[MIPRO|MIPROv2]]** ([[Krista Opsahl-Ong|Opsahl-Ong]] et al. 2024) — jointly optimizes instructions + few-shot examples via Bayesian optimization (TPE). The SOTA baseline GEPA beats. See [[2024-06 - Opsahl-Ong et al - MIPRO Optimizing Instructions and Demonstrations]].
 - **[[GEPA]]** (2026) — reflective evolutionary prompt optimization; instruction-only, Pareto-guided. The newest member of the family.
 
 The shared formalism: a system `Φ = (M, C, X, Y)` with modules `M_i = (π_i, θ_i, X_i, Y_i)`; optimizers search over module prompts `Π` and/or weights `Θ`.

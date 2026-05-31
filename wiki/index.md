@@ -13,7 +13,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[AI-Agents]] — agentic systems, tool use, orchestration, harnesses, evals, MCP
 - [[LLM]] — model internals, training, inference, optimization, alignment. Seeded 2026-05-14 with 5 Thinking Machines Lab sources.
 
-## Entities (41)
+## Entities (42)
 
 - [[Agent Skills]]
 - [[Andrej Karpathy]]
@@ -33,6 +33,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Jiayi Weng]]
 - [[John Schulman]]
 - [[Kevin Lu]]
+- [[Krista Opsahl-Ong]]
 - [[Letta]]
 - [[Lun Wang]]
 - [[Managed Agents]]
@@ -57,7 +58,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Thinking Machines Lab]]
 - [[Y Combinator]]
 
-## Concepts (125)
+## Concepts (126)
 
 - [[A-B Testing for Agents]]
 - [[ACI - Agent-Computer Interface]]
@@ -130,6 +131,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Memory Stream]]
 - [[Meta-Harness]]
 - [[Minimal Footprint Principle]]
+- [[MIPRO]]
 - [[Model-Centric Architecture]]
 - [[Multi-Agent Systems]]
 - [[Multi-Stage Decoding]]
@@ -185,9 +187,10 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Vibe Coding]]
 - [[Workflows vs Agents]]
 
-## Sources (62)
+## Sources (63)
 
 - [[2013-07 - Paul Graham - Do Things that Don't Scale]]
+- [[2024-06 - Opsahl-Ong et al - MIPRO Optimizing Instructions and Demonstrations]]
 - [[2026-02 - Agrawal et al - GEPA Reflective Prompt Evolution]]
 - [[2026-05 - Weng - Learning Beyond Gradients]]
 - [[2026-05-30 - Chayenne Zhao - SGLang Omni Multi-Stage Inference]]
@@ -280,4 +283,4 @@ Master catalog of all wiki pages. Refresh on every ingest.
 
 ---
 
-Total: ~204 wiki pages, 45 raw sources. Last full refresh: 2026-05-20 (autoresearch: continually-learning model-centric systems — 4 directions, 37 new pages). Last ingest: 2026-05-31 (Chayenne Zhao — SGLang Omni Multi-Stage Inference; seed 12/14 → high: 3 entities + 3 concepts + 1 source; wiki's first inference-serving-systems source). Prior ingest: 2026-05-30 (GEPA — Reflective Prompt Evolution, ICLR 2026 Oral). Last maintenance: 2026-05-28 (concept dedup — 3 merges, 108→105 concepts).
+Total: ~207 wiki pages, 46 raw sources. Last full refresh: 2026-05-20 (autoresearch: continually-learning model-centric systems — 4 directions, 37 new pages). Last ingest: 2026-05-31 (Opsahl-Ong et al — MIPRO, EMNLP 2024; seed 14/14 → high: 1 source + 1 concept [[MIPRO]] + 1 entity [[Krista Opsahl-Ong]]; backfills the prompt-optimizer cited across [[Prompt Optimization]]/[[GEPA]]/[[DSPy]]). Prior ingest: 2026-05-31 (Chayenne Zhao — SGLang Omni Multi-Stage Inference). Prior: 2026-05-30 (GEPA — Reflective Prompt Evolution, ICLR 2026 Oral). Last maintenance: 2026-05-28 (concept dedup — 3 merges, 108→105 concepts).

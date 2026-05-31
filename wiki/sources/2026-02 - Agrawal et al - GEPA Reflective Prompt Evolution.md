@@ -68,7 +68,7 @@ Three pillars (full algorithm in the paper's Fig. 4):
 GEPA is itself the primary source; its ~100 references are foundational works, mostly already represented conceptually in the wiki. Key related work (cited, not separately chased):
 
 - **[[GRPO]]** (Shao et al. 2024) — the RLVR baseline GEPA outperforms; uses LoRA ([[LoRA]]) here.
-- **MIPROv2** (Opsahl-Ong et al. 2024) — prior SOTA prompt optimizer (joint instruction + few-shot via Bayesian opt); GEPA's main prompt-optimizer baseline. Co-author Krista Opsahl-Ong is on GEPA too.
+- **[[MIPRO|MIPROv2]]** ([[Krista Opsahl-Ong|Opsahl-Ong]] et al. 2024) — prior SOTA prompt optimizer (joint instruction + few-shot via Bayesian opt); GEPA's main prompt-optimizer baseline. Co-author [[Krista Opsahl-Ong]] is on GEPA too. Now ingested: [[2024-06 - Opsahl-Ong et al - MIPRO Optimizing Instructions and Demonstrations]].
 - **[[DSPy]]** (Khattab et al. 2022, 2024) — the compound-AI-system framework GEPA's formalism inherits (`Φ = (M, C, X, Y)`).
 - **TextGrad** (Yuksekgonul et al. 2025) — backprops textual feedback; its candidate selection = GEPA's `SelectBestCandidate` ablation. **Trace/OptoPrime** (Cheng et al. 2024) — another baseline.
 - **Reflexion** (Shinn et al. 2023) / **Self-Refine** (Madaan et al. 2023) — in-context self-improvement antecedents to reflective mutation.

@@ -19,6 +19,13 @@ Ops: `init`, `ingest`, `query`, `lint`, `refactor`, `save`, `autoresearch`, `man
 
 ---
 
+## [2026-05-31] ingest | Optimizing Instructions and Demonstrations for Multi-Stage LM Programs (MIPRO, Opsahl-Ong et al., EMNLP 2024)
+- Source: `.raw/articles/mipro-optimizing-instructions-demonstrations-2026-05-31.md` (arXiv 2406.11695). Seed gate **14/14 → high**.
+- Summary: [[2024-06 - Opsahl-Ong et al - MIPRO Optimizing Instructions and Demonstrations]]
+- Pages created: [[MIPRO]], [[Krista Opsahl-Ong]]
+- Pages updated: [[Prompt Optimization]], [[DSPy]], [[Omar Khattab]], [[2026-02 - Agrawal et al - GEPA Reflective Prompt Evolution]], index, hot
+- Key insight: Backfills the **MIPROv2** prompt optimizer cited (but never sourced) across the wiki. Optimize LM-program prompts with **no module labels / no gradients** via bootstrapped demos + grounded instruction proposal + TPE Bayesian search; **demonstrations are the highest-impact lever, optimize both**. [[GEPA]] (2026) later reverses the "demos dominate" finding (instruction-only wins on newer LLMs) — `[!contradiction]` logged on both pages. Closes the [[DSPy]] optimizer lineage: few-shot → MIPRO → GEPA.
+
 ## [2026-05-31] ingest | SGLang Omni: Redesigning Inference for Multi-Stage Models (Chayenne Zhao)
 - Source: X long-form article (https://x.com/i/article/2060542211079757824, login-gated; HTTP 402 on fetch + headless-browser login wall) — full English text supplied by Nick, saved to `.raw/articles/sglang-omni-multi-stage-inference-2026-05-30.md` → [[2026-05-30 - Chayenne Zhao - SGLang Omni Multi-Stage Inference]].
 - Seed gate: **12/14 → high** (first-party design doc from a core [[SGLang]] contributor; concrete component names + numbers; blog/essay form, not peer-reviewed). Note: `_rubrics/source-quality.md` referenced in CLAUDE.md is absent on disk — gate applied from the score→confidence criteria.

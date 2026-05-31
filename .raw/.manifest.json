@@ -327,6 +327,24 @@
         "wiki/hot.md",
         "wiki/log.md"
       ]
+    },
+    ".raw/articles/mipro-optimizing-instructions-demonstrations-2026-05-31.md": {
+      "hash": "01b4f0f217b2f644366299561c729a95",
+      "ingested_at": "2026-05-31",
+      "pages_created": [
+        "wiki/sources/2024-06 - Opsahl-Ong et al - MIPRO Optimizing Instructions and Demonstrations.md",
+        "wiki/concepts/MIPRO.md",
+        "wiki/entities/Krista Opsahl-Ong.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Prompt Optimization.md",
+        "wiki/entities/DSPy.md",
+        "wiki/entities/Omar Khattab.md",
+        "wiki/sources/2026-02 - Agrawal et al - GEPA Reflective Prompt Evolution.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
     }
   }
 }
