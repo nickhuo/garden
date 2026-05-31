@@ -2,7 +2,7 @@
 type: domain
 title: LLM
 created: 2026-05-14
-updated: 2026-05-20
+updated: 2026-05-31
 tags:
   - llm
   - domain
@@ -72,8 +72,17 @@ Expansion beyond the TML seed via the autoresearch pass:
 - **[[Eval as Upstream Constraint]]** — eval bounds training; "Goodhart breaks at phase boundaries." Connects to Karpathy's [[Verifiability]].
 - **[[Strategic Information Withholding]]** — a novel honesty-failure mode that evades statement-truth benchmarks; pairs with [[Eval Awareness]].
 
+## Inference-serving systems (2026-05-31)
+
+First inference-engine source in the domain: [[2026-05-30 - Chayenne Zhao - SGLang Omni Multi-Stage Inference]] ([[Chayenne Zhao]], core [[SGLang]] contributor). Methodology thesis — **slice models by computation, not modality**:
+- **[[Multi-Stage Decoding]]** — the classification axis (single-stage decode loop vs. heterogeneous alternating stages). The regime SGLang Omni targets; single-stage stays with SGLang main / Diffusion.
+- **[[Stage-Decoupled Inference Architecture]]** — the design answer: one `Scheduler` per stage behind a uniform inbox/outbox interface, ZMQ control plane + relay data plane, cross-stage memory budgeting; tight-coupled stages fused into one piecewise CUDA Graph.
+- **[[Thinker-Talker-MTP]]** — the canonical pipeline ([[Qwen3-Omni]]) the design is read off; introduces a **third roofline category** beyond compute-/memory-bound: latency-bound, launch-overhead-dominated decode stages.
+- Kin to [[Interaction Model Architecture]] (TML), which contributed persistent streaming sessions back to [[SGLang]] — both separate a latency-critical path from heavier work at the systems layer.
+
 ## Open questions for this domain
 
-- Do batch-invariant kernels see adoption in major inference servers (vLLM, SGLang) by EOY 2026?
+- Do batch-invariant kernels see adoption in major inference servers (vLLM, SGLang) by EOY 2026? (SGLang is expanding fast — main / RL / Omni / Diffusion sub-lines as of mid-2026; see [[SGLang]].)
+- Is "single- vs multi-stage decoding" a durable inference taxonomy, or just disaggregation taken to N heterogeneous stages?
 - Does on-policy distillation generalize beyond reasoning / instruction-following — e.g., to coding agents?
 - Manifold optimization at LLM scale (matrix-sign retraction efficiency) — TML's next move?

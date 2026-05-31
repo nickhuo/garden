@@ -37,7 +37,9 @@ Karpathy's actionable version: find domains that are **valuable, verifiable, and
 - [[The Bitter Lesson]] — verifiable environments are exactly where scaled search/RL wins.
 - [[Welcome to the Era of Experience]] (Silver & Sutton) — grounded environmental reward over human prejudgment; the "why now" for verifiability-driven learning.
 - [[Jagged Intelligence]] — verifiability is one of its two axes (the other is training attention).
+- [[Do Things That Don't Scale]] (Paul Graham) — the founder-wedge's missing half: a verifiable/undertrained domain still needs an *unscalable bootstrap* to win the first users. The [[Startup Idea as Vector]] makes that effort an explicit part of the idea.
 - Evaluation pages this sharpens: [[Eval Validity]], [[Pass^k Reliability Metric]], [[Trace-Based Evaluation]] — a verifiable reward is the strongest form of eval signal.
+- [[GEPA]] / [[Language Feedback as Learning Signal]] — a friendly amendment: even in the verifiable/RLVR setting, *collapsing* the signal to a scalar reward (as [[GRPO]] does) throws away the richest part. The compiler error or failed rubric — the **evaluation trace** behind the reward — is itself verifiable *and* in language, so reflecting on it can beat policy gradients at far fewer rollouts.
 
 ## Source
 

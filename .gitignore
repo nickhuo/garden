@@ -11,3 +11,4 @@ portfolio
 # gbrain — DB lives at ~/.gbrain/ (outside repo); these guard against in-repo artifacts
 .gbrain/
 *.pglite
+.gstack/

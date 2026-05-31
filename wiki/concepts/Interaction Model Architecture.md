@@ -18,6 +18,7 @@ aliases:
 related:
   - "[[Trainer-Sampler Determinism]]"
   - "[[Multi-Agent Systems]]"
+  - "[[Stage-Decoupled Inference Architecture]]"
 sources:
   - "[[2026-05-11 - Thinking Machines - Interaction Models]]"
 ---
@@ -35,7 +36,10 @@ The architecture argues that **interactivity must be in the model, not the inter
 
 1. **Time-aligned micro-turns** — 200ms continuous chunks for input AND output. Both are streams. No discrete user turns.
 2. **Encoder-free early fusion** — Audio → dMel via lightweight embedding; images → 40×40 hMLP patches. End-to-end trained with the transformer (no large standalone encoders).
-3. **Persistent streaming sessions** — Server appends 200ms chunks into GPU memory rather than re-prefilling. Eliminates per-chunk memory allocation and metadata overhead. Contributed upstream to SGLang.
+3. **Persistent streaming sessions** — Server appends 200ms chunks into GPU memory rather than re-prefilling. Eliminates per-chunk memory allocation and metadata overhead. Contributed upstream to [[SGLang]].
+
+> [!note] Kin design at the serving layer
+> The interaction (latency-bound) / background (intelligence-bound) split is the two-stage case of [[Stage-Decoupled Inference Architecture]] ([[SGLang]] Omni), which generalizes to *N* heterogeneous decode stages behind a uniform scheduler interface. Both treat low-latency streaming as an infrastructure problem (kernels, persistent sessions) and both land in [[SGLang]] — TML via persistent streaming sessions, SGLang Omni via [[Multi-Stage Decoding]]. The shared move: isolate the latency-critical path so heavier work can't drag it down.
 
 ## Capabilities unlocked
 

@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Wiki Index"
-updated: 2026-05-24
+updated: 2026-05-31
 ---
 
 # Wiki Index
@@ -13,17 +13,19 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[AI-Agents]] — agentic systems, tool use, orchestration, harnesses, evals, MCP
 - [[LLM]] — model internals, training, inference, optimization, alignment. Seeded 2026-05-14 with 5 Thinking Machines Lab sources.
 
-## Entities (34)
+## Entities (41)
 
 - [[Agent Skills]]
 - [[Andrej Karpathy]]
 - [[brain/03_Resources/wiki/entities/Anthropic]]
 - [[BFCL]]
 - [[BrowseComp]]
+- [[Chayenne Zhao]]
 - [[Claude 3.5 Sonnet]]
 - [[Claude Code]]
 - [[Claude Desktop]]
 - [[Claude Opus 4.6]]
+- [[DSPy]]
 - [[DXT]]
 - [[Geoffrey Huntley]]
 - [[Horace He]]
@@ -39,9 +41,13 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[OpenAI]]
 - [[OpenAI Agents SDK]]
 - [[OpenBMB]]
+- [[Omar Khattab]]
+- [[Paul Graham]]
 - [[Prime Intellect]]
 - [[Gorilla]]
+- [[Qwen3-Omni]]
 - [[Richard Sutton]]
+- [[SGLang]]
 - [[Shunyu Yao]]
 - [[Sierra]]
 - [[ToolBench]]
@@ -49,8 +55,9 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[SWE-bench Verified]]
 - [[tau-bench]]
 - [[Thinking Machines Lab]]
+- [[Y Combinator]]
 
-## Concepts (111)
+## Concepts (125)
 
 - [[A-B Testing for Agents]]
 - [[ACI - Agent-Computer Interface]]
@@ -80,12 +87,16 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[brain/03_Resources/wiki/concepts/CLAUDE]]
 - [[CoALA]]
 - [[Code-to-the-Side vs Orchestration]]
+- [[Collison Installation]]
+- [[Compound AI System]]
 - [[Config Type Safety]]
 - [[Context Anxiety]]
 - [[Context Assembly Pipeline]]
 - [[Context Decomposition vs Problem Decomposition]]
 - [[Context Engineering]]
 - [[Contextual Retrieval]]
+- [[Deliberately Narrow Initial Market]]
+- [[Do Things That Don't Scale]]
 - [[Empirical Neural Tangent Kernel]]
 - [[Error Trace Retention]]
 - [[Eval as Upstream Constraint]]
@@ -95,6 +106,8 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Evaluator-Optimizer]]
 - [[Few-Shot Drift]]
 - [[Floating-Point Non-Associativity]]
+- [[GEPA]]
+- [[GRPO]]
 - [[Harness Staleness]]
 - [[Heuristic Learning]]
 - [[Human-in-the-Loop Intervention]]
@@ -104,6 +117,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Jagged Intelligence]]
 - [[Just-in-Time Context Retrieval]]
 - [[KV-Cache Discipline]]
+- [[Language Feedback as Learning Signal]]
 - [[LLM-as-Judge]]
 - [[Logit Masking]]
 - [[Long-Horizon Context Management]]
@@ -111,18 +125,21 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Manager Pattern]]
 - [[Manifold Muon]]
 - [[Manifold Optimization]]
+- [[Manual-First MVP]]
 - [[MemGPT]]
 - [[Memory Stream]]
 - [[Meta-Harness]]
 - [[Minimal Footprint Principle]]
 - [[Model-Centric Architecture]]
 - [[Multi-Agent Systems]]
+- [[Multi-Stage Decoding]]
 - [[On-Policy Distillation]]
 - [[Online Evaluation]]
 - [[Online Learning from Interaction]]
 - [[Orchestrator-Workers]]
 - [[Order Parameters for Capability Transitions]]
 - [[Parallelization]]
+- [[Pareto-based Candidate Selection]]
 - [[Pass^k Reliability Metric]]
 - [[Permission Classifier]]
 - [[Permission Model]]
@@ -130,6 +147,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Persona Vectors vs Memory Files]]
 - [[Programmatic Tool Calling]]
 - [[Progressive Disclosure]]
+- [[Prompt Optimization]]
 - [[Prompt Chaining]]
 - [[Prompt Injection]]
 - [[Recitation]]
@@ -147,10 +165,13 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Session as Event Log]]
 - [[Software 2.0]]
 - [[Software 3.0]]
+- [[Stage-Decoupled Inference Architecture]]
+- [[Startup Idea as Vector]]
 - [[Stiefel Manifold]]
 - [[Strategic Information Withholding]]
 - [[Test-Time Adaptation]]
 - [[The Bitter Lesson]]
+- [[Thinker-Talker-MTP]]
 - [[Think Tool]]
 - [[Token Economics]]
 - [[Token-In Token-Out]]
@@ -164,9 +185,12 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Vibe Coding]]
 - [[Workflows vs Agents]]
 
-## Sources (59)
+## Sources (62)
 
+- [[2013-07 - Paul Graham - Do Things that Don't Scale]]
+- [[2026-02 - Agrawal et al - GEPA Reflective Prompt Evolution]]
 - [[2026-05 - Weng - Learning Beyond Gradients]]
+- [[2026-05-30 - Chayenne Zhao - SGLang Omni Multi-Stage Inference]]
 - [[2026-05-17 - Lun Wang - Your Evals Will Break]]
 - [[2026-01-17 - Geoffrey Huntley - Everything is a Ralph Loop]]
 - [[2017-11-11 - Karpathy - Software 2.0]]
@@ -256,4 +280,4 @@ Master catalog of all wiki pages. Refresh on every ingest.
 
 ---
 
-Total: ~180 wiki pages, 42 raw sources. Last full refresh: 2026-05-20 (autoresearch: continually-learning model-centric systems — 4 directions, 37 new pages). Last ingest: 2026-05-29 (Weng — Learning Beyond Gradients; 1 entity + 1 concept + 1 source; updated Online Learning + Model-Centric). Last maintenance: 2026-05-28 (concept dedup — 3 merges, 108→105 concepts).
+Total: ~204 wiki pages, 45 raw sources. Last full refresh: 2026-05-20 (autoresearch: continually-learning model-centric systems — 4 directions, 37 new pages). Last ingest: 2026-05-31 (Chayenne Zhao — SGLang Omni Multi-Stage Inference; seed 12/14 → high: 3 entities + 3 concepts + 1 source; wiki's first inference-serving-systems source). Prior ingest: 2026-05-30 (GEPA — Reflective Prompt Evolution, ICLR 2026 Oral). Last maintenance: 2026-05-28 (concept dedup — 3 merges, 108→105 concepts).

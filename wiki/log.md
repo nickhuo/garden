@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Wiki Log"
-updated: 2026-05-20
+updated: 2026-05-31
 ---
 
 # Wiki Log
@@ -18,6 +18,35 @@ Format:
 Ops: `init`, `ingest`, `query`, `lint`, `refactor`, `save`, `autoresearch`, `manual`.
 
 ---
+
+## [2026-05-31] ingest | SGLang Omni: Redesigning Inference for Multi-Stage Models (Chayenne Zhao)
+- Source: X long-form article (https://x.com/i/article/2060542211079757824, login-gated; HTTP 402 on fetch + headless-browser login wall) — full English text supplied by Nick, saved to `.raw/articles/sglang-omni-multi-stage-inference-2026-05-30.md` → [[2026-05-30 - Chayenne Zhao - SGLang Omni Multi-Stage Inference]].
+- Seed gate: **12/14 → high** (first-party design doc from a core [[SGLang]] contributor; concrete component names + numbers; blog/essay form, not peer-reviewed). Note: `_rubrics/source-quality.md` referenced in CLAUDE.md is absent on disk — gate applied from the score→confidence criteria.
+- Collision check: gbrain MCP `query` — no existing inference-serving page; nearest neighbor [[Interaction Model Architecture]] (TML, also touches SGLang streaming). No collision; create fresh.
+- Wiki's **first inference-serving-systems source**. Thesis: slice models by computation, not modality.
+- Pages created: [[2026-05-30 - Chayenne Zhao - SGLang Omni Multi-Stage Inference]], [[SGLang]], [[Chayenne Zhao]], [[Qwen3-Omni]], [[Multi-Stage Decoding]], [[Stage-Decoupled Inference Architecture]], [[Thinker-Talker-MTP]].
+- Pages updated: [[brain/03_Resources/wiki/index]], [[hot]], [[log]], [[LLM]], [[Interaction Model Architecture]] (kin-design callout + cross-ref).
+- Citation chase: none built (primary source; only external ref is the author's unlinked "earlier blog post").
+- Key insight: names a **third roofline category** beyond compute-/memory-bound — latency-bound decode dominated by kernel-launch/sync overhead, fixed by fusing tight stages into one piecewise CUDA Graph.
+
+## [2026-05-30] ingest | GEPA: Reflective Prompt Evolution (Agrawal et al., ICLR 2026 Oral)
+- Source: `.raw/articles/gepa-reflective-prompt-evolution-2026-05-30.md` (arXiv 2507.19457v2, from `~/Downloads/2507.19457v2.pdf`, pypdf-extracted) → [[2026-02 - Agrawal et al - GEPA Reflective Prompt Evolution]].
+- Seed gate: **14/14 → high** (primary peer-reviewed research, Berkeley/Stanford/MIT/Databricks; full algorithm + 6 benchmarks + released code).
+- Collision check: gbrain CLI locked by MCP server (single-process PGLite); did manual neighbor read instead — [[Heuristic Learning]] is the closest existing page. No name/topic collision; create fresh.
+- Pages created: [[2026-02 - Agrawal et al - GEPA Reflective Prompt Evolution]], [[Omar Khattab]], [[DSPy]], [[GEPA]], [[Language Feedback as Learning Signal]], [[Pareto-based Candidate Selection]], [[Compound AI System]], [[Prompt Optimization]], [[GRPO]].
+- Pages updated: [[Heuristic Learning]] (prompt-space-twin bridge), [[Verifiability]] (RLVR-collapses-the-signal amendment), [[index]], [[hot]].
+- Key insight: GEPA is the prompt-space twin of Heuristic Learning — both learn by editing an interpretable, LLM-editable artifact from language/trace feedback instead of gradients, and both claim large sample-efficiency wins over RL because a good edit *jumps* where a gradient nudges.
+- Citation chase: none built (GEPA is the primary source; ~100 refs documented in a Lineage section, not fetched).
+
+## [2026-05-29] ingest | Do Things that Don't Scale (Paul Graham, 2013)
+- Source: `.raw/articles/do-things-that-dont-scale-2026-05-29.md` → [[2013-07 - Paul Graham - Do Things that Don't Scale]] (essay, paulgraham.com/ds.html). Verbatim fetch declined (copyright) — raw is a detailed structured extraction.
+- Seed gate: **12/14 → high** (docked on verifiability — illustrative anecdotes — and citation hygiene — footnotes attribute people, not chaseable sources).
+- gbrain collision check (query-first): no same-name or topical page; wiki is entirely AI-agents/LLM. Nearest semantic hits were unrelated (implicit-feedback, reward-modeling). → first **startups/founder-strategy** source; create fresh, tag `startups`, no domain page yet.
+- Pages created: [[Paul Graham]], [[Y Combinator]] (entities); [[Do Things That Don't Scale]], [[Startup Idea as Vector]], [[Collison Installation]], [[Manual-First MVP]], [[Deliberately Narrow Initial Market]] (concepts); source page.
+- Pages updated: [[brain/03_Resources/wiki/index]], [[hot]].
+- Key insight: startups don't take off by themselves — founders manufacture early momentum by doing deliberately unscalable things (manual recruiting, pathological delight, narrow market, by-hand ops), which become the company's DNA. Stated as a vector: idea = what you build + the unscalable launch effort.
+- Citation chase: none — footnotes attribute people (Altman, Garry Tan, Patrick Collison) and an Emerson quote, no chaseable external sources. `cited_sources: []`.
+- Reindex: `gbrain import wiki/ + .raw/` + `embed --stale` (pending).
 
 ## [2026-05-29] ingest | Learning Beyond Gradients (Jiayi Weng)
 - Source: `.raw/articles/2026-05 - Weng - Learning Beyond Gradients.md` → [[2026-05 - Weng - Learning Beyond Gradients]]

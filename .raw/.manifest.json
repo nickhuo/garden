@@ -1,5 +1,48 @@
 {
   "sources": {
+    ".raw/articles/sglang-omni-multi-stage-inference-2026-05-30.md": {
+      "hash": "eb952cd4581f4f2993b184d97966ce35",
+      "source_url": "https://x.com/GenAI_is_real/status/2060542315186540630",
+      "article_url": "https://x.com/i/article/2060542211079757824",
+      "ingested_at": "2026-05-31",
+      "pages_created": [
+        "wiki/sources/2026-05-30 - Chayenne Zhao - SGLang Omni Multi-Stage Inference.md",
+        "wiki/entities/SGLang.md",
+        "wiki/entities/Chayenne Zhao.md",
+        "wiki/entities/Qwen3-Omni.md",
+        "wiki/concepts/Multi-Stage Decoding.md",
+        "wiki/concepts/Stage-Decoupled Inference Architecture.md",
+        "wiki/concepts/Thinker-Talker-MTP.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md",
+        "wiki/domains/LLM.md",
+        "wiki/concepts/Interaction Model Architecture.md"
+      ]
+    },
+    ".raw/articles/do-things-that-dont-scale-2026-05-29.md": {
+      "hash": "cd869c3472d852bb86f8809ffc0afd92",
+      "source_url": "https://www.paulgraham.com/ds.html",
+      "ingested_at": "2026-05-29",
+      "pages_created": [
+        "wiki/sources/2013-07 - Paul Graham - Do Things that Don't Scale.md",
+        "wiki/entities/Paul Graham.md",
+        "wiki/entities/Y Combinator.md",
+        "wiki/concepts/Do Things That Don't Scale.md",
+        "wiki/concepts/Startup Idea as Vector.md",
+        "wiki/concepts/Collison Installation.md",
+        "wiki/concepts/Manual-First MVP.md",
+        "wiki/concepts/Deliberately Narrow Initial Market.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md",
+        "wiki/concepts/Verifiability.md"
+      ]
+    },
     ".raw/articles/2026-05 - Weng - Learning Beyond Gradients.md": {
       "hash": "426d6517dcfc5ccbccab5bd5de09bde3",
       "source_url": "https://trinkle23897.github.io/learning-beyond-gradients/",
@@ -261,6 +304,28 @@
         "wiki/concepts/Eval Awareness.md",
         "wiki/concepts/AI-Resistant Evaluation Design.md",
         "wiki/sources/2023-05 - Schaeffer et al - Emergent Abilities a Mirage.md"
+      ]
+    },
+    ".raw/articles/gepa-reflective-prompt-evolution-2026-05-30.pdf": {
+      "hash": "2f44ba38efa03ea5a5f734b809514960",
+      "ingested_at": "2026-05-30",
+      "pages_created": [
+        "wiki/sources/2026-02 - Agrawal et al - GEPA Reflective Prompt Evolution.md",
+        "wiki/entities/Omar Khattab.md",
+        "wiki/entities/DSPy.md",
+        "wiki/concepts/GEPA.md",
+        "wiki/concepts/Language Feedback as Learning Signal.md",
+        "wiki/concepts/Pareto-based Candidate Selection.md",
+        "wiki/concepts/Compound AI System.md",
+        "wiki/concepts/Prompt Optimization.md",
+        "wiki/concepts/GRPO.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Heuristic Learning.md",
+        "wiki/concepts/Verifiability.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
       ]
     }
   }

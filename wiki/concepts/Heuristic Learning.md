@@ -8,7 +8,7 @@ status: developing
 complexity: intermediate
 domain: llm
 aliases: ["HL", "Heuristic System", "Learning Beyond Gradients"]
-related: ["[[Online Learning from Interaction]]", "[[Model-Centric Architecture]]", "[[The Bitter Lesson]]", "[[Software 2.0]]", "[[Evaluator-Optimizer]]", "[[Self-Evolving Agent Environments]]", "[[Verifiability]]", "[[Ralph Loop]]"]
+related: ["[[Online Learning from Interaction]]", "[[Model-Centric Architecture]]", "[[The Bitter Lesson]]", "[[Software 2.0]]", "[[Evaluator-Optimizer]]", "[[Self-Evolving Agent Environments]]", "[[Verifiability]]", "[[Ralph Loop]]", "[[GEPA]]", "[[Language Feedback as Learning Signal]]"]
 sources: ["[[2026-05 - Weng - Learning Beyond Gradients]]"]
 ---
 
@@ -61,6 +61,7 @@ HL is the **code-centric pole** of the [[Model-Centric Architecture]] slider pus
 
 - Extends the durability spectrum in [[Online Learning from Interaction]] with a new mechanism: *update the code, not the weights*.
 - The iterate-on-code-from-feedback loop is a control-task cousin of [[Evaluator-Optimizer]] and [[Self-Evolving Agent Environments]]; operationally close to a [[Ralph Loop]] aimed at a policy artifact instead of an app.
+- **Prompt-space twin: [[GEPA]].** HL edits *code*; GEPA edits *prompts*. Both reject gradient descent for *learning in an interpretable, LLM-editable medium* driven by trace/test feedback ([[Language Feedback as Learning Signal]]) — and both report large sample-efficiency wins over RL because an effective edit *jumps* to a new policy. The shared bet: collapsing rich feedback into a scalar reward throws away most of the signal an LLM could use.
 - Leans on [[Verifiability]] — HL works exactly where feedback (tests/rewards) is cheap and trustworthy.
 
 ## Open questions
