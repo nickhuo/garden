@@ -19,6 +19,12 @@ Ops: `init`, `ingest`, `query`, `lint`, `refactor`, `save`, `autoresearch`, `man
 
 ---
 
+## [2026-06-01] refactor | Thinker-entity tier + deepening schema
+- Split entities into **thinker** (`entity_tier: thinker` — people/labs, accrete) vs **artifact** (snapshots, stay thin) in `entities/_index.md`; rewrote promotion policy (a thinker now qualifies on ≥1 source + a synthesizable stance, overturning the old "no single-source authors" rule) and added the 6-section deepening schema (Worldview / Methodology / Body of work / Throughlines / Tensions / Corpus to ingest).
+- Deepened 4 flagship thinker pages into the schema, grounded only in already-ingested sources: [[Andrej Karpathy]], [[Omar Khattab]], [[Richard Sutton]], [[Shunyu Yao]].
+- `Corpus to ingest` sections double as a per-person ingest queue (e.g. Khattab's DSPy 2022/2024 papers; Yao's ReAct/ToT source pages; Sutton & Barto textbook).
+- pages: [[Andrej Karpathy]], [[Omar Khattab]], [[Richard Sutton]], [[Shunyu Yao]], `entities/_index.md`
+
 ## [2026-05-31] ingest | DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via RL (DeepSeek-AI, Nature 2025)
 - Source: `.raw/articles/deepseek-r1-incentivizing-reasoning-2026-05-31.md` (arXiv 2501.12948v2 = peer-reviewed Nature 645:633–638; pypdf-extracted, 86pp). Seed gate **14/14 → high**.
 - Collision check: gbrain MCP `query` — [[GRPO]] concept exists (citing "Shao et al. 2024, not yet ingested"); no DeepSeek/R1 page. Clean fit; R1 is the primary lineage anchor GRPO/RLVR cites.

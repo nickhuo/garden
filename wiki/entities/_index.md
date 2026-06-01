@@ -50,13 +50,35 @@ Named things: people, organizations, products, repositories, frameworks, places.
 
 - [[Geoffrey Huntley]] — engineer/blogger; coined the [[Ralph Loop]]; "agentic coding is context engineering, not multi-agent." (His "Weaving Loom" / Gas Town automation-levels framing is covered inline on [[Ralph Loop]].)
 
+## Two tiers of entity
+
+Entities split into two kinds that evolve in opposite directions:
+
+- **Thinker entities** (`entity_tier: thinker`) — people and research labs. They **accrete**: each new source by/about them deepens a methodology and worldview. These are the pages worth growing into mini-theses (see deepening schema below). A single source is enough to *start* one **if** there is a synthesizable stance, not just authorship.
+- **Artifact entities** (`entity_tier: artifact`) — models, benchmarks, frameworks, products, repos. They are **snapshots** of a source and should stay thin: a few lines + the wikilinks that make them a useful index node. Don't pad them with speculation. Model-version pages (e.g. a specific Claude/GPT release) rarely deserve standalone pages — fold them into the source or the concept they illustrate.
+
 ## Promotion policy
 
-Create an entity page when:
-- The entity is mentioned substantively in ≥2 sources, OR
-- The entity is the subject of its own dedicated source (e.g., a tool's docs)
+Create a **thinker** page when:
+- The person/lab authors ≥1 wiki source **and** has a stance/method worth synthesizing across works (not just "wrote paper X").
 
-Don't create entity pages for:
+Create an **artifact** page when:
+- It is mentioned substantively in ≥2 sources, OR is the subject of its own dedicated source.
+
+Don't create a page for:
 - One-line mentions
-- Authors of single sources (info lives in the source frontmatter)
+- A specific model version that only illustrates one source (fold into the source/concept)
 - Generic categories ("LLMs," "agents") — those are concepts, not entities
+
+## Deepening schema (thinker entities)
+
+A deepened thinker page is a small thesis, grounded only in ingested sources (never invent — that's how stub pages rot into speculation). Sections:
+
+1. **Worldview / 核心主张** — the 1–3 arguments they keep making.
+2. **Methodology / 方法论** — *how* they work (the highest-value section).
+3. **Body of work** — chronological arc, each item linked to a wiki source.
+4. **Throughlines** — recurring themes across works.
+5. **Tensions** — where they disagree with others; cross-link the other entity.
+6. **Corpus to ingest** — their key works not yet in the wiki (the forward hook).
+
+Frontmatter adds `entity_tier`, `core_claim` (one-liner). Flagship samples: [[Andrej Karpathy]], [[Omar Khattab]].
