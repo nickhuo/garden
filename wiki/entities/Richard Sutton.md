@@ -28,13 +28,13 @@ sources:
 
 Foundational figure in reinforcement learning (co-author of the standard RL textbook) and author of the most-cited short argument in modern AI.
 
-## Worldview / 核心主张
+## Worldview
 
 1. **Scaling general methods beats encoding human knowledge.** [[The Bitter Lesson]] (2019): over 70 years of AI, the two things that scale arbitrarily with compute — **search** and **learning** — repeatedly overtake hand-engineered human knowledge (chess, Go, speech, vision). Baking in "how we think we think" satisfies the researcher and then plateaus.
 2. **Experience replaces human data.** [[2025-04-11 - Silver Sutton - Welcome to the Era of Experience|The Era of Experience]] (2025, w/ David Silver): high-quality human data is hitting its limit; the next generation of agents acquires superhuman capability by learning from **their own streams of experience**.
 3. **Grounded rewards over human prejudgment.** Reward should come from measurable environmental outcomes (cost, error rate, exam results), not from a human scoring a response's plausibility — which imposes a performance ceiling.
 
-## Methodology / 方法论
+## Methodology
 
 - **Argue from the historical pattern, not from a system.** Both works are manifestos: he establishes a recurring 70-year pattern, then projects it forward. He builds the *meta-argument* ("build meta-methods that discover complexity") rather than a specific method.
 - **Push the principle to its uncomfortable conclusion.** The "bitter" in the lesson is deliberate — he names the emotional resistance (researchers were "embittered") as evidence the field keeps relearning it.

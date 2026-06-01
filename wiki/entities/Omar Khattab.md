@@ -17,13 +17,13 @@ sources: ["[[2026-02 - Agrawal et al - GEPA Reflective Prompt Evolution]]", "[[2
 
 Researcher (MIT, OASYS Lab) working on **[[Compound AI System|compound AI systems]]**: how modular LLM programs should be *built, programmed, and optimized* rather than hand-prompted. Creator of **[[DSPy]]** (and earlier **ColBERT**, late-interaction retrieval).
 
-## Worldview / 核心主张
+## Worldview
 
 1. **Program, don't prompt.** An LLM pipeline is a system `Φ = (M, C, X, Y)` of modules `M_i = (π_i, θ_i, X_i, Y_i)` with *learnable* parameters (prompts and/or weights). The job is to optimize that system against a metric — not to hand-tune strings. This formalism, from his DSPy papers (Khattab et al. 2022, 2024), is the substrate the whole optimizer lineage inherits.
 2. **Learn in an interpretable medium.** [[GEPA]]'s thesis: language traces carry far more signal than a scalar reward. Reflecting on execution + evaluation traces in natural language beats policy-gradient RL ([[GRPO]]) by >10% over MIPROv2 and up to 20% over GRPO with up to **35× fewer rollouts**. See [[Language Feedback as Learning Signal]].
 3. **Decompose the context, not the problem.** [[Recursive Language Models]]: a root LM never sees long context directly — it manipulates it as a REPL variable and spawns sub-LM calls. "No model call should ever require handling a huge context."
 
-## Methodology / 方法论
+## Methodology
 
 - **Formalize first, then optimize.** Every contribution starts by naming the abstraction (late interaction; the DSPy module graph; the trace types in GEPA) and then building an optimizer or architecture on top of it.
 - **Optimizers as the unit of progress.** His research advances by successive optimizers over the *same* DSPy substrate — few-shot bootstrapping → MIPROv2 → GEPA — each beating the last on the same benchmarks.

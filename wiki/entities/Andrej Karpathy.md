@@ -32,13 +32,13 @@ sources:
 
 AI researcher and educator (ex-Director of AI at Tesla, founding member of OpenAI). The clearest articulator of how the *software stack itself* changes under machine learning.
 
-## Worldview / 核心主张
+## Worldview
 
 1. **The stack is changing in stages.** Software 1.0 = explicit code; **[[Software 2.0]]** = learned weights ("the program is the weights, written in a human-unfriendly language"); **[[Software 3.0]]** = programming the model in natural language, with the context window as "your lever over the interpreter." Logic steadily migrates out of hand-written code and into the model.
 2. **Partial autonomy, not full.** Against the "year of agents" hype he favors a human-controllable **autonomy slider** — keep a human in the loop. This is the *user-keeps-final-control* leg of [[Model-Centric Architecture]].
 3. **Understanding is not outsourceable.** "You can outsource your thinking, but you can't outsource your understanding." Knowledge bases are tools for *transforming information into understanding*, not answer machines — the thesis directly motivating this vault's LLM-wiki pattern.
 
-## Methodology / 方法论
+## Methodology
 
 - **Distill to the smallest inspectable artifact.** nanoGPT / `microGPT`: a stripped, readable core + human taste + an agent that can explain it interactively. He teaches by building the minimal version that still works.
 - **Empirical familiarity as posture.** LLMs are "**ghosts, not animals**" — statistical simulations of human artifacts, brilliant then "bizarrely dumb." Correct stance is neither dismissal nor blind trust but earned, hands-on calibration of where they break.

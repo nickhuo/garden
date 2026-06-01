@@ -74,8 +74,8 @@ Don't create a page for:
 
 A deepened thinker page is a small thesis, grounded only in ingested sources (never invent — that's how stub pages rot into speculation). Sections:
 
-1. **Worldview / 核心主张** — the 1–3 arguments they keep making.
-2. **Methodology / 方法论** — *how* they work (the highest-value section).
+1. **Worldview** — the 1–3 arguments they keep making.
+2. **Methodology** — *how* they work (the highest-value section).
 3. **Body of work** — chronological arc, each item linked to a wiki source.
 4. **Throughlines** — recurring themes across works.
 5. **Tensions** — where they disagree with others; cross-link the other entity.

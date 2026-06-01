@@ -29,13 +29,13 @@ sources:
 
 Researcher whose work threads through much of the language-agents canon — a coherent arc from inventing agent patterns to organizing them to measuring whether they actually work.
 
-## Worldview / 核心主张
+## Worldview
 
 1. **Language agents are not new — they are the latest cognitive architecture.** [[CoALA]] imports the symbolic-AI tradition (Soar, ACT-R, production systems) to argue the agent design space was already mapped; LLMs just made the modules cheap. The frontier is the *empty cells* of that map.
 2. **Reliability, not capability, is the deployment bottleneck.** [[tau-bench]] measures the *consistency* gap directly: SOTA agents solve <50% of customer-service tasks and [[Pass^k Reliability Metric|pass^8]] collapses below 25% even when pass^1 exceeds 60% — the *same* task solved inconsistently across i.i.d. trials.
 3. **Reasoning and acting should interleave and search.** [[ReAct]] (interleave reasoning + grounding) and [[Tree of Thoughts]] (deliberate search over reasoning paths) are the foundational patterns the later framework organizes.
 
-## Methodology / 方法论
+## Methodology
 
 - **The pattern → framework → benchmark arc.** Build agent patterns (ReAct, ToT), then a framework to organize the whole space ([[CoALA]]), then a benchmark to measure them in production-like settings ([[tau-bench]]). Each stage presupposes the last.
 - **Borrow rigor from older fields.** CoALA's three axes (memory modules / action space / decision procedure) are lifted from cognitive science rather than invented ad hoc — the way MDPs standardized RL.
