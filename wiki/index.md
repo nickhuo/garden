@@ -13,7 +13,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[AI-Agents]] — agentic systems, tool use, orchestration, harnesses, evals, MCP
 - [[LLM]] — model internals, training, inference, optimization, alignment. Seeded 2026-05-14 with 5 Thinking Machines Lab sources.
 
-## Entities (42)
+## Entities (43)
 
 - [[Agent Skills]]
 - [[Andrej Karpathy]]
@@ -25,6 +25,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Claude Code]]
 - [[Claude Desktop]]
 - [[Claude Opus 4.6]]
+- [[DeepSeek]]
 - [[DSPy]]
 - [[DXT]]
 - [[Geoffrey Huntley]]
@@ -58,12 +59,15 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Thinking Machines Lab]]
 - [[Y Combinator]]
 
-## Concepts (126)
+## Concepts (128)
 
 - [[A-B Testing for Agents]]
 - [[ACI - Agent-Computer Interface]]
 - [[Activation Steering / Representation Engineering]]
 - [[Adaptive Evaluation]]
+- [[DeepSeek-R1-Zero]]
+- [[Reasoning Distillation]]
+- [[RL with Verifiable Rewards]]
 - [[Agent Eval Pyramid]]
 - [[Autonomous Research Agents]]
 - [[Agent Guardrails]]
@@ -187,9 +191,10 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Vibe Coding]]
 - [[Workflows vs Agents]]
 
-## Sources (63)
+## Sources (65)
 
 - [[2013-07 - Paul Graham - Do Things that Don't Scale]]
+- [[2025-01 - DeepSeek-AI - DeepSeek-R1 Incentivizing Reasoning via RL]]
 - [[2024-06 - Opsahl-Ong et al - MIPRO Optimizing Instructions and Demonstrations]]
 - [[2026-02 - Agrawal et al - GEPA Reflective Prompt Evolution]]
 - [[2026-05 - Weng - Learning Beyond Gradients]]

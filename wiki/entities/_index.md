@@ -17,6 +17,7 @@ Named things: people, organizations, products, repositories, frameworks, places.
 - [[OpenBMB]] — Tsinghua NLP / ModelBest open big-model ecosystem; maintains [[ToolBench]]/ToolLLM. **Cited in:** [[2023-07-31 - Qin et al - ToolLLM]].
 - [[OpenAI]] — AI research & deployment company; maker of GPT/o-series, the Agents SDK, the moderation API. **Cited in:** [[2025 - OpenAI - A Practical Guide to Building Agents]].
 - [[Prime Intellect]] — open-source / decentralized RL company focused on **self-improving AI systems**; ships `prime-rl`, `verifiers`, `renderers`, `general-agent`; runs the Prime Sprints program. 5 sources. **Cited in:** the Prime Intellect batch (reward-hacking, general-agent, auto-nanogpt, renderers, RLM). Peer to [[Thinking Machines Lab]].
+- [[DeepSeek]] — Chinese AI lab (DeepSeek-AI); open-weight frontier models, popularized [[GRPO]] + large-scale [[RL with Verifiable Rewards|RLVR]] for reasoning. DeepSeek-V3 (671B MoE base) → [[DeepSeek-R1-Zero]] / DeepSeek-R1 / R1-Distill series. **Cited in:** [[2025-01 - DeepSeek-AI - DeepSeek-R1 Incentivizing Reasoning via RL]].
 
 ## Products / Frameworks / Benchmarks
 

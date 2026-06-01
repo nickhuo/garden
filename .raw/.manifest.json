@@ -1,48 +1,5 @@
 {
   "sources": {
-    ".raw/articles/sglang-omni-multi-stage-inference-2026-05-30.md": {
-      "hash": "eb952cd4581f4f2993b184d97966ce35",
-      "source_url": "https://x.com/GenAI_is_real/status/2060542315186540630",
-      "article_url": "https://x.com/i/article/2060542211079757824",
-      "ingested_at": "2026-05-31",
-      "pages_created": [
-        "wiki/sources/2026-05-30 - Chayenne Zhao - SGLang Omni Multi-Stage Inference.md",
-        "wiki/entities/SGLang.md",
-        "wiki/entities/Chayenne Zhao.md",
-        "wiki/entities/Qwen3-Omni.md",
-        "wiki/concepts/Multi-Stage Decoding.md",
-        "wiki/concepts/Stage-Decoupled Inference Architecture.md",
-        "wiki/concepts/Thinker-Talker-MTP.md"
-      ],
-      "pages_updated": [
-        "wiki/index.md",
-        "wiki/log.md",
-        "wiki/hot.md",
-        "wiki/domains/LLM.md",
-        "wiki/concepts/Interaction Model Architecture.md"
-      ]
-    },
-    ".raw/articles/do-things-that-dont-scale-2026-05-29.md": {
-      "hash": "cd869c3472d852bb86f8809ffc0afd92",
-      "source_url": "https://www.paulgraham.com/ds.html",
-      "ingested_at": "2026-05-29",
-      "pages_created": [
-        "wiki/sources/2013-07 - Paul Graham - Do Things that Don't Scale.md",
-        "wiki/entities/Paul Graham.md",
-        "wiki/entities/Y Combinator.md",
-        "wiki/concepts/Do Things That Don't Scale.md",
-        "wiki/concepts/Startup Idea as Vector.md",
-        "wiki/concepts/Collison Installation.md",
-        "wiki/concepts/Manual-First MVP.md",
-        "wiki/concepts/Deliberately Narrow Initial Market.md"
-      ],
-      "pages_updated": [
-        "wiki/index.md",
-        "wiki/log.md",
-        "wiki/hot.md",
-        "wiki/concepts/Verifiability.md"
-      ]
-    },
     ".raw/articles/2026-05 - Weng - Learning Beyond Gradients.md": {
       "hash": "426d6517dcfc5ccbccab5bd5de09bde3",
       "source_url": "https://trinkle23897.github.io/learning-beyond-gradients/",
@@ -58,133 +15,6 @@
         "wiki/index.md",
         "wiki/log.md",
         "wiki/hot.md"
-      ]
-    },
-    ".raw/articles/reward-hacking-2026-05-24.md": {
-      "hash": "6db5afe5932ee4eb1c560d077b26a0ca",
-      "source_url": "https://www.primeintellect.ai/blog/reward-hacking",
-      "ingested_at": "2026-05-24",
-      "pages_created": [
-        "wiki/sources/2026-05-20 - Prime Intellect - Systematic Reward Hacking.md",
-        "wiki/entities/Prime Intellect.md",
-        "wiki/concepts/Reward Hacking.md",
-        "wiki/comparisons/Prime Intellect Self-Improvement Stack.md"
-      ],
-      "pages_updated": [
-        "wiki/index.md",
-        "wiki/log.md",
-        "wiki/hot.md",
-        "wiki/domains/LLM.md"
-      ]
-    },
-    ".raw/articles/general-agent-2026-05-24.md": {
-      "hash": "739ec6b52f2811f4e707b8de81cfd9f3",
-      "source_url": "https://www.primeintellect.ai/blog/general-agent",
-      "ingested_at": "2026-05-24",
-      "pages_created": [
-        "wiki/sources/2026-05-18 - Prime Intellect - General Agent.md",
-        "wiki/concepts/Self-Evolving Agent Environments.md"
-      ],
-      "pages_updated": [
-        "wiki/index.md",
-        "wiki/log.md",
-        "wiki/hot.md",
-        "wiki/domains/AI-Agents.md"
-      ]
-    },
-    ".raw/articles/auto-nanogpt-2026-05-24.md": {
-      "hash": "64cde08134046ee287207c4057a536ae",
-      "source_url": "https://www.primeintellect.ai/auto-nanogpt",
-      "ingested_at": "2026-05-24",
-      "pages_created": [
-        "wiki/sources/2026-05-14 - Prime Intellect - Autonomous AI Research for nanogpt Speedrun.md",
-        "wiki/concepts/Autonomous Research Agents.md"
-      ],
-      "pages_updated": [
-        "wiki/index.md",
-        "wiki/log.md",
-        "wiki/hot.md",
-        "wiki/domains/AI-Agents.md"
-      ]
-    },
-    ".raw/articles/renderers-2026-05-24.md": {
-      "hash": "d8155d8bdb4486e95bc29d276ec96d40",
-      "source_url": "https://www.primeintellect.ai/blog/renderers",
-      "ingested_at": "2026-05-24",
-      "pages_created": [
-        "wiki/sources/2026-05-12 - Prime Intellect - Renderers.md",
-        "wiki/concepts/Token-In Token-Out.md"
-      ],
-      "pages_updated": [
-        "wiki/index.md",
-        "wiki/log.md",
-        "wiki/hot.md",
-        "wiki/domains/LLM.md"
-      ]
-    },
-    ".raw/articles/rlm-2026-05-24.md": {
-      "hash": "a387290d859a78da16135bd911ac207a",
-      "source_url": "https://www.primeintellect.ai/blog/rlm",
-      "ingested_at": "2026-05-24",
-      "pages_created": [
-        "wiki/sources/2026-01-01 - Prime Intellect - Recursive Language Models.md"
-      ],
-      "pages_updated": [
-        "wiki/index.md",
-        "wiki/log.md",
-        "wiki/hot.md",
-        "wiki/concepts/Recursive Language Models.md"
-      ]
-    },
-    ".raw/articles/a-practical-guide-to-building-agents-2026-05-22.md": {
-      "hash": "20e51e9a9c38d4990a0a589b1cce5f84",
-      "source_url": "https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/",
-      "ingested_at": "2026-05-22",
-      "pages_created": [
-        "wiki/sources/2025 - OpenAI - A Practical Guide to Building Agents.md",
-        "wiki/entities/OpenAI.md",
-        "wiki/entities/OpenAI Agents SDK.md",
-        "wiki/concepts/Manager Pattern.md",
-        "wiki/concepts/Agent Handoffs.md",
-        "wiki/concepts/Agent Tool Categories.md",
-        "wiki/concepts/Agent Run Loop.md",
-        "wiki/concepts/Agent Guardrails.md",
-        "wiki/concepts/Human-in-the-Loop Intervention.md",
-        "wiki/comparisons/OpenAI Practical Guide vs Anthropic Building Effective Agents.md"
-      ],
-      "pages_updated": [
-        "wiki/index.md",
-        "wiki/log.md",
-        "wiki/hot.md",
-        "wiki/domains/AI-Agents.md",
-        "wiki/concepts/_index.md",
-        "wiki/entities/_index.md",
-        "wiki/sources/_index.md",
-        "wiki/comparisons/_index.md",
-        "wiki/concepts/Workflows vs Agents.md",
-        "wiki/concepts/Orchestrator-Workers.md"
-      ]
-    },
-    ".raw/articles/sequoia-ascent-2026-2026-05-22.md": {
-      "hash": "2190188870fd92429b2722f5425c9367",
-      "source_url": "https://karpathy.bearblog.dev/sequoia-ascent-2026/",
-      "ingested_at": "2026-05-22",
-      "pages_created": [
-        "wiki/sources/2026-05-22 - Karpathy - Sequoia Ascent 2026.md",
-        "wiki/concepts/Software 3.0.md",
-        "wiki/concepts/Verifiability.md",
-        "wiki/concepts/Jagged Intelligence.md",
-        "wiki/concepts/Vibe Coding.md",
-        "wiki/concepts/Agentic Engineering.md",
-        "wiki/concepts/Agent-Native Infrastructure.md"
-      ],
-      "pages_updated": [
-        "wiki/index.md",
-        "wiki/log.md",
-        "wiki/hot.md",
-        "wiki/domains/AI-Agents.md",
-        "wiki/entities/Andrej Karpathy.md",
-        "wiki/concepts/Software 2.0.md"
       ]
     },
     ".raw/articles/2025-07 - Patil et al - BFCL.md": {
@@ -226,7 +56,177 @@
         "wiki/sources/_index.md"
       ]
     },
-    ".raw/pdfs/cognitive-architectures-language-agents-2309.02427.pdf": {
+    ".raw/articles/2026-05-30 - Chayenne Zhao - SGLang Omni Multi-Stage Inference.md": {
+      "hash": "eb952cd4581f4f2993b184d97966ce35",
+      "source_url": "https://x.com/GenAI_is_real/status/2060542315186540630",
+      "article_url": "https://x.com/i/article/2060542211079757824",
+      "ingested_at": "2026-05-31",
+      "pages_created": [
+        "wiki/sources/2026-05-30 - Chayenne Zhao - SGLang Omni Multi-Stage Inference.md",
+        "wiki/entities/SGLang.md",
+        "wiki/entities/Chayenne Zhao.md",
+        "wiki/entities/Qwen3-Omni.md",
+        "wiki/concepts/Multi-Stage Decoding.md",
+        "wiki/concepts/Stage-Decoupled Inference Architecture.md",
+        "wiki/concepts/Thinker-Talker-MTP.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md",
+        "wiki/domains/LLM.md",
+        "wiki/concepts/Interaction Model Architecture.md"
+      ]
+    },
+    ".raw/articles/2013-07 - Paul Graham - Do Things that Don't Scale.md": {
+      "hash": "cd869c3472d852bb86f8809ffc0afd92",
+      "source_url": "https://www.paulgraham.com/ds.html",
+      "ingested_at": "2026-05-29",
+      "pages_created": [
+        "wiki/sources/2013-07 - Paul Graham - Do Things that Don't Scale.md",
+        "wiki/entities/Paul Graham.md",
+        "wiki/entities/Y Combinator.md",
+        "wiki/concepts/Do Things That Don't Scale.md",
+        "wiki/concepts/Startup Idea as Vector.md",
+        "wiki/concepts/Collison Installation.md",
+        "wiki/concepts/Manual-First MVP.md",
+        "wiki/concepts/Deliberately Narrow Initial Market.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md",
+        "wiki/concepts/Verifiability.md"
+      ]
+    },
+    ".raw/articles/2026-05-20 - Prime Intellect - Systematic Reward Hacking.md": {
+      "hash": "6db5afe5932ee4eb1c560d077b26a0ca",
+      "source_url": "https://www.primeintellect.ai/blog/reward-hacking",
+      "ingested_at": "2026-05-24",
+      "pages_created": [
+        "wiki/sources/2026-05-20 - Prime Intellect - Systematic Reward Hacking.md",
+        "wiki/entities/Prime Intellect.md",
+        "wiki/concepts/Reward Hacking.md",
+        "wiki/comparisons/Prime Intellect Self-Improvement Stack.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md",
+        "wiki/domains/LLM.md"
+      ]
+    },
+    ".raw/articles/2026-05-18 - Prime Intellect - General Agent.md": {
+      "hash": "739ec6b52f2811f4e707b8de81cfd9f3",
+      "source_url": "https://www.primeintellect.ai/blog/general-agent",
+      "ingested_at": "2026-05-24",
+      "pages_created": [
+        "wiki/sources/2026-05-18 - Prime Intellect - General Agent.md",
+        "wiki/concepts/Self-Evolving Agent Environments.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md",
+        "wiki/domains/AI-Agents.md"
+      ]
+    },
+    ".raw/articles/2026-05-14 - Prime Intellect - Autonomous AI Research for nanogpt Speedrun.md": {
+      "hash": "64cde08134046ee287207c4057a536ae",
+      "source_url": "https://www.primeintellect.ai/auto-nanogpt",
+      "ingested_at": "2026-05-24",
+      "pages_created": [
+        "wiki/sources/2026-05-14 - Prime Intellect - Autonomous AI Research for nanogpt Speedrun.md",
+        "wiki/concepts/Autonomous Research Agents.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md",
+        "wiki/domains/AI-Agents.md"
+      ]
+    },
+    ".raw/articles/2026-05-12 - Prime Intellect - Renderers.md": {
+      "hash": "d8155d8bdb4486e95bc29d276ec96d40",
+      "source_url": "https://www.primeintellect.ai/blog/renderers",
+      "ingested_at": "2026-05-24",
+      "pages_created": [
+        "wiki/sources/2026-05-12 - Prime Intellect - Renderers.md",
+        "wiki/concepts/Token-In Token-Out.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md",
+        "wiki/domains/LLM.md"
+      ]
+    },
+    ".raw/articles/2026-01-01 - Prime Intellect - Recursive Language Models.md": {
+      "hash": "a387290d859a78da16135bd911ac207a",
+      "source_url": "https://www.primeintellect.ai/blog/rlm",
+      "ingested_at": "2026-05-24",
+      "pages_created": [
+        "wiki/sources/2026-01-01 - Prime Intellect - Recursive Language Models.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md",
+        "wiki/concepts/Recursive Language Models.md"
+      ]
+    },
+    ".raw/articles/2025 - OpenAI - A Practical Guide to Building Agents.md": {
+      "hash": "20e51e9a9c38d4990a0a589b1cce5f84",
+      "source_url": "https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/",
+      "ingested_at": "2026-05-22",
+      "pages_created": [
+        "wiki/sources/2025 - OpenAI - A Practical Guide to Building Agents.md",
+        "wiki/entities/OpenAI.md",
+        "wiki/entities/OpenAI Agents SDK.md",
+        "wiki/concepts/Manager Pattern.md",
+        "wiki/concepts/Agent Handoffs.md",
+        "wiki/concepts/Agent Tool Categories.md",
+        "wiki/concepts/Agent Run Loop.md",
+        "wiki/concepts/Agent Guardrails.md",
+        "wiki/concepts/Human-in-the-Loop Intervention.md",
+        "wiki/comparisons/OpenAI Practical Guide vs Anthropic Building Effective Agents.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md",
+        "wiki/domains/AI-Agents.md",
+        "wiki/concepts/_index.md",
+        "wiki/entities/_index.md",
+        "wiki/sources/_index.md",
+        "wiki/comparisons/_index.md",
+        "wiki/concepts/Workflows vs Agents.md",
+        "wiki/concepts/Orchestrator-Workers.md"
+      ]
+    },
+    ".raw/articles/2026-05-22 - Karpathy - Sequoia Ascent 2026.md": {
+      "hash": "2190188870fd92429b2722f5425c9367",
+      "source_url": "https://karpathy.bearblog.dev/sequoia-ascent-2026/",
+      "ingested_at": "2026-05-22",
+      "pages_created": [
+        "wiki/sources/2026-05-22 - Karpathy - Sequoia Ascent 2026.md",
+        "wiki/concepts/Software 3.0.md",
+        "wiki/concepts/Verifiability.md",
+        "wiki/concepts/Jagged Intelligence.md",
+        "wiki/concepts/Vibe Coding.md",
+        "wiki/concepts/Agentic Engineering.md",
+        "wiki/concepts/Agent-Native Infrastructure.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md",
+        "wiki/domains/AI-Agents.md",
+        "wiki/entities/Andrej Karpathy.md",
+        "wiki/concepts/Software 2.0.md"
+      ]
+    },
+    ".raw/articles/2023-09-05 - Sumers et al - Cognitive Architectures for Language Agents.pdf": {
       "hash": "673a3a00a375762a9e7a947b62d4d14b",
       "source_url": "https://arxiv.org/abs/2309.02427",
       "ingested_at": "2026-05-19",
@@ -245,7 +245,7 @@
         "wiki/domains/AI-Agents.md"
       ]
     },
-    ".raw/pdfs/memgpt-llms-as-operating-systems-2310.08560.pdf": {
+    ".raw/articles/2023-10-12 - Packer et al - MemGPT - LLMs as Operating Systems.pdf": {
       "hash": "16e65f7cc5c1d647eb6acffdf085ce62",
       "source_url": "https://arxiv.org/abs/2310.08560",
       "ingested_at": "2026-05-19",
@@ -262,7 +262,7 @@
         "wiki/concepts/Agent Memory Taxonomy.md"
       ]
     },
-    ".raw/articles/loop-2026-05-24.md": {
+    ".raw/articles/2026-01-17 - Geoffrey Huntley - Everything is a Ralph Loop.md": {
       "hash": "4bcf6ad0d8d773cc46f354a6733f7aaa",
       "ingested_at": "2026-05-24",
       "pages_created": [
@@ -283,7 +283,7 @@
         "wiki/sources/_index.md"
       ]
     },
-    ".raw/articles/your-evals-will-break-2026-05-28.md": {
+    ".raw/articles/2026-05-17 - Lun Wang - Your Evals Will Break.md": {
       "hash": "6bb98d63baeeba1d70f029fadd182c0f",
       "ingested_at": "2026-05-28",
       "pages_created": [
@@ -306,7 +306,7 @@
         "wiki/sources/2023-05 - Schaeffer et al - Emergent Abilities a Mirage.md"
       ]
     },
-    ".raw/articles/gepa-reflective-prompt-evolution-2026-05-30.pdf": {
+    ".raw/articles/2026-02 - Agrawal et al - GEPA Reflective Prompt Evolution.pdf": {
       "hash": "2f44ba38efa03ea5a5f734b809514960",
       "ingested_at": "2026-05-30",
       "pages_created": [
@@ -328,7 +328,7 @@
         "wiki/log.md"
       ]
     },
-    ".raw/articles/mipro-optimizing-instructions-demonstrations-2026-05-31.md": {
+    ".raw/articles/2024-06 - Opsahl-Ong et al - MIPRO Optimizing Instructions and Demonstrations.md": {
       "hash": "01b4f0f217b2f644366299561c729a95",
       "ingested_at": "2026-05-31",
       "pages_created": [
@@ -345,6 +345,31 @@
         "wiki/hot.md",
         "wiki/log.md"
       ]
+    },
+    ".raw/articles/2025-01 - DeepSeek-AI - DeepSeek-R1 Incentivizing Reasoning via RL.pdf": {
+      "hash": "37bc8f9c45b466c4611d753368ff6dd9",
+      "source_url": "https://arxiv.org/abs/2501.12948",
+      "arxiv": "2501.12948v2",
+      "ingested_at": "2026-05-31",
+      "pages_created": [
+        "wiki/sources/2025-01 - DeepSeek-AI - DeepSeek-R1 Incentivizing Reasoning via RL.md",
+        "wiki/entities/DeepSeek.md",
+        "wiki/concepts/DeepSeek-R1-Zero.md",
+        "wiki/concepts/RL with Verifiable Rewards.md",
+        "wiki/concepts/Reasoning Distillation.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/GRPO.md",
+        "wiki/concepts/Verifiability.md",
+        "wiki/concepts/On-Policy Distillation.md",
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md",
+        "wiki/domains/LLM.md",
+        "wiki/entities/_index.md",
+        "wiki/concepts/_index.md"
+      ],
+      "source_file": ".raw/articles/2025-01 - DeepSeek-AI - DeepSeek-R1 Incentivizing Reasoning via RL.pdf"
     }
   }
 }

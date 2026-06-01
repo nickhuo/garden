@@ -52,6 +52,9 @@ A post-training method that **samples trajectories from the student** (on-policy
 - **Strategy reuse:** RL searches semantic-strategy space at cost; distillation copies a found strategy without re-paying the search.
 - **Forking tokens:** per-token KL naturally targets the tokens where the student commits to a wrong reasoning path.
 
+> [!note] Successor to R1-style SFT distillation
+> [[Reasoning Distillation]] (DeepSeek-R1) already showed *off-policy SFT on teacher samples* beats running RL on a small model. On-policy distillation is the **denser-signal** refinement: sample from the *student* and grade every token by teacher reverse-KL, rather than imitating fixed teacher sequences. R1's paper explicitly leaves the "add RL/on-policy to the distilled students" step to the community — this is that step.
+
 ## Dependencies
 
 - Implicitly relies on sampler/trainer numerical alignment ([[Defeating Nondeterminism in LLM Inference]]) for the KL signal to be clean.

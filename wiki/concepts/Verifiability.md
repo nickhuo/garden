@@ -28,6 +28,9 @@ The single best predictor of where AI capability moves fastest. A task is **veri
 
 Code is maximally verifiable — compile, run, test, benchmark. The December-2025 reliability jump in coding agents is downstream of this: tight, automatic feedback loops let RL grind the domain. Math, formal reasoning, and games share the property.
 
+> [!key-insight] The existence proof
+> [[DeepSeek-R1-Zero]] is verifiability operationalized: pure [[RL with Verifiable Rewards|RLVR]] on a base model, reward = "is the math/code answer correct," lifts AIME pass@1 from 15.6% → 77.9% with *emergent* reasoning. It works *only* in the verifiable regime — the R1 authors note rule-based and ground-truth-graded rewards are the two robust signals, and both degrade on open-ended writing. That boundary is exactly Karpathy's: capability moves fast where a verifier exists.
+
 ## The founder wedge
 
 Karpathy's actionable version: find domains that are **valuable, verifiable, and undertrained by frontier labs**. Coding and math are already saturated. Many economically important domains have "latent verifiable structure that has not yet been exploited" — build the reward environment and you can fine-tune or RL your way to performance the base model lacks. The diagnostic is [[Jagged Intelligence]]'s "are you on the model's rails?"

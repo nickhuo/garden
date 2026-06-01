@@ -19,6 +19,15 @@ Ops: `init`, `ingest`, `query`, `lint`, `refactor`, `save`, `autoresearch`, `man
 
 ---
 
+## [2026-05-31] ingest | DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via RL (DeepSeek-AI, Nature 2025)
+- Source: `.raw/articles/deepseek-r1-incentivizing-reasoning-2026-05-31.md` (arXiv 2501.12948v2 = peer-reviewed Nature 645:633–638; pypdf-extracted, 86pp). Seed gate **14/14 → high**.
+- Collision check: gbrain MCP `query` — [[GRPO]] concept exists (citing "Shao et al. 2024, not yet ingested"); no DeepSeek/R1 page. Clean fit; R1 is the primary lineage anchor GRPO/RLVR cites.
+- Summary: [[2025-01 - DeepSeek-AI - DeepSeek-R1 Incentivizing Reasoning via RL]]
+- Pages created: [[DeepSeek]], [[DeepSeek-R1-Zero]], [[RL with Verifiable Rewards]], [[Reasoning Distillation]]
+- Pages updated: [[GRPO]] (secondary→sourced + full algorithm spec + large-clip), [[Verifiability]] (RLVR existence-proof callout), [[On-Policy Distillation]] (successor-to-SFT-distillation note), index, hot, [[LLM]], entities/_index, concepts/_index
+- Citation chase: none built. Standout next target = **GRPO-primary (Shao et al. 2024 / DeepSeekMath, arXiv 2402.03300)** — still the [[GRPO]] page's open gap.
+- Key insight: pure **[[RL with Verifiable Rewards|RLVR]]** on a base model (no SFT) *incentivizes* emergent reasoning ([[DeepSeek-R1-Zero]], AIME 15.6%→77.9%, the "aha moment"); the productionized **DeepSeek-R1** reaches o1-1217 parity on math/code; and **[[Reasoning Distillation|distillation > small-model RL]]**. Negative results (PRM, MCTS) preserved.
+
 ## [2026-05-31] ingest | Optimizing Instructions and Demonstrations for Multi-Stage LM Programs (MIPRO, Opsahl-Ong et al., EMNLP 2024)
 - Source: `.raw/articles/mipro-optimizing-instructions-demonstrations-2026-05-31.md` (arXiv 2406.11695). Seed gate **14/14 → high**.
 - Summary: [[2024-06 - Opsahl-Ong et al - MIPRO Optimizing Instructions and Demonstrations]]

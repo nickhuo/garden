@@ -80,6 +80,14 @@ First inference-engine source in the domain: [[2026-05-30 - Chayenne Zhao - SGLa
 - **[[Thinker-Talker-MTP]]** — the canonical pipeline ([[Qwen3-Omni]]) the design is read off; introduces a **third roofline category** beyond compute-/memory-bound: latency-bound, launch-overhead-dominated decode stages.
 - Kin to [[Interaction Model Architecture]] (TML), which contributed persistent streaming sessions back to [[SGLang]] — both separate a latency-critical path from heavier work at the systems layer.
 
+## RL for reasoning — the lineage anchor (2026-05-31)
+
+[[2025-01 - DeepSeek-AI - DeepSeek-R1 Incentivizing Reasoning via RL]] ([[DeepSeek]], *Nature* 2025) lands the **RL-for-reasoning** spine the domain had been citing but never sourcing — the canonical large-scale instance of **[[RL with Verifiable Rewards]]**:
+- **[[DeepSeek-R1-Zero]]** — pure RL on a 671B base, *no SFT*, [[Rule-Based Rewards|rule-based reward]] only; emergent self-reflection + the "aha moment"; AIME 15.6%→77.9%. The cleanest recent [[The Bitter Lesson]] instance.
+- **[[GRPO]]** — now properly sourced (was secondary-ref only): group-relative advantage, no critic, the large-PPO-clip refinement. Connects to the [[GEPA]] critique that scalar RLVR throws away the language trace.
+- **[[Reasoning Distillation]]** — 800k R1 traces → small Qwen/Llama bases by SFT; **distillation beats small-model RL**. The off-policy predecessor to TML's [[On-Policy Distillation]] — closing a loop with the domain's existing distillation page.
+- Sharpens [[Verifiability]] from principle to mechanism (RLVR is *how* verifiable domains get fast), and gives [[Reward Hacking]] / [[Reward Modeling]] their first frontier-model case study (R1 deliberately avoids neural RMs for reasoning; abandoned PRM + MCTS as failed attempts).
+
 ## Open questions for this domain
 
 - Do batch-invariant kernels see adoption in major inference servers (vLLM, SGLang) by EOY 2026? (SGLang is expanding fast — main / RL / Omni / Diffusion sub-lines as of mid-2026; see [[SGLang]].)

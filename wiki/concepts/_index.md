@@ -97,8 +97,15 @@ Ideas, patterns, frameworks. Domain-agnostic in form, domain-tagged in content. 
 
 - [[LoRA]] — low-rank adaptation; matches FullFT when applied to all layers, at moderate batch sizes, within capacity. Rank-1 suffices for policy-gradient RL.
 - [[On-Policy Distillation]] — student rollouts + teacher per-token reverse-KL; 9-30x cost reduction vs SFT/RL.
+- [[Reasoning Distillation]] — SFT a small base on a big RL model's CoT traces (R1-Distill); distillation > small-model RL.
 - [[Reverse KL Divergence]] — mode-seeking, "unhackable"; the supervision signal in on-policy distillation.
 - [[Empirical Neural Tangent Kernel]] — explains why LoRA needs all layers (MLP gradients dominate the kernel).
+
+## RL for reasoning (2026-05-31)
+
+- [[DeepSeek-R1-Zero]] — reasoning incentivized by *pure RL* on a base model, no SFT; emergent self-reflection + the "aha moment"; AIME 15.6%→77.9%.
+- [[RL with Verifiable Rewards]] — RLVR: RL whose reward is a cheap automatic verifier (rule/compiler/test), not a learned RM. The home page for the paradigm cited across [[GRPO]]/[[GEPA]]/[[Verifiability]].
+- [[GRPO]] — group-relative advantage, no critic; the canonical RLVR optimizer (now sourced from R1, not just GEPA).
 
 ## LLM inference & numerics
 
