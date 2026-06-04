@@ -39,7 +39,9 @@ Named things: people, organizations, products, repositories, frameworks, places.
 
 ## People
 
-- [[John Schulman]] — TML researcher; lead author of [[2025-09-29 - Schulman - LoRA Without Regret]]. Background: PPO, TRPO.
+- [[John Schulman]] — TML researcher; lead author of [[2025-09-29 - Schulman - LoRA Without Regret]] and of [[2017-07-20 - Schulman et al - Proximal Policy Optimization|PPO]] (OpenAI). Background: [[PPO]], TRPO.
+- [[Rafael Rafailov]] — Stanford researcher; lead author of [[2023-05-29 - Rafailov et al - Direct Preference Optimization|DPO]].
+- [[Chelsea Finn]] — Stanford professor; senior author of [[2023-05-29 - Rafailov et al - Direct Preference Optimization|DPO]]. Also known for MAML / meta-learning.
 - [[Horace He]] — TML researcher; lead author of [[2025-09-10 - He - Defeating Nondeterminism in LLM Inference]]. Background: PyTorch internals, GPU kernels.
 - [[Kevin Lu]] — TML researcher; lead author of [[2025-10-27 - Lu - On-Policy Distillation]].
 - [[Jeremy Bernstein]] — TML researcher; author of [[2025-09-26 - Bernstein - Modular Manifolds]]. Background: geometric/manifold optimization (Modula project).

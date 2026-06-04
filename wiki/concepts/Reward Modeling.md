@@ -9,6 +9,8 @@ related:
   - "[[Online Evaluation]]"
   - "[[LLM-as-Judge]]"
   - "[[Implicit Feedback Signals]]"
+  - "[[PPO]]"
+  - "[[DPO]]"
 sources:
   - "[[2023-06-09 - Zheng et al - Judging LLM-as-a-Judge]]"
 ---
@@ -17,7 +19,7 @@ sources:
 
 ## Summary
 
-A reward model (RM) maps a model output (or trajectory) to a scalar quality score, learned from preference data. It is the component that converts "humans/AI prefer A over B" into a differentiable signal a policy can optimize against. Introduced for LLMs in RLHF ([[2022 - Ouyang et al - InstructGPT]]); the reward model is trained on pairwise human preferences, then used to optimize the policy (PPO).
+A reward model (RM) maps a model output (or trajectory) to a scalar quality score, learned from preference data. It is the component that converts "humans/AI prefer A over B" into a differentiable signal a policy can optimize against. Introduced for LLMs in RLHF ([[2022 - Ouyang et al - InstructGPT]]); the reward model is trained on pairwise human preferences, then used to optimize the policy ([[PPO]]). [[DPO]] later showed this two-stage pipeline can be collapsed into a single classification loss with no explicit RM.
 
 ## Online and iterative variants
 
@@ -55,3 +57,5 @@ Direct line: RLHF reward model ([[2022 - Ouyang et al - InstructGPT]]) → DPO i
 
 - [[2023-06-09 - Zheng et al - Judging LLM-as-a-Judge]]
 - [[2022 - Ouyang et al - InstructGPT]] (RLHF reward model — owned elsewhere, linked)
+- [[2023-05-29 - Rafailov et al - Direct Preference Optimization]] (the implicit-reward branch — [[DPO]])
+- [[2017-07-20 - Schulman et al - Proximal Policy Optimization]] (the RL optimizer in the classic pipeline — [[PPO]])

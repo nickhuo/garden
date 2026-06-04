@@ -13,7 +13,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[AI-Agents]] — agentic systems, tool use, orchestration, harnesses, evals, MCP
 - [[LLM]] — model internals, training, inference, optimization, alignment. Seeded 2026-05-14 with 5 Thinking Machines Lab sources.
 
-## Entities (43)
+## Entities (45)
 
 - [[Agent Skills]]
 - [[Andrej Karpathy]]
@@ -21,6 +21,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[BFCL]]
 - [[BrowseComp]]
 - [[Chayenne Zhao]]
+- [[Chelsea Finn]]
 - [[Claude 3.5 Sonnet]]
 - [[Claude Code]]
 - [[Claude Desktop]]
@@ -48,6 +49,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Prime Intellect]]
 - [[Gorilla]]
 - [[Qwen3-Omni]]
+- [[Rafael Rafailov]]
 - [[Richard Sutton]]
 - [[SGLang]]
 - [[Shunyu Yao]]
@@ -59,7 +61,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Thinking Machines Lab]]
 - [[Y Combinator]]
 
-## Concepts (128)
+## Concepts (130)
 
 - [[A-B Testing for Agents]]
 - [[ACI - Agent-Computer Interface]]
@@ -102,6 +104,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Contextual Retrieval]]
 - [[Deliberately Narrow Initial Market]]
 - [[Do Things That Don't Scale]]
+- [[DPO]]
 - [[Empirical Neural Tangent Kernel]]
 - [[Error Trace Retention]]
 - [[Eval as Upstream Constraint]]
@@ -151,6 +154,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Permission Model]]
 - [[Persona Vectors]]
 - [[Persona Vectors vs Memory Files]]
+- [[PPO]]
 - [[Programmatic Tool Calling]]
 - [[Progressive Disclosure]]
 - [[Prompt Optimization]]
@@ -191,8 +195,10 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Vibe Coding]]
 - [[Workflows vs Agents]]
 
-## Sources (65)
+## Sources (67)
 
+- [[2017-07-20 - Schulman et al - Proximal Policy Optimization]]
+- [[2023-05-29 - Rafailov et al - Direct Preference Optimization]]
 - [[2013-07 - Paul Graham - Do Things that Don't Scale]]
 - [[2025-01 - DeepSeek-AI - DeepSeek-R1 Incentivizing Reasoning via RL]]
 - [[2024-06 - Opsahl-Ong et al - MIPRO Optimizing Instructions and Demonstrations]]

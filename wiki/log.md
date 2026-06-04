@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Wiki Log"
-updated: 2026-05-31
+updated: 2026-06-02
 ---
 
 # Wiki Log
@@ -18,6 +18,14 @@ Format:
 Ops: `init`, `ingest`, `query`, `lint`, `refactor`, `save`, `autoresearch`, `manual`.
 
 ---
+
+## [2026-06-02] ingest | PPO + DPO (RL & alignment foundations)
+
+- Batch ingest of two canonical papers Nick named (arXiv 1707.06347, 2305.18290); both passed the seed gate **14/14 → high** (peer-reviewed/canonical primary research). Lineage backfill — the wiki had cited both without sourcing.
+- Source: `.raw/articles/2017-07-20 - Schulman et al - Proximal Policy Optimization.md`, `.raw/articles/2023-05-29 - Rafailov et al - Direct Preference Optimization.md`
+- Pages created: [[2017-07-20 - Schulman et al - Proximal Policy Optimization]], [[2023-05-29 - Rafailov et al - Direct Preference Optimization]], [[PPO]], [[DPO]], [[Rafael Rafailov]], [[Chelsea Finn]]
+- Pages updated: [[Reward Modeling]] (PPO/DPO links + sources), [[GRPO]] (now links its [[PPO]] ancestor), [[John Schulman]] (PPO authorship + source), [[LLM]] domain, [[brain/03_Resources/wiki/index]], [[concepts/_index]], [[entities/_index]], [[sources/_index]], [[hot]]
+- Key insight: **PPO and DPO are two routes to the same RLHF objective** (reward − β·KL leash) — PPO optimizes it online against a learned reward model (ancestor of [[GRPO]] via the clipped objective); DPO solves it offline in closed form, no RM, no RL ("your LM is secretly a reward model"). The RLVR/R1 line is a third axis. Citation chase: DPO's upstreams ([[2022-03-04 - Ouyang et al - InstructGPT]], PPO) already/now in wiki; PPO's upstream **TRPO** flagged as top chase target, not built (scope = the two named papers).
 
 ## [2026-06-01] refactor | Thinker-entity tier + deepening schema
 - Split entities into **thinker** (`entity_tier: thinker` — people/labs, accrete) vs **artifact** (snapshots, stay thin) in `entities/_index.md`; rewrote promotion policy (a thinker now qualifies on ≥1 source + a synthesizable stance, overturning the old "no single-source authors" rule) and added the 6-section deepening schema (Worldview / Methodology / Body of work / Throughlines / Tensions / Corpus to ingest).

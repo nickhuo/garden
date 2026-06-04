@@ -42,6 +42,7 @@ In the [[GEPA]] experiments, GRPO is run with LoRA ([[LoRA]]) at a **24,000-roll
 
 ## Connections
 
+- **[[PPO]]** — the ancestor GRPO builds on: it keeps PPO's clipped importance-ratio objective but **drops the value/critic network**, estimating advantage by group-relative reward normalization instead. The "large clip" refinement is a tuning of PPO's ε.
 - **[[DeepSeek-R1-Zero]]** — GRPO's canonical large-scale use: pure-RL reasoning from a base model. R1 supplies the full algorithm spec the wiki was missing.
 - **[[RL with Verifiable Rewards]]** / **[[Verifiability]]** — GRPO is the canonical RLVR optimizer; it needs cheap, trustworthy verifiable rewards.
 - **[[On-Policy Distillation]]**, **[[LoRA]]** — other weight-space adaptation methods in the wiki.
@@ -51,4 +52,5 @@ In the [[GEPA]] experiments, GRPO is run with LoRA ([[LoRA]]) at a **24,000-roll
 
 - [[2025-01 - DeepSeek-AI - DeepSeek-R1 Incentivizing Reasoning via RL]] — canonical large-scale GRPO application; specifies the objective + group-relative advantage + large-clip refinement.
 - [[2026-02 - Agrawal et al - GEPA Reflective Prompt Evolution]] (secondary reference — the GEPA-vs-GRPO rollout-efficiency comparison).
+- [[2017-07-20 - Schulman et al - Proximal Policy Optimization]] (the [[PPO]] clipped objective GRPO inherits).
 - *Primary GRPO paper: Shao et al. 2024 (DeepSeekMath, arXiv 2402.03300) — not yet ingested; top citation-chase target.*

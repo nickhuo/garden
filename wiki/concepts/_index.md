@@ -101,11 +101,16 @@ Ideas, patterns, frameworks. Domain-agnostic in form, domain-tagged in content. 
 - [[Reverse KL Divergence]] — mode-seeking, "unhackable"; the supervision signal in on-policy distillation.
 - [[Empirical Neural Tangent Kernel]] — explains why LoRA needs all layers (MLP gradients dominate the kernel).
 
+## RL & preference optimization (alignment foundations) (2026-06-02)
+
+- [[PPO]] — clipped surrogate policy gradient; TRPO's stability without its complexity. The RL step in RLHF and the ancestor of [[GRPO]].
+- [[DPO]] — closed-form RLHF: solves the reward−KL objective as one classification loss on preference pairs; no reward model, no RL. "Your LM is secretly a reward model."
+
 ## RL for reasoning (2026-05-31)
 
 - [[DeepSeek-R1-Zero]] — reasoning incentivized by *pure RL* on a base model, no SFT; emergent self-reflection + the "aha moment"; AIME 15.6%→77.9%.
 - [[RL with Verifiable Rewards]] — RLVR: RL whose reward is a cheap automatic verifier (rule/compiler/test), not a learned RM. The home page for the paradigm cited across [[GRPO]]/[[GEPA]]/[[Verifiability]].
-- [[GRPO]] — group-relative advantage, no critic; the canonical RLVR optimizer (now sourced from R1, not just GEPA).
+- [[GRPO]] — group-relative advantage, no critic; the canonical RLVR optimizer (now sourced from R1, not just GEPA). Inherits [[PPO]]'s clipped objective, drops the value net.
 
 ## LLM inference & numerics
 

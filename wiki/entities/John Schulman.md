@@ -14,12 +14,14 @@ first_mentioned: 2026-05-14
 related:
   - "[[Thinking Machines Lab]]"
   - "[[LoRA]]"
+  - "[[PPO]]"
 sources:
   - "[[2025-09-29 - Schulman - LoRA Without Regret]]"
+  - "[[2017-07-20 - Schulman et al - Proximal Policy Optimization]]"
 ---
 
 # John Schulman
 
 At [[Thinking Machines Lab]]. Lead author of [[2025-09-29 - Schulman - LoRA Without Regret]], which establishes the conditions under which [[LoRA]] is statistically indistinguishable from full fine-tuning.
 
-Historically known for PPO and TRPO — RL algorithm foundations that underlie much of modern post-training. The LoRA-for-RL finding (rank 1 suffices for policy gradient) sits naturally in his prior thread of work.
+Lead author of **[[PPO]]** ([[2017-07-20 - Schulman et al - Proximal Policy Optimization]], OpenAI 2017) and TRPO — the policy-gradient RL foundations that underlie much of modern post-training (PPO is the RL step in RLHF and the ancestor of [[GRPO]]). The LoRA-for-RL finding (rank 1 suffices for policy gradient) sits naturally in that thread.

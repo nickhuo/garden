@@ -45,6 +45,14 @@ One summary page per ingested source. Body cites verbatim where load-bearing; sy
 - [[2024-09-19 - Anthropic - Contextual Retrieval]]
 - [[2024-06-17 - Yao et al - tau-bench]]
 - [[2023-07-31 - Qin et al - ToolLLM]]
+- [[2023-05-29 - Rafailov et al - Direct Preference Optimization]]
+- [[2017-07-20 - Schulman et al - Proximal Policy Optimization]]
+
+## RL & alignment foundations (added 2026-06-02)
+
+The two canonical preference-alignment / RL methods the wiki had cited but never sourced — lineage backfill for the [[Reward Modeling]] / [[GRPO]] cluster:
+- [[2017-07-20 - Schulman et al - Proximal Policy Optimization]] (Schulman et al., OpenAI 2017) — [[PPO]]; the RL step in RLHF, ancestor of [[GRPO]]. *Also the wiki's first OpenAI-authored research paper besides InstructGPT.*
+- [[2023-05-29 - Rafailov et al - Direct Preference Optimization]] (Rafailov et al., Stanford, NeurIPS 2023) — [[DPO]]; closed-form RLHF, no reward model, no RL.
 
 ## Continual learning research (added 2026-05-20)
 

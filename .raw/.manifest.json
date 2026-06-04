@@ -1,5 +1,47 @@
 {
   "sources": {
+    ".raw/articles/2017-07-20 - Schulman et al - Proximal Policy Optimization.md": {
+      "hash": "08c360081a742ab8ebdc562d948fb19c",
+      "source_url": "https://arxiv.org/abs/1707.06347",
+      "ingested_at": "2026-06-02",
+      "pages_created": [
+        "wiki/sources/2017-07-20 - Schulman et al - Proximal Policy Optimization.md",
+        "wiki/concepts/PPO.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Reward Modeling.md",
+        "wiki/concepts/GRPO.md",
+        "wiki/entities/John Schulman.md",
+        "wiki/domains/LLM.md",
+        "wiki/index.md",
+        "wiki/concepts/_index.md",
+        "wiki/entities/_index.md",
+        "wiki/sources/_index.md",
+        "wiki/log.md",
+        "wiki/hot.md"
+      ]
+    },
+    ".raw/articles/2023-05-29 - Rafailov et al - Direct Preference Optimization.md": {
+      "hash": "53c5a4cb0003983e55f5ec562b64f04a",
+      "source_url": "https://arxiv.org/abs/2305.18290",
+      "ingested_at": "2026-06-02",
+      "pages_created": [
+        "wiki/sources/2023-05-29 - Rafailov et al - Direct Preference Optimization.md",
+        "wiki/concepts/DPO.md",
+        "wiki/entities/Rafael Rafailov.md",
+        "wiki/entities/Chelsea Finn.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Reward Modeling.md",
+        "wiki/domains/LLM.md",
+        "wiki/index.md",
+        "wiki/concepts/_index.md",
+        "wiki/entities/_index.md",
+        "wiki/sources/_index.md",
+        "wiki/log.md",
+        "wiki/hot.md"
+      ]
+    },
     ".raw/articles/2026-05 - Weng - Learning Beyond Gradients.md": {
       "hash": "426d6517dcfc5ccbccab5bd5de09bde3",
       "source_url": "https://trinkle23897.github.io/learning-beyond-gradients/",

@@ -2,7 +2,7 @@
 type: domain
 title: LLM
 created: 2026-05-14
-updated: 2026-05-31
+updated: 2026-06-02
 tags:
   - llm
   - domain
@@ -87,6 +87,13 @@ First inference-engine source in the domain: [[2026-05-30 - Chayenne Zhao - SGLa
 - **[[GRPO]]** — now properly sourced (was secondary-ref only): group-relative advantage, no critic, the large-PPO-clip refinement. Connects to the [[GEPA]] critique that scalar RLVR throws away the language trace.
 - **[[Reasoning Distillation]]** — 800k R1 traces → small Qwen/Llama bases by SFT; **distillation beats small-model RL**. The off-policy predecessor to TML's [[On-Policy Distillation]] — closing a loop with the domain's existing distillation page.
 - Sharpens [[Verifiability]] from principle to mechanism (RLVR is *how* verifiable domains get fast), and gives [[Reward Hacking]] / [[Reward Modeling]] their first frontier-model case study (R1 deliberately avoids neural RMs for reasoning; abandoned PRM + MCTS as failed attempts).
+
+## RL & alignment foundations — lineage backfill (2026-06-02)
+
+Two canonical methods the domain had been citing without sourcing, filed together:
+- **[[PPO]]** ([[2017-07-20 - Schulman et al - Proximal Policy Optimization]], OpenAI 2017) — clipped surrogate policy gradient; TRPO's stability without its second-order machinery, reusable rollouts for sample efficiency. The "PPO" in InstructGPT's RLHF recipe and the clipped-objective ancestor of [[GRPO]] (which drops PPO's value net for group-relative advantage).
+- **[[DPO]]** ([[2023-05-29 - Rafailov et al - Direct Preference Optimization]], Stanford, NeurIPS 2023) — collapses two-stage RLHF into one classification loss on preference pairs via the closed-form reward−KL optimum; no reward model, no RL. The "implicit reward" branch [[Reward Modeling]] describes.
+- Together they define the **PPO vs DPO** fork for the same RLHF objective; the later [[RL with Verifiable Rewards]] / [[2025-01 - DeepSeek-AI - DeepSeek-R1 Incentivizing Reasoning via RL|R1]] line is a third axis (keep RL, swap the learned reward for a verifier).
 
 ## Open questions for this domain
 
