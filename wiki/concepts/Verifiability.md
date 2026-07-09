@@ -43,6 +43,7 @@ Karpathy's actionable version: find domains that are **valuable, verifiable, and
 - [[Do Things That Don't Scale]] (Paul Graham) — the founder-wedge's missing half: a verifiable/undertrained domain still needs an *unscalable bootstrap* to win the first users. The [[Startup Idea as Vector]] makes that effort an explicit part of the idea.
 - Evaluation pages this sharpens: [[Eval Validity]], [[Pass^k Reliability Metric]], [[Trace-Based Evaluation]] — a verifiable reward is the strongest form of eval signal.
 - [[GEPA]] / [[Language Feedback as Learning Signal]] — a friendly amendment: even in the verifiable/RLVR setting, *collapsing* the signal to a scalar reward (as [[GRPO]] does) throws away the richest part. The compiler error or failed rubric — the **evaluation trace** behind the reward — is itself verifiable *and* in language, so reflecting on it can beat policy gradients at far fewer rollouts.
+- [[Verbal Reinforcement Learning]] (Reflexion, Shinn et al. 2023) — the earliest concrete demonstration of that amendment: it only works where the Evaluator produces a trustworthy signal (self-written unit tests → 91% pass@1 on HumanEval), making it the *in-context* counterpart to RLVR's weight-space learning.
 
 ## Source
 

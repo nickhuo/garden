@@ -8,8 +8,8 @@ status: developing
 complexity: intermediate
 domain: llm
 aliases: ["Textual Feedback", "Reflection over Reward", "feedback function"]
-related: ["[[GEPA]]", "[[Heuristic Learning]]", "[[Verifiability]]", "[[Reward Modeling]]", "[[Trace-Based Evaluation]]", "[[Error Trace Retention]]", "[[GRPO]]"]
-sources: ["[[2026-02 - Agrawal et al - GEPA Reflective Prompt Evolution]]"]
+related: ["[[GEPA]]", "[[Verbal Reinforcement Learning]]", "[[Heuristic Learning]]", "[[Verifiability]]", "[[Reward Modeling]]", "[[Trace-Based Evaluation]]", "[[Error Trace Retention]]", "[[GRPO]]"]
+sources: ["[[2026-02 - Agrawal et al - GEPA Reflective Prompt Evolution]]", "[[2023-03-20 - Shinn et al - Reflexion]]"]
 ---
 
 # Language Feedback as Learning Signal
@@ -31,6 +31,7 @@ The principle that **natural-language feedback is a richer learning medium for L
 
 ## Connections
 
+- **[[Verbal Reinforcement Learning]]** (Reflexion, 2023) — the agentic predecessor of this idea: turn a failed rollout into a verbal self-reflection stored in memory, conditioning the next attempt. GEPA (2026) generalizes the same "reflect on language, not scalar" bet to prompt evolution.
 - **[[Heuristic Learning]]** — the same bet in code-space: a coding agent edits code from tests/logs/replays instead of taking gradient steps. Both treat an *interpretable, editable artifact* + *language feedback* as the learning loop.
 - **[[Trace-Based Evaluation]]** / **[[Error Trace Retention]]** — the infrastructure that makes execution/evaluation traces available is the same that GEPA mines.
 - **[[Verifiability]]** — language feedback is most useful exactly where the environment can produce trustworthy, detailed signals (tests, graders, compilers).

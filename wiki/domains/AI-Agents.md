@@ -22,7 +22,8 @@ Theory / framing:
 - [[2023-10-12 - Packer et al - MemGPT - LLMs as Operating Systems]] (UC Berkeley) — [[MemGPT]]: context window as RAM, *virtual context management* paging data between in-context and external tiers via [[Self-Editing Memory|model-issued function calls]]. The concrete mechanism for CoALA's working↔long-term memory boundary; became Letta
 
 Foundation:
-- [[2025-01-06 - Anthropic - SWE-bench Verified Sonnet 3.5]] (2024-10-29, Anthropic) — 49% pass@1 on [[SWE-bench Verified]] with simple [[Agentic Harness]] + [[Claude 3.5 Sonnet]]; scaffold simplicity as a capability finding
+
+- [[2025-01-06 - Anthropic - SWE-bench Verified Sonnet 3.5]] (2024-10-29, Anthropic) — 49% pass\@1 on [[SWE-bench Verified]] with simple [[Agentic Harness]] + [[Claude 3.5 Sonnet]]; scaffold simplicity as a capability finding
 - [[2026-01-21 - Anthropic - AI-Resistant Technical Evaluations]] (2026-05-13, Anthropic) — hiring evals redesigned for AI era; [[AI-Resistant Evaluation Design]] applied to human assessment
 - [[2026-05-13 - Anthropic - Demystifying Evals for AI Agents]] (Anthropic) — [[Agent Eval Pyramid]], [[Trace-Based Evaluation]], structured methodology for measuring agent behavior
 - [[2026-05-13 - Anthropic - Claude Code Best Practices]] (Anthropic) — [[Agentic Coding Slash Commands]], [[Think Tool]] usage, harness ergonomics for coding agents
@@ -87,10 +88,10 @@ Eight threads now structure the worldview:
 
 ## Gaps to fill via next ingests
 
-- **Counter-source for [[Workflows Beat Agents for Most Production]]** — Devin / Cognition writeup remains highest priority.
+- **Counter-source for&#x20;**[[Workflows Beat Agents for Most Production]] — Devin / Cognition writeup remains highest priority.
 - **Second non-Anthropic vendor on KV-cache primacy** — Manus is one data point; need another (OpenAI / Google / DeepSeek production write-up).
 - **Cross-provider KV-cache cost** — Sonnet 10× gap is anchored; analogues on GPT-5 / Gemini 3 / open-weights via vLLM are unknown.
-- **Independent replication of [[Recursive Language Models]]** — OOLONG, BrowseComp-Plus outside Khattab's orbit.
+- **Independent replication of&#x20;**[[Recursive Language Models]] — OOLONG, BrowseComp-Plus outside Khattab's orbit.
 - **DSPy as an ingest candidate** — Khattab orbit; problem-decomposition heavy framework.
 - **A swarm / graph perspective** beyond Anthropic's binary+1.
 - **Specific framework deep-dives** (LangGraph, OpenAI Agents SDK, Claude Agent SDK).
@@ -99,7 +100,7 @@ Eight threads now structure the worldview:
 
 ## Closed gaps
 
-- ~~Cross-vendor [[Meta-Harness]] analogues~~ — partially closed by Manus.
+- ~~Cross-vendor&#x20;~~[[Meta-Harness]]~~&#x20;analogues~~ — partially closed by Manus.
 - ~~Need a non-Anthropic perspective at all~~ — closed by Manus 2025-07.
 - ~~Need an academic perspective at all~~ — closed by Zhang & Khattab 2025-10.
 - ~~Production reliability data~~ — partially closed: [[Eval Infrastructure Noise]], [[Eval Awareness]], [[Sandbagging]], and [[Agent Eval Pyramid]] now form a coherent eval-methodology stack.
@@ -108,6 +109,7 @@ Eight threads now structure the worldview:
 ## Continual learning & online evaluation (2026-05-20)
 
 A new cross-cutting layer from the autoresearch pass. The agent-facing pillars:
+
 - **Online evaluation** — [[Online Evaluation]], [[LLM-as-Judge]], [[Implicit Feedback Signals]], [[A/B Testing for Agents]], [[Eval Validity]]; extends the existing eval stack ([[Agent Eval Pyramid]], [[Trace-Based Evaluation]], [[Eval Awareness]], [[tau-bench]]) from offline benchmarks to live signals.
 - **Real-time learning** — [[Online Learning from Interaction]], [[Implicit Feedback Signals]]; the durability spectrum from in-context to online RL.
 - **Memory persistence** — [[Memory Stream]], [[Persona Vectors vs Memory Files]], [[Letta]]; extends [[Agent Memory Taxonomy]], [[Self-Editing Memory]], [[MemGPT]].
@@ -116,6 +118,7 @@ A new cross-cutting layer from the autoresearch pass. The agent-facing pillars:
 ## OpenAI agent doctrine (2026-05-22)
 
 [[2025 - OpenAI - A Practical Guide to Building Agents]] adds the **OpenAI-side canon** alongside Anthropic's. Direct comparison: [[OpenAI Practical Guide vs Anthropic Building Effective Agents]].
+
 - **Orchestration patterns** — [[Manager Pattern]] (agents-as-tools; ≈ [[Orchestrator-Workers]]) vs [[Agent Handoffs]] (decentralized peer transfer; ≈ [[Routing]]); both are [[Multi-Agent Systems]] shapes. [[Agent Run Loop]] (`Runner.run()` until exit condition) is the single-agent core.
 - **Tools** — [[Agent Tool Categories]]: Data / Action / Orchestration; standardized definitions, kin to [[ACI - Agent-Computer Interface]] / [[Agent Interface Contracts]].
 - **Safety** — [[Agent Guardrails]] (relevance/safety/PII/moderation/tool-safeguards/rules/output-validation, optimistic tripwires) + [[Human-in-the-Loop Intervention]]; tool-safeguard risk ratings extend [[Permission Model]] / [[Minimal Footprint Principle]].
@@ -124,20 +127,23 @@ A new cross-cutting layer from the autoresearch pass. The agent-facing pillars:
 ## Software 3.0 & agentic engineering (2026-05-22)
 
 Karpathy's [[2026-05-22 - Karpathy - Sequoia Ascent 2026]] supplies the era-level framing over the operational corpus:
-- **[[Software 3.0]]** — programming LLMs in natural language; the successor to [[Software 2.0]] and the rhetorical frame above [[Model-Centric Architecture]]. Sometimes the app *disappears* into a direct model transformation.
-- **[[Verifiability]]** — "automate what you can verify"; the engine behind the December-2025 coding-agent jump and the [[The Bitter Lesson]] / RL story. The founder wedge: valuable + verifiable + undertrained domains.
-- **[[Jagged Intelligence]]** — capability ≈ verifiability × training attention × data × value; "ghosts, not animals"; the "are you on the model's rails?" test.
-- **[[Vibe Coding]]** (raises the floor) vs **[[Agentic Engineering]]** (raises the ceiling) — the latter is the human discipline wrapping fallible agents; pairs with the eval/harness/permission stack above.
-- **[[Agent-Native Infrastructure]]** — build for the human's agent: sensors + actuators, [[MCP]], CLIs, schemas, permissioning. Generalizes [[ACI - Agent-Computer Interface]] and [[Agent Interface Contracts]] to the whole product.
+
+- [[Software 3.0]] — programming LLMs in natural language; the successor to [[Software 2.0]] and the rhetorical frame above [[Model-Centric Architecture]]. Sometimes the app *disappears* into a direct model transformation.
+- [[Verifiability]] — "automate what you can verify"; the engine behind the December-2025 coding-agent jump and the [[The Bitter Lesson]] / RL story. The founder wedge: valuable + verifiable + undertrained domains.
+- [[Jagged Intelligence]] — capability ≈ verifiability × training attention × data × value; "ghosts, not animals"; the "are you on the model's rails?" test.
+- [[Vibe Coding]] (raises the floor) vs [[Agentic Engineering]] (raises the ceiling) — the latter is the human discipline wrapping fallible agents; pairs with the eval/harness/permission stack above.
+- [[Agent-Native Infrastructure]] — build for the human's agent: sensors + actuators, [[MCP]], CLIs, schemas, permissioning. Generalizes [[ACI - Agent-Computer Interface]] and [[Agent Interface Contracts]] to the whole product.
 
 ## Prime Intellect self-improvement stack (2026-05-24)
 
 [[Prime Intellect]]'s 5-post batch adds an **open-RL, self-improving** lens — see synthesis [[Prime Intellect Self-Improvement Stack]]. Agent-side pieces:
-- **[[Self-Evolving Agent Environments]]** (`general-agent`) — synthesizer↔solver loop auto-grows a difficulty-calibrated tool-use corpus; production-scale counterpart to [[tau-bench]]/[[BFCL]]/[[ToolBench]], and a structural defense against [[Reward Hacking]].
-- **[[Autonomous Research Agents]]** (nanogpt speedrun) — agents (Codex, [[Claude Code]]) beat a human optimizer baseline. Clean [[Agentic Harness]] / durable-log ([[Session as Event Log]]) instance. **Novelty gate:** agents search & recombine but can't originate ideas.
-- **[[Recursive Language Models]]** — now corroborated by a 2nd independent source (Prime Intellect impl), partially closing the replication gap flagged above.
+
+- [[Self-Evolving Agent Environments]] (`general-agent`) — synthesizer↔solver loop auto-grows a difficulty-calibrated tool-use corpus; production-scale counterpart to [[tau-bench]]/[[BFCL]]/[[ToolBench]], and a structural defense against [[Reward Hacking]].
+- [[Autonomous Research Agents]] (nanogpt speedrun) — agents (Codex, [[Claude Code]]) beat a human optimizer baseline. Clean [[Agentic Harness]] / durable-log ([[Session as Event Log]]) instance. **Novelty gate:** agents search & recombine but can't originate ideas.
+- [[Recursive Language Models]] — now corroborated by a 2nd independent source (Prime Intellect impl), partially closing the replication gap flagged above.
 
 ## Navigation
 
 - [[brain/03_Resources/wiki/index]] — full page catalog (read this first)
 - [[log]] — chronological event history
+

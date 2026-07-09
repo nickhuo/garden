@@ -2,7 +2,7 @@
 type: entity
 title: "Shunyu Yao"
 created: 2026-05-19
-updated: 2026-06-01
+updated: 2026-06-18
 tags:
 - ai-agents
 - entity
@@ -15,12 +15,16 @@ core_claim: "Language agents are the latest cognitive architecture — build the
 first_mentioned: 2026-05-19
 related:
 - "[[ReAct]]"
+- "[[Verbal Reinforcement Learning]]"
 - "[[Tree of Thoughts]]"
 - "[[CoALA]]"
 - "[[tau-bench]]"
 - "[[Pass^k Reliability Metric]]"
 - "[[Workflows Beat Agents for Most Production]]"
+- "[[Karthik Narasimhan]]"
 sources:
+- "[[2022-10-06 - Yao et al - ReAct]]"
+- "[[2023-03-20 - Shinn et al - Reflexion]]"
 - "[[2023-09-05 - Sumers et al - Cognitive Architectures for Language Agents]]"
 - "[[2024-06-17 - Yao et al - tau-bench]]"
 ---
@@ -43,7 +47,8 @@ Researcher whose work threads through much of the language-agents canon — a co
 
 ## Body of work (in the wiki)
 
-- **2022 — [[ReAct]]** — interleaving reasoning and acting (concept page; source not yet ingested).
+- **2022 — [[2022-10-06 - Yao et al - ReAct]]** — interleaving reasoning and acting (source ingested 2026-06-18).
+- **2023 — [[2023-03-20 - Shinn et al - Reflexion]]** ([[Verbal Reinforcement Learning]], co-author) — learn from failure via verbal self-reflection + episodic memory; the *learning* action ReAct lacks.
 - **2023 — [[Tree of Thoughts]]** — deliberate search over reasoning paths (concept page; source not yet ingested).
 - **2023 — [[2023-09-05 - Sumers et al - Cognitive Architectures for Language Agents]]** ([[CoALA]]) — the cognitive-architecture taxonomy organizing the agent zoo.
 - **2024 — [[2024-06-17 - Yao et al - tau-bench]]** (at Sierra) — tool-agent-user reliability benchmark; introduces [[Pass^k Reliability Metric]] and [[User Simulator Evaluation]].
@@ -60,4 +65,5 @@ Researcher whose work threads through much of the language-agents canon — a co
 
 ## Corpus to ingest
 
-- **ReAct** (Yao et al. 2022) and **Tree of Thoughts** (Yao et al. 2023) — both have concept pages but no source page; ingesting them would complete the body-of-work arc and ground two heavily-cited concepts.
+- **ReAct** (Yao et al. 2022) — ✅ ingested 2026-06-18 ([[2022-10-06 - Yao et al - ReAct]]), via the Reflexion citation chase.
+- **Tree of Thoughts** (Yao et al. 2023) — concept page exists, source not yet ingested; the last gap in the body-of-work arc.

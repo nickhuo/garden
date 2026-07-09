@@ -13,14 +13,16 @@ related:
 - "[[Tree of Thoughts]]"
 - "[[Think Tool]]"
 - "[[Augmented LLM]]"
+- "[[Verbal Reinforcement Learning]]"
 - "[[Shunyu Yao]]"
 sources:
+- "[[2022-10-06 - Yao et al - ReAct]]"
 - "[[2023-09-05 - Sumers et al - Cognitive Architectures for Language Agents]]"
 ---
 
 # ReAct
 
-The **Reason + Act** pattern (Yao et al., 2022): an agent interleaves **reasoning** traces (internal) with **grounding** actions (external) in a single fixed loop — think, act, observe, think, act. Each reasoning step conditions the next action; each observation conditions the next thought.
+The **Reason + Act** pattern ([[2022-10-06 - Yao et al - ReAct|Yao et al., 2022]], ICLR 2023): an agent interleaves **reasoning** traces (internal) with **grounding** actions (external) in a single fixed loop — think, act, observe, think, act. Each reasoning step conditions the next action; each observation conditions the next thought.
 
 ## In CoALA terms
 
@@ -33,4 +35,4 @@ The **Reason + Act** pattern (Yao et al., 2022): an agent interleaves **reasonin
 
 ReAct demonstrated the **synergy** between reasoning and environmental feedback: reasoning alone hallucinates, acting alone can't plan, but interleaving them grounds the reasoning in observations and lets observations steer the reasoning. It is the conceptual ancestor of the [[Think Tool]] (a reasoning-only internal action carved out as an explicit tool) and the default skeleton of most tool-using [[Augmented LLM]] agents today.
 
-Its limitation — no deliberate evaluation of alternatives — is exactly what [[Tree of Thoughts]] adds.
+Its limitation — no deliberate evaluation of alternatives — is exactly what [[Tree of Thoughts]] adds. Its other gap — no *learning* across trials — is what [[Verbal Reinforcement Learning]] (Reflexion) adds, wrapping the ReAct loop in an evaluate→reflect→remember outer loop.

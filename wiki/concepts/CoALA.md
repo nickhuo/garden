@@ -12,6 +12,7 @@ status: developing
 related:
 - "[[Agent Memory Taxonomy]]"
 - "[[ReAct]]"
+- "[[Verbal Reinforcement Learning]]"
 - "[[Tree of Thoughts]]"
 - "[[Augmented LLM]]"
 - "[[Workflows vs Agents]]"
@@ -35,7 +36,7 @@ Every action an agent can take is either **internal** (changes memory) or **exte
 **Internal actions:**
 - **Retrieval** — read from long-term memory into working memory (rule-based, sparse, or dense). Maps to [[Just-in-Time Context Retrieval]], [[Contextual Retrieval]], [[BM25 and Hybrid Retrieval]].
 - **Reasoning** — process working-memory contents via the LLM to generate new information (the [[Think Tool]], chain-of-thought).
-- **Learning** — write to long-term memory: update episodic experience, semantic knowledge, LLM weights (fine-tuning), or the **agent's own code** (procedural).
+- **Learning** — write to long-term memory: update episodic experience, semantic knowledge, LLM weights (fine-tuning), or the **agent's own code** (procedural). [[Verbal Reinforcement Learning]] (Reflexion) is the canonical instance of episodic-experience learning: it writes verbal self-reflections to memory, the *learning* action plain [[ReAct]] omits.
 
 **External actions (grounding):**
 - **Physical** — robotics, sensors, actuators.

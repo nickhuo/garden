@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Wiki Index"
-updated: 2026-05-31
+updated: 2026-06-18
 ---
 
 # Wiki Index
@@ -13,7 +13,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[AI-Agents]] — agentic systems, tool use, orchestration, harnesses, evals, MCP
 - [[LLM]] — model internals, training, inference, optimization, alignment. Seeded 2026-05-14 with 5 Thinking Machines Lab sources.
 
-## Entities (45)
+## Entities (47)
 
 - [[Agent Skills]]
 - [[Andrej Karpathy]]
@@ -34,6 +34,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Jeremy Bernstein]]
 - [[Jiayi Weng]]
 - [[John Schulman]]
+- [[Karthik Narasimhan]]
 - [[Kevin Lu]]
 - [[Krista Opsahl-Ong]]
 - [[Letta]]
@@ -41,6 +42,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Managed Agents]]
 - [[Manus]]
 - [[MCP]]
+- [[Noah Shinn]]
 - [[OpenAI]]
 - [[OpenAI Agents SDK]]
 - [[OpenBMB]]
@@ -61,7 +63,7 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Thinking Machines Lab]]
 - [[Y Combinator]]
 
-## Concepts (130)
+## Concepts (131)
 
 - [[A-B Testing for Agents]]
 - [[ACI - Agent-Computer Interface]]
@@ -191,13 +193,16 @@ Master catalog of all wiki pages. Refresh on every ingest.
 - [[Trainer-Sampler Determinism]]
 - [[Tree of Thoughts]]
 - [[User Simulator Evaluation]]
+- [[Verbal Reinforcement Learning]]
 - [[Verifiability]]
 - [[Vibe Coding]]
 - [[Workflows vs Agents]]
 
-## Sources (67)
+## Sources (69)
 
 - [[2017-07-20 - Schulman et al - Proximal Policy Optimization]]
+- [[2022-10-06 - Yao et al - ReAct]]
+- [[2023-03-20 - Shinn et al - Reflexion]]
 - [[2023-05-29 - Rafailov et al - Direct Preference Optimization]]
 - [[2013-07 - Paul Graham - Do Things that Don't Scale]]
 - [[2025-01 - DeepSeek-AI - DeepSeek-R1 Incentivizing Reasoning via RL]]
@@ -294,4 +299,4 @@ Master catalog of all wiki pages. Refresh on every ingest.
 
 ---
 
-Total: ~207 wiki pages, 46 raw sources. Last full refresh: 2026-05-20 (autoresearch: continually-learning model-centric systems — 4 directions, 37 new pages). Last ingest: 2026-05-31 (Opsahl-Ong et al — MIPRO, EMNLP 2024; seed 14/14 → high: 1 source + 1 concept [[MIPRO]] + 1 entity [[Krista Opsahl-Ong]]; backfills the prompt-optimizer cited across [[Prompt Optimization]]/[[GEPA]]/[[DSPy]]). Prior ingest: 2026-05-31 (Chayenne Zhao — SGLang Omni Multi-Stage Inference). Prior: 2026-05-30 (GEPA — Reflective Prompt Evolution, ICLR 2026 Oral). Last maintenance: 2026-05-28 (concept dedup — 3 merges, 108→105 concepts).
+Total: ~212 wiki pages, 48 raw sources. Last full refresh: 2026-05-20 (autoresearch: continually-learning model-centric systems — 4 directions, 37 new pages). Last ingest: 2026-06-18 (Reflexion — Shinn et al., NeurIPS 2023; seed 14/14 → high. 2-source batch with citation chase: parent [[2023-03-20 - Shinn et al - Reflexion]] + chased upstream [[2022-10-06 - Yao et al - ReAct]] (14/14, ICLR 2023). New concept [[Verbal Reinforcement Learning]]; new entities [[Noah Shinn]], [[Karthik Narasimhan]]. Backfills the verbal-RL/self-reflection mechanism cited across [[Verifiability]]/[[Language Feedback as Learning Signal]]/[[CoALA]] and grounds the [[ReAct]] concept). Prior ingest: 2026-05-31 (Opsahl-Ong et al — MIPRO, EMNLP 2024). Prior: 2026-05-30 (GEPA — Reflective Prompt Evolution, ICLR 2026 Oral). Last maintenance: 2026-05-28 (concept dedup — 3 merges, 108→105 concepts).

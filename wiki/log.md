@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Wiki Log"
-updated: 2026-06-02
+updated: 2026-06-18
 ---
 
 # Wiki Log
@@ -18,6 +18,14 @@ Format:
 Ops: `init`, `ingest`, `query`, `lint`, `refactor`, `save`, `autoresearch`, `manual`.
 
 ---
+
+## [2026-06-18] ingest | Reflexion (Shinn et al. 2023) + ReAct (Yao et al. 2022, citation chase)
+- 2-source batch. Parent: [[2023-03-20 - Shinn et al - Reflexion]] (NeurIPS 2023, arXiv 2303.11366) — seed gate **14/14 → high**. Chased upstream: [[2022-10-06 - Yao et al - ReAct]] (ICLR 2023, arXiv 2210.03629) — **14/14 → high**, reached via the one-hop citation chase (Reflexion's Actor backbone, shared authors).
+- Lineage backfill: the wiki described Reflexion's mechanism on [[Verifiability]] and [[Language Feedback as Learning Signal]] and cited [[ReAct]] as a concept-without-source. Both now grounded.
+- Pages created: [[2023-03-20 - Shinn et al - Reflexion]], [[2022-10-06 - Yao et al - ReAct]], [[Verbal Reinforcement Learning]], [[Noah Shinn]], [[Karthik Narasimhan]].
+- Pages updated: [[ReAct]] (now cites its source), [[Shunyu Yao]] (body-of-work + corpus-to-ingest), [[Verifiability]], [[Language Feedback as Learning Signal]], [[CoALA]], index, hot.
+- Key insight: Reflexion = ReAct Actor + an evaluate→reflect→remember outer loop; "reinforcement" is verbal feedback in an episodic memory, not weight updates. 91% pass@1 on HumanEval (vs GPT-4 80%) via self-written unit tests. The 2023 in-context ancestor of GEPA's "language > scalar reward" thesis.
+- Citation chase: ReAct built. Cited-but-not-built (recorded in Lineage): Chain-of-Thought (Wei 2022, future target), Self-Refine (Madaan 2023), Tree of Thoughts (concept exists, source pending), Generative Agents (already filed).
 
 ## [2026-06-02] ingest | PPO + DPO (RL & alignment foundations)
 
@@ -64,7 +72,7 @@ Ops: `init`, `ingest`, `query`, `lint`, `refactor`, `save`, `autoresearch`, `man
 - Seed gate: **14/14 → high** (primary peer-reviewed research, Berkeley/Stanford/MIT/Databricks; full algorithm + 6 benchmarks + released code).
 - Collision check: gbrain CLI locked by MCP server (single-process PGLite); did manual neighbor read instead — [[Heuristic Learning]] is the closest existing page. No name/topic collision; create fresh.
 - Pages created: [[2026-02 - Agrawal et al - GEPA Reflective Prompt Evolution]], [[Omar Khattab]], [[DSPy]], [[GEPA]], [[Language Feedback as Learning Signal]], [[Pareto-based Candidate Selection]], [[Compound AI System]], [[Prompt Optimization]], [[GRPO]].
-- Pages updated: [[Heuristic Learning]] (prompt-space-twin bridge), [[Verifiability]] (RLVR-collapses-the-signal amendment), [[index]], [[hot]].
+- Pages updated: [[Heuristic Learning]] (prompt-space-twin bridge), [[Verifiability]] (RLVR-collapses-the-signal amendment), [[brain/03_Resources/wiki/index]], [[hot]].
 - Key insight: GEPA is the prompt-space twin of Heuristic Learning — both learn by editing an interpretable, LLM-editable artifact from language/trace feedback instead of gradients, and both claim large sample-efficiency wins over RL because a good edit *jumps* where a gradient nudges.
 - Citation chase: none built (GEPA is the primary source; ~100 refs documented in a Lineage section, not fetched).
 
